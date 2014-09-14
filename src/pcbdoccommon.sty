@@ -1,0 +1,410 @@
+
+\ProvidesPackage{pcbdoccommon}%
+
+\RequirePackage{tikz}%
+\RequirePackage{xifthen}%
+%\RequirePackage{keyval}%
+\RequirePackage{rotating}%
+\RequirePackage{changepage}%
+
+% диаметр окружности знака маркировки:
+\newlength{\marksize}%
+\setlength{\marksize}{12mm}%
+%\define@key{pcbdocdrawinglayer}{marksize}{\setlength{\marksize}{#1}}%
+
+% толщина линии окружности знака маркировки:
+\newlength{\markline}%
+\setlength{\markline}{\pcbdoclinethick}%
+%\define@key{pcbdocdrawinglayer}{markline}{\setlength{\markline}{#1}}%
+
+% размер знака клеймения:
+\newlength{\stampsize}%
+\setlength{\stampsize}{16mm}%
+%\define@key{pcbdocdrawinglayer}{stampsize}{\setlength{\stampsize}{#1}}%
+
+% толщина линии знака клеймения:
+\newlength{\stampline}%
+\setlength{\stampline}{\pcbdoclinethick}%
+%\define@key{pcbdocdrawinglayer}{stampline}{\setlength{\stampline}{#1}}%
+
+% размер точки - начала линии выноски:
+\newlength{\extlinepoint}%
+\setlength{\extlinepoint}{2mm}%
+%\define@key{pcbdocdrawinglayer}{extlinepoint}{\setlength{\extlinepoint}{#1}}%
+
+%\DeclareOption*{\edef\@tempa{%
+%    \noexpand\setkeys{pcbdocdrawinglayer}{\CurrentOption}}\@tempa}%
+
+%\ProcessOptions%
+
+\usetikzlibrary{positioning,shapes.geometric,intersections}%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Цвета (имеют смысл для чернового режима):
+\definecolor{BackgroundColor}{rgb}{0.8784,0.8784,0.7647}% фон
+\definecolor{GridColor}{gray}{0.5}% метка точек начала выносных линий
+\definecolor{SheetCenterColor}{gray}{0.5}% метка центра листа
+\definecolor{BoardOriginColor}{rgb}{1,0,0}% метка точки привязки ПП
+\definecolor{GraphicsOriginColor}{rgb}{0,0,1}% метка точки привязки вставленного рисунка
+\definecolor{OriginColor}{rgb}{0,1,0}% метка иных точек привязки
+\definecolor{DimensionColor}{rgb}{1,1,0}% метка точек проставления размеров
+\definecolor{ExtensionColor}{rgb}{0,1,1}% метка точек начала выносных линий
+\definecolor{ExtensionLineColor}{gray}{0.5}% выносныe линии
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\StyleSet}[3]{%
+  \ifthenelse{\equal{\draftmode}{draftmode}}{%
+  \tikzset{#1/.style={#2}}%
+  }{%
+  \tikzset{#1/.style={#3}}%
+  }%
+  }%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Стили объектов:
+\StyleSet{SheetCenter}%
+  {circle,fill=SheetCenterColor,minimum size=2mm,anchor=center}%
+  {coordinate}%
+
+\StyleSet{BoardOrigin}%
+  {circle,fill=BoardOriginColor,minimum size=2mm,anchor=center}%
+  {coordinate}%
+
+\StyleSet{GraphicsOrigin}%
+  {circle,fill=GraphicsOriginColor,minimum size=2mm,anchor=center}%
+  {coordinate}%
+
+\StyleSet{Origin}%
+  {circle,fill=OriginColor,minimum size=2mm,anchor=center}%
+  {coordinate}%
+
+\StyleSet{DimensionOrigin}%
+  {circle,fill=DimensionColor,minimum size=2mm,anchor=center}%
+  {coordinate}%
+
+\StyleSet{ExtensionOrigin}%
+  {circle,fill=ExtensionColor,minimum size=1mm,anchor=center}%
+  {coordinate}%
+
+\StyleSet{ExtensionLine}%
+  {color=ExtensionLineColor}%
+  {linethin,extlinepoint-}%
+
+\StyleSet{ArrowLine}%
+  {linethin,extlinearrow-}%
+  {linethin,extlinearrow-}%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+\pgfarrowsdeclare{extlinearrow}{extlinearrow}{%
+  \pgfutil@tempdima=0pt%
+  \advance\pgfutil@tempdima by.3\pgflinewidth%
+  \pgfarrowsrightextend{+-1\pgfutil@tempdima}%
+  \pgfarrowsleftextend{+5\pgfutil@tempdima}%
+  }{%
+  \pgfutil@tempdima=0pt%
+  \advance\pgfutil@tempdima by.3\pgflinewidth%
+  \pgfsetdash{}{0pt} % do not dash
+  \pgfsetroundjoin   % fix join
+  \pgfsetroundcap    % fix cap
+  \pgfpathmoveto{\pgfpoint{-5mm}{0.8mm}}%
+  \pgfpathlineto{\pgfpoint{0mm}{0mm}}%
+  \pgfpathlineto{\pgfpoint{-5mm}{-0.8mm}}%
+  \pgfpathlineto{\pgfpoint{-2mm}{0mm}}%
+  \pgfpathlineto{\pgfpoint{-5mm}{0.8mm}}%
+  \pgfusepathqstroke%
+  \pgfpathmoveto{\pgfpointorigin}%
+  }%
+
+\pgfarrowsdeclare{linearrow}{linearrow}{%
+  \pgfutil@tempdima=0pt%
+  \advance\pgfutil@tempdima by.3\pgflinewidth%
+  \pgfarrowsrightextend{+-1\pgfutil@tempdima}%
+  \pgfarrowsleftextend{+5\pgfutil@tempdima}%
+  }{%
+  \pgfutil@tempdima=0pt%
+  \advance\pgfutil@tempdima by.3\pgflinewidth%
+  \pgfsetdash{}{0pt} % do not dash
+  \pgfsetroundjoin   % fix join
+  \pgfsetroundcap    % fix cap
+  \pgfpathmoveto{\pgfpoint{-5mm}{0.8mm}}%
+  \pgfpathlineto{\pgfpoint{0mm}{0mm}}%
+  \pgfpathlineto{\pgfpoint{-5mm}{-0.8mm}}%
+  \pgfpathlineto{\pgfpoint{-2mm}{0mm}}%
+  \pgfpathlineto{\pgfpoint{-5mm}{0.8mm}}%
+  \pgfusepathqstroke%
+  \pgfpathmoveto{\pgfpointorigin}%
+  }%
+
+\pgfarrowsdeclare{mlinearrow}{mlinearrow}{%
+  \pgfutil@tempdima=0pt%
+  \advance\pgfutil@tempdima by.3\pgflinewidth%
+  \pgfarrowsrightextend{+-1\pgfutil@tempdima}%
+  \pgfarrowsleftextend{+5\pgfutil@tempdima}%
+  }{%
+  \pgfutil@tempdima=0pt%
+  \advance\pgfutil@tempdima by.3\pgflinewidth%
+  \pgfsetdash{}{0pt} % do not dash
+  \pgfsetroundjoin   % fix join
+  \pgfsetroundcap    % fix cap
+  \pgfpathmoveto{\pgfpoint{0mm}{0mm}}%
+  \pgfpathlineto{\pgfpoint{5mm}{0.8mm}}%
+  \pgfpathlineto{\pgfpoint{2mm}{0mm}}%
+  \pgfpathlineto{\pgfpoint{5mm}{-0.8mm}}%
+  \pgfpathlineto{\pgfpoint{0mm}{0mm}}%
+  \pgfpathlineto{\pgfpoint{12mm}{0mm}}%
+  \pgfusepathqstroke%
+  \pgfpathmoveto{\pgfpointorigin}%
+  }%
+
+\pgfarrowsdeclare{extlinepoint}{extlinepoint}{%
+  \pgfutil@tempdima=0pt%
+  \advance\pgfutil@tempdima by.3\pgflinewidth%
+  \pgfarrowsrightextend{+-1\pgfutil@tempdima}%
+  \pgfarrowsleftextend{+5\pgfutil@tempdima}%
+  }{%
+  \pgfsetlinewidth{\extlinepoint}%
+  \pgfutil@tempdima=0pt%
+  \advance\pgfutil@tempdima by.3\pgflinewidth%
+  \pgfsetdash{}{0pt} % do not dash
+  \pgfsetroundjoin   % fix join
+  \pgfsetroundcap    % fix cap
+  \pgfpathcircle{\pgfpointorigin}{0mm}%
+  \pgfusepathqstroke%
+  \pgfpathmoveto{\pgfpointorigin}%
+  }%
+
+
+
+\newlength{\RoughnessSignLength}%
+\setlength{\RoughnessSignLength}{0mm}%
+\newcommand{\PpSideViewPosition}{0,0}%
+\newlength{\dimregI}%
+\newcounter{pcbdimcntI}%
+\newcounter{pcbdimcntII}%
+\newcounter{pcbdimcntIII}%
+\newcounter{pcbdimcntIV}%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Шаблон для знака шероховатости:
+%Необязательный аргумент 'v', 'o' или '-' (по умолчанию - 'v')
+%задает вариант знака, второй аргумент - угол поворота, третий
+%- xy координаты через запятую, четвертый - размер шрифта, под
+%который подстраивается знак, пятый - "подкоренной" текст.
+\newcommand{\RoughnessSignTemplate}[5][v]{%
+  \pgfmathsetlength{\dimregI}{#4/sin(60)}%
+  \draw[linethin] ++(#3) -- +(120+#2:\dimregI);%
+  \ifthenelse{\equal{#1}{-}}{%
+    \draw[linethin] ++(#3) ++(120+#2:\dimregI) -- +(#2:\dimregI);%
+    }{}%
+  \pgfmathsetlength{\dimregI}{#4*2/sin(60)}%
+  \draw[linethin] ++(#3) -- +(60+#2:\dimregI);%
+  \ifthenelse{\equal{#1}{o}}{%
+    \draw[linethin] ++(#3) +(90+#2:#4/3*2) circle(#4*0.33);%
+    }{}%
+  \ifthenelse{\equal{#5}{}}{}{\node[above right,rotate=#2] at (#3){\makebox{~~~#5}};}%
+  \ifthenelse{\equal{#5}{}}{}{%
+    \draw[linethin] ++(#3) ++(60+#2:\dimregI) -- +(#2:\RoughnessSignLength);%
+    }%
+  }%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Различные варианты знаков шероховатости:
+\newcommand{\RoughnessSign}[3][0]{%
+  \RoughnessSignTemplate[v]{#1}{#2}{2.8mm}{#3}%
+  }%
+\newcommand{\largeRoughnessSign}[3][0]{%
+  \RoughnessSignTemplate[v]{#1}{#2}{3.5mm}{#3}%
+  }%
+\newcommand{\LargeRoughnessSign}[3][0]{%
+  \RoughnessSignTemplate[v]{#1}{#2}{5mm}{#3}%
+  }%
+\newcommand{\RoughnessSignI}[3][0]{%
+  \RoughnessSignTemplate[-]{#1}{#2}{2.8mm}{#3}%
+  }%
+\newcommand{\largeRoughnessSignI}[3][0]{%
+  \RoughnessSignTemplate[-]{#1}{#2}{3.5mm}{#3}%
+  }%
+\newcommand{\LargeRoughnessSignI}[3][0]{%
+  \RoughnessSignTemplate[-]{#1}{#2}{5mm}{#3}%
+  }%
+\newcommand{\RoughnessSignO}[3][0]{%
+  \RoughnessSignTemplate[o]{#1}{#2}{2.8mm}{#3}%
+  }%
+\newcommand{\largeRoughnessSignO}[3][0]{%
+  \RoughnessSignTemplate[o]{#1}{#2}{3.5mm}{#3}%
+  }%
+\newcommand{\LargeRoughnessSignO}[3][0]{%
+  \RoughnessSignTemplate[o]{#1}{#2}{5mm}{#3}%
+  }%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Вид сбоку печатной платы:
+\newcommand{\PpSideView}[2][10mm]{%
+  \renewcommand{\PpSideViewPosition}{#2}%
+  \setcounter{pcbdimcntI}{\BoardThickness * 10}%
+  \setcounter{pcbdimcntI}{\value{pcbdimcntI}/186467}%
+  \setcounter{pcbdimcntII}{\BoardThickness}%
+  \setcounter{pcbdimcntII}{\value{pcbdimcntII}/186467}%
+  \setcounter{pcbdimcntII}{\value{pcbdimcntII} * 10}%
+  \setcounter{pcbdimcntIV}{\value{pcbdimcntI} - \value{pcbdimcntII}}%
+  \setcounter{pcbdimcntIII}{\value{pcbdimcntII} / 10}%
+  \draw[linethick] ++(#2)%
+    rectangle +(\BoardThickness,\BoardHeight);%
+  \draw[linethin] ++(#2)%
+    -- +(0,-#1-3mm) +(\BoardThickness,0mm) -- +(\BoardThickness,-#1-3mm);%
+  \draw[linethin,mlinearrow-mlinearrow] ++(#2)%
+    +(0,-#1) node[above left]%
+    {\largeit \thepcbdimcntIII{,}\thepcbdimcntIV{*~~~}} -- +(\BoardThickness,-#1);%
+  \draw ++(#2) +(0,10mm) node[coordinate](node1){} +(\BoardThickness,10mm) node[coordinate](node2){};%
+  \LargeRoughnessSignO[90]{node1}{}%
+  \LargeRoughnessSignO[-90]{node2}{}%
+  }%
+
+% Добавление излома к виду сбоку печатной платы:
+\newcommand{\PpSideViewLine}[1]{%
+  \draw[linethick] ++(\PpSideViewPosition) +(0mm,#1) -- +(\BoardThickness,#1);
+  }%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Неуказанная шероховатость (в правом верхнем углу чертежа ПП):
+\newcommand{\Roughness}[1]{%
+  \node[coordinate](righttoppoint) at (\theBorderWidth mm,\theBorderHeight mm){};%
+  \draw ++(righttoppoint) +(-45mm,-20mm) node[coordinate](roughnessorigin){};%
+  \LargeRoughnessSign[0]{roughnessorigin}{#1};%
+  }%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newenvironment{sheet}[1][\pcbdocpapersize]{%
+  \ifthenelse{\equal{#1}{\pcbdocpapersize}}{}{%
+    \renewcommand{\pcbdocpapersize}{#1}%
+    }%
+  \PcbDocSizeChoice%
+  \PcbDocLayoutSet%
+  \changetext{0mm}{0mm}{}{}{}%
+    \begin{tikzpicture}[%
+      linethick/.style={%
+        line width=\pcbdoclinethick%
+        },%
+      linethin/.style={%
+        line width=\pcbdoclinethin%
+        },%
+      stamptop/.style={%
+        regular polygon,regular polygon sides=3,minimum size=\stampsize,line width=\stampline,%
+        draw,anchor=corner 1,inner sep=-4pt,text height=5mm,font=\largeit%
+        },%
+      stampleft/.style={%
+        regular polygon,regular polygon sides=3,minimum size=\stampsize,line width=\stampline,%
+        draw,anchor=corner 2,inner sep=-4pt,text height=5mm,font=\largeit%
+        },%
+      stampright/.style={%
+        regular polygon,regular polygon sides=3,minimum size=\stampsize,line width=\stampline,%
+        draw,anchor=corner 3,inner sep=-4pt,text height=5mm,font=\largeit%
+        },%
+      marking/.style={%
+        circle,draw,line width=\markline,inner sep=-2pt,minimum size=\marksize,fill=white,%
+        font=\largeit%
+        },%
+      point/.style={%
+        circle,draw,%
+        inner sep=0pt,minimum size=\extlinepoint,fill%
+        },%
+      stamp/.style={%!!!
+        circle,draw=black,line width=0.1mm,%!!!
+        inner sep=0pt,minimum size=0.1mm%!!!
+        },%
+      stamp/.style={coordinate},%
+%      SheetCenter/.style={circle,fill=SheetCenterColor,minimum size=2mm},%
+%      BoardOrigin/.style={circle,fill=BoardOriginColor,minimum size=2mm},%
+%      GraphicsOrigin/.style={circle,fill=GraphicsOriginColor,minimum size=2mm},
+      execute at begin picture={%
+        \node[coordinate] (SheetCenter) at (\theBorderWidth/20,\theBorderHeight/20){};%
+        \node[coordinate] (GraphicsOrigin) at (\theBorderWidth/20,\theBorderHeight/20){};%
+        \ifthenelse{\equal{\draftmode}{draftmode}}{%
+          \draw[fill=backgroundcolor] (0,0) rectangle (\theBorderWidth mm,\theBorderHeight mm);%
+%          \draw ++(GraphicsOrigin)%
+%            node[circle,fill=gray,minimum size=2mm] {};%
+          }{%
+          \draw[fill=white,color=white] (0,0) rectangle (\theBorderWidth mm,\theBorderHeight mm);%
+          }%
+        },%
+      execute at end picture={%
+        \ifthenelse{\equal{\draftmode}{draftmode}}{%
+          \draw[step=\gridstep,color=GridColor] (0,0) grid (\theBorderWidth mm,\theBorderHeight mm);%
+          \node[coordinate] (GraphicsOrigin) at (\theBorderWidth/20,\theBorderHeight/20){};%
+          \draw ++(GraphicsOrigin)%
+            node[circle,fill=SheetCenterColor,minimum size=2mm] {};%
+          }{%
+            \node[coordinate](leftbottompoint) at (0,0){};%
+            \node[coordinate](righttoppoint) at (\theBorderWidth mm,\theBorderHeight mm){};%
+          }%
+        }%
+      ]%
+  }{%
+    \end{tikzpicture}%
+  \newpage%
+  }%
+
+\newcommand{\DrawMark}[4]{%
+  \draw[line width=\pcbdoclinethin]++(#1)node[point]{}--+(#2:#3)node[marking]{\largeit #4};%
+  }%
+
+\newcommand{\DrawStamp}[4]{%
+  \draw[line width=\pcbdoclinethin]++(#1)node[point]{}--++(#2:#3)node(next)[stamp]{};%
+  \ifthenelse{#2 < 90 \and #2 > -45}{%
+  \draw[line width=\pcbdoclinethick]%
+    (next)--++(14mm,0mm)--++(-7mm,12.2mm)--(next) ++(7mm,4mm)node{\largeit #4};% left
+    }{}%
+  \ifthenelse{#2 = 90 \or #2 = -45}{%
+  \draw[line width=\pcbdoclinethick]%
+    (next)--++(14mm,0mm)--++(-7mm,12.2mm)--(next) ++(7mm,4mm)node{\largeit #4};% left
+    }{}%
+  \ifthenelse{#2 < -135 \or #2 > 90}{%
+  \draw[line width=\pcbdoclinethick]%
+    (next)--++(-14mm,0mm)--++(7mm,12.2mm)--(next) ++(-7mm,4mm)node{\largeit #4};% right
+    }{}%
+  \ifthenelse{#2 < -45 \and #2 > -135}{%
+  \draw[line width=\pcbdoclinethick]%
+    (next)--++(-7mm,-12.2mm)--++(14mm,0mm)--(next) ++(0mm,-8.2mm)node{\largeit #4};% top
+    }{}%
+  \ifthenelse{#2 = -135}{%
+  \draw[line width=\pcbdoclinethick]%
+    (next)--++(-7mm,-12.2mm)--++(14mm,0mm)--(next) ++(0mm,-8.2mm)node{\largeit #4};% top
+    }{}%
+  }%
+
+\newcommand{\viewright}[2]{%
+  \draw[line width=\pcbdoclinethin]%
+    ++(#1) -- +(15mm,0mm) +(5mm,1mm) -- +(0mm,0mm) +(5mm,-1mm) -- +(0mm,0mm)%
+    +(10mm,5mm) node {\Largeit #2};%
+  }%
+
+\newcommand{\viewleft}[2]{%
+  \draw[line width=\pcbdoclinethin]%
+    ++(#1) -- +(-15mm,0mm) +(-5mm,1mm) -- +(0mm,0mm) +(-5mm,-1mm) -- +(0mm,0mm)%
+    +(-10mm,5mm) node {\Largeit #2};%
+  }%
+
+\newcommand{\DrawView}[3]{%
+  \ifthenelse{\equal{#1}{right}}{\viewright{#2}{#3}}{}%
+  \ifthenelse{\equal{#1}{left}}{\viewleft{#2}{#3}}{}%
+  }%
+
+\newcommand{\ViewName}[3][]{%
+  \ifthenelse{\equal{#1}{r}}{%
+    \draw[line width=\pcbdoclinethin]%
+      ++(#2) node{\Largeit #3} ++(5mm,0mm)circle(2mm)%
+      ++(2mm,0mm) -- +(-0.6mm,1mm)%
+      +(0mm,0mm) -- +(0mm,1.2mm);%
+    }{%
+    \draw ++(#2) node{\Largeit #3};%
+    }%
+  }%
+

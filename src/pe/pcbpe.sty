@@ -1,0 +1,79 @@
+
+\ProvidesPackage{pcbpe}%
+
+\RequirePackage{pcbpeborder}%
+\RequirePackage{longtable}%
+
+\renewcommand{\baselinestretch}{1.569}%
+
+\renewcommand{\pcbdocpapersize}{a4}%
+\PcbDocSizeChoice%
+\setlength{\pcbdocpaperdeltawidth}{0mm}%
+\setlength{\pcbdocpaperdeltaheight}{1mm}%
+
+\newenvironment{ElementList}{%
+  \begin{longtable}[c]{%
+    @{}p{19mm}@{\hspace{2mm}}%
+    p{107mm}@{\hspace{2mm}}%
+    p{8mm}@{\hspace{2mm}}%
+    p{43mm}@{\hspace{1mm}}%
+    }%
+    }{%
+    \end{longtable}%
+  }%
+
+\newcommand{\newsheet}{%
+  \end{ElementList}%
+  \newpage%
+  \begin{ElementList}%
+  }%
+
+\newcommand{\Line}[4]{%
+  \largeit #1 & %
+  \largeit #2 & %
+  \makebox[8mm]{\largeit #3} & %
+  \largeit #4 %
+  \tabularnewline%
+  }%
+
+\newcommand{\Part}[1]{% Добавить раздел, #1 - имя раздела
+  \tabularnewline%
+%  \Line{}{\hfill \raisebox{0.8mm}{\underline{\largeit #1}} \hfill}{}{}%
+  \Line{}{\hfill \underline{\raisebox{0mm}[0mm][0mm]{#1}} \hfill}{}{}%
+  \tabularnewline%
+  }%
+
+\newcommand{\refbox}[1]{%
+  \makebox[19mm]{#1}%
+  }%
+
+\newcommand{\Element}[4][]{% Добавить элемент
+  % #1 - примечание (необязательно),
+  % #2 - наименование,
+  % #3 - позиционное обозначение,
+  % #4 - количество
+  \Line{\largeit #3}{#2}{#4}{#1}%
+  \tabularnewline%
+  }%
+
+\ifthenelse{\equal{\compactmode}{compactmode}}{%
+\renewcommand{\Element}[4][]{% Добавить элемент
+  % #1 - примечание (необязательно),
+  % #2 - наименование,
+  % #3 - позиционное обозначение,
+  % #4 - количество
+  \Line{\largeit #3}{#2}{#4}{#1}%
+  }%
+}{}%
+
+%\sloppy%
+\tolerance=10000%
+\raggedright%
+%\hyphenpenalty=10000%
+
+\AtBeginDocument{%
+  \enlargethispage{-3\baselineskip}%
+  }%
+
+\AtEndDocument{%
+  }%

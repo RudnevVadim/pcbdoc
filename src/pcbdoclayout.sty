@@ -1,0 +1,150 @@
+
+\ProvidesPackage{pcbdoclayout}%
+
+\RequirePackage{pcbdocpaper}%
+\RequirePackage{calc}%
+
+\newlength{\pcbdocpaperdeltawidth}%
+\setlength{\pcbdocpaperdeltawidth}{5mm}%
+
+\newlength{\pcbdocpaperdeltaheight}%
+\setlength{\pcbdocpaperdeltaheight}{2mm}%
+
+\newlength{\pcbdocpapertopmargin}%
+\setlength{\pcbdocpapertopmargin}{5mm}%
+
+\newlength{\pcbdocpaperbottommargin}%
+\setlength{\pcbdocpaperbottommargin}{5mm}%
+
+\newlength{\pcbdocpaperleftmargin}%
+\setlength{\pcbdocpaperleftmargin}{20mm}%
+
+\newlength{\pcbdocpaperrightmargin}%
+\setlength{\pcbdocpaperrightmargin}{5mm}%
+
+\newcounter{LeftMargin}%
+\newcounter{RightMargin}%
+\newcounter{TopMargin}%
+\newcounter{BottomMargin}%
+\newcounter{BorderWidth}%
+\newcounter{BorderHeight}%
+\newcounter{DeltaWidth}%
+\newcounter{DeltaHeight}%
+\newcounter{xStamp}%
+
+%\newcommand{\PcbDocLayoutSet}{%
+%  \setcounter{LeftMargin}{\pcbdocpaperleftmargin}%
+%  \setcounter{RightMargin}{\pcbdocpaperrightmargin}%
+%  \setcounter{TopMargin}{\pcbdocpapertopmargin}%
+%  \setcounter{BottomMargin}{\pcbdocpaperbottommargin}%
+%  \setcounter{BorderWidth}{\pcbdocpaperwidth - \pcbdocpaperrightmargin - \pcbdocpaperleftmargin}%
+%  \setcounter{BorderHeight}{\pcbdocpaperheight - \pcbdocpaperbottommargin - \pcbdocpapertopmargin}%!!!
+%  \setcounter{DeltaWidth}{\pcbdocpaperdeltawidth}%
+%  \setcounter{DeltaHeight}{\pcbdocpaperdeltaheight}%
+%  \setcounter{LeftMargin}{\value{LeftMargin}/186467}%
+%  \setcounter{RightMargin}{\value{RightMargin}/186467}%
+%  \setcounter{TopMargin}{\value{TopMargin}/186467}%
+%  \setcounter{BottomMargin}{\value{BottomMargin}/186467}%
+%  \setcounter{BorderWidth}{\value{BorderWidth}/186467}%
+%  \setcounter{BorderHeight}{\value{BorderHeight}/186467}%
+%  \setcounter{DeltaWidth}{\value{DeltaWidth}/186467}%
+%  \setcounter{DeltaHeight}{\value{DeltaHeight}/186467}%
+%  \setcounter{xStamp}{\value{BorderWidth}}%
+%  \addtocounter{xStamp}{-185}%
+%  \addtocounter{xStamp}{\value{DeltaWidth}}%
+%  \setlength{\topmargin}{\pcbdocpapertopmargin - \pcbdocpaperdeltaheight}%
+%  \setlength{\headsep}{0mm}%!!!
+%  \setlength{\hoffset}{-25.4mm}%
+%  \setlength{\voffset}{-25.4mm}%
+%  \setlength{\oddsidemargin}{\pcbdocpaperleftmargin - \pcbdocpaperdeltawidth}%
+%  \setlength{\footskip}{0mm}%!!!
+%  \setlength{\headheight}{0mm}%???
+%  \setlength{\textwidth}{%
+%    \pcbdocpaperwidth -%
+%    \pcbdocpaperleftmargin -%
+%    \pcbdocpaperrightmargin +%
+%    \pcbdocpaperdeltawidth +%
+%    \pcbdocpaperdeltawidth%
+%    }%
+%  \setlength{\textheight}{%!!!
+%    \pcbdocpaperheight -%
+%    \pcbdocpapertopmargin -%
+%    \pcbdocpaperbottommargin -%
+%    \footskip - \headheight +%
+%    \pcbdocpaperdeltaheight +%
+%    \pcbdocpaperdeltaheight%
+%    }%
+%  \marginparsep=0mm%
+%  \marginparwidth=0mm%
+%  \marginparpush=0mm%
+%  }%
+
+%\setlength{\headsep}{0mm}%
+
+\newcommand{\PcbDocLayoutSet}{%
+  \setcounter{LeftMargin}{\pcbdocpaperleftmargin}%
+  \setcounter{RightMargin}{\pcbdocpaperrightmargin}%
+  \setcounter{TopMargin}{\pcbdocpapertopmargin}%
+  \setcounter{BottomMargin}{\pcbdocpaperbottommargin}%
+  \setcounter{BorderWidth}{\pcbdocpaperwidth - \pcbdocpaperrightmargin - \pcbdocpaperleftmargin}%
+  \setcounter{BorderHeight}{\pcbdocpaperheight - \pcbdocpaperbottommargin - \pcbdocpapertopmargin}%!!!
+  \setcounter{DeltaWidth}{\pcbdocpaperdeltawidth}%
+  \setcounter{DeltaHeight}{\pcbdocpaperdeltaheight}%
+  \setcounter{LeftMargin}{\value{LeftMargin}/186467}%
+  \setcounter{RightMargin}{\value{RightMargin}/186467}%
+  \setcounter{TopMargin}{\value{TopMargin}/186467}%
+  \setcounter{BottomMargin}{\value{BottomMargin}/186467}%
+  \setcounter{BorderWidth}{\value{BorderWidth}/186467}%
+  \setcounter{BorderHeight}{\value{BorderHeight}/186467}%
+  \setcounter{DeltaWidth}{\value{DeltaWidth}/186467}%
+  \setcounter{DeltaHeight}{\value{DeltaHeight}/186467}%
+  \setcounter{xStamp}{\value{BorderWidth}}%
+  \addtocounter{xStamp}{-185}%
+  \addtocounter{xStamp}{\value{DeltaWidth}}%
+  \setlength{\topmargin}{\pcbdocpapertopmargin - \pcbdocpaperdeltaheight}%
+
+  \setlength{\headsep}{0mm}%
+  \setlength{\footskip}{0mm}%
+
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \ifthenelse{\equal{\pcbdoctype}{spec}}{%
+    \setlength{\headsep}{16.5mm}%
+    \setlength{\footskip}{15mm}}{}%
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \ifthenelse{\equal{\pcbdoctype}{pe}}{%
+    \setlength{\headsep}{16.5mm}%
+    \setlength{\footskip}{15mm}}{}%
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \ifthenelse{\equal{\pcbdoctype}{in}}{%
+    \setlength{\headsep}{0mm}%
+    \setlength{\footskip}{15mm}}{}%
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+  \setlength{\hoffset}{-25.4mm}%
+  \setlength{\voffset}{-25.4mm}%
+  \setlength{\oddsidemargin}{\pcbdocpaperleftmargin - \pcbdocpaperdeltawidth}%
+  \setlength{\headheight}{0mm}%???
+  \setlength{\textwidth}{%
+    \pcbdocpaperwidth -%
+    \pcbdocpaperleftmargin -%
+    \pcbdocpaperrightmargin +%
+    \pcbdocpaperdeltawidth +%
+    \pcbdocpaperdeltawidth%
+    }%
+  \setlength{\textheight}{%!!!
+    \pcbdocpaperheight -%
+    \pcbdocpapertopmargin -%
+    \pcbdocpaperbottommargin -%
+    \footskip - \headheight +%
+    \pcbdocpaperdeltaheight +%
+    \pcbdocpaperdeltaheight -%
+    \headsep%
+    }%
+  \marginparsep=0mm%
+  \marginparwidth=0mm%
+  \marginparpush=0mm%
+  }%

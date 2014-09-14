@@ -1,0 +1,281 @@
+
+\ProvidesPackage{pcbpeborder}%
+
+\RequirePackage{pcbdoccontent}%
+\RequirePackage{lastpage}%
+\RequirePackage{rotating}%
+\RequirePackage{xifthen}%
+
+\newcommand{\DrawHeaderFirst}{%
+  \unitlength=1mm%
+  \begin{picture}(0,0)%
+    \linethickness{\pcbdoclinethick}%
+    \put(0,-15){\line(1,0){185}}%
+    \put(21,0){\line(0,-1){247}}%
+    \put(130,0){\line(0,-1){247}}%
+    \put(140,0){\line(0,-1){247}}%
+    \put(0,-5){\makebox[20mm]{\largeit Поз.}}%
+    \put(0,-9){\makebox[20mm]{\largeit обозна-}}%
+    \put(0,-13){\makebox[20mm]{\largeit чение}}%
+    \put(20,-9){\makebox[110mm]{\Largeit Наименование}}%
+    \put(130,-9){\makebox[10mm]{\LLargeit Кол.}}%
+    \put(140,-9){\makebox[45mm]{\Largeit Примечание}}%
+    \linethickness{\pcbdoclinethin}%
+    \put(0,-23){\line(1,0){185}}%
+    \put(0,-31){\line(1,0){185}}%
+    \put(0,-39){\line(1,0){185}}%
+    \put(0,-47){\line(1,0){185}}%
+    \put(0,-55){\line(1,0){185}}%
+    \put(0,-63){\line(1,0){185}}%
+    \put(0,-71){\line(1,0){185}}%
+    \put(0,-79){\line(1,0){185}}%
+    \put(0,-87){\line(1,0){185}}%
+    \put(0,-95){\line(1,0){185}}%
+    \put(0,-103){\line(1,0){185}}%
+    \put(0,-111){\line(1,0){185}}%
+    \put(0,-119){\line(1,0){185}}%
+    \put(0,-127){\line(1,0){185}}%
+    \put(0,-135){\line(1,0){185}}%
+    \put(0,-143){\line(1,0){185}}%
+    \put(0,-151){\line(1,0){185}}%
+    \put(0,-159){\line(1,0){185}}%
+    \put(0,-167){\line(1,0){185}}%
+    \put(0,-175){\line(1,0){185}}%
+    \put(0,-183){\line(1,0){185}}%
+    \put(0,-191){\line(1,0){185}}%
+    \put(0,-199){\line(1,0){185}}%
+    \put(0,-207){\line(1,0){185}}%
+    \put(0,-215){\line(1,0){185}}%
+    \put(0,-223){\line(1,0){185}}%
+    \put(0,-231){\line(1,0){185}}%
+    \put(0,-239){\line(1,0){185}}%
+  \end{picture}%
+  }%
+
+\newcommand{\DrawHeaderNext}{%
+  \unitlength=1mm%
+  \begin{picture}(0,0)%
+    \linethickness{\pcbdoclinethick}%
+    \put(0,-15){\line(1,0){185}}%
+    \put(21,0){\line(0,-1){272}}%
+    \put(130,0){\line(0,-1){272}}%
+    \put(140,0){\line(0,-1){272}}%
+    \put(0,-5){\makebox[20mm]{\largeit Поз.}}%
+    \put(0,-9){\makebox[20mm]{\largeit обозна-}}%
+    \put(0,-13){\makebox[20mm]{\largeit чение}}%
+    \put(20,-9){\makebox[110mm]{\Largeit Наименование}}%
+    \put(130,-9){\makebox[10mm]{\LLargeit Кол.}}%
+    \put(140,-9){\makebox[45mm]{\Largeit Примечание}}%
+    \linethickness{\pcbdoclinethin}%
+    \put(0,-23){\line(1,0){185}}%
+    \put(0,-31){\line(1,0){185}}%
+    \put(0,-39){\line(1,0){185}}%
+    \put(0,-47){\line(1,0){185}}%
+    \put(0,-55){\line(1,0){185}}%
+    \put(0,-63){\line(1,0){185}}%
+    \put(0,-71){\line(1,0){185}}%
+    \put(0,-79){\line(1,0){185}}%
+    \put(0,-87){\line(1,0){185}}%
+    \put(0,-95){\line(1,0){185}}%
+    \put(0,-103){\line(1,0){185}}%
+    \put(0,-111){\line(1,0){185}}%
+    \put(0,-119){\line(1,0){185}}%
+    \put(0,-127){\line(1,0){185}}%
+    \put(0,-135){\line(1,0){185}}%
+    \put(0,-143){\line(1,0){185}}%
+    \put(0,-151){\line(1,0){185}}%
+    \put(0,-159){\line(1,0){185}}%
+    \put(0,-167){\line(1,0){185}}%
+    \put(0,-175){\line(1,0){185}}%
+    \put(0,-183){\line(1,0){185}}%
+    \put(0,-191){\line(1,0){185}}%
+    \put(0,-199){\line(1,0){185}}%
+    \put(0,-207){\line(1,0){185}}%
+    \put(0,-215){\line(1,0){185}}%
+    \put(0,-223){\line(1,0){185}}%
+    \put(0,-231){\line(1,0){185}}%
+    \put(0,-239){\line(1,0){185}}%
+    \put(0,-247){\line(1,0){185}}%
+    \put(0,-255){\line(1,0){185}}%
+    \put(0,-263){\line(1,0){185}}%
+  \end{picture}%
+  }%
+
+\newcommand{\DrawStampFirst}{%
+  \begin{picture}(0,0)%
+    \setlength{\unitlength}{1mm}%
+    \linethickness{\pcbdoclinethick}%
+    \ifthenelse{\equal{\pcbdocpapersize}{a4}}{}{\put(0,40){\line(0,-1){40}}}%
+    \put(0,40){\line(1,0){185}}%
+    \put(0,25){\line(1,0){185}}%
+    \put(135,20){\line(1,0){50}}%
+    \put(135,15){\line(1,0){50}}%
+    \put(7,40){\line(0,-1){15}}%
+    \put(17,40){\line(0,-1){40}}%
+    \put(40,40){\line(0,-1){40}}%
+    \put(55,40){\line(0,-1){40}}%
+    \put(65,40){\line(0,-1){40}}%
+    \put(135,25){\line(0,-1){25}}%
+    \put(150,25){\line(0,-1){10}}%
+    \put(167,25){\line(0,-1){10}}%
+    \linethickness{\pcbdoclinethin}%
+    \put(0,35){\line(1,0){65}}%
+    \put(0,30){\line(1,0){65}}%
+    \put(0,20){\line(1,0){65}}%
+    \put(0,15){\line(1,0){65}}%
+    \put(0,10){\line(1,0){65}}%
+    \put(0,5){\line(1,0){65}}%
+    \put(140,20){\line(0,-1){5}}%
+    \put(145,20){\line(0,-1){5}}%
+    \put(0,26.25){\makebox[7mm]{\normalfontit Изм.}}%
+    \put(7,26.25){\makebox[10mm]{\normalfontit Лист}}%
+    \put(17,26.25){\makebox[23mm]{\normalfontit № докум.}}%
+    \put(40,26.25){\makebox[15mm]{\normalfontit Подпись}}%
+    \put(55,26.25){\makebox[10mm]{\normalfontit Дата}}%
+    \put(1,21.25){\normalfontit Разраб.}%
+    \put(1,16.25){\normalfontit Пров.}%
+    \put(1,6.25){\normalfontit Н. контр.}%
+    \put(1,1.25){\normalfontit Утв.}%
+    \put(18,21.25){\normalfontit \PcbDocAuthor}%
+    \put(18,16.25){\normalfontit \PcbDocChecker}%
+    \put(18,6.25){\normalfontit \PcbDocNormController}%
+    \put(18,1.25){\normalfontit \PcbDocApprover}%
+    \put(135,21.25){\makebox[15mm]{\normalfontit Лит.}}%
+    \put(150,21.25){\makebox[17mm]{\normalfontit Лист}}%
+    \put(167,21.25){\makebox[18mm]{\normalfontit Листов}}%
+    \put(65,30){\makebox[110mm]{\Largeit \PcbDocNumber{ПЭ}}}%
+    \renewcommand{\arraystretch}{0}%
+    \put(65,15){\makebox[70mm]{%
+      \begin{tabular}{@{\Largeit}c}%
+        \PcbDocName%
+      \end{tabular}%
+      }%
+    }%
+    \put(65,5){\makebox[70mm]{\largeit Перечень элементов}}%
+    \renewcommand{\arraystretch}{1}%
+    \put(150,16.25){\makebox[17mm]{%
+        \normalfontit\ifthenelse{\equal{\pageref{LastPage}}{1}}{}{1}%
+        }%
+      }%
+    \put(167,16.25){\makebox[18mm]{\normalfontit\pageref{LastPage}}}%
+  \end{picture}%
+  }%
+
+\newcommand{\DrawStampNext}{%
+  \begin{picture}(0,0)%
+    \setlength{\unitlength}{1mm}%
+    \linethickness{\pcbdoclinethick}%
+    \ifthenelse{\equal{\pcbdocpapersize}{a4}}{}{\put(0,0){\line(0,1){15}}}%
+    \put(7,0){\line(0,1){15}}%
+    \put(17,0){\line(0,1){15}}%
+    \put(40,0){\line(0,1){15}}%
+    \put(55,0){\line(0,1){15}}%
+    \put(65,0){\line(0,1){15}}%
+    \put(175,0){\line(0,1){15}}%
+    \put(185,0){\line(0,1){15}}%
+    \put(0,15){\line(1,0){185}}%
+    \put(175,8){\line(1,0){10}}%
+    \linethickness{\pcbdoclinethin}%
+    \put(0,5){\line(1,0){65}}%
+    \put(0,10){\line(1,0){65}}%
+    \put(0,1.25){\makebox[7mm]{\normalfontit Изм.}}%
+    \put(7,1.25){\makebox[10mm]{\normalfontit Лист}}%
+    \put(17,1.25){\makebox[23mm]{\normalfontit № докум.}}%
+    \put(40,1.25){\makebox[15mm]{\normalfontit Подпись}}%
+    \put(55,1.25){\makebox[10mm]{\normalfontit Дата}}%
+    \put(175,10.25){\makebox[10mm]{\normalfontit Лист}}%
+    \put(175,2.75){\makebox[10mm]{\normalfontit\thepage}}%
+    \put(65,5){\makebox[110mm]{\Largeit\PcbDocNumber{ПЭ}}}%
+  \end{picture}%
+  }%
+
+\newcommand{\DrawFieldBottomFirst}{%
+  \begin{picture}(0,0)%
+    \setlength{\unitlength}{1mm}%
+    \linethickness{\pcbdoclinethick}%
+    \put(-7,0){\line(0,1){145}}%
+    \put(-12,0){\line(0,1){145}}%
+    \put(0,0){\line(-1,0){12}}%
+    \put(0,25){\line(-1,0){12}}%
+    \put(0,60){\line(-1,0){12}}%
+    \put(0,85){\line(-1,0){12}}%
+    \put(0,110){\line(-1,0){12}}%
+    \put(0,145){\line(-1,0){12}}%
+    \put(-8,0){\begin{rotate}{90}\makebox[25mm]{\normalfontit Инв. № подл.}\end{rotate}}%
+    \put(-8,25){\begin{rotate}{90}\makebox[35mm]{\normalfontit Подп. и дата}\end{rotate}}%
+    \put(-8,60){\begin{rotate}{90}\makebox[25mm]{\normalfontit Взам. инв. №}\end{rotate}}%
+    \put(-8,85){\begin{rotate}{90}\makebox[25mm]{\normalfontit Инв. № дубл.}\end{rotate}}%
+    \put(-8,110){\begin{rotate}{90}\makebox[35mm]{\normalfontit Подп. и дата.}\end{rotate}}%
+  \end{picture}%
+  }%
+
+\newcommand{\DrawFieldBottomNext}{%
+  \begin{picture}(0,0)%
+    \setlength{\unitlength}{1mm}%
+    \linethickness{\pcbdoclinethick}%
+    \put(-7,0){\line(0,1){145}}%
+    \put(-12,0){\line(0,1){145}}%
+    \put(0,0){\line(-1,0){12}}%
+    \put(0,25){\line(-1,0){12}}%
+    \put(0,60){\line(-1,0){12}}%
+    \put(0,85){\line(-1,0){12}}%
+    \put(0,110){\line(-1,0){12}}%
+    \put(0,145){\line(-1,0){12}}%
+    \put(-8,0){\begin{rotate}{90}\makebox[25mm]{\normalfontit Инв. № подл.}\end{rotate}}%
+    \put(-8,25){\begin{rotate}{90}\makebox[35mm]{\normalfontit Подп. и дата}\end{rotate}}%
+    \put(-8,60){\begin{rotate}{90}\makebox[25mm]{\normalfontit Взам. инв. №}\end{rotate}}%
+    \put(-8,85){\begin{rotate}{90}\makebox[25mm]{\normalfontit Инв. № дубл.}\end{rotate}}%
+    \put(-8,110){\begin{rotate}{90}\makebox[35mm]{\normalfontit Подп. и дата.}\end{rotate}}%
+  \end{picture}%
+  }%
+
+\newcommand{\DrawFieldTopFirst}{%
+  \begin{picture}(0,0)%
+    \setlength{\unitlength}{1mm}%
+    \linethickness{\pcbdoclinethick}%
+    \put(-12,167){\line(0,1){120}}%
+    \put(-7,167){\line(0,1){120}}%
+    \put(0,167){\line(-1,0){12}}%
+    \put(0,227){\line(-1,0){12}}%
+    \put(0,287){\line(-1,0){12}}%
+    \put(-8.25,167){\begin{rotate}{90}\makebox[60mm]{\normalfontit Справ. №}\end{rotate}}%
+    \put(-8.25,227){\begin{rotate}{90}\makebox[60mm]{\normalfontit Перв. примен.}\end{rotate}}%
+    \put(-2,227){\begin{rotate}{90}\makebox[60mm]{\largeit\PcbDocNumber}\end{rotate}}%
+  \end{picture}%
+  }%
+
+\newcommand{\DrawFieldTopNext}{%
+%  \begin{picture}(0,0)%
+%    \setlength{\unitlength}{1mm}%
+%    \linethickness{\pcbdoclinethick}%
+%    \put(-12,167){\line(0,1){120}}%
+%    \put(-7,167){\line(0,1){120}}%
+%    \put(0,167){\line(-1,0){12}}%
+%    \put(0,227){\line(-1,0){12}}%
+%    \put(0,287){\line(-1,0){12}}%
+%    \put(-8.25,167){\begin{rotate}{90}\makebox[60mm]{\itshape\normalsize Справ. №}\end{rotate}}%
+%    \put(-8.25,227){\begin{rotate}{90}\makebox[60mm]{\itshape\normalsize Перв. примен.}\end{rotate}}%
+%    \put(-2,227){\begin{rotate}{90}\makebox[60mm]{\itshape\large\PcbDocPrimaryUse}\end{rotate}}%
+%  \end{picture}%
+  }%
+
+\newcommand{\DrawFieldTopTopFirst}{%
+%  \begin{picture}(0,0)%
+%    \setlength{\unitlength}{1mm}%
+%    \linethickness{\pcbdoclinethick}%
+%    \put(0,-14){\line(1,0){70}}%
+%    \put(70,-14){\line(0,1){14}}%
+%    \put(70,-4){\begin{rotate}{180}\makebox[70mm]{\itshape\Large\PcbDocNumber}\end{rotate}}%
+%  \end{picture}%
+  }%
+
+\newcommand{\DrawFieldTopTopNext}{%
+%  \begin{picture}(0,0)%
+%    \setlength{\unitlength}{1mm}%
+%    \linethickness{\pcbdoclinethick}%
+%    \put(0,-14){\line(1,0){70}}%
+%    \put(70,-14){\line(0,1){14}}%
+%    \put(70,-4){\begin{rotate}{180}\makebox[70mm]{\itshape\Large\PcbDocNumber}\end{rotate}}%
+%  \end{picture}%
+  }%
+

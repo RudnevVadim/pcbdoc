@@ -1,0 +1,4 @@
+#!/bin/bash
+
+#xelatex pe.tex
+xelatex ch_mik_00_06_pe.tex

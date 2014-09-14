@@ -1,0 +1,178 @@
+
+\ProvidesPackage{pcbin}%
+
+\RequirePackage{pcbinborder}%
+\RequirePackage[titles]{tocloft}%
+
+\setlength{\parindent}{5mm}%
+
+\renewcommand{\pcbdocpapersize}{a4}%
+\PcbDocSizeChoice%
+\setlength{\pcbdocpaperdeltawidth}{-5mm}%
+\setlength{\pcbdocpaperdeltaheight}{-5mm}%
+
+\newcommand{\DrawTitle}{%
+  \setcounter{Height}{\theBorderHeight}%
+  \addtocounter{Height}{\theDeltaHeight}%
+  \setlength{\unitlength}{1mm}%
+  \begin{picture}(0,0)%
+    \put(\theDeltaWidth,\theDeltaHeight){\DrawBorder}%
+    \put(\theDeltaWidth,\theDeltaHeight){\DrawFieldBottomNext}%
+  \end{picture}%
+  }%
+
+\renewcommand{\PcbDocBorderSet}{%
+  % верхний колонтитулы (четные страницы):
+  \renewcommand{\@evenhead}{%
+    \ifthenelse{\equal{\thepage}{1}}%
+      {\HeaderFirst}%
+      {\HeaderNext}%
+    }%
+  % нижний колонтитул (четные страницы):
+  \renewcommand{\@evenfoot}{%
+    \ifthenelse{\thepage = 1}%
+      {\DrawTitle}%!!!!
+      {}%
+    \ifthenelse{\thepage = 2}%
+      {\FooterFirst}%
+      {\ifthenelse{\thepage > 2}{\FooterNext}{}}%
+    }%
+  % верхний колонтитул (нечетные страницы):
+  \renewcommand{\@oddhead}{%
+    \ifthenelse{\equal{\thepage}{1}}%
+      {\HeaderFirst}%
+      {\HeaderNext}%
+    }%
+  % нижний колонтитул (нечетные страницы):
+  \renewcommand{\@oddfoot}{%
+    \ifthenelse{\thepage = 1}%
+      {\DrawTitle}%!!!!
+      {}%
+    \ifthenelse{\thepage = 2}%
+      {\FooterFirst}%
+      {\ifthenelse{\thepage > 2}{\FooterNext}{}}%
+    }%
+  }%
+
+\newcommand{\EndSheet}{%
+  \renewcommand{\DrawHeaderNext}{%
+    \setlength{\unitlength}{1mm}%
+    \begin{picture}(0,0)%
+      \linethickness{\pcbdoclinethick}%
+      \put(0,-10){\line(1,0){185}}%
+      \put(0,-33){\line(1,0){185}}%
+      \put(10,-10){\line(0,-1){262}}%
+      \put(22,-18){\line(0,-1){254}}%
+      \put(34,-18){\line(0,-1){254}}%
+      \put(46,-18){\line(0,-1){254}}%
+      \put(58,-10){\line(0,-1){262}}%
+      \put(73,-10){\line(0,-1){262}}%
+      \put(114,-10){\line(0,-1){262}}%
+      \put(155,-10){\line(0,-1){262}}%
+      \put(170,-10){\line(0,-1){262}}%
+      \put(10,-18){\line(1,0){48}}%
+      \linethickness{\pcbdoclinethin}%
+      \put(0,-41){\line(1,0){185}}%
+      \put(0,-49){\line(1,0){185}}%
+      \put(0,-57){\line(1,0){185}}%
+      \put(0,-65){\line(1,0){185}}%
+      \put(0,-73){\line(1,0){185}}%
+      \put(0,-81){\line(1,0){185}}%
+      \put(0,-89){\line(1,0){185}}%
+      \put(0,-97){\line(1,0){185}}%
+      \put(0,-105){\line(1,0){185}}%
+      \put(0,-113){\line(1,0){185}}%
+      \put(0,-121){\line(1,0){185}}%
+      \put(0,-129){\line(1,0){185}}%
+      \put(0,-137){\line(1,0){185}}%
+      \put(0,-145){\line(1,0){185}}%
+      \put(0,-153){\line(1,0){185}}%
+      \put(0,-161){\line(1,0){185}}%
+      \put(0,-169){\line(1,0){185}}%
+      \put(0,-177){\line(1,0){185}}%
+      \put(0,-185){\line(1,0){185}}%
+      \put(0,-193){\line(1,0){185}}%
+      \put(0,-201){\line(1,0){185}}%
+      \put(0,-209){\line(1,0){185}}%
+      \put(0,-217){\line(1,0){185}}%
+      \put(0,-225){\line(1,0){185}}%
+      \put(0,-233){\line(1,0){185}}%
+      \put(0,-241){\line(1,0){185}}%
+      \put(0,-249){\line(1,0){185}}%
+      \put(0,-257){\line(1,0){185}}%
+      \put(0,-265){\line(1,0){185}}%
+      \put(0,-7){\makebox[185mm]{\Largeit Лист регистрации изменений}}%
+      \put(10,-15.5){\makebox[48mm]{\largeit Номера листов}}%
+      \put(0,-25){\makebox[10mm]{\largeit Изм.}}%
+      \put(10,-23){\largeit изме-}%
+      \put(11,-27){\largeit нен-}%
+      \put(11,-31){\largeit ных}%
+      \put(22,-23){\largeit заме-}%
+      \put(23,-27){\largeit нен-}%
+      \put(23,-31){\largeit ных}%
+      \put(34,-23){\largeit новых}%
+      \put(46,-21.2){\llargeit анну-}%
+      \put(46,-25){\llargeit лиро-}%
+      \put(46,-28.8){\llargeit ван-}%
+      \put(46,-32.4){\llargeit ных}%
+      \put(58,-18){\makebox[15mm]{\largeit Всего}}%
+      \put(57.5,-23){\makebox[15mm]{\largeit листов}}%
+      \put(58,-28){\makebox[15mm]{\largeit в докум.}}%
+      \put(73,-18){\makebox[41mm]{\largeit №}}%
+      \put(73,-23){\makebox[41mm]{\largeit докум.}}%
+      \put(114,-15.5){\makebox[41mm]{\largeit Входящий №}}%
+      \put(114,-20.5){\makebox[41mm]{\largeit сопроводительного}}%
+      \put(114,-25.5){\makebox[41mm]{\largeit документа}}%
+      \put(114,-30.5){\makebox[41mm]{\largeit и дата}}%
+      \put(155,-20.5){\makebox[15mm]{\llargeit Подпись}}%
+      \put(170,-20.5){\makebox[15mm]{\largeit Дата}}%
+    \end{picture}%
+    }%
+  ~
+  }%
+
+\renewcommand{\cftsecfont}{\largeit}%
+\renewcommand{\cftsecpagefont}{\largeit}%
+
+\renewcommand{\section}%
+  {\@startsection{section}{1}{\parindent}%
+  {7ex plus 1ex minus .2ex}{4.6ex plus.2ex}%
+  {\largeit}}%
+
+\renewcommand{\subsection}%
+  {\@startsection{subsection}{1}{\parindent}%
+  {3.25ex plus 1ex minus .2ex}{-1.5ex plus.2ex}%
+  {\largeit}}%
+
+\renewcommand{\subsubsection}%
+  {\@startsection{subsubsection}{1}{\parindent}%
+  {3.25ex plus 1ex minus .2ex}{-1.5ex plus.2ex}%
+  {\largeit}}%
+
+\renewcommand{\l@subsection}{\@dottedtocline{4}{1.5em}{2.3em}}%
+\renewcommand{\l@subsubsection}{\@dottedtocline{4}{1.5em}{2.3em}}%
+
+\AtBeginDocument{%
+  \begin{center}%
+    \Largeit%
+    ~\\[80mm]%
+    ~\PcbDocName{~}\\~\\%
+    \PcbDocNumber{И2}\\~\\%
+    Инструкция по настройке\\%
+  \end{center}%
+  \newpage%
+  \enlargethispage{-25mm}%
+  \renewcommand{\contentsname}{\largeit\center Содержание}%
+  \largeit%
+  \raggedright%
+  ~\\[20mm]%
+  \tableofcontents%
+  \newpage%
+  }%
+
+\AtEndDocument{%
+  \ifthenelse{\equal{\changelist}{changelist}}{%
+    \EndSheet%
+    \clearpage\lastpage@putlabel%
+    }{}%
+  }%

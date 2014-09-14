@@ -1,0 +1,55 @@
+
+\ProvidesPackage{pcbsch}%
+
+\RequirePackage{pcbschborder}%
+
+\RequirePackage{tikz}%
+\RequirePackage{xifthen}%
+\RequirePackage{graphicx}%
+\RequirePackage{changepage}%
+
+\setlength{\pcbdocpaperdeltawidth}{0.1mm}%
+\setlength{\pcbdocpaperdeltaheight}{0.1mm}%
+
+\newenvironment{sheet}[1][\pcbdocpapersize]%
+{%
+  \ifthenelse{\equal{#1}{\pcbdocpapersize}}{}%
+  {%
+    \renewcommand{\pcbdocpapersize}{#1}%
+  }%
+  \PcbDocSizeChoice%
+  \PcbDocLayoutSet%
+  \changetext{0mm}{0mm}{}{}{}%
+  \begin{tikzpicture}[%
+    linethick/.style={%
+      line width=\pcbdoclinethick%
+      },%
+    linethin/.style={%
+      line width=\pcbdoclinethin%
+      },%
+    execute at begin picture={%
+      \node[coordinate] (SheetCenter) at (\theBorderWidth/20,\theBorderHeight/20){};%
+      \ifthenelse{\equal{\draftmode}{draftmode}}{%
+        \draw[fill=backgroundcolor] (0,0) rectangle%
+          (\theBorderWidth mm,\theBorderHeight mm);%
+        }{%
+        \draw[fill=white,color=white] (0,0) rectangle%
+          (\theBorderWidth mm,\theBorderHeight mm);%
+        }%
+      },%
+    execute at end picture={%
+      \ifthenelse{\equal{\draftmode}{draftmode}}{%
+        \draw[step=\gridstep,color=gray] (0,0) grid%
+          (\theBorderWidth mm,\theBorderHeight mm);%
+        }{%
+          \node[coordinate](leftbottompoint) at (0,0){};%
+          \node[coordinate](righttoppoint) at%
+            (\theBorderWidth mm,\theBorderHeight mm){};%
+          }%
+        }%
+      ]%
+}%
+{%
+  \end{tikzpicture}%
+  \newpage%
+}%

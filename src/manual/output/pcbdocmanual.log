@@ -1,0 +1,1437 @@
+This is XeTeX, Version 3.1415926-2.4-0.9998 (TeX Live 2012) (format=xelatex 2013.2.28)  8 MAR 2014 20:40
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**./src/pcbdocmanual.tex
+(./src/pcbdocmanual.tex
+LaTeX2e <2011/06/27>
+Babel <v3.8m> and hyphenation patterns for english, dumylang, nohyphenation, ge
+rman-x-2012-05-30, ngerman-x-2012-05-30, afrikaans, ancientgreek, ibycus, arabi
+c, armenian, basque, bulgarian, catalan, pinyin, coptic, croatian, czech, danis
+h, dutch, ukenglish, usenglishmax, esperanto, estonian, ethiopic, farsi, finnis
+h, french, friulan, galician, german, ngerman, swissgerman, monogreek, greek, h
+ungarian, icelandic, assamese, bengali, gujarati, hindi, kannada, malayalam, ma
+rathi, oriya, panjabi, tamil, telugu, indonesian, interlingua, irish, italian, 
+kurmanji, latin, latvian, lithuanian, mongolian, mongolianlmc, bokmal, nynorsk,
+ piedmontese, polish, portuguese, romanian, romansh, russian, sanskrit, serbian
+, serbianc, slovak, slovenian, spanish, swedish, turkish, turkmen, ukrainian, u
+ppersorbian, welsh, loaded.
+(/opt1/texlive/2012/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
+(/opt1/texlive/2012/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+) (./pcbdocmanual.sty
+(/opt1/texlive/2012/texmf-dist/tex/latex/graphics/color.sty
+Package: color 2005/11/14 v1.0j Standard LaTeX Color (DPC)
+
+(/opt1/texlive/2012/texmf-dist/tex/latex/latexconfig/color.cfg
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package color Info: Driver file: xetex.def on input line 130.
+
+(/opt1/texlive/2012/texmf-dist/tex/xelatex/xetex-def/xetex.def
+File: xetex.def 2013/02/04 v0.95 LaTeX color/graphics driver for XeTeX (RRM/JK)
+
+))
+(/opt1/texlive/2012/texmf-dist/tex/latex/fancyvrb/fancyvrb.sty
+Package: fancyvrb 2008/02/07
+
+Style option: `fancyvrb' v2.7a, with DG/SPQR fixes, and firstline=lastline fix 
+<2008/02/07> (tvz) (/opt1/texlive/2012/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+\FV@CodeLineNo=\count88
+\FV@InFile=\read1
+\FV@TabBox=\box26
+\c@FancyVerbLine=\count89
+\FV@StepNumber=\count90
+\FV@OutFile=\write3
+) (/opt1/texlive/2012/texmf-dist/tex/latex/fontspec/fontspec.sty
+Package: fontspec 2013/03/16 v2.3a Font selection for XeLaTeX and LuaLaTeX
+
+(/opt1/texlive/2012/texmf-dist/tex/latex/l3kernel/expl3.sty
+(/opt1/texlive/2012/texmf-dist/tex/latex/l3kernel/l3names.sty
+(/opt1/texlive/2012/texmf-dist/tex/latex/l3kernel/l3bootstrap.sty
+Package: l3bootstrap 2013/01/08 v4420 L3 Experimental bootstrap code
+)
+Package: l3names 2012/12/07 v4346 L3 Namespace for primitives
+)
+(/opt1/texlive/2012/texmf-dist/tex/latex/etex-pkg/etex.sty
+Package: etex 1998/03/26 v2.0 eTeX basic definition package (PEB)
+\et@xins=\count91
+)
+Package: expl3 2013/03/14 v4469 L3 Experimental code bundle wrapper
+
+(/opt1/texlive/2012/texmf-dist/tex/latex/l3kernel/l3basics.sty
+Package: l3basics 2013/01/10 v4428 L3 Basic definitions
+)
+(/opt1/texlive/2012/texmf-dist/tex/latex/l3kernel/l3expan.sty
+Package: l3expan 2013/02/03 v4458 L3 Argument expansion
+)
+(/opt1/texlive/2012/texmf-dist/tex/latex/l3kernel/l3tl.sty
+Package: l3tl 2013/01/08 v4415 L3 Token lists
+)
+(/opt1/texlive/2012/texmf-dist/tex/latex/l3kernel/l3seq.sty
+Package: l3seq 2013/01/12 v4434 L3 Sequences and stacks
+)
+(/opt1/texlive/2012/texmf-dist/tex/latex/l3kernel/l3int.sty
+Package: l3int 2013/01/13 v4444 L3 Integers
+\c_max_int=\count92
+\l_tmpa_int=\count93
+\l_tmpb_int=\count94
+\g_tmpa_int=\count95
+\g_tmpb_int=\count96
+)
+(/opt1/texlive/2012/texmf-dist/tex/latex/l3kernel/l3quark.sty
+Package: l3quark 2012/11/04 v4268 L3 Quarks
+)
+(/opt1/texlive/2012/texmf-dist/tex/latex/l3kernel/l3prg.sty
+Package: l3prg 2013/02/13 v4459 L3 Control structures
+\g__prg_map_int=\count97
+)
+(/opt1/texlive/2012/texmf-dist/tex/latex/l3kernel/l3clist.sty
+Package: l3clist 2013/01/08 v4414 L3 Comma separated lists
+)
+(/opt1/texlive/2012/texmf-dist/tex/latex/l3kernel/l3token.sty
+Package: l3token 2013/01/10 v4428 L3 Experimental token manipulation
+)
+(/opt1/texlive/2012/texmf-dist/tex/latex/l3kernel/l3prop.sty
+Package: l3prop 2013/01/09 v4423 L3 Property lists
+)
+(/opt1/texlive/2012/texmf-dist/tex/latex/l3kernel/l3msg.sty
+Package: l3msg 2013/01/08 v4412 L3 Messages
+)
+(/opt1/texlive/2012/texmf-dist/tex/latex/l3kernel/l3file.sty
+Package: l3file 2013/01/14 v4446 L3 File and I/O operations
+\l_iow_line_count_int=\count98
+\l__iow_target_count_int=\count99
+\l__iow_current_line_int=\count100
+\l__iow_current_word_int=\count101
+\l__iow_current_indentation_int=\count102
+)
+(/opt1/texlive/2012/texmf-dist/tex/latex/l3kernel/l3skip.sty
+Package: l3skip 2013/01/13 v4444 L3 Dimensions and skips
+\c_zero_dim=\dimen103
+\c_max_dim=\dimen104
+\l_tmpa_dim=\dimen105
+\l_tmpb_dim=\dimen106
+\g_tmpa_dim=\dimen107
+\g_tmpb_dim=\dimen108
+\c_zero_skip=\skip43
+\c_max_skip=\skip44
+\l_tmpa_skip=\skip45
+\l_tmpb_skip=\skip46
+\g_tmpa_skip=\skip47
+\g_tmpb_skip=\skip48
+\c_zero_muskip=\muskip10
+\c_max_muskip=\muskip11
+\l_tmpa_muskip=\muskip12
+\l_tmpb_muskip=\muskip13
+\g_tmpa_muskip=\muskip14
+\g_tmpb_muskip=\muskip15
+)
+(/opt1/texlive/2012/texmf-dist/tex/latex/l3kernel/l3keys.sty
+Package: l3keys 2013/02/24 v4461 L3 Experimental key-value interfaces
+\g__keyval_level_int=\count103
+\l_keys_choice_int=\count104
+)
+(/opt1/texlive/2012/texmf-dist/tex/latex/l3kernel/l3fp.sty
+Package: l3fp 2013/01/19 v4449 L3 Floating points
+\c__fp_leading_shift_int=\count105
+\c__fp_middle_shift_int=\count106
+\c__fp_trailing_shift_int=\count107
+\c__fp_big_leading_shift_int=\count108
+\c__fp_big_middle_shift_int=\count109
+\c__fp_big_trailing_shift_int=\count110
+\c__fp_Bigg_leading_shift_int=\count111
+\c__fp_Bigg_middle_shift_int=\count112
+\c__fp_Bigg_trailing_shift_int=\count113
+)
+(/opt1/texlive/2012/texmf-dist/tex/latex/l3kernel/l3box.sty
+Package: l3box 2013/01/08 v4411 L3 Experimental boxes
+\c_empty_box=\box27
+\l_tmpa_box=\box28
+\l_tmpb_box=\box29
+\g_tmpa_box=\box30
+\g_tmpb_box=\box31
+)
+(/opt1/texlive/2012/texmf-dist/tex/latex/l3kernel/l3coffins.sty
+Package: l3coffins 2012/09/09 v4212 L3 Coffin code layer
+\l__coffin_internal_box=\box32
+\l__coffin_internal_dim=\dimen109
+\l__coffin_offset_x_dim=\dimen110
+\l__coffin_offset_y_dim=\dimen111
+\l__coffin_x_dim=\dimen112
+\l__coffin_y_dim=\dimen113
+\l__coffin_x_prime_dim=\dimen114
+\l__coffin_y_prime_dim=\dimen115
+\c_empty_coffin=\box33
+\l__coffin_aligned_coffin=\box34
+\l__coffin_aligned_internal_coffin=\box35
+\l_tmpa_coffin=\box36
+\l_tmpb_coffin=\box37
+\l__coffin_display_coffin=\box38
+\l__coffin_display_coord_coffin=\box39
+\l__coffin_display_pole_coffin=\box40
+\l__coffin_display_offset_dim=\dimen116
+\l__coffin_display_x_dim=\dimen117
+\l__coffin_display_y_dim=\dimen118
+)
+(/opt1/texlive/2012/texmf-dist/tex/latex/l3kernel/l3color.sty
+Package: l3color 2012/08/29 v4156 L3 Experimental color support
+)
+(/opt1/texlive/2012/texmf-dist/tex/latex/l3kernel/l3luatex.sty
+Package: l3luatex 2012/08/03 v4049 L3 Experimental LuaTeX-specific functions
+\g__cctab_allocate_int=\count114
+\g__cctab_stack_int=\count115
+)
+(/opt1/texlive/2012/texmf-dist/tex/latex/l3kernel/l3candidates.sty
+Package: l3candidates 2013/03/14 v4468 L3 Experimental additions to l3kernel
+\l__box_top_dim=\dimen119
+\l__box_bottom_dim=\dimen120
+\l__box_left_dim=\dimen121
+\l__box_right_dim=\dimen122
+\l__box_top_new_dim=\dimen123
+\l__box_bottom_new_dim=\dimen124
+\l__box_left_new_dim=\dimen125
+\l__box_right_new_dim=\dimen126
+\l__box_internal_box=\box41
+\l__coffin_bounding_shift_dim=\dimen127
+\l__coffin_left_corner_dim=\dimen128
+\l__coffin_right_corner_dim=\dimen129
+\l__coffin_bottom_corner_dim=\dimen130
+\l__coffin_top_corner_dim=\dimen131
+\l__coffin_scaled_total_height_dim=\dimen132
+\l__coffin_scaled_width_dim=\dimen133
+)
+(/opt1/texlive/2012/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is not detected.
+))
+(/opt1/texlive/2012/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+Package: xparse 2013/03/12 v4467 L3 Experimental document command parser
+\l__xparse_current_arg_int=\count116
+\l__xparse_m_args_int=\count117
+\l__xparse_mandatory_args_int=\count118
+\l__xparse_processor_int=\count119
+\l__xparse_v_nesting_int=\count120
+)
+\l_fontspec_script_int=\count121
+\l_fontspec_language_int=\count122
+\l_fontspec_strnum_int=\count123
+\l_fontspec_tmpa_dim=\dimen134
+\l_fontspec_tmpb_dim=\dimen135
+\l_fontspec_tmpc_dim=\dimen136
+Variant \tl_gset:cV already defined; not changing it on line 69
+
+(/opt1/texlive/2012/texmf-dist/tex/latex/fontspec/fontspec-patches.sty
+Package: fontspec-patches 2013/03/16 v2.3a Font selection for XeLaTeX and LuaLa
+TeX
+
+(/opt1/texlive/2012/texmf-dist/tex/latex/base/fixltx2e.sty
+Package: fixltx2e 2006/09/13 v1.1m fixes to LaTeX
+LaTeX Info: Redefining \em on input line 420.
+)
+LaTeX Info: Redefining \em on input line 22.
+LaTeX Info: Redefining \emph on input line 30.
+LaTeX Info: Redefining \- on input line 33.
+
+*************************************************
+* LaTeX warning: "xparse/redefine-command"
+* 
+* Redefining document command \oldstylenums with arg. spec. 'm' on line 128.
+*************************************************
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining document command \liningnums with arg. spec. 'm' on line 132.
+.................................................
+) (/opt1/texlive/2012/texmf-dist/tex/latex/fontspec/fontspec-xetex.sty
+Package: fontspec-xetex 2013/03/16 v2.3a Font selection for XeLaTeX and LuaLaTe
+X
+
+(/opt1/texlive/2012/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
+
+(/opt1/texlive/2012/texmf-dist/tex/latex/euenc/eu1enc.def
+File: eu1enc.def 2010/05/27 v0.1h Experimental Unicode font encodings
+)
+LaTeX Font Info:    Try loading font information for EU1+lmr on input line 100.
+
+
+(/opt1/texlive/2012/texmf-dist/tex/latex/euenc/eu1lmr.fd
+File: eu1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+))
+(/opt1/texlive/2012/texmf-dist/tex/xelatex/xunicode/xunicode.sty
+File: xunicode.sty 2011/09/09 v0.981 provides access to latin accents and many 
+other characters in Unicode lower plane
+
+(/opt1/texlive/2012/texmf-dist/tex/latex/tipa/t3enc.def
+File: t3enc.def 2001/12/31 T3 encoding
+LaTeX Font Info:    Try loading font information for EU1+lmss on input line 357
+.
+
+(/opt1/texlive/2012/texmf-dist/tex/latex/euenc/eu1lmss.fd
+File: eu1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
+))
+\tipaTiiicode=\count124
+\tipasavetokens=\toks15
+\tipachecktokens=\toks16
+
+(/opt1/texlive/2012/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/opt1/texlive/2012/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+(/opt1/texlive/2012/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(/opt1/texlive/2012/texmf-dist/tex/latex/latexconfig/graphics.cfg
+File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
+)
+Package graphics Info: Driver file: xetex.def on input line 91.
+)
+\Gin@req@height=\dimen137
+\Gin@req@width=\dimen138
+))
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining document command \fontspec with arg. spec. 'O{}m' on line 41.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining document command \setmainfont with arg. spec. 'O{}m' on line 46.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining document command \setsansfont with arg. spec. 'O{}m' on line 51.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining document command \setmonofont with arg. spec. 'O{}m' on line 56.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining document command \setmathrm with arg. spec. 'O{}m' on line 65.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining document command \setboldmathrm with arg. spec. 'O{}m' on line 69.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining document command \setmathsf with arg. spec. 'O{}m' on line 73.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining document command \setmathtt with arg. spec. 'O{}m' on line 77.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining document command \newfontfamily with arg. spec. 'mO{}m' on line 96.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining document command \newfontface with arg. spec. 'mO{}m' on line 100.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining document command \defaultfontfeatures with arg. spec. 'om' on line
+. 108.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining document command \addfontfeatures with arg. spec. 'm' on line 144.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining document command \newfontfeature with arg. spec. 'mm' on line 156.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining document command \newAATfeature with arg. spec. 'mmmm' on line 164.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining document command \newICUfeature with arg. spec. 'mmm' on line 172.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining document command \aliasfontfeature with arg. spec. 'mm' on line
+. 201.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining document command \aliasfontfeatureoption with arg. spec. 'mmm' on
+. line 203.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining document command \newfontscript with arg. spec. 'mm' on line 208.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining document command \newfontlanguage with arg. spec. 'mm' on line 235.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining document command \DeclareFontsExtensions with arg. spec. 'm' on
+. line 256.
+.................................................
+Variant \prop_gput:cnV already defined; not changing it on line 582
+Variant \prop_gput:cnx already defined; not changing it on line 583
+\l_fontspec_tmp_int=\count125
+LaTeX Info: Redefining \itshape on input line 2091.
+LaTeX Info: Redefining \slshape on input line 2096.
+LaTeX Info: Redefining \scshape on input line 2101.
+LaTeX Info: Redefining \upshape on input line 2106.
+
+(/opt1/texlive/2012/texmf-dist/tex/latex/fontspec/fontspec.cfg)))
+(/opt1/texlive/2012/texmf-dist/tex/latex/xltxtra/xltxtra.sty
+Package: xltxtra 2010/09/20 v0.5e Improvements for the "XeLaTeX" format
+
+(/opt1/texlive/2012/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+(/opt1/texlive/2012/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+(/opt1/texlive/2012/texmf-dist/tex/latex/realscripts/realscripts.sty
+Package: realscripts 2013/03/18 v0.3c Access OpenType subscripts and superscrip
+ts
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining document command \fakesubscript with arg. spec. 'm' on line 19.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining document command \fakesuperscript with arg. spec. 'm' on line 22.
+.................................................
+
+*************************************************
+* LaTeX warning: "xparse/redefine-command"
+* 
+* Redefining document command \textsubscript with arg. spec. 's' on line 25.
+*************************************************
+*************************************************
+* LaTeX warning: "xparse/redefine-command"
+* 
+* Redefining document command \textsuperscript with arg. spec. 's' on line 28.
+*************************************************
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining document command \realsubscript with arg. spec. 'm' on line 45.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining document command \realsuperscript with arg. spec. 'm' on line 60.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining document command \textsubsuperscript with arg. spec. 'sO{l}mm' on
+. line 138.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining document command \textsupersubscript with arg. spec. 'sO{l}mm' on
+. line 143.
+.................................................
+\subsupersep=\dimen139
+) (/opt1/texlive/2012/texmf-dist/tex/latex/metalogo/metalogo.sty
+Package: metalogo 2010/05/29 v0.12 Extended TeX logo macros
+\xl@everylogo=\toks17
+\xl@@everylogo=\toks18
+LaTeX Info: Redefining \TeX on input line 193.
+LaTeX Info: Redefining \LaTeX on input line 202.
+LaTeX Info: Redefining \LaTeXe on input line 219.
+)
+\xxt@tempbox=\box42
+)
+(/opt1/texlive/2012/texmf-dist/tex/latex/colortbl/colortbl.sty
+Package: colortbl 2012/02/13 v1.0a Color table columns (DPC)
+
+(/opt1/texlive/2012/texmf-dist/tex/latex/tools/array.sty
+Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
+\col@sep=\dimen140
+\extrarowheight=\dimen141
+\NC@list=\toks19
+\extratabsurround=\skip49
+\backup@length=\skip50
+)
+\everycr=\toks20
+\minrowclearance=\skip51
+)
+(/opt1/texlive/2012/texmf-dist/tex/latex/sectsty/sectsty.sty
+Package: sectsty 2002/02/25 v2.0.2 Commands to change all sectional heading sty
+les
+)
+(/opt1/texlive/2012/texmf-dist/tex/xelatex/polyglossia/polyglossia.sty
+Package: polyglossia 2012/04/29 v1.2.1 Babel replacement for XeLaTeX
+
+(/opt1/texlive/2012/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2011/01/03 v2.1 e-TeX tools for LaTeX
+\etb@tempcnta=\count126
+)
+(/opt1/texlive/2012/texmf-dist/tex/latex/makecmds/makecmds.sty
+Package: makecmds 2009/09/03 v1.0a extra command making commands
+)
+(/opt1/texlive/2012/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2012/10/14 v2.6b package option processing (HA)
+
+(/opt1/texlive/2012/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+\XKV@toks=\toks21
+\XKV@tempa@toks=\toks22
+\XKV@depth=\count127
+File: xkeyval.tex 2012/10/14 v2.6b key=value parser (HA)
+))
+\xpg@normalclass=\XeTeXintercharclass4
+)
+(/opt1/texlive/2012/texmf-dist/tex/xelatex/polyglossia/gloss-russian.ldf
+File: gloss-russian.ldf polyglossia: module for russian
+
+(/opt1/texlive/2012/texmf-dist/tex/xelatex/polyglossia/babelsh.def
+File: babelsh.def 2009/05/07 Babel common definitions for shorthands
+ Taken verbatim from babel.def (2008/07/06 v3.8l)
+)
+Package babel Info: Making " an active character on input line 41.
+)
+Package polyglossia Info: Default language is russian.
+
+(/opt1/texlive/2012/texmf-dist/tex/xelatex/polyglossia/gloss-english.ldf
+File: gloss-english.ldf polyglossia: module for english
+)
+\g__file_internal_ior=\read2
+\g_fontspec_family_DejaVu Sans_int=\count128
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'DejaVuSans(0)' created for font 'DejaVu Sans' with options
+. [Mapping=tex-text,].
+. 
+. This font family consists of the following shapes:
+. 
+. * 'normal' with NFSS spec.:
+. <->"DejaVu Sans/ICU:script=latn;language=DFLT;mapping=tex-text;"
+. 
+. * 'bold' with NFSS spec.:
+. <->"DejaVu Sans/B/ICU:script=latn;language=DFLT;mapping=tex-text;"
+. 
+. * 'italic' with NFSS spec.:
+. <->"DejaVu Sans/I/ICU:script=latn;language=DFLT;mapping=tex-text;"
+. 
+. * 'bold italic' with NFSS spec.:
+. <->"DejaVu Sans/BI/ICU:script=latn;language=DFLT;mapping=tex-text;"
+.................................................
+\g_fontspec_family_DejaVu Sans Mono_int=\count129
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'DejaVuSansMono(0)' created for font 'DejaVu Sans Mono' with
+. options [Mapping=tex-text,].
+. 
+. This font family consists of the following shapes:
+. 
+. * 'normal' with NFSS spec.:
+. <->"DejaVu Sans Mono/ICU:script=latn;language=DFLT;mapping=tex-text;"
+. 
+. * 'bold' with NFSS spec.:
+. <->"DejaVu Sans Mono/B/ICU:script=latn;language=DFLT;mapping=tex-text;"
+. 
+. * 'italic' with NFSS spec.:
+. <->"DejaVu Sans Mono/I/ICU:script=latn;language=DFLT;mapping=tex-text;"
+. 
+. * 'bold italic' with NFSS spec.:
+. <->"DejaVu Sans Mono/BI/ICU:script=latn;language=DFLT;mapping=tex-text;"
+.................................................
+\g_fontspec_family_DejaVu Serif_int=\count130
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'DejaVuSerif(0)' created for font 'DejaVu Serif' with options
+. [Mapping=tex-text,].
+. 
+. This font family consists of the following shapes:
+. 
+. * 'normal' with NFSS spec.:
+. <->"DejaVu Serif/ICU:script=latn;language=DFLT;mapping=tex-text;"
+. 
+. * 'bold' with NFSS spec.:
+. <->"DejaVu Serif/B/ICU:script=latn;language=DFLT;mapping=tex-text;"
+. 
+. * 'italic' with NFSS spec.:
+. <->"DejaVu Serif/I/ICU:script=latn;language=DFLT;mapping=tex-text;"
+. 
+. * 'bold italic' with NFSS spec.:
+. <->"DejaVu Serif/BI/ICU:script=latn;language=DFLT;mapping=tex-text;"
+.................................................
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'DejaVuSerif(0)' created for font 'DejaVu Serif' with options
+. [Mapping=tex-text,].
+. 
+. This font family consists of the following shapes:
+.................................................
+)
+(./output/pcbdocmanual.aux
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'DejaVuSerif(1)' created for font 'DejaVu Serif' with options
+. [Mapping=tex-text,,Script=Cyrillic].
+. 
+. This font family consists of the following shapes:
+. 
+. * 'normal' with NFSS spec.:
+. <->"DejaVu Serif/ICU:script=cyrl;language=DFLT;mapping=tex-text;"
+. 
+. * 'bold' with NFSS spec.:
+. <->"DejaVu Serif/B/ICU:script=cyrl;language=DFLT;mapping=tex-text;"
+. 
+. * 'italic' with NFSS spec.:
+. <->"DejaVu Serif/I/ICU:script=cyrl;language=DFLT;mapping=tex-text;"
+. 
+. * 'bold italic' with NFSS spec.:
+. <->"DejaVu Serif/BI/ICU:script=cyrl;language=DFLT;mapping=tex-text;"
+.................................................
+)
+\openout1 = `pcbdocmanual.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for EU1/lmr/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 6.
+LaTeX Font Info:    Try loading font information for T3+cmr on input line 6.
+
+(/opt1/texlive/2012/texmf-dist/tex/latex/tipa/t3cmr.fd
+File: t3cmr.fd 2001/12/31 TIPA font definitions
+)
+LaTeX Font Info:    ... okay on input line 6.
+.................................................
+. fontspec info: "setup-math"
+. 
+. Adjusting the maths setup (use [no-math] to avoid this).
+.................................................
+\symlegacymaths=\mathgroup4
+LaTeX Font Info:    Overwriting symbol font `legacymaths' in version `bold'
+(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 6.
+LaTeX Font Info:    Redeclaring math accent \acute on input line 6.
+LaTeX Font Info:    Redeclaring math accent \grave on input line 6.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 6.
+LaTeX Font Info:    Redeclaring math accent \tilde on input line 6.
+LaTeX Font Info:    Redeclaring math accent \bar on input line 6.
+LaTeX Font Info:    Redeclaring math accent \breve on input line 6.
+LaTeX Font Info:    Redeclaring math accent \check on input line 6.
+LaTeX Font Info:    Redeclaring math accent \hat on input line 6.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 6.
+LaTeX Font Info:    Redeclaring math accent \mathring on input line 6.
+LaTeX Font Info:    Redeclaring math symbol \colon on input line 6.
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 6.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 6.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 6.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 6.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 6.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 6.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 6.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 6.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 6.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 6.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 6.
+LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 6.
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 6.
+LaTeX Font Info:    Encoding `OT1' has changed to `EU1' for symbol font
+(Font)              `operators' in the math version `normal' on input line 6.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> EU1/DejaVuSerif(0)/m/n on input line 6.
+
+LaTeX Font Info:    Encoding `OT1' has changed to `EU1' for symbol font
+(Font)              `operators' in the math version `bold' on input line 6.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> EU1/DejaVuSerif(0)/m/n on input line 6
+.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  EU1/DejaVuSerif(0)/m/n --> EU1/DejaVuSerif(0)/m/n on in
+put line 6.
+LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
+(Font)                  EU1/DejaVuSerif(0)/m/n --> EU1/DejaVuSerif(0)/m/n on in
+put line 6.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> EU1/DejaVuSerif(0)/m/it on input line 
+6.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> EU1/DejaVuSerif(0)/bx/n on input line 
+6.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
+(Font)                  OT1/cmss/m/n --> EU1/DejaVuSans(0)/m/n on input line 6.
+
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
+(Font)                  OT1/cmtt/m/n --> EU1/DejaVuSansMono(0)/m/n on input lin
+e 6.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  EU1/DejaVuSerif(0)/m/n --> EU1/DejaVuSerif(0)/bx/n on i
+nput line 6.
+LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
+(Font)                  EU1/DejaVuSerif(0)/m/n --> EU1/DejaVuSerif(0)/bx/n on i
+nput line 6.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> EU1/DejaVuSerif(0)/bx/it on input lin
+e 6.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/cmss/bx/n --> EU1/DejaVuSans(0)/bx/n on input line 
+6.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/cmtt/m/n --> EU1/DejaVuSansMono(0)/bx/n on input li
+ne 6.
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'DejaVuSerif(1)' created for font 'DejaVu Serif' with options
+. [Mapping=tex-text,,Script=Cyrillic].
+. 
+. This font family consists of the following shapes:
+.................................................
+ (./src/introduction.tex
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'DejaVuSerif(1)' created for font 'DejaVu Serif' with options
+. [Mapping=tex-text,,Script=Cyrillic].
+. 
+. This font family consists of the following shapes:
+.................................................
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'DejaVuSans(1)' created for font 'DejaVu Sans' with options
+. [Mapping=tex-text,,Script=Cyrillic].
+. 
+. This font family consists of the following shapes:
+. 
+. * 'normal' with NFSS spec.:
+. <->"DejaVu Sans/ICU:script=cyrl;language=DFLT;mapping=tex-text;"
+. 
+. * 'bold' with NFSS spec.:
+. <->"DejaVu Sans/B/ICU:script=cyrl;language=DFLT;mapping=tex-text;"
+. 
+. * 'italic' with NFSS spec.:
+. <->"DejaVu Sans/I/ICU:script=cyrl;language=DFLT;mapping=tex-text;"
+. 
+. * 'bold italic' with NFSS spec.:
+. <->"DejaVu Sans/BI/ICU:script=cyrl;language=DFLT;mapping=tex-text;"
+.................................................
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 6.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 6.
+) (./src/install.tex
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'DejaVuSerif(1)' created for font 'DejaVu Serif' with options
+. [Mapping=tex-text,,Script=Cyrillic].
+. 
+. This font family consists of the following shapes:
+.................................................
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'DejaVuSans(1)' created for font 'DejaVu Sans' with options
+. [Mapping=tex-text,,Script=Cyrillic].
+. 
+. This font family consists of the following shapes:
+.................................................
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'DejaVuSansMono(1)' created for font 'DejaVu Sans Mono' with
+. options [Mapping=tex-text,,Script=Cyrillic].
+. 
+. This font family consists of the following shapes:
+. 
+. * 'normal' with NFSS spec.:
+. <->"DejaVu Sans Mono/ICU:script=cyrl;language=DFLT;mapping=tex-text;"
+. 
+. * 'bold' with NFSS spec.:
+. <->"DejaVu Sans Mono/B/ICU:script=cyrl;language=DFLT;mapping=tex-text;"
+. 
+. * 'italic' with NFSS spec.:
+. <->"DejaVu Sans Mono/I/ICU:script=cyrl;language=DFLT;mapping=tex-text;"
+. 
+. * 'bold italic' with NFSS spec.:
+. <->"DejaVu Sans Mono/BI/ICU:script=cyrl;language=DFLT;mapping=tex-text;"
+.................................................
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'DejaVuSansMono(1)' created for font 'DejaVu Sans Mono' with
+. options [Mapping=tex-text,,Script=Cyrillic].
+. 
+. This font family consists of the following shapes:
+.................................................
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'DejaVuSerif(1)' created for font 'DejaVu Serif' with options
+. [Mapping=tex-text,,Script=Cyrillic].
+. 
+. This font family consists of the following shapes:
+.................................................
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'DejaVuSerif(1)' created for font 'DejaVu Serif' with options
+. [Mapping=tex-text,,Script=Cyrillic].
+. 
+. This font family consists of the following shapes:
+.................................................
+ [1
+
+]
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'DejaVuSansMono(1)' created for font 'DejaVu Sans Mono' with
+. options [Mapping=tex-text,,Script=Cyrillic].
+. 
+. This font family consists of the following shapes:
+.................................................
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'DejaVuSansMono(1)' created for font 'DejaVu Sans Mono' with
+. options [Mapping=tex-text,,Script=Cyrillic].
+. 
+. This font family consists of the following shapes:
+.................................................
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'DejaVuSansMono(1)' created for font 'DejaVu Sans Mono' with
+. options [Mapping=tex-text,,Script=Cyrillic].
+. 
+. This font family consists of the following shapes:
+.................................................
+) (./src/tutorial.tex
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'DejaVuSerif(1)' created for font 'DejaVu Serif' with options
+. [Mapping=tex-text,,Script=Cyrillic].
+. 
+. This font family consists of the following shapes:
+.................................................
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'DejaVuSans(1)' created for font 'DejaVu Sans' with options
+. [Mapping=tex-text,,Script=Cyrillic].
+. 
+. This font family consists of the following shapes:
+.................................................
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'DejaVuSansMono(1)' created for font 'DejaVu Sans Mono' with
+. options [Mapping=tex-text,,Script=Cyrillic].
+. 
+. This font family consists of the following shapes:
+.................................................
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'DejaVuSerif(1)' created for font 'DejaVu Serif' with options
+. [Mapping=tex-text,,Script=Cyrillic].
+. 
+. This font family consists of the following shapes:
+.................................................
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'DejaVuSansMono(1)' created for font 'DejaVu Sans Mono' with
+. options [Mapping=tex-text,,Script=Cyrillic].
+. 
+. This font family consists of the following shapes:
+.................................................
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'DejaVuSansMono(1)' created for font 'DejaVu Sans Mono' with
+. options [Mapping=tex-text,,Script=Cyrillic].
+. 
+. This font family consists of the following shapes:
+.................................................
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'DejaVuSansMono(1)' created for font 'DejaVu Sans Mono' with
+. options [Mapping=tex-text,,Script=Cyrillic].
+. 
+. This font family consists of the following shapes:
+.................................................
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'DejaVuSansMono(1)' created for font 'DejaVu Sans Mono' with
+. options [Mapping=tex-text,,Script=Cyrillic].
+. 
+. This font family consists of the following shapes:
+.................................................
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'DejaVuSerif(1)' created for font 'DejaVu Serif' with options
+. [Mapping=tex-text,,Script=Cyrillic].
+. 
+. This font family consists of the following shapes:
+.................................................
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'DejaVuSerif(1)' created for font 'DejaVu Serif' with options
+. [Mapping=tex-text,,Script=Cyrillic].
+. 
+. This font family consists of the following shapes:
+.................................................
+ [2]
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'DejaVuSansMono(1)' created for font 'DejaVu Sans Mono' with
+. options [Mapping=tex-text,,Script=Cyrillic].
+. 
+. This font family consists of the following shapes:
+.................................................
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'DejaVuSansMono(1)' created for font 'DejaVu Sans Mono' with
+. options [Mapping=tex-text,,Script=Cyrillic].
+. 
+. This font family consists of the following shapes:
+.................................................
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'DejaVuSansMono(1)' created for font 'DejaVu Sans Mono' with
+. options [Mapping=tex-text,,Script=Cyrillic].
+. 
+. This font family consists of the following shapes:
+.................................................
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'DejaVuSansMono(1)' created for font 'DejaVu Sans Mono' with
+. options [Mapping=tex-text,,Script=Cyrillic].
+. 
+. This font family consists of the following shapes:
+.................................................
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'DejaVuSansMono(1)' created for font 'DejaVu Sans Mono' with
+. options [Mapping=tex-text,,Script=Cyrillic].
+. 
+. This font family consists of the following shapes:
+.................................................
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'DejaVuSansMono(1)' created for font 'DejaVu Sans Mono' with
+. options [Mapping=tex-text,,Script=Cyrillic].
+. 
+. This font family consists of the following shapes:
+.................................................
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'DejaVuSansMono(1)' created for font 'DejaVu Sans Mono' with
+. options [Mapping=tex-text,,Script=Cyrillic].
+. 
+. This font family consists of the following shapes:
+.................................................
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'DejaVuSansMono(1)' created for font 'DejaVu Sans Mono' with
+. options [Mapping=tex-text,,Script=Cyrillic].
+. 
+. This font family consists of the following shapes:
+.................................................
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'DejaVuSansMono(1)' created for font 'DejaVu Sans Mono' with
+. options [Mapping=tex-text,,Script=Cyrillic].
+. 
+. This font family consists of the following shapes:
+.................................................
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'DejaVuSerif(1)' created for font 'DejaVu Serif' with options
+. [Mapping=tex-text,,Script=Cyrillic].
+. 
+. This font family consists of the following shapes:
+.................................................
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'DejaVuSerif(1)' created for font 'DejaVu Serif' with options
+. [Mapping=tex-text,,Script=Cyrillic].
+. 
+. This font family consists of the following shapes:
+.................................................
+ [3]
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'DejaVuSansMono(1)' created for font 'DejaVu Sans Mono' with
+. options [Mapping=tex-text,,Script=Cyrillic].
+. 
+. This font family consists of the following shapes:
+.................................................
+File: output/vasia.pdf Graphic file (type QTm)
+
+<use  "output/vasia.pdf" >) (./src/options.tex
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'DejaVuSerif(1)' created for font 'DejaVu Serif' with options
+. [Mapping=tex-text,,Script=Cyrillic].
+. 
+. This font family consists of the following shapes:
+.................................................
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'DejaVuSerif(1)' created for font 'DejaVu Serif' with options
+. [Mapping=tex-text,,Script=Cyrillic].
+. 
+. This font family consists of the following shapes:
+.................................................
+ [4]
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'DejaVuSerif(1)' created for font 'DejaVu Serif' with options
+. [Mapping=tex-text,,Script=Cyrillic].
+. 
+. This font family consists of the following shapes:
+.................................................
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'DejaVuSans(1)' created for font 'DejaVu Sans' with options
+. [Mapping=tex-text,,Script=Cyrillic].
+. 
+. This font family consists of the following shapes:
+.................................................
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'DejaVuSansMono(1)' created for font 'DejaVu Sans Mono' with
+. options [Mapping=tex-text,,Script=Cyrillic].
+. 
+. This font family consists of the following shapes:
+.................................................
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'DejaVuSerif(1)' created for font 'DejaVu Serif' with options
+. [Mapping=tex-text,,Script=Cyrillic].
+. 
+. This font family consists of the following shapes:
+.................................................
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'DejaVuSans(1)' created for font 'DejaVu Sans' with options
+. [Mapping=tex-text,,Script=Cyrillic].
+. 
+. This font family consists of the following shapes:
+.................................................
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'DejaVuSansMono(1)' created for font 'DejaVu Sans Mono' with
+. options [Mapping=tex-text,,Script=Cyrillic].
+. 
+. This font family consists of the following shapes:
+.................................................
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'DejaVuSansMono(1)' created for font 'DejaVu Sans Mono' with
+. options [Mapping=tex-text,,Script=Cyrillic].
+. 
+. This font family consists of the following shapes:
+.................................................
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'DejaVuSansMono(1)' created for font 'DejaVu Sans Mono' with
+. options [Mapping=tex-text,,Script=Cyrillic].
+. 
+. This font family consists of the following shapes:
+.................................................
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'DejaVuSansMono(1)' created for font 'DejaVu Sans Mono' with
+. options [Mapping=tex-text,,Script=Cyrillic].
+. 
+. This font family consists of the following shapes:
+.................................................
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'DejaVuSansMono(1)' created for font 'DejaVu Sans Mono' with
+. options [Mapping=tex-text,,Script=Cyrillic].
+. 
+. This font family consists of the following shapes:
+.................................................
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'DejaVuSansMono(1)' created for font 'DejaVu Sans Mono' with
+. options [Mapping=tex-text,,Script=Cyrillic].
+. 
+. This font family consists of the following shapes:
+.................................................
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'DejaVuSansMono(1)' created for font 'DejaVu Sans Mono' with
+. options [Mapping=tex-text,,Script=Cyrillic].
+. 
+. This font family consists of the following shapes:
+.................................................
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'DejaVuSerif(1)' created for font 'DejaVu Serif' with options
+. [Mapping=tex-text,,Script=Cyrillic].
+. 
+. This font family consists of the following shapes:
+.................................................
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'DejaVuSans(1)' created for font 'DejaVu Sans' with options
+. [Mapping=tex-text,,Script=Cyrillic].
+. 
+. This font family consists of the following shapes:
+.................................................
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'DejaVuSansMono(1)' created for font 'DejaVu Sans Mono' with
+. options [Mapping=tex-text,,Script=Cyrillic].
+. 
+. This font family consists of the following shapes:
+.................................................
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'DejaVuSansMono(1)' created for font 'DejaVu Sans Mono' with
+. options [Mapping=tex-text,,Script=Cyrillic].
+. 
+. This font family consists of the following shapes:
+.................................................
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'DejaVuSansMono(1)' created for font 'DejaVu Sans Mono' with
+. options [Mapping=tex-text,,Script=Cyrillic].
+. 
+. This font family consists of the following shapes:
+.................................................
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'DejaVuSansMono(1)' created for font 'DejaVu Sans Mono' with
+. options [Mapping=tex-text,,Script=Cyrillic].
+. 
+. This font family consists of the following shapes:
+.................................................
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'DejaVuSansMono(1)' created for font 'DejaVu Sans Mono' with
+. options [Mapping=tex-text,,Script=Cyrillic].
+. 
+. This font family consists of the following shapes:
+.................................................
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'DejaVuSansMono(1)' created for font 'DejaVu Sans Mono' with
+. options [Mapping=tex-text,,Script=Cyrillic].
+. 
+. This font family consists of the following shapes:
+.................................................
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'DejaVuSansMono(1)' created for font 'DejaVu Sans Mono' with
+. options [Mapping=tex-text,,Script=Cyrillic].
+. 
+. This font family consists of the following shapes:
+.................................................
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'DejaVuSansMono(1)' created for font 'DejaVu Sans Mono' with
+. options [Mapping=tex-text,,Script=Cyrillic].
+. 
+. This font family consists of the following shapes:
+.................................................
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'DejaVuSansMono(1)' created for font 'DejaVu Sans Mono' with
+. options [Mapping=tex-text,,Script=Cyrillic].
+. 
+. This font family consists of the following shapes:
+.................................................
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'DejaVuSansMono(1)' created for font 'DejaVu Sans Mono' with
+. options [Mapping=tex-text,,Script=Cyrillic].
+. 
+. This font family consists of the following shapes:
+.................................................
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'DejaVuSansMono(1)' created for font 'DejaVu Sans Mono' with
+. options [Mapping=tex-text,,Script=Cyrillic].
+. 
+. This font family consists of the following shapes:
+.................................................
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'DejaVuSerif(1)' created for font 'DejaVu Serif' with options
+. [Mapping=tex-text,,Script=Cyrillic].
+. 
+. This font family consists of the following shapes:
+.................................................
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'DejaVuSans(1)' created for font 'DejaVu Sans' with options
+. [Mapping=tex-text,,Script=Cyrillic].
+. 
+. This font family consists of the following shapes:
+.................................................
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'DejaVuSansMono(1)' created for font 'DejaVu Sans Mono' with
+. options [Mapping=tex-text,,Script=Cyrillic].
+. 
+. This font family consists of the following shapes:
+.................................................
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'DejaVuSansMono(1)' created for font 'DejaVu Sans Mono' with
+. options [Mapping=tex-text,,Script=Cyrillic].
+. 
+. This font family consists of the following shapes:
+.................................................
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'DejaVuSansMono(1)' created for font 'DejaVu Sans Mono' with
+. options [Mapping=tex-text,,Script=Cyrillic].
+. 
+. This font family consists of the following shapes:
+.................................................
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'DejaVuSansMono(1)' created for font 'DejaVu Sans Mono' with
+. options [Mapping=tex-text,,Script=Cyrillic].
+. 
+. This font family consists of the following shapes:
+.................................................
+) (./src/elementlist.tex
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'DejaVuSerif(1)' created for font 'DejaVu Serif' with options
+. [Mapping=tex-text,,Script=Cyrillic].
+. 
+. This font family consists of the following shapes:
+.................................................
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'DejaVuSans(1)' created for font 'DejaVu Sans' with options
+. [Mapping=tex-text,,Script=Cyrillic].
+. 
+. This font family consists of the following shapes:
+.................................................
+)
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'DejaVuSerif(1)' created for font 'DejaVu Serif' with options
+. [Mapping=tex-text,,Script=Cyrillic].
+. 
+. This font family consists of the following shapes:
+.................................................
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'DejaVuSerif(1)' created for font 'DejaVu Serif' with options
+. [Mapping=tex-text,,Script=Cyrillic].
+. 
+. This font family consists of the following shapes:
+.................................................
+
+[5]
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'DejaVuSerif(1)' created for font 'DejaVu Serif' with options
+. [Mapping=tex-text,,Script=Cyrillic].
+. 
+. This font family consists of the following shapes:
+.................................................
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'DejaVuSans(1)' created for font 'DejaVu Sans' with options
+. [Mapping=tex-text,,Script=Cyrillic].
+. 
+. This font family consists of the following shapes:
+.................................................
+ (./output/pcbdocmanual.toc
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'DejaVuSerif(1)' created for font 'DejaVu Serif' with options
+. [Mapping=tex-text,,Script=Cyrillic].
+. 
+. This font family consists of the following shapes:
+.................................................
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'DejaVuSerif(1)' created for font 'DejaVu Serif' with options
+. [Mapping=tex-text,,Script=Cyrillic].
+. 
+. This font family consists of the following shapes:
+.................................................
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'DejaVuSerif(1)' created for font 'DejaVu Serif' with options
+. [Mapping=tex-text,,Script=Cyrillic].
+. 
+. This font family consists of the following shapes:
+.................................................
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'DejaVuSerif(1)' created for font 'DejaVu Serif' with options
+. [Mapping=tex-text,,Script=Cyrillic].
+. 
+. This font family consists of the following shapes:
+.................................................
+)
+\tf@toc=\write4
+\openout4 = `pcbdocmanual.toc'.
+
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'DejaVuSerif(1)' created for font 'DejaVu Serif' with options
+. [Mapping=tex-text,,Script=Cyrillic].
+. 
+. This font family consists of the following shapes:
+.................................................
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'DejaVuSerif(1)' created for font 'DejaVu Serif' with options
+. [Mapping=tex-text,,Script=Cyrillic].
+. 
+. This font family consists of the following shapes:
+.................................................
+ [6] (./output/pcbdocmanual.aux
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'DejaVuSerif(1)' created for font 'DejaVu Serif' with options
+. [Mapping=tex-text,,Script=Cyrillic].
+. 
+. This font family consists of the following shapes:
+.................................................
+) ) 
+Here is how much of TeX's memory you used:
+ 15607 strings out of 493994
+ 338668 string characters out of 3152225
+ 346165 words of memory out of 3000000
+ 18633 multiletter control sequences out of 15000+200000
+ 4088 words of font info for 70 fonts, out of 3000000 for 9000
+ 1144 hyphenation exceptions out of 8191
+ 53i,7n,44p,838b,389s stack positions out of 5000i,500n,10000p,200000b,50000s
+
+Output written on ./output/pcbdocmanual.pdf (6 pages).

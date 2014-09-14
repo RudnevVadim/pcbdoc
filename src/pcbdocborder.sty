@@ -1,0 +1,91 @@
+
+\ProvidesPackage{pcbdocborder}%
+
+\RequirePackage{xifthen}%
+\RequirePackage{pcbdoccontent}%
+\RequirePackage{pcbdoclayout}%
+\RequirePackage{calc}%
+
+\newcounter{Height}%
+
+\newcommand{\HeaderFirst}{%
+  \setcounter{Height}{\theBorderHeight}%
+  \addtocounter{Height}{\theDeltaHeight}%
+  \setlength{\unitlength}{1mm}%
+  \begin{picture}(0,0)%
+    \put(\theDeltaWidth,-\theDeltaHeight){\DrawHeaderFirst}%
+  \end{picture}%
+  }%
+
+\newcommand{\HeaderNext}{%
+  \setcounter{Height}{\theBorderHeight}%
+  \addtocounter{Height}{\theDeltaHeight}%
+  \setlength{\unitlength}{1mm}%
+  \begin{picture}(0,0)%
+    \put(\theDeltaWidth,-\theDeltaHeight){\DrawHeaderNext}%
+  \end{picture}%
+  }%
+
+\newcommand{\DrawBorder}{%
+  \begin{picture}(0,0)%
+    \setlength{\unitlength}{1mm}%
+    \linethickness{\pcbdoclinethick}%
+    \put(0,0){\line(1,0){\theBorderWidth}}% нижняя линия
+    \put(0,\theBorderHeight){\line(1,0){\theBorderWidth}}% верхняя линия
+    \put(0,0){\line(0,1){\theBorderHeight}}% левая линия
+    \put(\theBorderWidth,0){\line(0,1){\theBorderHeight}}% правая линия
+  \end{picture}%
+  }%
+
+\newcommand{\FooterFirst}{%
+  \setcounter{Height}{\theBorderHeight}%
+  \addtocounter{Height}{\theDeltaHeight}%
+  \setlength{\unitlength}{1mm}%
+  \begin{picture}(0,0)%
+    \put(\theDeltaWidth,\theDeltaHeight){\DrawBorder}%
+    \put(\thexStamp,\theDeltaHeight){\DrawStampFirst}%
+    \put(\theDeltaWidth,\theDeltaHeight){\DrawFieldBottomFirst}%
+    \put(\theDeltaWidth,\theDeltaHeight){\DrawFieldTopFirst}%
+    \put(\theDeltaWidth,\theHeight){\DrawFieldTopTopFirst}%
+  \end{picture}%
+  }%
+
+\newcommand{\FooterNext}{%
+  \setcounter{Height}{\theBorderHeight}%
+  \addtocounter{Height}{\theDeltaHeight}%
+  \setlength{\unitlength}{1mm}%
+  \begin{picture}(0,0)%
+    \put(\theDeltaWidth,\theDeltaHeight){\DrawBorder}%
+    \put(\thexStamp,\theDeltaHeight){\DrawStampNext}%
+    \put(\theDeltaWidth,\theDeltaHeight){\DrawFieldBottomNext}%
+    \put(\theDeltaWidth,\theDeltaHeight){\DrawFieldTopNext}%
+    \put(\theDeltaWidth,\theHeight){\DrawFieldTopTopNext}%
+  \end{picture}%
+  }%
+
+\newcommand{\PcbDocBorderSet}{%
+  % верхний колонтитулы (четные страницы):
+  \renewcommand{\@evenhead}{%
+    \ifthenelse{\equal{\thepage}{1}}%
+      {\HeaderFirst}%
+      {\HeaderNext}%
+    }%
+  % нижний колонтитул (четные страницы):
+  \renewcommand{\@evenfoot}{%
+    \ifthenelse{\equal{\thepage}{1}}%
+      {\FooterFirst}%
+      {\FooterNext}%
+    }%
+  % верхний колонтитул (нечетные страницы):
+  \renewcommand{\@oddhead}{%
+    \ifthenelse{\equal{\thepage}{1}}%
+      {\HeaderFirst}%
+      {\HeaderNext}%
+    }%
+  % нижний колонтитул (нечетные страницы):
+  \renewcommand{\@oddfoot}{%
+    \ifthenelse{\equal{\thepage}{1}}%
+      {\FooterFirst}%
+      {\FooterNext}%
+    }%
+  }%

@@ -1,0 +1,17 @@
+#!/bin/bash
+
+PCBDOC_VERSION=v0.4
+
+mkdir texmf
+mkdir texmf/tex
+mkdir texmf/tex/xelatex
+mkdir texmf/tex/xelatex/pcbdoc
+cp -R src/* texmf/tex/xelatex/pcbdoc
+mkdir texmf/tex/xelatex/pcbdoc/doc
+cp texmf/tex/xelatex/pcbdoc/manual/output/pcbdocmanual.pdf texmf/tex/xelatex/pcbdoc/doc
+rm -rf texmf/tex/xelatex/pcbdoc/manual
+rm -rf texmf/tex/xelatex/pcbdoc/experimental
+zip -r ../pcbdoc-$PCBDOC_VERSION.zip .fonts texmf
+rm -rf texmf
+
+unset PCBDOC_VERSION

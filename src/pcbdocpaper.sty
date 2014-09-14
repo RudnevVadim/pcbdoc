@@ -1,0 +1,29 @@
+
+\ProvidesPackage{pcbdocpaper}%
+
+\RequirePackage{xifthen}%
+\RequirePackage{vmargin}%
+
+\newlength{\pcbdocpaperwidth}%
+\setlength{\pcbdocpaperwidth}{210mm}%
+
+\newlength{\pcbdocpaperheight}%
+\setlength{\pcbdocpaperheight}{297mm}%
+
+\newcommand{\pcbdocpapersize}{a4}%
+
+\newcommand{\PcbDocPaperSet}[2]{%
+  \setlength{\pcbdocpaperwidth}{#1}%
+  \setlength{\pcbdocpaperheight}{#2}%
+  \setpapersize{custom}{\pcbdocpaperwidth}{\pcbdocpaperheight}%
+  }%
+
+\newcommand{\PcbDocSizeChoice}{%
+  \ifthenelse{\equal{\pcbdocpapersize}{a4}}{\PcbDocPaperSet{210mm}{297mm}}{}%
+  \ifthenelse{\equal{\pcbdocpapersize}{a3}}{\PcbDocPaperSet{420mm}{297mm}}{}%
+  \ifthenelse{\equal{\pcbdocpapersize}{a2}}{\PcbDocPaperSet{594mm}{420mm}}{}%
+  \ifthenelse{\equal{\pcbdocpapersize}{a1}}{\PcbDocPaperSet{841mm}{594mm}}{}%
+  \ifthenelse{\equal{\pcbdocpapersize}{cdstick}}{\PcbDocPaperSet{120mm}{120mm}}{}%
+  \ifthenelse{\equal{\pcbdocpapersize}{a4x3}}{\PcbDocPaperSet{630mm}{297mm}}{}%
+  \ifthenelse{\equal{\pcbdocpapersize}{a4x4}}{\PcbDocPaperSet{840mm}{297mm}}{}%
+  }%

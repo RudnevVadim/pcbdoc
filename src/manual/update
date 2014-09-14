@@ -1,0 +1,4 @@
+#!/bin/bash
+
+./vasia
+xelatex -output-directory=./output ./src/pcbdocmanual.tex

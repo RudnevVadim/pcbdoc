@@ -1,0 +1,9 @@
+\select@language {russian}
+\contentsline {section}{\numberline {1}Введение}{1}
+\contentsline {section}{\numberline {2}Установка}{1}
+\contentsline {section}{\numberline {3}Тренинг}{2}
+\contentsline {section}{\numberline {4}Опции класса pcbdoc}{5}
+\contentsline {subsection}{\numberline {4.1}Тип документа}{5}
+\contentsline {subsection}{\numberline {4.2}Размер страницы}{5}
+\contentsline {subsection}{\numberline {4.3}Толщины линий}{5}
+\contentsline {section}{\numberline {5}Перечень элементов}{5}

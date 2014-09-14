@@ -1,0 +1,45 @@
+
+\ProvidesPackage{pcbdoccontent}%
+
+% XeLaTeX:
+%\RequirePackage[cm-default]{fontspec}%
+\RequirePackage{xunicode}%
+\RequirePackage{xltxtra}%
+\RequirePackage{color}%
+\defaultfontfeatures{Mapping=tex-text}%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+ %Polyglossia:
+\RequirePackage{polyglossia}%
+\setdefaultlanguage{russian}%
+\setotherlanguage{english}%
+\newfontfamily\russianfont[Scale=0.95]{GOST Type AU}%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\RequirePackage{longtable}%
+\RequirePackage{rotating}%
+\RequirePackage{lastpage}%
+\RequirePackage{xifthen}%
+\RequirePackage{calc}%
+
+% Default fonts:
+\setsansfont{GOST Type AU}%
+\setmonofont{GOST Type AU}%
+\setmainfont{GOST Type AU}%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\renewcommand{\normalfont}{\fontspec[Scale=1.0]{GOST Type AU}}%
+\newcommand{\normalfontit}{\fontspec[Scale=1.0]{GOST type A}\itshape}%
+\renewcommand{\small}{\fontspec[Scale=0.75]{GOST Type AU}}%
+\newcommand{\smallit}{\fontspec[Scale=0.75]{GOST type A}\itshape}%
+\renewcommand{\large}{\fontspec[Scale=1.3]{GOST Type AU}}%
+\newcommand{\llarge}{\fontspec[Scale=1.2]{GOST Type AU}}%
+\renewcommand{\Large}{\fontspec[Scale=1.75]{GOST Type AU}}%
+\newcommand{\LLarge}{\fontspec[Scale=1.65]{GOST Type AU}}%
+
+\newcommand{\largeit}{\fontspec[Scale=1.3]{GOST type A}\itshape}%
+\newcommand{\llargeit}{\fontspec[Scale=1.2]{GOST type A}\itshape}%
+\newcommand{\Largeit}{\fontspec[Scale=1.75]{GOST type A}\itshape}%
+\newcommand{\LLargeit}{\fontspec[Scale=1.65]{GOST type A}\itshape}%
+
+\setlength{\parindent}{0pt}%не делать отступа новой строки

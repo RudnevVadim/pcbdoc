@@ -1,0 +1,205 @@
+
+\documentclass[doctype=pe]{pcbdoc}
+\usepackage{xstring}
+\usepackage{xifthen}
+
+\newcounter{pcbdocCycleCounter}%
+\newcounter{pcbdocDeltaCounter}%
+
+\def\pcbdocTmp{}%
+\def\pcbdocRefDes{}%
+\def\pcbdocRefDesTmp{}%
+\def\pcbdocPartNumber{}%
+\def\pcbdocPartNumberTmp{}%
+\def\pcbdocNotice{}%
+\def\pcbdocNoticeTmp{}%
+
+\renewenvironment{ElementList}{}{}%
+
+\newcommand{\pcbdocpeLine}[5]{%
+  }%
+
+\renewcommand{\Element}[4][]{% Добавить элемент
+  % #1 - примечание (необязательно),
+  % #2 - наименование,
+  % #3 - позиционное обозначение,
+  % #4 - количество
+  \largeit%
+  \setcounter{pcbdocCycleCounter}{1}%
+  \setcounter{pcbdocDeltaCounter}{2}%
+  %
+  \StrDel{#3}{ }[\pcbdocRefDes]%
+  \def\pcbdocNotice{#1}%
+  \def\pcbdocPartNumber{#2}%
+  % убираем начальные символы '|' из \pcbdocRefDes
+  \def\pcbdocTmp{|}%
+  \whiledo{\equal{\pcbdocTmp}{|}}{%
+    \IfBeginWith{\pcbdocRefDes}{|}{%
+      \StrDel[1]{\pcbdocRefDes}{|}[\pcbdocRefDes]%
+      }{%
+        \def\pcbdocTmp{}%
+      }%
+    }%
+  %
+  % убираем начальные символы '|' из \pcbdocPartNumber
+  \def\pcbdocTmp{|}%
+  \whiledo{\equal{\pcbdocTmp}{|}}{%
+    \IfBeginWith{\pcbdocPartNumber}{|}{%
+      \StrDel[1]{\pcbdocPartNumber}{|}[\pcbdocPartNumber]%
+      }{%
+        \def\pcbdocTmp{}%
+      }%
+    }%
+  %
+  % убираем начальные символы '|' из \pcbdocNotice
+  \def\pcbdocTmp{|}
+  \whiledo{\equal{\pcbdocTmp}{|}}{%
+    \IfBeginWith{\pcbdocNotice}{|}{%
+      \StrDel[1]{\pcbdocNotice}{|}[\pcbdocNotice]%
+      }{%
+        \def\pcbdocTmp{}%
+      }%
+    }%
+  %
+  \StrBetween[1,2]{|\pcbdocRefDes|}{|}{|}[\pcbdocRefDesTmp]%
+  \StrBetween[1,2]{|\pcbdocPartNumber|}{|}{|}[\pcbdocPartNumberTmp]%
+  \StrBetween[1,2]{|\pcbdocNotice|}{|}{|}[\pcbdocNoticeTmp]%
+  %
+  \whiledo{\not\equal{\pcbdocRefDesTmp}{}}{%
+    % убираем начальные пробелы из \pcbdocNoticeTmp
+    \def\pcbdocTmp{ }%
+    \whiledo{\equal{\pcbdocTmp}{ }}{%
+      \IfBeginWith{\pcbdocNoticeTmp}{ }{%
+        \StrDel[1]{\pcbdocNoticeTmp}{ }[\pcbdocNoticeTmp]%
+        }{%
+          \def\pcbdocTmp{}%
+        }%
+      }%
+    %
+    % убираем конечные пробелы из \pcbdocNoticeTmp
+    \def\pcbdocTmp{ }%
+    \whiledo{\equal{\pcbdocTmp}{ }}{%
+      \IfEndWith{\pcbdocNoticeTmp}{ }{%
+        \StrGobbleRight{\pcbdocNoticeTmp}{1}[\pcbdocNoticeTmp]%
+        }{%
+          \def\pcbdocTmp{}%
+        }%
+      }%
+    %
+    % убираем начальные пробелы из \pcbdocPartNumberTmp
+    \def\pcbdocTmp{ }%
+    \whiledo{\equal{\pcbdocTmp}{ }}{%
+      \IfBeginWith{\pcbdocPartNumberTmp}{ }{%
+        \StrDel[1]{\pcbdocPartNumberTmp}{ }[\pcbdocPartNumberTmp]%
+        }{%
+          \def\pcbdocTmp{}%
+        }%
+      }%
+    %
+    % убираем конечные пробелы из \pcbdocPartNumberTmp
+    \def\pcbdocTmp{ }%
+    \whiledo{\equal{\pcbdocTmp}{ }}{%
+      \IfEndWith{\pcbdocPartNumberTmp}{ }{%
+        \StrGobbleRight{\pcbdocPartNumberTmp}{1}[\pcbdocPartNumberTmp]%
+        }{%
+          \def\pcbdocTmp{}%
+        }%
+      }%
+    %
+    \ifthenelse{\equal{\thepcbdocCycleCounter}{1}}{%
+      \makebox[21mm]{\pcbdocRefDesTmp}%
+      \makebox[109mm]{\pcbdocPartNumberTmp\hfill}%
+      \makebox[10mm]{#4}%
+      \makebox[45mm]{\pcbdocNoticeTmp\hfill}\\%
+      }{%
+      \makebox[21mm]{\pcbdocRefDesTmp}%
+      \makebox[109mm]{\pcbdocPartNumberTmp\hfill}%
+      \makebox[10mm]{}%
+      \makebox[45mm]{\pcbdocNoticeTmp\hfill}\\%
+      }%
+    \addtocounter{pcbdocCycleCounter}{1}%
+    \addtocounter{pcbdocDeltaCounter}{1}%
+    \StrBetween[\thepcbdocCycleCounter,\thepcbdocDeltaCounter]%
+      {|\pcbdocRefDes|}{|}{|}[\pcbdocRefDesTmp]%
+    \StrBetween[\thepcbdocCycleCounter,\thepcbdocDeltaCounter]%
+      {|\pcbdocPartNumber|}{|}{|}[\pcbdocPartNumberTmp]%
+    \StrBetween[\thepcbdocCycleCounter,\thepcbdocDeltaCounter]%
+      {|\pcbdocNotice|}{|}{|}[\pcbdocNoticeTmp]%
+    }%
+    %
+    \whiledo{\not\equal{\pcbdocPartNumberTmp}{}}{%
+      % убираем начальные пробелы из \pcbdocPartNumberTmp
+      \def\pcbdocTmp{ }%
+      \whiledo{\equal{\pcbdocTmp}{ }}{%
+        \IfBeginWith{\pcbdocPartNumberTmp}{ }{%
+          \StrDel[1]{\pcbdocPartNumberTmp}{ }[\pcbdocPartNumberTmp]%
+          }{%
+            \def\pcbdocTmp{}%
+          }%
+        }%
+      %
+      % убираем начальные пробелы из \pcbdocNoticeTmp
+      \def\pcbdocTmp{ }%
+      \whiledo{\equal{\pcbdocTmp}{ }}{%
+        \IfBeginWith{\pcbdocNoticeTmp}{ }{%
+          \StrDel[1]{\pcbdocNoticeTmp}{ }[\pcbdocNoticeTmp]%
+          }{%
+            \def\pcbdocTmp{}%
+          }%
+        }%
+      %
+      \makebox[21mm]{}%
+      \makebox[109mm]{\pcbdocPartNumberTmp\hfill}%
+      \makebox[10mm]{}%
+      \makebox[45mm]{\pcbdocNoticeTmp\hfill}\\%
+      \addtocounter{pcbdocCycleCounter}{1}%
+      \addtocounter{pcbdocDeltaCounter}{1}%
+      \StrBetween[\thepcbdocCycleCounter,\thepcbdocDeltaCounter]%
+        {|\pcbdocPartNumber|}{|}{|}[\pcbdocPartNumberTmp]%
+      \StrBetween[\thepcbdocCycleCounter,\thepcbdocDeltaCounter]%
+        {|\pcbdocNotice|}{|}{|}[\pcbdocNoticeTmp]%
+      }%
+    %
+    \whiledo{\not\equal{\pcbdocNoticeTmp}{}}{%
+      % убираем начальные пробелы из \pcbdocNoticeTmp
+      \def\pcbdocTmp{ }%
+      \whiledo{\equal{\pcbdocTmp}{ }}{%
+        \IfBeginWith{\pcbdocNoticeTmp}{ }{%
+          \StrDel[1]{\pcbdocNoticeTmp}{ }[\pcbdocNoticeTmp]%
+          }{%
+            \def\pcbdocTmp{}%
+          }%
+        }%
+      %
+      \makebox[21mm]{}%
+      \makebox[109mm]{}%
+      \makebox[10mm]{}%
+      \makebox[45mm]{\pcbdocNoticeTmp\hfill}\\%
+      \addtocounter{pcbdocCycleCounter}{1}%
+      \addtocounter{pcbdocDeltaCounter}{1}%
+      \StrBetween[\thepcbdocCycleCounter,\thepcbdocDeltaCounter]%
+        {|\pcbdocNotice|}{|}{|}[\pcbdocNoticeTmp]%
+      }%
+  }%
+
+
+\begin{document}
+
+%\Element[Бурый медведь]{MLT\%}{R1, R2 | R3 | R4 | R5}{5}
+
+\Element
+[
+  \hfill{}Бурый медведь |%
+  \hfill{}Бурый медведь |%
+  \hfill{}Бурый медведь |%
+  yyy |%
+  uuu |%
+  ooo |%
+  iii
+]
+{ PN1 | PN2 | PN3 | PN4 | PN5 | PN6 | PN7 }{ R1, R2 | R3 | R4 | R5 }{5}
+
+%\largeit\StrBetween[6,7]{|PN1|PN2|PN3|PN4|PN5|PN6|PN7|}{|}{|}%
+
+\end{document}
+

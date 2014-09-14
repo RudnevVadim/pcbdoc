@@ -1,0 +1,3 @@
+#!/bin/bash
+
+xelatex -output-directory=./output ./src/vasia.tex
