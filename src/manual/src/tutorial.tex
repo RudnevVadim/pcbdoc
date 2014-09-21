@@ -11,16 +11,17 @@
 Вася открывает свой любимый текстовый редактор(кто знает, возможно это
 \emph{emacs}) и приступает к работе. Он аккуратно набирает первую строчку:
 
-\begin{SaveVerbatim}{TutorCode}
-  \documentclass[doctype=pe]{pcbdoc}
-\end{SaveVerbatim}
-\colorbox{codecolor}{\BUseVerbatim{TutorCode}}
+%\begin{SaveVerbatim}[formatcom=\bfseries]{TutorCode}
+%\documentclass[doctype=pe]{pcbdoc}
+%\end{SaveVerbatim}
+%\colorbox{codecolor}{\BUseVerbatim{TutorCode}}
 
-\begin{verbatim}
-  \documentclass[doctype=pe]{pcbdoc}
-\end{verbatim}
+\begin{tikzpicture}\node[align=left,fill=codecolor,font=\ttfamily] at (0,0){%
+\textbackslash{}documentclass[doctype=pe]\{pcbdoc\}
+};
+\end{tikzpicture}
 
-Теперь \emph{LaTeX} в курсе, что ему предстоит сверстать перечень элементов.
+Теперь \LaTeX{} в курсе, что ему предстоит сверстать перечень элементов.
 Далее Васе требуется указать, что он является автором этого замечательного
 документа:
 
@@ -88,7 +89,7 @@
 Вот он, этот единственный конденсатор:
 
 \begin{SaveVerbatim}{TutorCode}
-  \Element{X7R\_0805\_1\_KOM\_5\%}{\refbox{C1}}{1}
+  \Element{X7R\_0805\_1\_МКФ\_5\%}{\refbox{C1}}{1}
 \end{SaveVerbatim}
 \colorbox{codecolor}{\BUseVerbatim{TutorCode}}
 

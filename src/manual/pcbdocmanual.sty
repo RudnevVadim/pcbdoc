@@ -1,6 +1,22 @@
 
 \RequirePackage{color}
 \RequirePackage{fancyvrb}
+%\RequirePackage{alltt}
+%\RequirePackage{listings}
+%\lstloadlanguages{[LaTeX]TeX,bash,MetaPost,Perl,C++,make}
+%\lstset{%
+%  language=[LaTeX]TeX, % выбираем язык по умолчанию
+%  basicstyle=\ttfamily,
+%  backgroundcolor=\color{codecolor},
+%  extendedchars=true, % включаем не латиницу
+%  escapechar=|,% |«выпадаем» в L TEX|
+%  frame=tb,% рамка сверху и снизу
+%  commentstyle=\itshape,% шрифт для комментариев
+%  %stringstyle=\bfseries % шрифт для строк
+%  stringstyle=\fontspec{DejaVu Sans Mono} % шрифт для строк
+%}
+
+
 
 % XeLaTeX:
 \RequirePackage{fontspec}
@@ -10,6 +26,7 @@
 %
 \RequirePackage{color}
 \RequirePackage{colortbl}
+\RequirePackage{tikz}
 %\RequirePackage[titles]{tocloft}
 \defaultfontfeatures{Mapping=tex-text}
 \RequirePackage{sectsty}
@@ -21,15 +38,15 @@
 \setdefaultlanguage{russian}
 \setotherlanguage{english}
 %\newfontfamily\cyrillicfont{DejaVu Sans}
-%\newfontfamily\cyrillicfonttt{DejaVu Sans Mono}
+\newfontfamily\cyrillicfonttt{DejaVu Sans Mono}
 %\newfontfamily\cyrillicfontsf{DejaVu Serif}
 %\newfontfamily\cyrillicfonttt{Courier New}
 
- %Default fonts:
+%Default fonts:
 \setsansfont{DejaVu Sans}
-\setmonofont{DejaVu Sans Mono}\small
+\setmonofont{DejaVu Sans Mono}
 %\setmonofont{Courier New}
-\setmainfont{DejaVu Serif}
+%\setmainfont{DejaVu Serif}
 \setromanfont{DejaVu Serif}
 
 %\setlength{\textwidth}{165mm}
@@ -41,7 +58,7 @@
 \textwidth=160mm    % ширина текста
 %\topmargin=-12mm    % верхнее поле
 %\headsep=19pt
-\textheight=220mm   % высота текста
+\textheight=200mm   % высота текста
 %\footskip=46pt
 
 %не делать отступа новой строки:
@@ -53,7 +70,7 @@
 \definecolor{resultcolor}{rgb}{0.8784,0.8784,0.7647}
 \definecolor{terminalcolor}{rgb}{0.7, 0.75, 0.71}
 \definecolor{codecolor}{rgb}{0.74, 0.83, 0.9}
-\definecolor{commandcolor}{rgb}{0.0, 0.29, 0.33}
+\definecolor{commandcolor}{rgb}{0.0, 0.2, 0.23}
 
 %\newenvironment{PCBDOCcode}{%
 %  \ttfamily%
@@ -63,4 +80,6 @@
 %
 %  }%
 
-\newcommand{\PCBdocCode}[1]{\textcolor{commandcolor}{\texttt{ #1}}}
+%\newcommand{\PCBdocCode}[1]{\textcolor{commandcolor}{\texttt{\bfseries{}#1}}}
+\newcommand{\PCBdocCode}[1]{\texttt{#1}}
+\newcommand{\coloremph}[1]{\emph{\color{commandcolor}#1}}
