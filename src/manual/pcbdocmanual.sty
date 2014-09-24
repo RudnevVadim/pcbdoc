@@ -53,13 +53,24 @@
 %\setlength{\textheight}{220mm}
 
 
-\oddsidemargin=0mm  % левое поле (нечетные страницы)
-\evensidemargin=0mm % левое поле (четные страницы)
-\textwidth=160mm    % ширина текста
-%\topmargin=-12mm    % верхнее поле
-%\headsep=19pt
-\textheight=200mm   % высота текста
-%\footskip=46pt
+%\oddsidemargin=0mm  % левое поле (нечетные страницы)
+%\evensidemargin=0mm % левое поле (четные страницы)
+%\textwidth=160mm    % ширина текста
+%%\topmargin=-12mm    % верхнее поле
+%%\headsep=19pt
+%\textheight=200mm   % высота текста
+%%\footskip=46pt
+
+% geometry
+\setlength{\hoffset}{0mm}
+\setlength{\voffset}{0mm}
+\setlength{\oddsidemargin}{12.7mm}
+\setlength{\textwidth}{148mm}
+\setlength{\topmargin}{0mm}
+\setlength{\headsep}{20pt}
+\setlength{\textheight}{220mm}
+\setlength{\parskip}{1mm}
+\setlength{\footskip}{10mm}
 
 %не делать отступа новой строки:
 \setlength{\parindent}{0pt}
@@ -69,17 +80,16 @@
 \definecolor{darkslategray}{rgb}{0.0, 0.35, 0.35}%%%%%%%%%%%%%
 \definecolor{resultcolor}{rgb}{0.8784,0.8784,0.7647}
 \definecolor{terminalcolor}{rgb}{0.7, 0.75, 0.71}
-\definecolor{codecolor}{rgb}{0.74, 0.83, 0.9}
+%\definecolor{codecolor}{rgb}{0.74, 0.83, 0.9}
+%\definecolor{codecolor}{rgb}{0.8, 0.9, 1}
+\definecolor{codecolor}{rgb}{0.7, 0.75, 0.71}
 \definecolor{commandcolor}{rgb}{0.0, 0.2, 0.23}
-
-%\newenvironment{PCBDOCcode}{%
-%  \ttfamily%
-%  \begin{tabbing}%
-%  }{%
-%  \end{tabbing}
-%
-%  }%
 
 %\newcommand{\PCBdocCode}[1]{\textcolor{commandcolor}{\texttt{\bfseries{}#1}}}
 \newcommand{\PCBdocCode}[1]{\texttt{#1}}
 \newcommand{\coloremph}[1]{\emph{\color{commandcolor}#1}}
+
+\newcommand{\pcbdocmanualcode}[1]{%
+  \begin{tikzpicture}\node[align=left,fill=codecolor,font=\ttfamily] at (0,0){#1};%
+  \end{tikzpicture}%
+  }%

@@ -1,0 +1,45 @@
+
+\section{Шрифты}
+
+В \emph{pcbdoc} используется наклонный шрифт \emph{GOST type A}(по умолчанию) и
+прямой \emph{GOST Type AU}.
+
+Предусмотрены команды изменения шрифта. Наклонный шрифт, от меньшего к
+большему:
+
+\pcbdocmanualcode{%
+\textbackslash{}smallit\\
+\textbackslash{}normalfontit\\
+\textbackslash{}llargeit\\
+\textbackslash{}largeit\\
+\textbackslash{}LLargeit\\
+\textbackslash{}Largeit
+}
+
+Прямой шрифт, от меньшего к большему:
+
+\pcbdocmanualcode{%
+\textbackslash{}small\\
+\textbackslash{}normalfont\\
+\textbackslash{}llarge\\
+\textbackslash{}large\\
+\textbackslash{}LLarge\\
+\textbackslash{}Large
+}
+
+Пример применения:
+
+\pcbdocmanualcode{%
+\textbackslash{}AuthorSet\{\textbackslash{}smallit\{\}Пупкин\}
+}
+
+Кроме того, Вы можете указать тип шрифта и его размер "в лоб" средствами
+\XeLaTeX{}. Например:
+
+\pcbdocmanualcode{%
+\textbackslash{}AuthorSet\{\textbackslash{}fontspec[Scale=0.68]\{GOST type A\}%
+\textbackslash{}itshape\{\}Пупкин\}
+}
+
+И, само собой разумеется, если Вы планируете часто использовать конкретный размер
+шрифта, имеет смысл создать для этого новую команду.

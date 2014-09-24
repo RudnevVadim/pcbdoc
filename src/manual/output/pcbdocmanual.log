@@ -1,14 +1,24 @@
-This is XeTeX, Version 3.1415926-2.5-0.9999.3 (TeX Live 2013) (format=xelatex 2014.3.29)  21 SEP 2014 21:15
+This is XeTeX, Version 3.1415926-2.4-0.9998 (TeX Live 2012) (format=xelatex 2013.2.28)  23 SEP 2014 23:46
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **./src/pcbdocmanual.tex
 (./src/pcbdocmanual.tex
 LaTeX2e <2011/06/27>
-Babel <3.9k> and hyphenation patterns for 78 languages loaded.
-(/opt1/texlive/2013/texmf-dist/tex/latex/base/article.cls
+Babel <v3.8m> and hyphenation patterns for english, dumylang, nohyphenation, ge
+rman-x-2012-05-30, ngerman-x-2012-05-30, afrikaans, ancientgreek, ibycus, arabi
+c, armenian, basque, bulgarian, catalan, pinyin, coptic, croatian, czech, danis
+h, dutch, ukenglish, usenglishmax, esperanto, estonian, ethiopic, farsi, finnis
+h, french, friulan, galician, german, ngerman, swissgerman, monogreek, greek, h
+ungarian, icelandic, assamese, bengali, gujarati, hindi, kannada, malayalam, ma
+rathi, oriya, panjabi, tamil, telugu, indonesian, interlingua, irish, italian, 
+kurmanji, latin, latvian, lithuanian, mongolian, mongolianlmc, bokmal, nynorsk,
+ piedmontese, polish, portuguese, romanian, romansh, russian, sanskrit, serbian
+, serbianc, slovak, slovenian, spanish, swedish, turkish, turkmen, ukrainian, u
+ppersorbian, welsh, loaded.
+(/opt1/texlive/2012/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
-(/opt1/texlive/2013/texmf-dist/tex/latex/base/size10.clo
+(/opt1/texlive/2012/texmf-dist/tex/latex/base/size10.clo
 File: size10.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count80
@@ -23,23 +33,23 @@ File: size10.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
 ) (./pcbdocmanual.sty
-(/opt1/texlive/2013/texmf-dist/tex/latex/graphics/color.sty
+(/opt1/texlive/2012/texmf-dist/tex/latex/graphics/color.sty
 Package: color 2005/11/14 v1.0j Standard LaTeX Color (DPC)
 
-(/opt1/texlive/2013/texmf-dist/tex/latex/latexconfig/color.cfg
+(/opt1/texlive/2012/texmf-dist/tex/latex/latexconfig/color.cfg
 File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
 Package color Info: Driver file: xetex.def on input line 130.
 
-(/opt1/texlive/2013/texmf-dist/tex/xelatex/xetex-def/xetex.def
+(/opt1/texlive/2012/texmf-dist/tex/xelatex/xetex-def/xetex.def
 File: xetex.def 2013/02/04 v0.95 LaTeX color/graphics driver for XeTeX (RRM/JK)
 
 ))
-(/opt1/texlive/2013/texmf-dist/tex/latex/fancyvrb/fancyvrb.sty
+(/opt1/texlive/2012/texmf-dist/tex/latex/fancyvrb/fancyvrb.sty
 Package: fancyvrb 2008/02/07
 
 Style option: `fancyvrb' v2.7a, with DG/SPQR fixes, and firstline=lastline fix 
-<2008/02/07> (tvz) (/opt1/texlive/2013/texmf-dist/tex/latex/graphics/keyval.sty
+<2008/02/07> (tvz) (/opt1/texlive/2012/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
 \KV@toks@=\toks14
 )
@@ -49,71 +59,71 @@ Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
 \c@FancyVerbLine=\count89
 \FV@StepNumber=\count90
 \FV@OutFile=\write3
-) (/opt1/texlive/2013/texmf-dist/tex/latex/fontspec/fontspec.sty
-Package: fontspec 2013/05/20 v2.3c Font selection for XeLaTeX and LuaLaTeX
+) (/opt1/texlive/2012/texmf-dist/tex/latex/fontspec/fontspec.sty
+Package: fontspec 2013/03/16 v2.3a Font selection for XeLaTeX and LuaLaTeX
 
-(/opt1/texlive/2013/texmf-dist/tex/latex/l3kernel/expl3.sty
-(/opt1/texlive/2013/texmf-dist/tex/latex/l3kernel/l3names.sty
-(/opt1/texlive/2013/texmf-dist/tex/latex/l3kernel/l3bootstrap.sty
-Package: l3bootstrap 2014/01/04 v4640 L3 Experimental bootstrap code
+(/opt1/texlive/2012/texmf-dist/tex/latex/l3kernel/expl3.sty
+(/opt1/texlive/2012/texmf-dist/tex/latex/l3kernel/l3names.sty
+(/opt1/texlive/2012/texmf-dist/tex/latex/l3kernel/l3bootstrap.sty
+Package: l3bootstrap 2013/01/08 v4420 L3 Experimental bootstrap code
 )
-Package: l3names 2014/01/04 v4640 L3 Namespace for primitives
+Package: l3names 2012/12/07 v4346 L3 Namespace for primitives
 )
-(/opt1/texlive/2013/texmf-dist/tex/latex/etex-pkg/etex.sty
+(/opt1/texlive/2012/texmf-dist/tex/latex/etex-pkg/etex.sty
 Package: etex 1998/03/26 v2.0 eTeX basic definition package (PEB)
 \et@xins=\count91
 )
-Package: expl3 2014/01/07 v4646 L3 Experimental code bundle wrapper
+Package: expl3 2013/03/14 v4469 L3 Experimental code bundle wrapper
 
-(/opt1/texlive/2013/texmf-dist/tex/latex/l3kernel/l3basics.sty
-Package: l3basics 2014/01/04 v4642 L3 Basic definitions
+(/opt1/texlive/2012/texmf-dist/tex/latex/l3kernel/l3basics.sty
+Package: l3basics 2013/01/10 v4428 L3 Basic definitions
 )
-(/opt1/texlive/2013/texmf-dist/tex/latex/l3kernel/l3expan.sty
-Package: l3expan 2014/01/04 v4642 L3 Argument expansion
+(/opt1/texlive/2012/texmf-dist/tex/latex/l3kernel/l3expan.sty
+Package: l3expan 2013/02/03 v4458 L3 Argument expansion
 )
-(/opt1/texlive/2013/texmf-dist/tex/latex/l3kernel/l3tl.sty
-Package: l3tl 2013/12/27 v4625 L3 Token lists
+(/opt1/texlive/2012/texmf-dist/tex/latex/l3kernel/l3tl.sty
+Package: l3tl 2013/01/08 v4415 L3 Token lists
 )
-(/opt1/texlive/2013/texmf-dist/tex/latex/l3kernel/l3seq.sty
-Package: l3seq 2013/12/14 v4623 L3 Sequences and stacks
+(/opt1/texlive/2012/texmf-dist/tex/latex/l3kernel/l3seq.sty
+Package: l3seq 2013/01/12 v4434 L3 Sequences and stacks
 )
-(/opt1/texlive/2013/texmf-dist/tex/latex/l3kernel/l3int.sty
-Package: l3int 2013/08/02 v4583 L3 Integers
+(/opt1/texlive/2012/texmf-dist/tex/latex/l3kernel/l3int.sty
+Package: l3int 2013/01/13 v4444 L3 Integers
 \c_max_int=\count92
 \l_tmpa_int=\count93
 \l_tmpb_int=\count94
 \g_tmpa_int=\count95
 \g_tmpb_int=\count96
 )
-(/opt1/texlive/2013/texmf-dist/tex/latex/l3kernel/l3quark.sty
-Package: l3quark 2013/12/14 v4623 L3 Quarks
+(/opt1/texlive/2012/texmf-dist/tex/latex/l3kernel/l3quark.sty
+Package: l3quark 2012/11/04 v4268 L3 Quarks
 )
-(/opt1/texlive/2013/texmf-dist/tex/latex/l3kernel/l3prg.sty
-Package: l3prg 2014/01/04 v4642 L3 Control structures
+(/opt1/texlive/2012/texmf-dist/tex/latex/l3kernel/l3prg.sty
+Package: l3prg 2013/02/13 v4459 L3 Control structures
 \g__prg_map_int=\count97
 )
-(/opt1/texlive/2013/texmf-dist/tex/latex/l3kernel/l3clist.sty
-Package: l3clist 2013/07/28 v4581 L3 Comma separated lists
+(/opt1/texlive/2012/texmf-dist/tex/latex/l3kernel/l3clist.sty
+Package: l3clist 2013/01/08 v4414 L3 Comma separated lists
 )
-(/opt1/texlive/2013/texmf-dist/tex/latex/l3kernel/l3token.sty
-Package: l3token 2013/08/25 v4587 L3 Experimental token manipulation
+(/opt1/texlive/2012/texmf-dist/tex/latex/l3kernel/l3token.sty
+Package: l3token 2013/01/10 v4428 L3 Experimental token manipulation
 )
-(/opt1/texlive/2013/texmf-dist/tex/latex/l3kernel/l3prop.sty
-Package: l3prop 2013/12/14 v4623 L3 Property lists
+(/opt1/texlive/2012/texmf-dist/tex/latex/l3kernel/l3prop.sty
+Package: l3prop 2013/01/09 v4423 L3 Property lists
 )
-(/opt1/texlive/2013/texmf-dist/tex/latex/l3kernel/l3msg.sty
-Package: l3msg 2013/07/28 v4581 L3 Messages
+(/opt1/texlive/2012/texmf-dist/tex/latex/l3kernel/l3msg.sty
+Package: l3msg 2013/01/08 v4412 L3 Messages
 )
-(/opt1/texlive/2013/texmf-dist/tex/latex/l3kernel/l3file.sty
-Package: l3file 2013/10/13 v4596 L3 File and I/O operations
+(/opt1/texlive/2012/texmf-dist/tex/latex/l3kernel/l3file.sty
+Package: l3file 2013/01/14 v4446 L3 File and I/O operations
 \l_iow_line_count_int=\count98
 \l__iow_target_count_int=\count99
 \l__iow_current_line_int=\count100
 \l__iow_current_word_int=\count101
 \l__iow_current_indentation_int=\count102
 )
-(/opt1/texlive/2013/texmf-dist/tex/latex/l3kernel/l3skip.sty
-Package: l3skip 2013/07/28 v4581 L3 Dimensions and skips
+(/opt1/texlive/2012/texmf-dist/tex/latex/l3kernel/l3skip.sty
+Package: l3skip 2013/01/13 v4444 L3 Dimensions and skips
 \c_zero_dim=\dimen103
 \c_max_dim=\dimen104
 \l_tmpa_dim=\dimen105
@@ -133,13 +143,13 @@ Package: l3skip 2013/07/28 v4581 L3 Dimensions and skips
 \g_tmpa_muskip=\muskip14
 \g_tmpb_muskip=\muskip15
 )
-(/opt1/texlive/2013/texmf-dist/tex/latex/l3kernel/l3keys.sty
-Package: l3keys 2013/12/08 v4614 L3 Experimental key-value interfaces
+(/opt1/texlive/2012/texmf-dist/tex/latex/l3kernel/l3keys.sty
+Package: l3keys 2013/02/24 v4461 L3 Experimental key-value interfaces
 \g__keyval_level_int=\count103
 \l_keys_choice_int=\count104
 )
-(/opt1/texlive/2013/texmf-dist/tex/latex/l3kernel/l3fp.sty
-Package: l3fp 2014/01/04 v4642 L3 Floating points
+(/opt1/texlive/2012/texmf-dist/tex/latex/l3kernel/l3fp.sty
+Package: l3fp 2013/01/19 v4449 L3 Floating points
 \c__fp_leading_shift_int=\count105
 \c__fp_middle_shift_int=\count106
 \c__fp_trailing_shift_int=\count107
@@ -150,16 +160,16 @@ Package: l3fp 2014/01/04 v4642 L3 Floating points
 \c__fp_Bigg_middle_shift_int=\count112
 \c__fp_Bigg_trailing_shift_int=\count113
 )
-(/opt1/texlive/2013/texmf-dist/tex/latex/l3kernel/l3box.sty
-Package: l3box 2013/07/28 v4581 L3 Experimental boxes
+(/opt1/texlive/2012/texmf-dist/tex/latex/l3kernel/l3box.sty
+Package: l3box 2013/01/08 v4411 L3 Experimental boxes
 \c_empty_box=\box27
 \l_tmpa_box=\box28
 \l_tmpb_box=\box29
 \g_tmpa_box=\box30
 \g_tmpb_box=\box31
 )
-(/opt1/texlive/2013/texmf-dist/tex/latex/l3kernel/l3coffins.sty
-Package: l3coffins 2013/12/14 v4624 L3 Coffin code layer
+(/opt1/texlive/2012/texmf-dist/tex/latex/l3kernel/l3coffins.sty
+Package: l3coffins 2012/09/09 v4212 L3 Coffin code layer
 \l__coffin_internal_box=\box32
 \l__coffin_internal_dim=\dimen109
 \l__coffin_offset_x_dim=\dimen110
@@ -180,16 +190,16 @@ Package: l3coffins 2013/12/14 v4624 L3 Coffin code layer
 \l__coffin_display_x_dim=\dimen117
 \l__coffin_display_y_dim=\dimen118
 )
-(/opt1/texlive/2013/texmf-dist/tex/latex/l3kernel/l3color.sty
+(/opt1/texlive/2012/texmf-dist/tex/latex/l3kernel/l3color.sty
 Package: l3color 2012/08/29 v4156 L3 Experimental color support
 )
-(/opt1/texlive/2013/texmf-dist/tex/latex/l3kernel/l3luatex.sty
-Package: l3luatex 2013/07/28 v4581 L3 Experimental LuaTeX-specific functions
+(/opt1/texlive/2012/texmf-dist/tex/latex/l3kernel/l3luatex.sty
+Package: l3luatex 2012/08/03 v4049 L3 Experimental LuaTeX-specific functions
 \g__cctab_allocate_int=\count114
 \g__cctab_stack_int=\count115
 )
-(/opt1/texlive/2013/texmf-dist/tex/latex/l3kernel/l3candidates.sty
-Package: l3candidates 2014/01/06 v4643 L3 Experimental additions to l3kernel
+(/opt1/texlive/2012/texmf-dist/tex/latex/l3kernel/l3candidates.sty
+Package: l3candidates 2013/03/14 v4468 L3 Experimental additions to l3kernel
 \l__box_top_dim=\dimen119
 \l__box_bottom_dim=\dimen120
 \l__box_left_dim=\dimen121
@@ -207,12 +217,12 @@ Package: l3candidates 2014/01/06 v4643 L3 Experimental additions to l3kernel
 \l__coffin_scaled_total_height_dim=\dimen132
 \l__coffin_scaled_width_dim=\dimen133
 )
-(/opt1/texlive/2013/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+(/opt1/texlive/2012/texmf-dist/tex/generic/oberdiek/ifpdf.sty
 Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
 Package ifpdf Info: pdfTeX in PDF mode is not detected.
 ))
-(/opt1/texlive/2013/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
-Package: xparse 2013/12/31 v4634 L3 Experimental document command parser
+(/opt1/texlive/2012/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+Package: xparse 2013/03/12 v4467 L3 Experimental document command parser
 \l__xparse_current_arg_int=\count116
 \l__xparse_m_args_int=\count117
 \l__xparse_mandatory_args_int=\count118
@@ -227,11 +237,11 @@ Package: xparse 2013/12/31 v4634 L3 Experimental document command parser
 \l_fontspec_tmpc_dim=\dimen136
 Variant \tl_gset:cV already defined; not changing it on line 69
 
-(/opt1/texlive/2013/texmf-dist/tex/latex/fontspec/fontspec-patches.sty
-Package: fontspec-patches 2013/05/20 v2.3c Font selection for XeLaTeX and LuaLa
+(/opt1/texlive/2012/texmf-dist/tex/latex/fontspec/fontspec-patches.sty
+Package: fontspec-patches 2013/03/16 v2.3a Font selection for XeLaTeX and LuaLa
 TeX
 
-(/opt1/texlive/2013/texmf-dist/tex/latex/base/fixltx2e.sty
+(/opt1/texlive/2012/texmf-dist/tex/latex/base/fixltx2e.sty
 Package: fixltx2e 2006/09/13 v1.1m fixes to LaTeX
 LaTeX Info: Redefining \em on input line 420.
 )
@@ -249,48 +259,48 @@ LaTeX Info: Redefining \- on input line 33.
 . 
 . Defining document command \liningnums with arg. spec. 'm' on line 132.
 .................................................
-) (/opt1/texlive/2013/texmf-dist/tex/latex/fontspec/fontspec-xetex.sty
-Package: fontspec-xetex 2013/05/20 v2.3c Font selection for XeLaTeX and LuaLaTe
+) (/opt1/texlive/2012/texmf-dist/tex/latex/fontspec/fontspec-xetex.sty
+Package: fontspec-xetex 2013/03/16 v2.3a Font selection for XeLaTeX and LuaLaTe
 X
 
-(/opt1/texlive/2013/texmf-dist/tex/latex/base/fontenc.sty
+(/opt1/texlive/2012/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
 
-(/opt1/texlive/2013/texmf-dist/tex/latex/euenc/eu1enc.def
+(/opt1/texlive/2012/texmf-dist/tex/latex/euenc/eu1enc.def
 File: eu1enc.def 2010/05/27 v0.1h Experimental Unicode font encodings
 )
 LaTeX Font Info:    Try loading font information for EU1+lmr on input line 100.
 
 
-(/opt1/texlive/2013/texmf-dist/tex/latex/euenc/eu1lmr.fd
+(/opt1/texlive/2012/texmf-dist/tex/latex/euenc/eu1lmr.fd
 File: eu1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 ))
-(/opt1/texlive/2013/texmf-dist/tex/xelatex/xunicode/xunicode.sty
+(/opt1/texlive/2012/texmf-dist/tex/xelatex/xunicode/xunicode.sty
 File: xunicode.sty 2011/09/09 v0.981 provides access to latin accents and many 
 other characters in Unicode lower plane
 
-(/opt1/texlive/2013/texmf-dist/tex/latex/tipa/t3enc.def
+(/opt1/texlive/2012/texmf-dist/tex/latex/tipa/t3enc.def
 File: t3enc.def 2001/12/31 T3 encoding
 LaTeX Font Info:    Try loading font information for EU1+lmss on input line 357
 .
 
-(/opt1/texlive/2013/texmf-dist/tex/latex/euenc/eu1lmss.fd
+(/opt1/texlive/2012/texmf-dist/tex/latex/euenc/eu1lmss.fd
 File: eu1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 ))
 \tipaTiiicode=\count124
 \tipasavetokens=\toks15
 \tipachecktokens=\toks16
 
-(/opt1/texlive/2013/texmf-dist/tex/latex/graphics/graphicx.sty
+(/opt1/texlive/2012/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
 
-(/opt1/texlive/2013/texmf-dist/tex/latex/graphics/graphics.sty
+(/opt1/texlive/2012/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
 
-(/opt1/texlive/2013/texmf-dist/tex/latex/graphics/trig.sty
+(/opt1/texlive/2012/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
 )
-(/opt1/texlive/2013/texmf-dist/tex/latex/latexconfig/graphics.cfg
+(/opt1/texlive/2012/texmf-dist/tex/latex/latexconfig/graphics.cfg
 File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
 )
 Package graphics Info: Driver file: xetex.def on input line 91.
@@ -405,23 +415,23 @@ Package graphics Info: Driver file: xetex.def on input line 91.
 Variant \prop_gput:cnV already defined; not changing it on line 582
 Variant \prop_gput:cnx already defined; not changing it on line 583
 \l_fontspec_tmp_int=\count125
-LaTeX Info: Redefining \itshape on input line 2087.
-LaTeX Info: Redefining \slshape on input line 2092.
-LaTeX Info: Redefining \scshape on input line 2097.
-LaTeX Info: Redefining \upshape on input line 2102.
+LaTeX Info: Redefining \itshape on input line 2091.
+LaTeX Info: Redefining \slshape on input line 2096.
+LaTeX Info: Redefining \scshape on input line 2101.
+LaTeX Info: Redefining \upshape on input line 2106.
 
-(/opt1/texlive/2013/texmf-dist/tex/latex/fontspec/fontspec.cfg)))
-(/opt1/texlive/2013/texmf-dist/tex/latex/xltxtra/xltxtra.sty
+(/opt1/texlive/2012/texmf-dist/tex/latex/fontspec/fontspec.cfg)))
+(/opt1/texlive/2012/texmf-dist/tex/latex/xltxtra/xltxtra.sty
 Package: xltxtra 2010/09/20 v0.5e Improvements for the "XeLaTeX" format
 
-(/opt1/texlive/2013/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+(/opt1/texlive/2012/texmf-dist/tex/generic/oberdiek/ifluatex.sty
 Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
 Package ifluatex Info: LuaTeX not detected.
 )
-(/opt1/texlive/2013/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+(/opt1/texlive/2012/texmf-dist/tex/generic/ifxetex/ifxetex.sty
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
-(/opt1/texlive/2013/texmf-dist/tex/latex/realscripts/realscripts.sty
+(/opt1/texlive/2012/texmf-dist/tex/latex/realscripts/realscripts.sty
 Package: realscripts 2013/03/18 v0.3c Access OpenType subscripts and superscrip
 ts
 .................................................
@@ -468,7 +478,7 @@ ts
 . line 143.
 .................................................
 \subsupersep=\dimen139
-) (/opt1/texlive/2013/texmf-dist/tex/latex/metalogo/metalogo.sty
+) (/opt1/texlive/2012/texmf-dist/tex/latex/metalogo/metalogo.sty
 Package: metalogo 2010/05/29 v0.12 Extended TeX logo macros
 \xl@everylogo=\toks17
 \xl@@everylogo=\toks18
@@ -478,10 +488,10 @@ LaTeX Info: Redefining \LaTeXe on input line 219.
 )
 \xxt@tempbox=\box42
 )
-(/opt1/texlive/2013/texmf-dist/tex/latex/colortbl/colortbl.sty
+(/opt1/texlive/2012/texmf-dist/tex/latex/colortbl/colortbl.sty
 Package: colortbl 2012/02/13 v1.0a Color table columns (DPC)
 
-(/opt1/texlive/2013/texmf-dist/tex/latex/tools/array.sty
+(/opt1/texlive/2012/texmf-dist/tex/latex/tools/array.sty
 Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
 \col@sep=\dimen140
 \extrarowheight=\dimen141
@@ -492,85 +502,79 @@ Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
 \everycr=\toks20
 \minrowclearance=\skip51
 )
-(/opt1/texlive/2013/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
-(/opt1/texlive/2013/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
-(/opt1/texlive/2013/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
-(/opt1/texlive/2013/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
+(/opt1/texlive/2012/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
+(/opt1/texlive/2012/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
+(/opt1/texlive/2012/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
+(/opt1/texlive/2012/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
 \pgfutil@everybye=\toks21
-\pgfutil@tempdima=\dimen142
-\pgfutil@tempdimb=\dimen143
-
-(/opt1/texlive/2013/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-lists.t
-ex)) (/opt1/texlive/2013/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
+)
+(/opt1/texlive/2012/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
 \pgfutil@abb=\box43
-(/opt1/texlive/2013/texmf-dist/tex/latex/ms/everyshi.sty
+
+(/opt1/texlive/2012/texmf-dist/tex/latex/ms/everyshi.sty
 Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
 ))
-(/opt1/texlive/2013/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex
-Package: pgfrcs 2013/12/20 v3.0.0 (rcs-revision 1.28)
+(/opt1/texlive/2012/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex
+Package: pgfrcs 2010/10/25 v2.10 (rcs-revision 1.24)
 ))
-Package: pgf 2013/12/18 v3.0.0 (rcs-revision 1.14)
+Package: pgf 2008/01/15 v2.10 (rcs-revision 1.12)
 
-(/opt1/texlive/2013/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty
-(/opt1/texlive/2013/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty
-(/opt1/texlive/2013/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
-Package: pgfsys 2013/11/30 v3.0.0 (rcs-revision 1.47)
+(/opt1/texlive/2012/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty
+(/opt1/texlive/2012/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty
+(/opt1/texlive/2012/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
+Package: pgfsys 2010/06/30 v2.10 (rcs-revision 1.37)
 
-(/opt1/texlive/2013/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+(/opt1/texlive/2012/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
 \pgfkeys@pathtoks=\toks22
 \pgfkeys@temptoks=\toks23
 
-(/opt1/texlive/2013/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.code.t
+(/opt1/texlive/2012/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.code.t
 ex
 \pgfkeys@tmptoks=\toks24
 ))
-\pgf@x=\dimen144
-\pgf@y=\dimen145
-\pgf@xa=\dimen146
-\pgf@ya=\dimen147
-\pgf@xb=\dimen148
-\pgf@yb=\dimen149
-\pgf@xc=\dimen150
-\pgf@yc=\dimen151
+\pgf@x=\dimen142
+\pgf@y=\dimen143
+\pgf@xa=\dimen144
+\pgf@ya=\dimen145
+\pgf@xb=\dimen146
+\pgf@yb=\dimen147
+\pgf@xc=\dimen148
+\pgf@yc=\dimen149
 \w@pgf@writea=\write4
 \r@pgf@reada=\read2
 \c@pgf@counta=\count126
 \c@pgf@countb=\count127
 \c@pgf@countc=\count128
 \c@pgf@countd=\count129
-\t@pgf@toka=\toks25
-\t@pgf@tokb=\toks26
-\t@pgf@tokc=\toks27
- (/opt1/texlive/2013/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
+ (/opt1/texlive/2012/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
 File: pgf.cfg 2008/05/14  (rcs-revision 1.7)
 )
-Driver file for pgf: pgfsys-xetex.def
+Package pgfsys Info: Driver file for pgf: pgfsys-xetex.def on input line 900.
 
-(/opt1/texlive/2013/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-xetex.def
-File: pgfsys-xetex.def 2013/07/16  (rcs-revision 1.9)
+(/opt1/texlive/2012/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-xetex.def
+File: pgfsys-xetex.def 2010/02/16  (rcs-revision 1.3)
 
-(/opt1/texlive/2013/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-dvipdfmx.def
-File: pgfsys-dvipdfmx.def 2013/08/28  (rcs-revision 1.12)
-
-(/opt1/texlive/2013/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.de
+(/opt1/texlive/2012/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.de
 f
-File: pgfsys-common-pdf.def 2013/10/10  (rcs-revision 1.13)
+File: pgfsys-common-pdf.def 2008/05/19  (rcs-revision 1.10)
 )
-\pgfsys@objnum=\count130
+(/opt1/texlive/2012/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf-vi
+a-dvi.def
+File: pgfsys-common-pdf-via-dvi.def 2008/05/19  (rcs-revision 1.7)
 )))
-(/opt1/texlive/2013/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.
+(/opt1/texlive/2012/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.
 tex
-File: pgfsyssoftpath.code.tex 2013/09/09  (rcs-revision 1.9)
-\pgfsyssoftpath@smallbuffer@items=\count131
-\pgfsyssoftpath@bigbuffer@items=\count132
+File: pgfsyssoftpath.code.tex 2008/07/18  (rcs-revision 1.7)
+\pgfsyssoftpath@smallbuffer@items=\count130
+\pgfsyssoftpath@bigbuffer@items=\count131
 )
-(/opt1/texlive/2013/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.
+(/opt1/texlive/2012/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.
 tex
 File: pgfsysprotocol.code.tex 2006/10/16  (rcs-revision 1.4)
-)) (/opt1/texlive/2013/texmf-dist/tex/latex/xcolor/xcolor.sty
+)) (/opt1/texlive/2012/texmf-dist/tex/latex/xcolor/xcolor.sty
 Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
 
-(/opt1/texlive/2013/texmf-dist/tex/latex/latexconfig/color.cfg
+(/opt1/texlive/2012/texmf-dist/tex/latex/latexconfig/color.cfg
 File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
 Package xcolor Info: Driver file: xetex.def on input line 225.
@@ -584,238 +588,228 @@ Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
 )
-(/opt1/texlive/2013/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
-Package: pgfcore 2010/04/11 v3.0.0 (rcs-revision 1.7)
+(/opt1/texlive/2012/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
+Package: pgfcore 2010/04/11 v2.10 (rcs-revision 1.7)
 
-(/opt1/texlive/2013/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex
-(/opt1/texlive/2013/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex
-(/opt1/texlive/2013/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
-(/opt1/texlive/2013/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
-\pgfmath@dimen=\dimen152
-\pgfmath@count=\count133
+(/opt1/texlive/2012/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex
+(/opt1/texlive/2012/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex
+(/opt1/texlive/2012/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
+(/opt1/texlive/2012/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
+\pgfmath@dimen=\dimen150
+\pgfmath@count=\count132
 \pgfmath@box=\box44
-\pgfmath@toks=\toks28
-\pgfmath@stack@operand=\toks29
-\pgfmath@stack@operation=\toks30
+\pgfmath@toks=\toks25
+\pgfmath@stack@operand=\toks26
+\pgfmath@stack@operation=\toks27
 )
-(/opt1/texlive/2013/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex
-(/opt1/texlive/2013/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code
+(/opt1/texlive/2012/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex
+(/opt1/texlive/2012/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code
 .tex)
-(/opt1/texlive/2013/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonomet
+(/opt1/texlive/2012/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonomet
 ric.code.tex)
-(/opt1/texlive/2013/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.cod
+(/opt1/texlive/2012/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.cod
 e.tex)
-(/opt1/texlive/2013/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison
+(/opt1/texlive/2012/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison
 .code.tex)
-(/opt1/texlive/2013/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.
+(/opt1/texlive/2012/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.
 tex)
-(/opt1/texlive/2013/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code
+(/opt1/texlive/2012/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code
 .tex)
-(/opt1/texlive/2013/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.
-tex)
-(/opt1/texlive/2013/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerari
-thmetics.code.tex)))
-(/opt1/texlive/2013/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
-\c@pgfmathroundto@lastzeros=\count134
+(/opt1/texlive/2012/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.
+tex)))
+(/opt1/texlive/2012/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count133
 ))
-(/opt1/texlive/2013/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.te
+(/opt1/texlive/2012/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.te
 x
-File: pgfcorepoints.code.tex 2013/10/07  (rcs-revision 1.27)
-\pgf@picminx=\dimen153
-\pgf@picmaxx=\dimen154
-\pgf@picminy=\dimen155
-\pgf@picmaxy=\dimen156
-\pgf@pathminx=\dimen157
-\pgf@pathmaxx=\dimen158
-\pgf@pathminy=\dimen159
-\pgf@pathmaxy=\dimen160
-\pgf@xx=\dimen161
-\pgf@xy=\dimen162
-\pgf@yx=\dimen163
-\pgf@yy=\dimen164
-\pgf@zx=\dimen165
-\pgf@zy=\dimen166
+File: pgfcorepoints.code.tex 2010/04/09  (rcs-revision 1.20)
+\pgf@picminx=\dimen151
+\pgf@picmaxx=\dimen152
+\pgf@picminy=\dimen153
+\pgf@picmaxy=\dimen154
+\pgf@pathminx=\dimen155
+\pgf@pathmaxx=\dimen156
+\pgf@pathminy=\dimen157
+\pgf@pathmaxy=\dimen158
+\pgf@xx=\dimen159
+\pgf@xy=\dimen160
+\pgf@yx=\dimen161
+\pgf@yy=\dimen162
+\pgf@zx=\dimen163
+\pgf@zy=\dimen164
 )
-(/opt1/texlive/2013/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.
+(/opt1/texlive/2012/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.
 code.tex
-File: pgfcorepathconstruct.code.tex 2013/10/07  (rcs-revision 1.29)
-\pgf@path@lastx=\dimen167
-\pgf@path@lasty=\dimen168
+File: pgfcorepathconstruct.code.tex 2010/08/03  (rcs-revision 1.24)
+\pgf@path@lastx=\dimen165
+\pgf@path@lasty=\dimen166
 )
-(/opt1/texlive/2013/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code
+(/opt1/texlive/2012/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code
 .tex
-File: pgfcorepathusage.code.tex 2013/12/13  (rcs-revision 1.23)
-\pgf@shorten@end@additional=\dimen169
-\pgf@shorten@start@additional=\dimen170
+File: pgfcorepathusage.code.tex 2008/04/22  (rcs-revision 1.12)
+\pgf@shorten@end@additional=\dimen167
+\pgf@shorten@start@additional=\dimen168
 )
-(/opt1/texlive/2013/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.te
+(/opt1/texlive/2012/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.te
 x
-File: pgfcorescopes.code.tex 2013/10/09  (rcs-revision 1.44)
+File: pgfcorescopes.code.tex 2010/09/08  (rcs-revision 1.34)
 \pgfpic=\box45
 \pgf@hbox=\box46
 \pgf@layerbox@main=\box47
-\pgf@picture@serial@count=\count135
+\pgf@picture@serial@count=\count134
 )
-(/opt1/texlive/2013/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.c
+(/opt1/texlive/2012/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.c
 ode.tex
-File: pgfcoregraphicstate.code.tex 2013/09/19  (rcs-revision 1.11)
-\pgflinewidth=\dimen171
+File: pgfcoregraphicstate.code.tex 2008/04/22  (rcs-revision 1.9)
+\pgflinewidth=\dimen169
 )
-(/opt1/texlive/2013/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformation
+(/opt1/texlive/2012/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformation
 s.code.tex
-File: pgfcoretransformations.code.tex 2013/10/10  (rcs-revision 1.17)
-\pgf@pt@x=\dimen172
-\pgf@pt@y=\dimen173
-\pgf@pt@temp=\dimen174
+File: pgfcoretransformations.code.tex 2009/06/10  (rcs-revision 1.11)
+\pgf@pt@x=\dimen170
+\pgf@pt@y=\dimen171
+\pgf@pt@temp=\dimen172
 )
-(/opt1/texlive/2013/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
+(/opt1/texlive/2012/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
 File: pgfcorequick.code.tex 2008/10/09  (rcs-revision 1.3)
 )
-(/opt1/texlive/2013/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.t
+(/opt1/texlive/2012/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.t
 ex
 File: pgfcoreobjects.code.tex 2006/10/11  (rcs-revision 1.2)
 )
-(/opt1/texlive/2013/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathprocessing
+(/opt1/texlive/2012/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathprocessing
 .code.tex
-File: pgfcorepathprocessing.code.tex 2013/09/09  (rcs-revision 1.9)
+File: pgfcorepathprocessing.code.tex 2008/10/09  (rcs-revision 1.8)
 )
-(/opt1/texlive/2013/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.te
+(/opt1/texlive/2012/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.te
 x
-File: pgfcorearrows.code.tex 2013/11/07  (rcs-revision 1.40)
-\pgfarrowsep=\dimen175
+File: pgfcorearrows.code.tex 2008/04/23  (rcs-revision 1.11)
 )
-(/opt1/texlive/2013/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
-File: pgfcoreshade.code.tex 2013/07/15  (rcs-revision 1.15)
-\pgf@max=\dimen176
-\pgf@sys@shading@range@num=\count136
+(/opt1/texlive/2012/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
+File: pgfcoreshade.code.tex 2008/11/23  (rcs-revision 1.13)
+\pgf@max=\dimen173
+\pgf@sys@shading@range@num=\count135
 )
-(/opt1/texlive/2013/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
-File: pgfcoreimage.code.tex 2013/07/15  (rcs-revision 1.18)
+(/opt1/texlive/2012/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
+File: pgfcoreimage.code.tex 2010/03/25  (rcs-revision 1.16)
 
-(/opt1/texlive/2013/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.
+(/opt1/texlive/2012/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.
 tex
-File: pgfcoreexternal.code.tex 2013/07/15  (rcs-revision 1.20)
+File: pgfcoreexternal.code.tex 2010/09/01  (rcs-revision 1.17)
 \pgfexternal@startupbox=\box48
 ))
-(/opt1/texlive/2013/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.te
+(/opt1/texlive/2012/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.te
 x
-File: pgfcorelayers.code.tex 2013/07/18  (rcs-revision 1.7)
+File: pgfcorelayers.code.tex 2010/08/27  (rcs-revision 1.2)
 )
-(/opt1/texlive/2013/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransparency.c
+(/opt1/texlive/2012/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransparency.c
 ode.tex
-File: pgfcoretransparency.code.tex 2013/09/30  (rcs-revision 1.5)
+File: pgfcoretransparency.code.tex 2008/01/17  (rcs-revision 1.2)
 )
-(/opt1/texlive/2013/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.code.
+(/opt1/texlive/2012/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.code.
 tex
-File: pgfcorepatterns.code.tex 2013/11/07  (rcs-revision 1.5)
+File: pgfcorepatterns.code.tex 2009/07/02  (rcs-revision 1.3)
 )))
-(/opt1/texlive/2013/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
-File: pgfmoduleshapes.code.tex 2013/10/31  (rcs-revision 1.34)
+(/opt1/texlive/2012/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
+File: pgfmoduleshapes.code.tex 2010/09/09  (rcs-revision 1.13)
 \pgfnodeparttextbox=\box49
-) (/opt1/texlive/2013/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
-File: pgfmoduleplot.code.tex 2013/07/31  (rcs-revision 1.12)
+) (/opt1/texlive/2012/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
+File: pgfmoduleplot.code.tex 2010/10/22  (rcs-revision 1.8)
 )
-(/opt1/texlive/2013/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65
+(/opt1/texlive/2012/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65
 .sty
-Package: pgfcomp-version-0-65 2007/07/03 v3.0.0 (rcs-revision 1.7)
-\pgf@nodesepstart=\dimen177
-\pgf@nodesepend=\dimen178
+Package: pgfcomp-version-0-65 2007/07/03 v2.10 (rcs-revision 1.7)
+\pgf@nodesepstart=\dimen174
+\pgf@nodesepend=\dimen175
 )
-(/opt1/texlive/2013/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18
+(/opt1/texlive/2012/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18
 .sty
-Package: pgfcomp-version-1-18 2007/07/23 v3.0.0 (rcs-revision 1.1)
-)) (/opt1/texlive/2013/texmf-dist/tex/latex/pgf/utilities/pgffor.sty
-(/opt1/texlive/2013/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
-(/opt1/texlive/2013/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex))
-(/opt1/texlive/2013/texmf-dist/tex/latex/pgf/math/pgfmath.sty
-(/opt1/texlive/2013/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex))
-(/opt1/texlive/2013/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
-Package: pgffor 2013/12/13 v3.0.0 (rcs-revision 1.25)
-
-(/opt1/texlive/2013/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
-\pgffor@iter=\dimen179
-\pgffor@skip=\dimen180
-\pgffor@stack=\toks31
-\pgffor@toks=\toks32
+Package: pgfcomp-version-1-18 2007/07/23 v2.10 (rcs-revision 1.1)
+)) (/opt1/texlive/2012/texmf-dist/tex/latex/pgf/utilities/pgffor.sty
+(/opt1/texlive/2012/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
+(/opt1/texlive/2012/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex))
+(/opt1/texlive/2012/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
+Package: pgffor 2010/03/23 v2.10 (rcs-revision 1.18)
+\pgffor@iter=\dimen176
+\pgffor@skip=\dimen177
+\pgffor@stack=\toks28
+\pgffor@toks=\toks29
 ))
-(/opt1/texlive/2013/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
-Package: tikz 2013/12/13 v3.0.0 (rcs-revision 1.142)
+(/opt1/texlive/2012/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
+Package: tikz 2010/10/13 v2.10 (rcs-revision 1.76)
 
-(/opt1/texlive/2013/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers
+(/opt1/texlive/2012/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers
 .code.tex
-File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.0 (rcs-revision 1.20)
-\pgf@plot@mark@count=\count137
-\pgfplotmarksize=\dimen181
+File: pgflibraryplothandlers.code.tex 2010/05/31 v2.10 (rcs-revision 1.15)
+\pgf@plot@mark@count=\count136
+\pgfplotmarksize=\dimen178
 )
-\tikz@lastx=\dimen182
-\tikz@lasty=\dimen183
-\tikz@lastxsaved=\dimen184
-\tikz@lastysaved=\dimen185
-\tikzleveldistance=\dimen186
-\tikzsiblingdistance=\dimen187
+\tikz@lastx=\dimen179
+\tikz@lasty=\dimen180
+\tikz@lastxsaved=\dimen181
+\tikz@lastysaved=\dimen182
+\tikzleveldistance=\dimen183
+\tikzsiblingdistance=\dimen184
 \tikz@figbox=\box50
-\tikz@figbox@bg=\box51
-\tikz@tempbox=\box52
-\tikz@tempbox@bg=\box53
-\tikztreelevel=\count138
-\tikznumberofchildren=\count139
-\tikznumberofcurrentchild=\count140
-\tikz@fig@count=\count141
+\tikz@tempbox=\box51
+\tikztreelevel=\count137
+\tikznumberofchildren=\count138
+\tikznumberofcurrentchild=\count139
+\tikz@fig@count=\count140
 
-(/opt1/texlive/2013/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
-File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
-\pgfmatrixcurrentrow=\count142
-\pgfmatrixcurrentcolumn=\count143
-\pgf@matrix@numberofcolumns=\count144
+(/opt1/texlive/2012/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
+File: pgfmodulematrix.code.tex 2010/08/24  (rcs-revision 1.4)
+\pgfmatrixcurrentrow=\count141
+\pgfmatrixcurrentcolumn=\count142
+\pgf@matrix@numberofcolumns=\count143
 )
-\tikz@expandcount=\count145
+\tikz@expandcount=\count144
 
-(/opt1/texlive/2013/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+(/opt1/texlive/2012/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
 zlibrarytopaths.code.tex
-File: tikzlibrarytopaths.code.tex 2008/06/17 v3.0.0 (rcs-revision 1.2)
+File: tikzlibrarytopaths.code.tex 2008/06/17 v2.10 (rcs-revision 1.2)
 )))
-(/opt1/texlive/2013/texmf-dist/tex/latex/sectsty/sectsty.sty
+(/opt1/texlive/2012/texmf-dist/tex/latex/sectsty/sectsty.sty
 Package: sectsty 2002/02/25 v2.0.2 Commands to change all sectional heading sty
 les
 )
-(/opt1/texlive/2013/texmf-dist/tex/latex/polyglossia/polyglossia.sty
-Package: polyglossia 2013/06/27 v1.33.4 Babel replacement for XeLaTeX and LuaTe
-X
+(/opt1/texlive/2012/texmf-dist/tex/xelatex/polyglossia/polyglossia.sty
+Package: polyglossia 2012/04/29 v1.2.1 Babel replacement for XeLaTeX
 
-(/opt1/texlive/2013/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+(/opt1/texlive/2012/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2011/01/03 v2.1 e-TeX tools for LaTeX
-\etb@tempcnta=\count146
+\etb@tempcnta=\count145
 )
-(/opt1/texlive/2013/texmf-dist/tex/latex/makecmds/makecmds.sty
+(/opt1/texlive/2012/texmf-dist/tex/latex/makecmds/makecmds.sty
 Package: makecmds 2009/09/03 v1.0a extra command making commands
 )
-(/opt1/texlive/2013/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+(/opt1/texlive/2012/texmf-dist/tex/latex/xkeyval/xkeyval.sty
 Package: xkeyval 2012/10/14 v2.6b package option processing (HA)
 
-(/opt1/texlive/2013/texmf-dist/tex/generic/xkeyval/xkeyval.tex
-\XKV@toks=\toks33
-\XKV@tempa@toks=\toks34
-\XKV@depth=\count147
+(/opt1/texlive/2012/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+\XKV@toks=\toks30
+\XKV@tempa@toks=\toks31
+\XKV@depth=\count146
 File: xkeyval.tex 2012/10/14 v2.6b key=value parser (HA)
 ))
 \xpg@normalclass=\XeTeXintercharclass4
 )
-(/opt1/texlive/2013/texmf-dist/tex/latex/polyglossia/gloss-russian.ldf
+(/opt1/texlive/2012/texmf-dist/tex/xelatex/polyglossia/gloss-russian.ldf
 File: gloss-russian.ldf polyglossia: module for russian
 
-(/opt1/texlive/2013/texmf-dist/tex/latex/polyglossia/babelsh.def
-File: babelsh.def 2013/04/30 Babel common definitions for shorthands
- Taken verbatim from babel.def (2013/04/15 v3.9e)
+(/opt1/texlive/2012/texmf-dist/tex/xelatex/polyglossia/babelsh.def
+File: babelsh.def 2009/05/07 Babel common definitions for shorthands
+ Taken verbatim from babel.def (2008/07/06 v3.8l)
 )
-Package polyglossia Info: Making " an active character on input line 41.
+Package babel Info: Making " an active character on input line 41.
 )
 Package polyglossia Info: Default language is russian.
 
-(/opt1/texlive/2013/texmf-dist/tex/latex/polyglossia/gloss-english.ldf
+(/opt1/texlive/2012/texmf-dist/tex/xelatex/polyglossia/gloss-english.ldf
 File: gloss-english.ldf polyglossia: module for english
 )
 \g__file_internal_ior=\read3
-\g_fontspec_family_DejaVu Sans Mono_int=\count148
+\g_fontspec_family_DejaVu Sans Mono_int=\count147
 .................................................
 . fontspec info: "defining-font"
 . 
@@ -836,7 +830,7 @@ File: gloss-english.ldf polyglossia: module for english
 . * 'bold italic' with NFSS spec.:
 . <->"DejaVu Sans Mono/BI/ICU:script=latn;language=DFLT;mapping=tex-text;"
 .................................................
-\g_fontspec_family_DejaVu Sans_int=\count149
+\g_fontspec_family_DejaVu Sans_int=\count148
 .................................................
 . fontspec info: "defining-font"
 . 
@@ -865,7 +859,7 @@ File: gloss-english.ldf polyglossia: module for english
 . 
 . This font family consists of the following shapes:
 .................................................
-\g_fontspec_family_DejaVu Serif_int=\count150
+\g_fontspec_family_DejaVu Serif_int=\count149
 .................................................
 . fontspec info: "defining-font"
 . 
@@ -928,7 +922,7 @@ LaTeX Font Info:    ... okay on input line 6.
 LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 6.
 LaTeX Font Info:    Try loading font information for T3+cmr on input line 6.
 
-(/opt1/texlive/2013/texmf-dist/tex/latex/tipa/t3cmr.fd
+(/opt1/texlive/2012/texmf-dist/tex/latex/tipa/t3cmr.fd
 File: t3cmr.fd 2001/12/31 TIPA font definitions
 )
 LaTeX Font Info:    ... okay on input line 6.
@@ -1052,6 +1046,12 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 6.
 )
 (./src/install.tex
+Overfull \hbox (0.43242pt too wide) in paragraph at lines 18--1
+\EU1/DejaVuSerif(1)/m/n/10 конструкторскую документац�
+�ю на уже разработанные печатные платы и сд�
+�ть
+ []
+
 .................................................
 . fontspec info: "defining-font"
 . 
@@ -1068,6 +1068,14 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 . 
 . This font family consists of the following shapes:
 .................................................
+
+Overfull \hbox (16.89136pt too wide) in paragraph at lines 24--26
+[]\EU1/DejaVuSerif(1)/m/n/10 В этой директории находитс�
+� директория []\EU1/DejaVuSerif(1)/m/it/10 tex[]\EU1/DejaVuSerif(1)/m
+/n/10 , дерево исходных файлов \EU1/DejaVuSerif(1)/m/it/10 
+pcbdoc\EU1/DejaVuSerif(1)/m/n/10 . 
+ []
+
 .................................................
 . fontspec info: "defining-font"
 . 
@@ -1084,7 +1092,7 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 . 
 . This font family consists of the following shapes:
 .................................................
- [1
+[1
 
 ]) (./src/tutorial.tex
 .................................................
@@ -1099,6 +1107,22 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 . fontspec info: "defining-font"
 . 
 . Font family 'DejaVuSans(1)' created for font 'DejaVu Sans' with options
+. [Mapping=tex-text,,Script=Cyrillic].
+. 
+. This font family consists of the following shapes:
+.................................................
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'DejaVuSerif(1)' created for font 'DejaVu Serif' with options
+. [Mapping=tex-text,,Script=Cyrillic].
+. 
+. This font family consists of the following shapes:
+.................................................
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'DejaVuSerif(1)' created for font 'DejaVu Serif' with options
 . [Mapping=tex-text,,Script=Cyrillic].
 . 
 . This font family consists of the following shapes:
@@ -1155,8 +1179,38 @@ File: output/vasia.pdf Graphic file (type QTm)
 . 
 . This font family consists of the following shapes:
 .................................................
+ [4])
+(./src/options.tex
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'DejaVuSerif(1)' created for font 'DejaVu Serif' with options
+. [Mapping=tex-text,,Script=Cyrillic].
+. 
+. This font family consists of the following shapes:
+.................................................
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'DejaVuSans(1)' created for font 'DejaVu Sans' with options
+. [Mapping=tex-text,,Script=Cyrillic].
+. 
+. This font family consists of the following shapes:
+.................................................
 
-[4]) (./src/options.tex
+Overfull \hbox (1.90215pt too wide) in paragraph at lines 4--10
+\EU1/DejaVuSerif(1)/m/n/10 Опцией класса \EU1/DejaVuSerif(1)/m/it/1
+0 pcbdoc \EU1/DejaVuSerif(1)/m/n/10 является идентификатор
+, влияющий на параметры вёрст-
+ []
+
+
+Overfull \hbox (19.6707pt too wide) in paragraph at lines 4--10
+\EU1/DejaVuSerif(1)/m/n/10 чение. Ключ представляет соб
+ой конструкцию типа []\EU1/DejaVuSerif(1)/m/it/10 <name>=<valu
+e>[]\EU1/DejaVuSerif(1)/m/n/10 , где []\EU1/DejaVuSerif(1)/m/it/10 <name>[]
+ []
+
 .................................................
 . fontspec info: "defining-font"
 . 
@@ -1168,44 +1222,12 @@ File: output/vasia.pdf Graphic file (type QTm)
 .................................................
 . fontspec info: "defining-font"
 . 
-. Font family 'DejaVuSans(1)' created for font 'DejaVu Sans' with options
-. [Mapping=tex-text,,Script=Cyrillic].
-. 
-. This font family consists of the following shapes:
-.................................................
-.................................................
-. fontspec info: "defining-font"
-. 
 . Font family 'DejaVuSerif(1)' created for font 'DejaVu Serif' with options
 . [Mapping=tex-text,,Script=Cyrillic].
 . 
 . This font family consists of the following shapes:
 .................................................
-.................................................
-. fontspec info: "defining-font"
-. 
-. Font family 'DejaVuSerif(1)' created for font 'DejaVu Serif' with options
-. [Mapping=tex-text,,Script=Cyrillic].
-. 
-. This font family consists of the following shapes:
-.................................................
- [5]
-.................................................
-. fontspec info: "defining-font"
-. 
-. Font family 'DejaVuSerif(1)' created for font 'DejaVu Serif' with options
-. [Mapping=tex-text,,Script=Cyrillic].
-. 
-. This font family consists of the following shapes:
-.................................................
-.................................................
-. fontspec info: "defining-font"
-. 
-. Font family 'DejaVuSans(1)' created for font 'DejaVu Sans' with options
-. [Mapping=tex-text,,Script=Cyrillic].
-. 
-. This font family consists of the following shapes:
-.................................................
+[5]
 .................................................
 . fontspec info: "defining-font"
 . 
@@ -1265,12 +1287,11 @@ File: output/vasia.pdf Graphic file (type QTm)
 .................................................
 . fontspec info: "defining-font"
 . 
-. Font family 'DejaVuSerif(1)' created for font 'DejaVu Serif' with options
+. Font family 'DejaVuSans(1)' created for font 'DejaVu Sans' with options
 . [Mapping=tex-text,,Script=Cyrillic].
 . 
 . This font family consists of the following shapes:
 .................................................
- [6]
 .................................................
 . fontspec info: "defining-font"
 . 
@@ -1283,6 +1304,103 @@ File: output/vasia.pdf Graphic file (type QTm)
 . fontspec info: "defining-font"
 . 
 . Font family 'DejaVuSans(1)' created for font 'DejaVu Sans' with options
+. [Mapping=tex-text,,Script=Cyrillic].
+. 
+. This font family consists of the following shapes:
+.................................................
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'DejaVuSerif(1)' created for font 'DejaVu Serif' with options
+. [Mapping=tex-text,,Script=Cyrillic].
+. 
+. This font family consists of the following shapes:
+.................................................
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'DejaVuSerif(1)' created for font 'DejaVu Serif' with options
+. [Mapping=tex-text,,Script=Cyrillic].
+. 
+. This font family consists of the following shapes:
+.................................................
+ [6]) (./src/font.tex
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'DejaVuSerif(1)' created for font 'DejaVu Serif' with options
+. [Mapping=tex-text,,Script=Cyrillic].
+. 
+. This font family consists of the following shapes:
+.................................................
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'DejaVuSans(1)' created for font 'DejaVu Sans' with options
+. [Mapping=tex-text,,Script=Cyrillic].
+. 
+. This font family consists of the following shapes:
+.................................................
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'DejaVuSerif(1)' created for font 'DejaVu Serif' with options
+. [Mapping=tex-text,,Script=Cyrillic].
+. 
+. This font family consists of the following shapes:
+.................................................
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'DejaVuSerif(1)' created for font 'DejaVu Serif' with options
+. [Mapping=tex-text,,Script=Cyrillic].
+. 
+. This font family consists of the following shapes:
+.................................................
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'DejaVuSerif(1)' created for font 'DejaVu Serif' with options
+. [Mapping=tex-text,,Script=Cyrillic].
+. 
+. This font family consists of the following shapes:
+.................................................
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'DejaVuSerif(1)' created for font 'DejaVu Serif' with options
+. [Mapping=tex-text,,Script=Cyrillic].
+. 
+. This font family consists of the following shapes:
+.................................................
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'DejaVuSerif(1)' created for font 'DejaVu Serif' with options
+. [Mapping=tex-text,,Script=Cyrillic].
+. 
+. This font family consists of the following shapes:
+.................................................
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'DejaVuSerif(1)' created for font 'DejaVu Serif' with options
+. [Mapping=tex-text,,Script=Cyrillic].
+. 
+. This font family consists of the following shapes:
+.................................................
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'DejaVuSerif(1)' created for font 'DejaVu Serif' with options
+. [Mapping=tex-text,,Script=Cyrillic].
+. 
+. This font family consists of the following shapes:
+.................................................
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'DejaVuSerif(1)' created for font 'DejaVu Serif' with options
 . [Mapping=tex-text,,Script=Cyrillic].
 . 
 . This font family consists of the following shapes:
@@ -1304,7 +1422,23 @@ File: output/vasia.pdf Graphic file (type QTm)
 . 
 . This font family consists of the following shapes:
 .................................................
-)
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'DejaVuSans(1)' created for font 'DejaVu Sans' with options
+. [Mapping=tex-text,,Script=Cyrillic].
+. 
+. This font family consists of the following shapes:
+.................................................
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'DejaVuSans(1)' created for font 'DejaVu Sans' with options
+. [Mapping=tex-text,,Script=Cyrillic].
+. 
+. This font family consists of the following shapes:
+.................................................
+ [7])
 .................................................
 . fontspec info: "defining-font"
 . 
@@ -1321,7 +1455,7 @@ File: output/vasia.pdf Graphic file (type QTm)
 . 
 . This font family consists of the following shapes:
 .................................................
- [7]
+ [8]
 .................................................
 . fontspec info: "defining-font"
 . 
@@ -1408,7 +1542,7 @@ File: output/vasia.pdf Graphic file (type QTm)
 . 
 . This font family consists of the following shapes:
 .................................................
- [8] (./output/pcbdocmanual.aux
+ [9] (./output/pcbdocmanual.aux
 .................................................
 . fontspec info: "defining-font"
 . 
@@ -1419,12 +1553,12 @@ File: output/vasia.pdf Graphic file (type QTm)
 .................................................
 ) ) 
 Here is how much of TeX's memory you used:
- 24417 strings out of 493918
- 509570 string characters out of 6150549
- 536493 words of memory out of 5000000
- 27302 multiletter control sequences out of 15000+600000
- 4024 words of font info for 62 fonts, out of 8000000 for 9000
+ 23825 strings out of 493994
+ 504007 string characters out of 3152225
+ 494027 words of memory out of 3000000
+ 26657 multiletter control sequences out of 15000+200000
+ 4056 words of font info for 66 fonts, out of 3000000 for 9000
  1144 hyphenation exceptions out of 8191
- 62i,7n,56p,10420b,504s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 63i,7n,57p,838b,602s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on ./output/pcbdocmanual.pdf (8 pages).
+Output written on ./output/pcbdocmanual.pdf (9 pages).

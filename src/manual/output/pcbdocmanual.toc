@@ -2,10 +2,11 @@
 \contentsline {section}{\numberline {1}Введение}{1}
 \contentsline {section}{\numberline {2}Установка}{1}
 \contentsline {section}{\numberline {3}Тренинг}{2}
-\contentsline {section}{\numberline {4}Опции и ключи класса pcbdoc}{6}
+\contentsline {section}{\numberline {4}Опции и ключи класса pcbdoc}{5}
 \contentsline {subsection}{\numberline {4.1}Тип документа}{6}
 \contentsline {subsection}{\numberline {4.2}Размер страницы}{6}
 \contentsline {subsection}{\numberline {4.3}Толщины линий}{6}
-\contentsline {subsection}{\numberline {4.4}Лист изменений}{7}
+\contentsline {subsection}{\numberline {4.4}Лист изменений}{6}
 \contentsline {subsection}{\numberline {4.5}Прочие опции и ключи}{7}
-\contentsline {section}{\numberline {5}Перечень элементов}{7}
+\contentsline {section}{\numberline {5}Шрифты}{7}
+\contentsline {section}{\numberline {6}Перечень элементов}{8}
