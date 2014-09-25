@@ -1,45 +1,94 @@
 
 \section{Шрифты}
 
-В \emph{pcbdoc} используется наклонный шрифт \emph{GOST type A}(по умолчанию) и
-прямой \emph{GOST Type AU}.
+По умолчанию в \emph{pcbdoc} используется наклонный шрифт \coloremph{GOST type A},
+размер которого зависит от контекста. В качестве прямого имеется возможность
+использовать шрифт \coloremph{GOST Type AU}. Локально сменить наклонный шрифт на прямой
+и(или) изменить размер шрифта можно с помощью команд, приведённых в
+таблице~\ref{tabular:font} и таблице~\ref{tabular:fontit}.
 
-Предусмотрены команды изменения шрифта. Наклонный шрифт, от меньшего к
-большему:
+\begin{longtable}{%
+>{\cellcolor{codecolor}\ttfamily\bfseries}lc%
+>{\cellcolor{codecolor}\ttfamily}lc%
+>{\cellcolor{resultcolor}\ttfamily}l%
+}%
+\label{tabular:font}\\
+\caption{Команды изменения размера прямого шрифта}\\
+\hline\hline
+\multicolumn{1}{c}{\sffamily\bfseries{}Команда} & &
+\multicolumn{1}{c}{\sffamily\bfseries{}Пример использования} & &
+\multicolumn{1}{c}{\sffamily\bfseries{}Результат}\\
+%\hline%
+\endfirsthead
+\textbackslash{}small & &
+\textbackslash{}AuthorSet\{\textbackslash{}small\{\}Пупкин\} & &
+\smallresult{}Пупкин\\
+%\hline
+\textbackslash{}normalfont & &
+\textbackslash{}AuthorSet\{\textbackslash{}normalfont\{\}Пупкин\} & &
+\normalfontresult{}Пупкин\\
+%\hline
+\textbackslash{}llarge & &
+\textbackslash{}AuthorSet\{\textbackslash{}llarge\{\}Пупкин\} & &
+\llargeresult{}Пупкин\\
+%\hline
+\textbackslash{}large & &
+\textbackslash{}AuthorSet\{\textbackslash{}large\{\}Пупкин\} & &
+\largeresult{}Пупкин\\
+%\hline
+\textbackslash{}LLarge & &
+\textbackslash{}AuthorSet\{\textbackslash{}LLarge\{\}Пупкин\} & &
+\LLargeresult{}Пупкин\\
+%\hline
+\textbackslash{}Large & &
+\textbackslash{}AuthorSet\{\textbackslash{}Large\{\}Пупкин\} & &
+\Large{}Пупкин\\
+%\hline\hline
+\end{longtable}
 
-\pcbdocmanualcode{%
-\textbackslash{}smallit\\
-\textbackslash{}normalfontit\\
-\textbackslash{}llargeit\\
-\textbackslash{}largeit\\
-\textbackslash{}LLargeit\\
-\textbackslash{}Largeit
-}
+\begin{longtable}{%
+>{\cellcolor{codecolor}\ttfamily\bfseries}lc%
+>{\cellcolor{codecolor}\ttfamily}lc%
+>{\cellcolor{resultcolor}\ttfamily}l%
+}%
+\label{tabular:fontit}\\
+\caption{Команды изменения размера наклонного шрифта}\\
+\hline\hline
+\multicolumn{1}{c}{\sffamily\bfseries{}Команда} & &
+\multicolumn{1}{c}{\sffamily\bfseries{}Пример использования} & &
+\multicolumn{1}{c}{\sffamily\bfseries{}Результат}\\
+%\hline%
+\endfirsthead
+\textbackslash{}smallit & &
+\textbackslash{}AuthorSet\{\textbackslash{}smallit\{\}Пупкин\} & &
+\smallitresult{}Пупкин\\
+%\hline
+\textbackslash{}normalfontit & &
+\textbackslash{}AuthorSet\{\textbackslash{}normalfontit\{\}Пупкин\} & &
+\normalfontitresult{}Пупкин\\
+%\hline
+\textbackslash{}llargeit & &
+\textbackslash{}AuthorSet\{\textbackslash{}llargeit\{\}Пупкин\} & &
+\llargeitresult{}Пупкин\\
+%\hline
+\textbackslash{}largeit & &
+\textbackslash{}AuthorSet\{\textbackslash{}largeit\{\}Пупкин\} & &
+\largeitresult{}Пупкин\\
+%\hline
+\textbackslash{}LLargeit & &
+\textbackslash{}AuthorSet\{\textbackslash{}LLargeit\{\}Пупкин\} & &
+\LLargeitresult{}Пупкин\\
+%\hline
+\textbackslash{}Largeit & &
+\textbackslash{}AuthorSet\{\textbackslash{}Largeit\{\}Пупкин\} & &
+\Largeitresult{}Пупкин\\
+%\hline\hline
+\end{longtable}
 
-Прямой шрифт, от меньшего к большему:
-
-\pcbdocmanualcode{%
-\textbackslash{}small\\
-\textbackslash{}normalfont\\
-\textbackslash{}llarge\\
-\textbackslash{}large\\
-\textbackslash{}LLarge\\
-\textbackslash{}Large
-}
-
-Пример применения:
-
-\pcbdocmanualcode{%
-\textbackslash{}AuthorSet\{\textbackslash{}smallit\{\}Пупкин\}
-}
-
-Кроме того, Вы можете указать тип шрифта и его размер "в лоб" средствами
-\XeLaTeX{}. Например:
+Кроме того, для указания типа шрифта и его размера можно воспользоваться встроенными
+средствами \XeLaTeX{}. Например:
 
 \pcbdocmanualcode{%
 \textbackslash{}AuthorSet\{\textbackslash{}fontspec[Scale=0.68]\{GOST type A\}%
 \textbackslash{}itshape\{\}Пупкин\}
 }
-
-И, само собой разумеется, если Вы планируете часто использовать конкретный размер
-шрифта, имеет смысл создать для этого новую команду.

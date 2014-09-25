@@ -1,27 +1,21 @@
 
 \RequirePackage{color}
 \RequirePackage{fancyvrb}
-%\RequirePackage{alltt}
-%\RequirePackage{listings}
-%\lstloadlanguages{[LaTeX]TeX,bash,MetaPost,Perl,C++,make}
-%\lstset{%
-%  language=[LaTeX]TeX, % выбираем язык по умолчанию
-%  basicstyle=\ttfamily,
-%  backgroundcolor=\color{codecolor},
-%  extendedchars=true, % включаем не латиницу
-%  escapechar=|,% |«выпадаем» в L TEX|
-%  frame=tb,% рамка сверху и снизу
-%  commentstyle=\itshape,% шрифт для комментариев
-%  %stringstyle=\bfseries % шрифт для строк
-%  stringstyle=\fontspec{DejaVu Sans Mono} % шрифт для строк
-%}
+\RequirePackage{longtable}
+\RequirePackage{array}
+\setlength{\arrayrulewidth}{0.3mm}
+\setlength{\extrarowheight}{1mm}
+\setlength\doublerulesep{-0.1pt}
 
-
+\RequirePackage[font={sf,bf},labelsep=period]{caption}
+\RequirePackage[sf,bf,medium]{titlesec}
 
 % XeLaTeX:
 \RequirePackage{fontspec}
 \RequirePackage{xunicode}
 \RequirePackage{xltxtra}
+\RequirePackage{multirow}
+\RequirePackage{topcapt}
 
 %
 \RequirePackage{color}
@@ -29,8 +23,8 @@
 \RequirePackage{tikz}
 %\RequirePackage[titles]{tocloft}
 \defaultfontfeatures{Mapping=tex-text}
-\RequirePackage{sectsty}
-\allsectionsfont{\color{darkslategray}\sffamily}
+%\RequirePackage{sectsty}
+%\allsectionsfont{\color{darkslategray}\sffamily}
 
 
 % Polyglossia:
@@ -82,14 +76,28 @@
 \definecolor{terminalcolor}{rgb}{0.7, 0.75, 0.71}
 %\definecolor{codecolor}{rgb}{0.74, 0.83, 0.9}
 %\definecolor{codecolor}{rgb}{0.8, 0.9, 1}
-\definecolor{codecolor}{rgb}{0.7, 0.75, 0.71}
+%\definecolor{codecolor}{rgb}{0.7, 0.75, 0.71}
+\definecolor{codecolor}{rgb}{0.84, 0.86, 0.86}
 \definecolor{commandcolor}{rgb}{0.0, 0.2, 0.23}
 
 %\newcommand{\PCBdocCode}[1]{\textcolor{commandcolor}{\texttt{\bfseries{}#1}}}
 \newcommand{\PCBdocCode}[1]{\texttt{#1}}
-\newcommand{\coloremph}[1]{\emph{\color{commandcolor}#1}}
+\newcommand{\coloremph}[1]{\textsl{\color{commandcolor}\bfseries#1}}
 
 \newcommand{\pcbdocmanualcode}[1]{%
   \begin{tikzpicture}\node[align=left,fill=codecolor,font=\ttfamily] at (0,0){#1};%
   \end{tikzpicture}%
   }%
+
+\newcommand{\normalfontresult}{\fontspec[Scale=1.0]{GOST Type AU}}%
+\newcommand{\normalfontitresult}{\fontspec[Scale=1.0]{GOST type A}\itshape}%
+\newcommand{\smallresult}{\fontspec[Scale=0.75]{GOST Type AU}}%
+\newcommand{\smallitresult}{\fontspec[Scale=0.75]{GOST type A}\itshape}%
+\newcommand{\largeresult}{\fontspec[Scale=1.3]{GOST Type AU}}%
+\newcommand{\llargeresult}{\fontspec[Scale=1.2]{GOST Type AU}}%
+\newcommand{\Largeresult}{\fontspec[Scale=1.75]{GOST Type AU}}%
+\newcommand{\LLargeresult}{\fontspec[Scale=1.65]{GOST Type AU}}%
+\newcommand{\largeitresult}{\fontspec[Scale=1.3]{GOST type A}\itshape}%
+\newcommand{\llargeitresult}{\fontspec[Scale=1.2]{GOST type A}\itshape}%
+\newcommand{\Largeitresult}{\fontspec[Scale=1.75]{GOST type A}\itshape}%
+\newcommand{\LLargeitresult}{\fontspec[Scale=1.65]{GOST type A}\itshape}%
