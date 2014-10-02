@@ -82,7 +82,8 @@
 
 %\newcommand{\PCBdocCode}[1]{\textcolor{commandcolor}{\texttt{\bfseries{}#1}}}
 \newcommand{\PCBdocCode}[1]{\texttt{#1}}
-\newcommand{\coloremph}[1]{\textsl{\color{commandcolor}\bfseries#1}}
+\newcommand{\coloremph}[1]%
+  {\textsl{\color{commandcolor}\rmfamily\bfseries\mbox{#1}}}
 
 \newcommand{\pcbdocmanualcode}[1]{%
   \begin{tikzpicture}\node[align=left,fill=codecolor,font=\ttfamily] at (0,0){#1};%

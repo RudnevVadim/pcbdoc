@@ -1,0 +1,60 @@
+
+\section{Команды заполнения полей документа}
+
+Команды заполнения полей, приведённые в таблице~\ref{tabular:fields}, должны
+находиться либо непосредственно в преамбуле документа, либо в отдельном пакете,
+включаемом в преамбулу с помощью команды \coloremph{\textbackslash{}usepackage}.
+
+\begin{longtable}{%
+>{\ttfamily\bfseries}p{0.26\textwidth}%
+>{\small}p{0.68\textwidth}%
+}%
+\label{tabular:fields}\\
+\caption{Команды заполнения полей документа}\\
+\hline\hline
+\multicolumn{1}{c}{\sffamily\bfseries{}Команда} &
+\multicolumn{1}{c}{\sffamily\bfseries{}Описание}\\
+\hline\hline
+\endfirsthead
+\cellcolor{codecolor}\textbackslash{}AuthorSet \{\coloremph{<name>}\} &
+Печатает аргумент \coloremph{<name>} в поле \coloremph{Разраб.} основной надписи.\\
+\hline
+\cellcolor{codecolor}\textbackslash{}CheckerSet \{\coloremph{<name>}\} &
+Печатает аргумент \coloremph{<name>} в поле \coloremph{Пров.} основной надписи.\\
+\hline
+\cellcolor{codecolor}\textbackslash{}ScaleSet \{\coloremph{<value>}\} &
+Печатает аргумент \coloremph{<value>} в поле \coloremph{Масштаб} основной надписи
+сборочного чертежа или чертежа печатной платы.\\
+\hline
+\cellcolor{codecolor}\textbackslash{}NormControllerSet \{\coloremph{<name>}\} &
+Печатает аргумент \coloremph{<name>} в поле \coloremph{Н.~контр.} основной надписи.\\
+\hline
+\cellcolor{codecolor}\textbackslash{}TechControllerSet \{\coloremph{<name>}\} &
+Печатает аргумент \coloremph{<name>} в поле \coloremph{Т.~контр.} основной надписи
+сборочного чертежа или чертежа печатной платы.\\
+\hline
+\cellcolor{codecolor}\textbackslash{}ApproverSet \{\coloremph{<name>}\} &
+Печатает аргумент \coloremph{<name>} в поле \coloremph{Утв.} основной надписи.\\
+\hline
+\cellcolor{codecolor}\textbackslash{}NameSet \{\coloremph{<name>}\} &
+Печатает аргумент \coloremph{<name>} в поле наименования изделия основной надписи.\\
+\hline
+\cellcolor{codecolor}\textbackslash{}NumberSet \{\coloremph{<number>}\} &
+Печатает децимальный номер \coloremph{<number>} в поле обозначения документа основной
+надписи схемы электрической принципиальной, перечня элементов, сборочного чертежа и
+спецификации, а также в поле \coloremph{Перв. примен.} схемы электрической
+принципиальной, перечня элементов, чертежа печатной платы и сборочного чертежа.\\
+\hline
+\cellcolor{codecolor}\textbackslash{}PcbNumberSet \{\coloremph{<number>}\} &
+Печатает децимальный номер \coloremph{<number>} в поле обозначения документа основной
+надписи чертежа печатной платы. \\
+\hline
+\cellcolor{codecolor}\textbackslash{}PcbMaterialSet \{\coloremph{<name>}\} &
+Печатает аргумент \coloremph{<name>} в поле обозначения материала детали основной
+надписи чертежа печатной платы. \\
+\hline
+\cellcolor{codecolor}\textbackslash{}PrimaryUseSet \{\coloremph{<number>}\} &
+Печатает аргумент \coloremph{<number>} в поле \coloremph{Перв. примен.} основной
+надписи спецификации.\\
+\hline\hline
+\end{longtable}

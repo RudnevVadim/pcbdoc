@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.1415926-2.4-0.9998 (TeX Live 2012) (format=xelatex 2013.2.28)  25 SEP 2014 21:33
+This is XeTeX, Version 3.1415926-2.4-0.9998 (TeX Live 2012) (format=xelatex 2013.2.28)  2 OCT 2014 23:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1110,6 +1110,18 @@ LaTeX Font Info:    Font shape `EU1/DejaVuSerif(1)/m/sl' in size <10> not avail
 able
 (Font)              Font shape `EU1/DejaVuSerif(1)/m/it' tried instead on input
  line 22.
+LaTeX Font Info:    Font shape `EU1/DejaVuSerif(0)/m/sl' in size <10> not avail
+able
+(Font)              Font shape `EU1/DejaVuSerif(0)/m/it' tried instead on input
+ line 22.
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'DejaVuSerif(1)' created for font 'DejaVu Serif' with options
+. [Mapping=tex-text,,Script=Cyrillic].
+. 
+. This font family consists of the following shapes:
+.................................................
 LaTeX Font Info:    Font shape `EU1/DejaVuSerif(1)/bx/sl' in size <10> not avai
 lable
 (Font)              Font shape `EU1/DejaVuSerif(1)/bx/it' tried instead on inpu
@@ -1130,9 +1142,26 @@ t line 22.
 . 
 . This font family consists of the following shapes:
 .................................................
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'DejaVuSerif(1)' created for font 'DejaVu Serif' with options
+. [Mapping=tex-text,,Script=Cyrillic].
+. 
+. This font family consists of the following shapes:
+.................................................
 [1
 
-]) (./src/tutorial.tex
+]
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'DejaVuSerif(1)' created for font 'DejaVu Serif' with options
+. [Mapping=tex-text,,Script=Cyrillic].
+. 
+. This font family consists of the following shapes:
+.................................................
+) (./src/tutorial.tex
 .................................................
 . fontspec info: "defining-font"
 . 
@@ -1219,6 +1248,38 @@ File: output/vasia.pdf Graphic file (type QTm)
 . 
 . This font family consists of the following shapes:
 .................................................
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'DejaVuSerif(1)' created for font 'DejaVu Serif' with options
+. [Mapping=tex-text,,Script=Cyrillic].
+. 
+. This font family consists of the following shapes:
+.................................................
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'DejaVuSerif(1)' created for font 'DejaVu Serif' with options
+. [Mapping=tex-text,,Script=Cyrillic].
+. 
+. This font family consists of the following shapes:
+.................................................
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'DejaVuSerif(1)' created for font 'DejaVu Serif' with options
+. [Mapping=tex-text,,Script=Cyrillic].
+. 
+. This font family consists of the following shapes:
+.................................................
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'DejaVuSerif(1)' created for font 'DejaVu Serif' with options
+. [Mapping=tex-text,,Script=Cyrillic].
+. 
+. This font family consists of the following shapes:
+.................................................
 
 Overfull \hbox (1.90215pt too wide) in paragraph at lines 4--10
 \EU1/DejaVuSerif(1)/m/n/10 Опцией класса \EU1/DejaVuSerif(1)/m/it/1
@@ -1229,9 +1290,7 @@ Overfull \hbox (1.90215pt too wide) in paragraph at lines 4--10
 
 Overfull \hbox (28.00566pt too wide) in paragraph at lines 4--10
 \EU1/DejaVuSerif(1)/m/n/10 чение. Ключ представляет соб
-ой конструкцию типа []\EU1/DejaVuSerif(1)/bx/it/10 <name>=<val
-ue>[]\EU1/DejaVuSerif(1)/m/n/10 , где []\EU1/DejaVuSerif(1)/bx/it/10 <name>[
-]
+ой конструкцию типа [][][], где [][][]
  []
 
 .................................................
@@ -1262,7 +1321,55 @@ ue>[]\EU1/DejaVuSerif(1)/m/n/10 , где []\EU1/DejaVuSerif(1)/bx/it/10 <name>[
 .................................................
 . fontspec info: "defining-font"
 . 
-. Font family 'DejaVuSans(1)' created for font 'DejaVu Sans' with options
+. Font family 'DejaVuSerif(1)' created for font 'DejaVu Serif' with options
+. [Mapping=tex-text,,Script=Cyrillic].
+. 
+. This font family consists of the following shapes:
+.................................................
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'DejaVuSerif(1)' created for font 'DejaVu Serif' with options
+. [Mapping=tex-text,,Script=Cyrillic].
+. 
+. This font family consists of the following shapes:
+.................................................
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'DejaVuSerif(1)' created for font 'DejaVu Serif' with options
+. [Mapping=tex-text,,Script=Cyrillic].
+. 
+. This font family consists of the following shapes:
+.................................................
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'DejaVuSerif(1)' created for font 'DejaVu Serif' with options
+. [Mapping=tex-text,,Script=Cyrillic].
+. 
+. This font family consists of the following shapes:
+.................................................
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'DejaVuSerif(1)' created for font 'DejaVu Serif' with options
+. [Mapping=tex-text,,Script=Cyrillic].
+. 
+. This font family consists of the following shapes:
+.................................................
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'DejaVuSerif(1)' created for font 'DejaVu Serif' with options
+. [Mapping=tex-text,,Script=Cyrillic].
+. 
+. This font family consists of the following shapes:
+.................................................
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'DejaVuSerif(1)' created for font 'DejaVu Serif' with options
 . [Mapping=tex-text,,Script=Cyrillic].
 . 
 . This font family consists of the following shapes:
@@ -1278,7 +1385,87 @@ ue>[]\EU1/DejaVuSerif(1)/m/n/10 , где []\EU1/DejaVuSerif(1)/bx/it/10 <name>[
 .................................................
 . fontspec info: "defining-font"
 . 
-. Font family 'DejaVuSans(1)' created for font 'DejaVu Sans' with options
+. Font family 'DejaVuSerif(1)' created for font 'DejaVu Serif' with options
+. [Mapping=tex-text,,Script=Cyrillic].
+. 
+. This font family consists of the following shapes:
+.................................................
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'DejaVuSerif(1)' created for font 'DejaVu Serif' with options
+. [Mapping=tex-text,,Script=Cyrillic].
+. 
+. This font family consists of the following shapes:
+.................................................
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'DejaVuSerif(1)' created for font 'DejaVu Serif' with options
+. [Mapping=tex-text,,Script=Cyrillic].
+. 
+. This font family consists of the following shapes:
+.................................................
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'DejaVuSerif(1)' created for font 'DejaVu Serif' with options
+. [Mapping=tex-text,,Script=Cyrillic].
+. 
+. This font family consists of the following shapes:
+.................................................
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'DejaVuSerif(1)' created for font 'DejaVu Serif' with options
+. [Mapping=tex-text,,Script=Cyrillic].
+. 
+. This font family consists of the following shapes:
+.................................................
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'DejaVuSerif(1)' created for font 'DejaVu Serif' with options
+. [Mapping=tex-text,,Script=Cyrillic].
+. 
+. This font family consists of the following shapes:
+.................................................
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'DejaVuSerif(1)' created for font 'DejaVu Serif' with options
+. [Mapping=tex-text,,Script=Cyrillic].
+. 
+. This font family consists of the following shapes:
+.................................................
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'DejaVuSerif(1)' created for font 'DejaVu Serif' with options
+. [Mapping=tex-text,,Script=Cyrillic].
+. 
+. This font family consists of the following shapes:
+.................................................
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'DejaVuSerif(1)' created for font 'DejaVu Serif' with options
+. [Mapping=tex-text,,Script=Cyrillic].
+. 
+. This font family consists of the following shapes:
+.................................................
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'DejaVuSerif(1)' created for font 'DejaVu Serif' with options
+. [Mapping=tex-text,,Script=Cyrillic].
+. 
+. This font family consists of the following shapes:
+.................................................
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'DejaVuSerif(1)' created for font 'DejaVu Serif' with options
 . [Mapping=tex-text,,Script=Cyrillic].
 . 
 . This font family consists of the following shapes:
@@ -1291,7 +1478,103 @@ ue>[]\EU1/DejaVuSerif(1)/m/n/10 , где []\EU1/DejaVuSerif(1)/bx/it/10 <name>[
 . 
 . This font family consists of the following shapes:
 .................................................
-) (./src/font.tex
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'DejaVuSerif(1)' created for font 'DejaVu Serif' with options
+. [Mapping=tex-text,,Script=Cyrillic].
+. 
+. This font family consists of the following shapes:
+.................................................
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'DejaVuSerif(1)' created for font 'DejaVu Serif' with options
+. [Mapping=tex-text,,Script=Cyrillic].
+. 
+. This font family consists of the following shapes:
+.................................................
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'DejaVuSerif(1)' created for font 'DejaVu Serif' with options
+. [Mapping=tex-text,,Script=Cyrillic].
+. 
+. This font family consists of the following shapes:
+.................................................
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'DejaVuSerif(1)' created for font 'DejaVu Serif' with options
+. [Mapping=tex-text,,Script=Cyrillic].
+. 
+. This font family consists of the following shapes:
+.................................................
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'DejaVuSans(1)' created for font 'DejaVu Sans' with options
+. [Mapping=tex-text,,Script=Cyrillic].
+. 
+. This font family consists of the following shapes:
+.................................................
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'DejaVuSerif(1)' created for font 'DejaVu Serif' with options
+. [Mapping=tex-text,,Script=Cyrillic].
+. 
+. This font family consists of the following shapes:
+.................................................
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'DejaVuSans(1)' created for font 'DejaVu Sans' with options
+. [Mapping=tex-text,,Script=Cyrillic].
+. 
+. This font family consists of the following shapes:
+.................................................
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'DejaVuSerif(1)' created for font 'DejaVu Serif' with options
+. [Mapping=tex-text,,Script=Cyrillic].
+. 
+. This font family consists of the following shapes:
+.................................................
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'DejaVuSerif(1)' created for font 'DejaVu Serif' with options
+. [Mapping=tex-text,,Script=Cyrillic].
+. 
+. This font family consists of the following shapes:
+.................................................
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'DejaVuSerif(1)' created for font 'DejaVu Serif' with options
+. [Mapping=tex-text,,Script=Cyrillic].
+. 
+. This font family consists of the following shapes:
+.................................................
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'DejaVuSerif(1)' created for font 'DejaVu Serif' with options
+. [Mapping=tex-text,,Script=Cyrillic].
+. 
+. This font family consists of the following shapes:
+.................................................
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'DejaVuSerif(1)' created for font 'DejaVu Serif' with options
+. [Mapping=tex-text,,Script=Cyrillic].
+. 
+. This font family consists of the following shapes:
+.................................................
+) (./src/fonts.tex
 .................................................
 . fontspec info: "defining-font"
 . 
@@ -1313,6 +1596,22 @@ ue>[]\EU1/DejaVuSerif(1)/m/n/10 , где []\EU1/DejaVuSerif(1)/bx/it/10 <name>[
 . fontspec info: "defining-font"
 . 
 . Font family 'DejaVuSans(1)' created for font 'DejaVu Sans' with options
+. [Mapping=tex-text,,Script=Cyrillic].
+. 
+. This font family consists of the following shapes:
+.................................................
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'DejaVuSerif(1)' created for font 'DejaVu Serif' with options
+. [Mapping=tex-text,,Script=Cyrillic].
+. 
+. This font family consists of the following shapes:
+.................................................
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'DejaVuSerif(1)' created for font 'DejaVu Serif' with options
 . [Mapping=tex-text,,Script=Cyrillic].
 . 
 . This font family consists of the following shapes:
@@ -1395,7 +1694,7 @@ ue>[]\EU1/DejaVuSerif(1)/m/n/10 , где []\EU1/DejaVuSerif(1)/bx/it/10 <name>[
 . This font family consists of the following shapes:
 . 
 . * 'normal' with NFSS spec.:
-. <->s*[0.75]"GOST Type AU/ICU:script=latn;language=;mapping=tex-text;"
+. <->s*[0.75]"GOST Type AU/ICU:script=cyrl;language=;mapping=tex-text;"
 .................................................
 LaTeX Font Info:    Font shape `EU1/GOSTTypeAU(0)/m/n' will be
 (Font)              scaled to size 7.5pt on input line 25.
@@ -1428,7 +1727,7 @@ LaTeX Font Info:    Font shape `EU1/GOSTTypeAU(0)/m/n' will be
 . This font family consists of the following shapes:
 . 
 . * 'normal' with NFSS spec.:
-. <->s*[1.0]"GOST Type AU/ICU:script=latn;language=;mapping=tex-text;"
+. <->s*[1.0]"GOST Type AU/ICU:script=cyrl;language=;mapping=tex-text;"
 .................................................
 LaTeX Font Info:    Font shape `EU1/GOSTTypeAU(1)/m/n' will be
 (Font)              scaled to size 10.0pt on input line 29.
@@ -1461,7 +1760,7 @@ LaTeX Font Info:    Font shape `EU1/GOSTTypeAU(1)/m/n' will be
 . This font family consists of the following shapes:
 . 
 . * 'normal' with NFSS spec.:
-. <->s*[1.2]"GOST Type AU/ICU:script=latn;language=;mapping=tex-text;"
+. <->s*[1.2]"GOST Type AU/ICU:script=cyrl;language=;mapping=tex-text;"
 .................................................
 LaTeX Font Info:    Font shape `EU1/GOSTTypeAU(2)/m/n' will be
 (Font)              scaled to size 11.99997pt on input line 33.
@@ -1494,7 +1793,7 @@ LaTeX Font Info:    Font shape `EU1/GOSTTypeAU(2)/m/n' will be
 . This font family consists of the following shapes:
 . 
 . * 'normal' with NFSS spec.:
-. <->s*[1.3]"GOST Type AU/ICU:script=latn;language=;mapping=tex-text;"
+. <->s*[1.3]"GOST Type AU/ICU:script=cyrl;language=;mapping=tex-text;"
 .................................................
 LaTeX Font Info:    Font shape `EU1/GOSTTypeAU(3)/m/n' will be
 (Font)              scaled to size 13.00003pt on input line 37.
@@ -1527,10 +1826,43 @@ LaTeX Font Info:    Font shape `EU1/GOSTTypeAU(3)/m/n' will be
 . This font family consists of the following shapes:
 . 
 . * 'normal' with NFSS spec.:
-. <->s*[1.65]"GOST Type AU/ICU:script=latn;language=;mapping=tex-text;"
+. <->s*[1.65]"GOST Type AU/ICU:script=cyrl;language=;mapping=tex-text;"
 .................................................
 LaTeX Font Info:    Font shape `EU1/GOSTTypeAU(4)/m/n' will be
 (Font)              scaled to size 16.49994pt on input line 41.
+.................................................
+. fontspec info: "no-scripts"
+. 
+. Font GOST Type AU does not contain any OpenType `Script' information.
+.................................................
+.................................................
+. fontspec info: "no-font-shape"
+. 
+. Could not resolve font GOST Type AU/B (it probably doesn't exist).
+.................................................
+.................................................
+. fontspec info: "no-font-shape"
+. 
+. Could not resolve font GOST Type AU/I (it probably doesn't exist).
+.................................................
+.................................................
+. fontspec info: "no-font-shape"
+. 
+. Could not resolve font GOST Type AU/BI (it probably doesn't exist).
+.................................................
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'GOSTTypeAU(5)' created for font 'GOST Type AU' with options
+. [Mapping=tex-text,Scale=1.75].
+. 
+. This font family consists of the following shapes:
+. 
+. * 'normal' with NFSS spec.:
+. <->s*[1.75]"GOST Type AU/ICU:script=cyrl;language=;mapping=tex-text;"
+.................................................
+LaTeX Font Info:    Font shape `EU1/GOSTTypeAU(5)/m/n' will be
+(Font)              scaled to size 17.5pt on input line 45.
 .................................................
 . fontspec info: "defining-font"
 . 
@@ -1769,6 +2101,378 @@ LaTeX Font Info:    Font shape `EU1/GOSTtypeA(5)/m/it' will be
 . 
 . This font family consists of the following shapes:
 .................................................
+) (./src/fields.tex
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'DejaVuSans(1)' created for font 'DejaVu Sans' with options
+. [Mapping=tex-text,,Script=Cyrillic].
+. 
+. This font family consists of the following shapes:
+.................................................
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'DejaVuSerif(1)' created for font 'DejaVu Serif' with options
+. [Mapping=tex-text,,Script=Cyrillic].
+. 
+. This font family consists of the following shapes:
+.................................................
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'DejaVuSerif(1)' created for font 'DejaVu Serif' with options
+. [Mapping=tex-text,,Script=Cyrillic].
+. 
+. This font family consists of the following shapes:
+.................................................
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'DejaVuSans(1)' created for font 'DejaVu Sans' with options
+. [Mapping=tex-text,,Script=Cyrillic].
+. 
+. This font family consists of the following shapes:
+.................................................
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'DejaVuSans(1)' created for font 'DejaVu Sans' with options
+. [Mapping=tex-text,,Script=Cyrillic].
+. 
+. This font family consists of the following shapes:
+.................................................
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'DejaVuSans(1)' created for font 'DejaVu Sans' with options
+. [Mapping=tex-text,,Script=Cyrillic].
+. 
+. This font family consists of the following shapes:
+.................................................
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'DejaVuSans(1)' created for font 'DejaVu Sans' with options
+. [Mapping=tex-text,,Script=Cyrillic].
+. 
+. This font family consists of the following shapes:
+.................................................
+LaTeX Font Info:    Font shape `EU1/DejaVuSansMono(0)/bx/sl' in size <10> not a
+vailable
+(Font)              Font shape `EU1/DejaVuSansMono(0)/bx/it' tried instead on i
+nput line 19.
+LaTeX Font Info:    Font shape `EU1/DejaVuSerif(0)/bx/sl' in size <10> not avai
+lable
+(Font)              Font shape `EU1/DejaVuSerif(0)/bx/it' tried instead on inpu
+t line 19.
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'DejaVuSerif(1)' created for font 'DejaVu Serif' with options
+. [Mapping=tex-text,,Script=Cyrillic].
+. 
+. This font family consists of the following shapes:
+.................................................
+
+Underfull \hbox (badness 10000) in paragraph at lines 19--19
+[]|\EU1/DejaVuSansMono(0)/bx/n/10 \AuthorSet
+ []
+
+LaTeX Font Info:    Font shape `EU1/DejaVuSerif(1)/m/sl' in size <9> not availa
+ble
+(Font)              Font shape `EU1/DejaVuSerif(1)/m/it' tried instead on input
+ line 20.
+LaTeX Font Info:    Font shape `EU1/DejaVuSerif(0)/m/sl' in size <9> not availa
+ble
+(Font)              Font shape `EU1/DejaVuSerif(0)/m/it' tried instead on input
+ line 20.
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'DejaVuSerif(1)' created for font 'DejaVu Serif' with options
+. [Mapping=tex-text,,Script=Cyrillic].
+. 
+. This font family consists of the following shapes:
+.................................................
+LaTeX Font Info:    Font shape `EU1/DejaVuSerif(1)/bx/sl' in size <9> not avail
+able
+(Font)              Font shape `EU1/DejaVuSerif(1)/bx/it' tried instead on inpu
+t line 20.
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'DejaVuSerif(1)' created for font 'DejaVu Serif' with options
+. [Mapping=tex-text,,Script=Cyrillic].
+. 
+. This font family consists of the following shapes:
+.................................................
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'DejaVuSerif(1)' created for font 'DejaVu Serif' with options
+. [Mapping=tex-text,,Script=Cyrillic].
+. 
+. This font family consists of the following shapes:
+.................................................
+
+Underfull \hbox (badness 10000) in paragraph at lines 22--22
+[]|\EU1/DejaVuSansMono(0)/bx/n/10 \CheckerSet
+ []
+
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'DejaVuSerif(1)' created for font 'DejaVu Serif' with options
+. [Mapping=tex-text,,Script=Cyrillic].
+. 
+. This font family consists of the following shapes:
+.................................................
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'DejaVuSerif(1)' created for font 'DejaVu Serif' with options
+. [Mapping=tex-text,,Script=Cyrillic].
+. 
+. This font family consists of the following shapes:
+.................................................
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'DejaVuSerif(1)' created for font 'DejaVu Serif' with options
+. [Mapping=tex-text,,Script=Cyrillic].
+. 
+. This font family consists of the following shapes:
+.................................................
+
+Underfull \hbox (badness 10000) in paragraph at lines 25--25
+[]|\EU1/DejaVuSansMono(0)/bx/n/10 \ScaleSet
+ []
+
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'DejaVuSerif(1)' created for font 'DejaVu Serif' with options
+. [Mapping=tex-text,,Script=Cyrillic].
+. 
+. This font family consists of the following shapes:
+.................................................
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'DejaVuSerif(1)' created for font 'DejaVu Serif' with options
+. [Mapping=tex-text,,Script=Cyrillic].
+. 
+. This font family consists of the following shapes:
+.................................................
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'DejaVuSerif(1)' created for font 'DejaVu Serif' with options
+. [Mapping=tex-text,,Script=Cyrillic].
+. 
+. This font family consists of the following shapes:
+.................................................
+
+Underfull \hbox (badness 10000) in paragraph at lines 29--29
+[]|\EU1/DejaVuSansMono(0)/bx/n/10 \NormControllerSet
+ []
+
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'DejaVuSerif(1)' created for font 'DejaVu Serif' with options
+. [Mapping=tex-text,,Script=Cyrillic].
+. 
+. This font family consists of the following shapes:
+.................................................
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'DejaVuSerif(1)' created for font 'DejaVu Serif' with options
+. [Mapping=tex-text,,Script=Cyrillic].
+. 
+. This font family consists of the following shapes:
+.................................................
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'DejaVuSerif(1)' created for font 'DejaVu Serif' with options
+. [Mapping=tex-text,,Script=Cyrillic].
+. 
+. This font family consists of the following shapes:
+.................................................
+
+Underfull \hbox (badness 10000) in paragraph at lines 32--32
+[]|\EU1/DejaVuSansMono(0)/bx/n/10 \TechControllerSet
+ []
+
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'DejaVuSerif(1)' created for font 'DejaVu Serif' with options
+. [Mapping=tex-text,,Script=Cyrillic].
+. 
+. This font family consists of the following shapes:
+.................................................
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'DejaVuSerif(1)' created for font 'DejaVu Serif' with options
+. [Mapping=tex-text,,Script=Cyrillic].
+. 
+. This font family consists of the following shapes:
+.................................................
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'DejaVuSerif(1)' created for font 'DejaVu Serif' with options
+. [Mapping=tex-text,,Script=Cyrillic].
+. 
+. This font family consists of the following shapes:
+.................................................
+
+Underfull \hbox (badness 10000) in paragraph at lines 36--36
+[]|\EU1/DejaVuSansMono(0)/bx/n/10 \ApproverSet
+ []
+
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'DejaVuSerif(1)' created for font 'DejaVu Serif' with options
+. [Mapping=tex-text,,Script=Cyrillic].
+. 
+. This font family consists of the following shapes:
+.................................................
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'DejaVuSerif(1)' created for font 'DejaVu Serif' with options
+. [Mapping=tex-text,,Script=Cyrillic].
+. 
+. This font family consists of the following shapes:
+.................................................
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'DejaVuSerif(1)' created for font 'DejaVu Serif' with options
+. [Mapping=tex-text,,Script=Cyrillic].
+. 
+. This font family consists of the following shapes:
+.................................................
+
+Underfull \hbox (badness 10000) in paragraph at lines 39--39
+[]|\EU1/DejaVuSansMono(0)/bx/n/10 \NameSet
+ []
+
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'DejaVuSerif(1)' created for font 'DejaVu Serif' with options
+. [Mapping=tex-text,,Script=Cyrillic].
+. 
+. This font family consists of the following shapes:
+.................................................
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'DejaVuSerif(1)' created for font 'DejaVu Serif' with options
+. [Mapping=tex-text,,Script=Cyrillic].
+. 
+. This font family consists of the following shapes:
+.................................................
+
+Underfull \hbox (badness 10000) in paragraph at lines 42--42
+[]|\EU1/DejaVuSansMono(0)/bx/n/10 \NumberSet
+ []
+
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'DejaVuSerif(1)' created for font 'DejaVu Serif' with options
+. [Mapping=tex-text,,Script=Cyrillic].
+. 
+. This font family consists of the following shapes:
+.................................................
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'DejaVuSerif(1)' created for font 'DejaVu Serif' with options
+. [Mapping=tex-text,,Script=Cyrillic].
+. 
+. This font family consists of the following shapes:
+.................................................
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'DejaVuSerif(1)' created for font 'DejaVu Serif' with options
+. [Mapping=tex-text,,Script=Cyrillic].
+. 
+. This font family consists of the following shapes:
+.................................................
+
+Underfull \hbox (badness 10000) in paragraph at lines 48--48
+[]|\EU1/DejaVuSansMono(0)/bx/n/10 \PcbNumberSet
+ []
+
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'DejaVuSerif(1)' created for font 'DejaVu Serif' with options
+. [Mapping=tex-text,,Script=Cyrillic].
+. 
+. This font family consists of the following shapes:
+.................................................
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'DejaVuSerif(1)' created for font 'DejaVu Serif' with options
+. [Mapping=tex-text,,Script=Cyrillic].
+. 
+. This font family consists of the following shapes:
+.................................................
+
+Underfull \hbox (badness 10000) in paragraph at lines 52--52
+[]|\EU1/DejaVuSansMono(0)/bx/n/10 \PcbMaterialSet
+ []
+
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'DejaVuSerif(1)' created for font 'DejaVu Serif' with options
+. [Mapping=tex-text,,Script=Cyrillic].
+. 
+. This font family consists of the following shapes:
+.................................................
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'DejaVuSerif(1)' created for font 'DejaVu Serif' with options
+. [Mapping=tex-text,,Script=Cyrillic].
+. 
+. This font family consists of the following shapes:
+.................................................
+
+Underfull \hbox (badness 10000) in paragraph at lines 56--56
+[]|\EU1/DejaVuSansMono(0)/bx/n/10 \PrimaryUseSet
+ []
+
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'DejaVuSerif(1)' created for font 'DejaVu Serif' with options
+. [Mapping=tex-text,,Script=Cyrillic].
+. 
+. This font family consists of the following shapes:
+.................................................
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'DejaVuSerif(1)' created for font 'DejaVu Serif' with options
+. [Mapping=tex-text,,Script=Cyrillic].
+. 
+. This font family consists of the following shapes:
+.................................................
 ) (./src/elementlist.tex
 .................................................
 . fontspec info: "defining-font"
@@ -1799,13 +2503,29 @@ LaTeX Font Info:    Font shape `EU1/GOSTtypeA(5)/m/it' will be
 .................................................
 . fontspec info: "defining-font"
 . 
+. Font family 'DejaVuSerif(1)' created for font 'DejaVu Serif' with options
+. [Mapping=tex-text,,Script=Cyrillic].
+. 
+. This font family consists of the following shapes:
+.................................................
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'DejaVuSerif(1)' created for font 'DejaVu Serif' with options
+. [Mapping=tex-text,,Script=Cyrillic].
+. 
+. This font family consists of the following shapes:
+.................................................
+ [9]
+.................................................
+. fontspec info: "defining-font"
+. 
 . Font family 'DejaVuSans(1)' created for font 'DejaVu Sans' with options
 . [Mapping=tex-text,,Script=Cyrillic].
 . 
 . This font family consists of the following shapes:
 .................................................
-
-(./output/pcbdocmanual.toc
+ (./output/pcbdocmanual.toc
 .................................................
 . fontspec info: "defining-font"
 . 
@@ -1874,7 +2594,8 @@ LaTeX Font Info:    Font shape `EU1/GOSTtypeA(5)/m/it' will be
 . 
 . This font family consists of the following shapes:
 .................................................
- [9] (./output/pcbdocmanual.aux
+ [10]
+(./output/pcbdocmanual.aux
 .................................................
 . fontspec info: "defining-font"
 . 
@@ -1885,12 +2606,12 @@ LaTeX Font Info:    Font shape `EU1/GOSTtypeA(5)/m/it' will be
 .................................................
 ) ) 
 Here is how much of TeX's memory you used:
- 25400 strings out of 493994
- 534890 string characters out of 3152225
- 521793 words of memory out of 3000000
- 28185 multiletter control sequences out of 15000+200000
- 4144 words of font info for 77 fonts, out of 3000000 for 9000
+ 25442 strings out of 493994
+ 536325 string characters out of 3152225
+ 526797 words of memory out of 3000000
+ 28212 multiletter control sequences out of 15000+200000
+ 4224 words of font info for 87 fonts, out of 3000000 for 9000
  1144 hyphenation exceptions out of 8191
  63i,10n,80p,838b,604s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on ./output/pcbdocmanual.pdf (9 pages).
+Output written on ./output/pcbdocmanual.pdf (10 pages).
