@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.1415926-2.4-0.9998 (TeX Live 2012) (format=xelatex 2013.2.28)  2 OCT 2014 23:03
+This is XeTeX, Version 3.1415926-2.4-0.9998 (TeX Live 2012) (format=xelatex 2013.2.28)  4 OCT 2014 01:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2158,14 +2158,54 @@ LaTeX Font Info:    Font shape `EU1/GOSTtypeA(5)/m/it' will be
 . 
 . This font family consists of the following shapes:
 .................................................
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'DejaVuSerif(1)' created for font 'DejaVu Serif' with options
+. [Mapping=tex-text,,Script=Cyrillic].
+. 
+. This font family consists of the following shapes:
+.................................................
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'DejaVuSans(1)' created for font 'DejaVu Sans' with options
+. [Mapping=tex-text,,Script=Cyrillic].
+. 
+. This font family consists of the following shapes:
+.................................................
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'DejaVuSans(1)' created for font 'DejaVu Sans' with options
+. [Mapping=tex-text,,Script=Cyrillic].
+. 
+. This font family consists of the following shapes:
+.................................................
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'DejaVuSans(1)' created for font 'DejaVu Sans' with options
+. [Mapping=tex-text,,Script=Cyrillic].
+. 
+. This font family consists of the following shapes:
+.................................................
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'DejaVuSans(1)' created for font 'DejaVu Sans' with options
+. [Mapping=tex-text,,Script=Cyrillic].
+. 
+. This font family consists of the following shapes:
+.................................................
 LaTeX Font Info:    Font shape `EU1/DejaVuSansMono(0)/bx/sl' in size <10> not a
 vailable
 (Font)              Font shape `EU1/DejaVuSansMono(0)/bx/it' tried instead on i
-nput line 19.
+nput line 25.
 LaTeX Font Info:    Font shape `EU1/DejaVuSerif(0)/bx/sl' in size <10> not avai
 lable
 (Font)              Font shape `EU1/DejaVuSerif(0)/bx/it' tried instead on inpu
-t line 19.
+t line 25.
 .................................................
 . fontspec info: "defining-font"
 . 
@@ -2175,18 +2215,18 @@ t line 19.
 . This font family consists of the following shapes:
 .................................................
 
-Underfull \hbox (badness 10000) in paragraph at lines 19--19
+Underfull \hbox (badness 10000) in paragraph at lines 25--25
 []|\EU1/DejaVuSansMono(0)/bx/n/10 \AuthorSet
  []
 
 LaTeX Font Info:    Font shape `EU1/DejaVuSerif(1)/m/sl' in size <9> not availa
 ble
 (Font)              Font shape `EU1/DejaVuSerif(1)/m/it' tried instead on input
- line 20.
+ line 26.
 LaTeX Font Info:    Font shape `EU1/DejaVuSerif(0)/m/sl' in size <9> not availa
 ble
 (Font)              Font shape `EU1/DejaVuSerif(0)/m/it' tried instead on input
- line 20.
+ line 26.
 .................................................
 . fontspec info: "defining-font"
 . 
@@ -2198,7 +2238,7 @@ ble
 LaTeX Font Info:    Font shape `EU1/DejaVuSerif(1)/bx/sl' in size <9> not avail
 able
 (Font)              Font shape `EU1/DejaVuSerif(1)/bx/it' tried instead on inpu
-t line 20.
+t line 26.
 .................................................
 . fontspec info: "defining-font"
 . 
@@ -2216,7 +2256,7 @@ t line 20.
 . This font family consists of the following shapes:
 .................................................
 
-Underfull \hbox (badness 10000) in paragraph at lines 22--22
+Underfull \hbox (badness 10000) in paragraph at lines 28--28
 []|\EU1/DejaVuSansMono(0)/bx/n/10 \CheckerSet
  []
 
@@ -2245,7 +2285,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 22--22
 . This font family consists of the following shapes:
 .................................................
 
-Underfull \hbox (badness 10000) in paragraph at lines 25--25
+Underfull \hbox (badness 10000) in paragraph at lines 31--31
 []|\EU1/DejaVuSansMono(0)/bx/n/10 \ScaleSet
  []
 
@@ -2274,7 +2314,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 25--25
 . This font family consists of the following shapes:
 .................................................
 
-Underfull \hbox (badness 10000) in paragraph at lines 29--29
+Underfull \hbox (badness 10000) in paragraph at lines 35--35
 []|\EU1/DejaVuSansMono(0)/bx/n/10 \NormControllerSet
  []
 
@@ -2303,7 +2343,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 29--29
 . This font family consists of the following shapes:
 .................................................
 
-Underfull \hbox (badness 10000) in paragraph at lines 32--32
+Underfull \hbox (badness 10000) in paragraph at lines 38--38
 []|\EU1/DejaVuSansMono(0)/bx/n/10 \TechControllerSet
  []
 
@@ -2332,7 +2372,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 32--32
 . This font family consists of the following shapes:
 .................................................
 
-Underfull \hbox (badness 10000) in paragraph at lines 36--36
+Underfull \hbox (badness 10000) in paragraph at lines 42--42
 []|\EU1/DejaVuSansMono(0)/bx/n/10 \ApproverSet
  []
 
@@ -2361,7 +2401,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 36--36
 . This font family consists of the following shapes:
 .................................................
 
-Underfull \hbox (badness 10000) in paragraph at lines 39--39
+Underfull \hbox (badness 10000) in paragraph at lines 45--45
 []|\EU1/DejaVuSansMono(0)/bx/n/10 \NameSet
  []
 
@@ -2381,8 +2421,32 @@ Underfull \hbox (badness 10000) in paragraph at lines 39--39
 . 
 . This font family consists of the following shapes:
 .................................................
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'DejaVuSerif(1)' created for font 'DejaVu Serif' with options
+. [Mapping=tex-text,,Script=Cyrillic].
+. 
+. This font family consists of the following shapes:
+.................................................
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'DejaVuSerif(1)' created for font 'DejaVu Serif' with options
+. [Mapping=tex-text,,Script=Cyrillic].
+. 
+. This font family consists of the following shapes:
+.................................................
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'DejaVuSerif(1)' created for font 'DejaVu Serif' with options
+. [Mapping=tex-text,,Script=Cyrillic].
+. 
+. This font family consists of the following shapes:
+.................................................
 
-Underfull \hbox (badness 10000) in paragraph at lines 42--42
+Underfull \hbox (badness 10000) in paragraph at lines 56--56
 []|\EU1/DejaVuSansMono(0)/bx/n/10 \NumberSet
  []
 
@@ -2411,7 +2475,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 42--42
 . This font family consists of the following shapes:
 .................................................
 
-Underfull \hbox (badness 10000) in paragraph at lines 48--48
+Underfull \hbox (badness 10000) in paragraph at lines 62--62
 []|\EU1/DejaVuSansMono(0)/bx/n/10 \PcbNumberSet
  []
 
@@ -2432,7 +2496,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 48--48
 . This font family consists of the following shapes:
 .................................................
 
-Underfull \hbox (badness 10000) in paragraph at lines 52--52
+Underfull \hbox (badness 10000) in paragraph at lines 66--66
 []|\EU1/DejaVuSansMono(0)/bx/n/10 \PcbMaterialSet
  []
 
@@ -2452,8 +2516,50 @@ Underfull \hbox (badness 10000) in paragraph at lines 52--52
 . 
 . This font family consists of the following shapes:
 .................................................
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'DejaVuSerif(1)' created for font 'DejaVu Serif' with options
+. [Mapping=tex-text,,Script=Cyrillic].
+. 
+. This font family consists of the following shapes:
+.................................................
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'DejaVuSerif(1)' created for font 'DejaVu Serif' with options
+. [Mapping=tex-text,,Script=Cyrillic].
+. 
+. This font family consists of the following shapes:
+.................................................
 
-Underfull \hbox (badness 10000) in paragraph at lines 56--56
+Underfull \hbox (badness 1721) in paragraph at lines 67--79
+[]|\EU1/DejaVuSerif(1)/m/n/9 Печатает аргумент [][][] в пол
+е обозначения мате-
+ []
+
+
+Underfull \hbox (badness 1383) in paragraph at lines 67--79
+\EU1/DejaVuSerif(1)/m/n/9 ты. Аргумент [][][] может быть о�
+�нострочным, дву-
+ []
+
+
+Underfull \hbox (badness 1859) in paragraph at lines 67--79
+\EU1/DejaVuSerif(1)/m/n/9 строчным или трёхстрочным. Р�
+�зделение аргумента на
+ []
+
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'DejaVuSerif(1)' created for font 'DejaVu Serif' with options
+. [Mapping=tex-text,,Script=Cyrillic].
+. 
+. This font family consists of the following shapes:
+.................................................
+
+Underfull \hbox (badness 10000) in paragraph at lines 80--80
 []|\EU1/DejaVuSansMono(0)/bx/n/10 \PrimaryUseSet
  []
 
@@ -2473,7 +2579,23 @@ Underfull \hbox (badness 10000) in paragraph at lines 56--56
 . 
 . This font family consists of the following shapes:
 .................................................
-) (./src/elementlist.tex
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'DejaVuSerif(1)' created for font 'DejaVu Serif' with options
+. [Mapping=tex-text,,Script=Cyrillic].
+. 
+. This font family consists of the following shapes:
+.................................................
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'DejaVuSerif(1)' created for font 'DejaVu Serif' with options
+. [Mapping=tex-text,,Script=Cyrillic].
+. 
+. This font family consists of the following shapes:
+.................................................
+[8]) (./src/elementlist.tex
 .................................................
 . fontspec info: "defining-font"
 . 
@@ -2483,23 +2605,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 56--56
 . This font family consists of the following shapes:
 .................................................
 )
-.................................................
-. fontspec info: "defining-font"
-. 
-. Font family 'DejaVuSerif(1)' created for font 'DejaVu Serif' with options
-. [Mapping=tex-text,,Script=Cyrillic].
-. 
-. This font family consists of the following shapes:
-.................................................
-.................................................
-. fontspec info: "defining-font"
-. 
-. Font family 'DejaVuSerif(1)' created for font 'DejaVu Serif' with options
-. [Mapping=tex-text,,Script=Cyrillic].
-. 
-. This font family consists of the following shapes:
-.................................................
- [8]
 .................................................
 . fontspec info: "defining-font"
 . 
@@ -2606,12 +2711,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 56--56
 .................................................
 ) ) 
 Here is how much of TeX's memory you used:
- 25442 strings out of 493994
- 536325 string characters out of 3152225
- 526797 words of memory out of 3000000
- 28212 multiletter control sequences out of 15000+200000
- 4224 words of font info for 87 fonts, out of 3000000 for 9000
+ 25449 strings out of 493994
+ 536644 string characters out of 3152225
+ 530796 words of memory out of 3000000
+ 28215 multiletter control sequences out of 15000+200000
+ 4256 words of font info for 91 fonts, out of 3000000 for 9000
  1144 hyphenation exceptions out of 8191
- 63i,10n,80p,838b,604s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 63i,14n,80p,838b,810s stack positions out of 5000i,500n,10000p,200000b,50000s
 
 Output written on ./output/pcbdocmanual.pdf (10 pages).

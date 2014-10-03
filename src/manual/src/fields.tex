@@ -16,6 +16,12 @@
 \multicolumn{1}{c}{\sffamily\bfseries{}Описание}\\
 \hline\hline
 \endfirsthead
+\caption{Команды заполнения полей документа. Продолжение}\\
+\hline\hline
+\multicolumn{1}{c}{\sffamily\bfseries{}Команда} &
+\multicolumn{1}{c}{\sffamily\bfseries{}Описание}\\
+\hline\hline
+\endhead
 \cellcolor{codecolor}\textbackslash{}AuthorSet \{\coloremph{<name>}\} &
 Печатает аргумент \coloremph{<name>} в поле \coloremph{Разраб.} основной надписи.\\
 \hline
@@ -37,7 +43,15 @@
 Печатает аргумент \coloremph{<name>} в поле \coloremph{Утв.} основной надписи.\\
 \hline
 \cellcolor{codecolor}\textbackslash{}NameSet \{\coloremph{<name>}\} &
-Печатает аргумент \coloremph{<name>} в поле наименования изделия основной надписи.\\
+Печатает аргумент \coloremph{<name>} в поле наименования изделия основной надписи.
+Аргумент \coloremph{<name>} может быть как однострочным, так и двустрочным. Разделение
+аргумента на строки производится с помощью команды
+\texttt{\bfseries\textbackslash\textbackslash}. Например:
+\makebox[0.68\textwidth]{%
+\pcbdocmanualcode{%
+  \textbackslash{}NameSet\{Модуль\textbackslash\textbackslash{}расширителя сознания\}%
+  }%
+}\\
 \hline
 \cellcolor{codecolor}\textbackslash{}NumberSet \{\coloremph{<number>}\} &
 Печатает децимальный номер \coloremph{<number>} в поле обозначения документа основной
@@ -51,7 +65,17 @@
 \hline
 \cellcolor{codecolor}\textbackslash{}PcbMaterialSet \{\coloremph{<name>}\} &
 Печатает аргумент \coloremph{<name>} в поле обозначения материала детали основной
-надписи чертежа печатной платы. \\
+надписи чертежа печатной платы. Аргумент \coloremph{<name>} может быть однострочным,
+двустрочным или трёхстрочным. Разделение аргумента на строки производится с помощью
+команды \texttt{\bfseries\textbackslash\textbackslash}. Например:
+\makebox[0.68\textwidth]{%
+\pcbdocmanualcode{%
+  \textbackslash{}PcbMaterialSet\{Материал фольгированный%
+  \textbackslash\textbackslash\\качественный\textbackslash\textbackslash{}от надёжного
+  поставщика%
+  \}%
+  }%
+}\\
 \hline
 \cellcolor{codecolor}\textbackslash{}PrimaryUseSet \{\coloremph{<number>}\} &
 Печатает аргумент \coloremph{<number>} в поле \coloremph{Перв. примен.} основной
