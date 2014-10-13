@@ -7,7 +7,7 @@
 \contentsline {subsection}{\numberline {4.2}Размер страницы}{6}
 \contentsline {subsection}{\numberline {4.3}Толщины линий}{6}
 \contentsline {subsection}{\numberline {4.4}Лист изменений}{6}
-\contentsline {subsection}{\numberline {4.5}Прочие опции и ключи}{7}
+\contentsline {subsection}{\numberline {4.5}Прочие опции и ключи}{6}
 \contentsline {section}{\numberline {5}Шрифты}{7}
 \contentsline {section}{\numberline {6}Команды заполнения полей документа}{8}
 \contentsline {section}{\numberline {7}Перечень элементов}{9}

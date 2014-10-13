@@ -101,6 +101,10 @@
   \renewcommand{\PcbDocShTtFirst}{#1}%
   \renewcommand{\PcbDocShTtNext}{#2}%
   }%
+\newcommand{\SchTtSet}[2]{%
+  \renewcommand{\PcbDocShTtFirst}{#1}%
+  \renewcommand{\PcbDocShTtNext}{#2}%
+  }%
 
 %\ifthenelse{\equal{\pcbdoctype}{spec}}{%
 %  \renewcommand{\pcbdocpapersize}{a4}%

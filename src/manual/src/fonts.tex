@@ -1,16 +1,15 @@
 
 \section{Шрифты}
 
-По умолчанию в \emph{pcbdoc} используется наклонный шрифт \coloremph{GOST type A},
+По умолчанию в \emph{pcbdoc} используется наклонный шрифт \bfemph{GOST type A},
 размер которого зависит от контекста. В качестве прямого имеется возможность
-использовать шрифт \coloremph{GOST Type AU}. Локально сменить наклонный шрифт на прямой
+использовать шрифт \bfemph{GOST Type AU}. Локально сменить наклонный шрифт на прямой
 и(или) изменить размер шрифта можно с помощью команд, приведённых в
-таблице~\ref{tabular:font} и таблице~\ref{tabular:fontit}.
-
+\bfemph{Таблице~\ref{tabular:font}} и \bfemph{Таблице~\ref{tabular:fontit}}.\\[-15mm]
 \begin{longtable}{%
->{\cellcolor{codecolor}\ttfamily\bfseries}lc%
->{\cellcolor{codecolor}\ttfamily}lc%
->{\cellcolor{resultcolor}}l%
+>{\ttfamily\bfseries}lc%
+>{\ttfamily}lc%
+l%
 }%
 \label{tabular:font}\\
 \caption{Команды изменения размера прямого шрифта}\\
@@ -18,38 +17,37 @@
 \multicolumn{1}{c}{\sffamily\bfseries{}Команда} & &
 \multicolumn{1}{c}{\sffamily\bfseries{}Пример использования} & &
 \multicolumn{1}{c}{\sffamily\bfseries{}Результат}\\
-%\hline%
 \endfirsthead
-\textbackslash{}small & &
-\textbackslash{}AuthorSet\{\textbackslash{}small\{\}Пупкин\} & &
-\smallresult{}Пупкин\\
-%\hline
-\textbackslash{}normalfont & &
-\textbackslash{}AuthorSet\{\textbackslash{}normalfont\{\}Пупкин\} & &
-\normalfontresult{}Пупкин\\
-%\hline
-\textbackslash{}llarge & &
-\textbackslash{}AuthorSet\{\textbackslash{}llarge\{\}Пупкин\} & &
-\llargeresult{}Пупкин\\
-%\hline
-\textbackslash{}large & &
-\textbackslash{}AuthorSet\{\textbackslash{}large\{\}Пупкин\} & &
-\largeresult{}Пупкин\\
-%\hline
-\textbackslash{}LLarge & &
-\textbackslash{}AuthorSet\{\textbackslash{}LLarge\{\}Пупкин\} & &
-\LLargeresult{}Пупкин\\
-%\hline
-\textbackslash{}Large & &
-\textbackslash{}AuthorSet\{\textbackslash{}Large\{\}Пупкин\} & &
-\Largeresult{}Пупкин\\
-%\hline\hline
-\end{longtable}
-
+\caption{Команды изменения размера прямого шрифта. Продолжение}\\
+\hline\hline
+\multicolumn{1}{c}{\bfseries{}Команда} & &
+\multicolumn{1}{c}{\bfseries{}Пример использования} & &
+\multicolumn{1}{c}{\bfseries{}Результат}\\
+\endhead
+\cellcolor{codecolor}\textbackslash{}small & &
+\cellcolor{codecolor}\textbackslash{}AuthorSet\{\textbackslash{}small\{\}Пупкин\} & &
+\cellcolor{resultcolor}\smallresult{}Пупкин\\
+\cellcolor{codecolor}\textbackslash{}normalfont & &
+\cellcolor{codecolor}%
+  \textbackslash{}AuthorSet\{\textbackslash{}normalfont\{\}Пупкин\} & &
+\cellcolor{resultcolor}\normalfontresult{}Пупкин\\
+\cellcolor{codecolor}\textbackslash{}llarge & &
+\cellcolor{codecolor}\textbackslash{}AuthorSet\{\textbackslash{}llarge\{\}Пупкин\} & &
+\cellcolor{resultcolor}\llargeresult{}Пупкин\\
+\cellcolor{codecolor}\textbackslash{}large & &
+\cellcolor{codecolor}\textbackslash{}AuthorSet\{\textbackslash{}large\{\}Пупкин\} & &
+\cellcolor{resultcolor}\largeresult{}Пупкин\\
+\cellcolor{codecolor}\textbackslash{}LLarge & &
+\cellcolor{codecolor}\textbackslash{}AuthorSet\{\textbackslash{}LLarge\{\}Пупкин\} & &
+\cellcolor{resultcolor}\LLargeresult{}Пупкин\\
+\cellcolor{codecolor}\textbackslash{}Large & &
+\cellcolor{codecolor}\textbackslash{}AuthorSet\{\textbackslash{}Large\{\}Пупкин\} & &
+\cellcolor{resultcolor}\Largeresult{}Пупкин\\
+\end{longtable}~\\[-20mm]
 \begin{longtable}{%
->{\cellcolor{codecolor}\ttfamily\bfseries}lc%
->{\cellcolor{codecolor}\ttfamily}lc%
->{\cellcolor{resultcolor}\ttfamily}l%
+>{\ttfamily\bfseries}lc%
+>{\ttfamily}lc%
+>{\ttfamily}l%
 }%
 \label{tabular:fontit}\\
 \caption{Команды изменения размера наклонного шрифта}\\
@@ -57,31 +55,37 @@
 \multicolumn{1}{c}{\sffamily\bfseries{}Команда} & &
 \multicolumn{1}{c}{\sffamily\bfseries{}Пример использования} & &
 \multicolumn{1}{c}{\sffamily\bfseries{}Результат}\\
-%\hline%
 \endfirsthead
-\textbackslash{}smallit & &
-\textbackslash{}AuthorSet\{\textbackslash{}smallit\{\}Пупкин\} & &
-\smallitresult{}Пупкин\\
+\caption{Команды изменения размера наклонного шрифта. Продолжение}\\
+\hline\hline
+\multicolumn{1}{c}{\sffamily\bfseries{}Команда} & &
+\multicolumn{1}{c}{\sffamily\bfseries{}Пример использования} & &
+\multicolumn{1}{c}{\sffamily\bfseries{}Результат}\\
+\endhead
+\cellcolor{codecolor}\textbackslash{}smallit & &
+\cellcolor{codecolor}\textbackslash{}AuthorSet\{\textbackslash{}smallit\{\}Пупкин\} & &
+\cellcolor{resultcolor}\smallitresult{}Пупкин\\
 %\hline
-\textbackslash{}normalfontit & &
-\textbackslash{}AuthorSet\{\textbackslash{}normalfontit\{\}Пупкин\} & &
-\normalfontitresult{}Пупкин\\
+\cellcolor{codecolor}\textbackslash{}normalfontit & &
+\cellcolor{codecolor}%
+  \textbackslash{}AuthorSet\{\textbackslash{}normalfontit\{\}Пупкин\} & &
+\cellcolor{resultcolor}\normalfontitresult{}Пупкин\\
 %\hline
-\textbackslash{}llargeit & &
-\textbackslash{}AuthorSet\{\textbackslash{}llargeit\{\}Пупкин\} & &
-\llargeitresult{}Пупкин\\
+\cellcolor{codecolor}\textbackslash{}llargeit & &
+\cellcolor{codecolor}\textbackslash{}AuthorSet\{\textbackslash{}llargeit\{\}Пупкин\} & &
+\cellcolor{resultcolor}\llargeitresult{}Пупкин\\
 %\hline
-\textbackslash{}largeit & &
-\textbackslash{}AuthorSet\{\textbackslash{}largeit\{\}Пупкин\} & &
-\largeitresult{}Пупкин\\
+\cellcolor{codecolor}\textbackslash{}largeit & &
+\cellcolor{codecolor}\textbackslash{}AuthorSet\{\textbackslash{}largeit\{\}Пупкин\} & &
+\cellcolor{resultcolor}\largeitresult{}Пупкин\\
 %\hline
-\textbackslash{}LLargeit & &
-\textbackslash{}AuthorSet\{\textbackslash{}LLargeit\{\}Пупкин\} & &
-\LLargeitresult{}Пупкин\\
+\cellcolor{codecolor}\textbackslash{}LLargeit & &
+\cellcolor{codecolor}\textbackslash{}AuthorSet\{\textbackslash{}LLargeit\{\}Пупкин\} & &
+\cellcolor{resultcolor}\LLargeitresult{}Пупкин\\
 %\hline
-\textbackslash{}Largeit & &
-\textbackslash{}AuthorSet\{\textbackslash{}Largeit\{\}Пупкин\} & &
-\Largeitresult{}Пупкин\\
+\cellcolor{codecolor}\textbackslash{}Largeit & &
+\cellcolor{codecolor}\textbackslash{}AuthorSet\{\textbackslash{}Largeit\{\}Пупкин\} & &
+\cellcolor{resultcolor}\Largeitresult{}Пупкин\\
 %\hline\hline
 \end{longtable}
 

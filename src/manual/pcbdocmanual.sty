@@ -1,6 +1,6 @@
 
 \RequirePackage{color}
-\RequirePackage{fancyvrb}
+%\RequirePackage{fancyvrb}
 \RequirePackage{longtable}
 \RequirePackage{array}
 \setlength{\arrayrulewidth}{0.3mm}
@@ -31,17 +31,53 @@
 \RequirePackage{polyglossia}
 \setdefaultlanguage{russian}
 \setotherlanguage{english}
-%\newfontfamily\cyrillicfont{DejaVu Sans}
-\newfontfamily\cyrillicfonttt{DejaVu Sans Mono}
-%\newfontfamily\cyrillicfontsf{DejaVu Serif}
-%\newfontfamily\cyrillicfonttt{Courier New}
 
-%Default fonts:
-\setsansfont{DejaVu Sans}
-\setmonofont{DejaVu Sans Mono}
-%\setmonofont{Courier New}
-%\setmainfont{DejaVu Serif}
-\setromanfont{DejaVu Serif}
+\newfontfamily\cyrillicfont
+[
+  ItalicFont=Liberation Serif Italic,
+  BoldFont=Liberation Serif Bold,
+  BoldItalicFont=Liberation Serif Bold Italic
+]
+{Computer Modern Concrete Roman}
+
+\newfontfamily\cyrillicfonttt[Scale=0.9]{Liberation Mono}
+
+\newfontfamily\cyrillicfontsf
+[
+  BoldFont=Droid Sans Bold,
+]
+{Computer Modern Bright Roman}
+
+\setromanfont
+[
+  ItalicFont=Liberation Serif Italic,
+  BoldFont=Liberation Serif Bold,
+  BoldItalicFont=Liberation Serif Bold Italic
+]
+{Computer Modern Concrete Roman}
+
+\setmonofont[Scale=0.9]{Liberation Mono}
+
+\setsansfont
+[
+  BoldFont=Droid Sans Bold,
+]
+{Computer Modern Bright Roman}
+
+
+
+
+
+%\setsansfont%
+%[BoldFont=Droid Sans Bold]
+%{Computer Modern Bright Roman}
+%%\setmonofont{Droid Sans Mono}
+%\setromanfont%
+%[ItalicFont=Computer Modern Concrete Italic,
+%BoldFont=Computer Modern Bold,
+%BoldItalicFont={Liberation Serif Bold Italic}
+%]
+%{Computer Modern Concrete Roman}
 
 %\setlength{\textwidth}{165mm}
 %\setlength{\textheight}{220mm}
@@ -74,19 +110,22 @@
 \definecolor{darkslategray}{rgb}{0.0, 0.35, 0.35}%%%%%%%%%%%%%
 \definecolor{resultcolor}{rgb}{0.8784,0.8784,0.7647}
 \definecolor{terminalcolor}{rgb}{0.7, 0.75, 0.71}
-%\definecolor{codecolor}{rgb}{0.74, 0.83, 0.9}
-%\definecolor{codecolor}{rgb}{0.8, 0.9, 1}
-%\definecolor{codecolor}{rgb}{0.7, 0.75, 0.71}
 \definecolor{codecolor}{rgb}{0.84, 0.86, 0.86}
 \definecolor{commandcolor}{rgb}{0.0, 0.2, 0.23}
 
-%\newcommand{\PCBdocCode}[1]{\textcolor{commandcolor}{\texttt{\bfseries{}#1}}}
 \newcommand{\PCBdocCode}[1]{\texttt{#1}}
 \newcommand{\coloremph}[1]%
   {\textsl{\color{commandcolor}\rmfamily\bfseries\mbox{#1}}}
-
+\newcommand{\bfemph}[1]%
+  {\textsl{\rmfamily\bfseries\mbox{#1}}}
+\newcommand{\bftt}[1]%
+  {\texttt{\bfseries{}\mbox{#1}}}
 \newcommand{\pcbdocmanualcode}[1]{%
   \begin{tikzpicture}\node[align=left,fill=codecolor,font=\ttfamily] at (0,0){#1};%
+  \end{tikzpicture}%
+  }%
+\newcommand{\pcbdocmanualterminal}[1]{%
+  \begin{tikzpicture}\node[align=left,fill=terminalcolor,font=\ttfamily] at (0,0){#1};%
   \end{tikzpicture}%
   }%
 

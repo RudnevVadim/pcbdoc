@@ -1,7 +1,7 @@
 
 \section{Тренинг}
 
-Вася нарисовал схему и разработал плату замечательного устройсва --- фильтра
+Вася нарисовал схему и разработал плату замечательного устройства --- фильтра
 низкой частоты первого порядка. Плата была успешно изготовлена, спаяна и
 настроена. Теперь это устройство безукоризненно выполняет свои функции на радость
 клиентам фирмы, где работает Вася. Да вот беда --- начальство Васи требует
@@ -11,16 +11,6 @@
 Вася открывает свой любимый текстовый редактор(кто знает, возможно это
 \emph{emacs}) и приступает к работе. Он аккуратно набирает первую строчку:
 
-%\begin{SaveVerbatim}[formatcom=\bfseries]{TutorCode}
-%\documentclass[doctype=pe]{pcbdoc}
-%\end{SaveVerbatim}
-%\colorbox{codecolor}{\BUseVerbatim{TutorCode}}
-
-%\begin{tikzpicture}\node[align=left,fill=codecolor,font=\ttfamily] at (0,0){%
-%\textbackslash{}documentclass[doctype=pe]\{pcbdoc\}
-%};
-%\end{tikzpicture}
-
 \pcbdocmanualcode{%
 \textbackslash{}documentclass[doctype=pe]\{pcbdoc\}
 }
@@ -29,10 +19,9 @@
 Далее Васе требуется указать, что он является автором этого замечательного
 документа:
 
-\begin{SaveVerbatim}{TutorCode}
-  \AuthorSet{Пупкин}
-\end{SaveVerbatim}
-\colorbox{codecolor}{\BUseVerbatim{TutorCode}}
+\pcbdocmanualcode{%
+\textbackslash{}AuthorSet\{Пупкин\}
+}
 
 Готовый перечень элементов Вася планирует показать для проверки коллеге, который,
 как и Вася, разрабатывает замечательные электронные устройства, рабочее место
@@ -40,108 +29,96 @@
 ошибка? Одна голова хорошо, а две лучше, думает Вася, набирая следующую
 строчку:
 
-\begin{SaveVerbatim}{TutorCode}
-  \CheckerSet{Ближайший}
-\end{SaveVerbatim}
-\colorbox{codecolor}{\BUseVerbatim{TutorCode}}
+\pcbdocmanualcode{%
+\textbackslash{}CheckerSet\{Ближайший\}
+}
 
 Вася знает, что проверять готовый документ также будет и очень суровый
 нормоконтролёр. Нужно указать и этот факт. Быстро и решительно Вася набирает
 очередную строчку:
 
-\begin{SaveVerbatim}{TutorCode}
-  \NormControllerSet{Суровый}
-\end{SaveVerbatim}
-\colorbox{codecolor}{\BUseVerbatim{TutorCode}}
+\pcbdocmanualcode{%
+\textbackslash{}NormControllerSet\{Суровый\}
+}
 
 Вася знает, что утверждать перечень элементов будет Васин начальник. Вася очень
 любит своего начальника, потому что он обещал повысить Васе зарплату. Жизнь
 прекрасна, думает Вася, набирая следующую строчку:
 
-\begin{SaveVerbatim}{TutorCode}
-  \ApproverSet{Сказочник}
-\end{SaveVerbatim}
-\colorbox{codecolor}{\BUseVerbatim{TutorCode}}
+\pcbdocmanualcode{%
+\textbackslash{}ApproverSet\{Сказочник\}
+}
 
 Далее Вася указывает имя своего устройства и его децимальный номер, который
 по секрету сообщил Васе его начальник отдела:
 
-\begin{SaveVerbatim}{TutorCode}
-  \NameSet{Фильтр}
-  \NumberSet{РОГА.123456.001}
-\end{SaveVerbatim}
-\colorbox{codecolor}{\BUseVerbatim{TutorCode}}
+\pcbdocmanualcode{%
+\textbackslash{}NameSet\{Фильтр\}\\
+\textbackslash{}NumberSet\{РОГА.123456.001\}
+}
 
 Пора приступать к заполнению тела документа, думает Вася, набирая следующие
 две строчки:
 
-\begin{SaveVerbatim}{TutorCode}
-  \begin{document}
-  \begin{ElementList}
-\end{SaveVerbatim}
-\colorbox{codecolor}{\BUseVerbatim{TutorCode}}
+\pcbdocmanualcode{%
+\textbackslash{}begin\{document\}\\
+\textbackslash{}begin\{ElementList\}
+}
 
 Несмотря на то, что конденсатор в Васином устройстве всего один, Вася, вспомнив
 про суровость нормоконтролёра,  решил создать для одного конденсатора целый
 раздел:
 
-\begin{SaveVerbatim}{TutorCode}
-  \Part{Конденсаторы}
-\end{SaveVerbatim}
-\colorbox{codecolor}{\BUseVerbatim{TutorCode}}
+\pcbdocmanualcode{%
+\textbackslash{}Part\{Конденсаторы\}
+}
 
 Вот он, этот единственный конденсатор:
 
-\begin{SaveVerbatim}{TutorCode}
-  \Element{X7R\_0805\_1\_МКФ\_5\%}{\refbox{C1}}{1}
-\end{SaveVerbatim}
-\colorbox{codecolor}{\BUseVerbatim{TutorCode}}
+\pcbdocmanualcode{%
+\textbackslash{}Element\{X7R\_0805\_1\_МКФ\_5\%\}\{\textbackslash{}refbox\{C1\}\}\{1\}
+}
 
 Как видим, Вася не забыл указать его позиционное обозначение и
 количество. Аналогично Вася поступил и с единственным резистором:
 
-\begin{SaveVerbatim}{TutorCode}
-  \Part{Резисторы}
-  \Element{RMC\_0805\_1\_KOM\_5\%}{\refbox{R1}}{1}
-\end{SaveVerbatim}
-\colorbox{codecolor}{\BUseVerbatim{TutorCode}}
+\pcbdocmanualcode{%
+\textbackslash{}Part\{Резисторы\}\\
+\textbackslash{}Element\{RMC\_0805\_1\_KOM\_5\%\}\{\textbackslash{}refbox\{R1\}\}\{1\}
+}
 
 А вот соединителей в Васином устройстве целых два. Вася не забыл и про них:
 
-\begin{SaveVerbatim}{TutorCode}
-  \Part{Соединители}
-  \Element{Розетка SMA-BJ}{\refbox{XS1,XS2}}{2}
-\end{SaveVerbatim}
-\colorbox{codecolor}{\BUseVerbatim{TutorCode}}
+\pcbdocmanualcode{%
+\textbackslash{}Part\{Соединители\}\\
+\textbackslash{}Element\{Розетка SMA-BJ\}\{\textbackslash{}refbox\{XS1,XS2\}\}\{2\}
+}
 
 Ну вроде всё, подумал Вася. Пора закругляться.
 
-\begin{SaveVerbatim}{TutorCode}
-  \end{ElementList}
-  \end{document}
-\end{SaveVerbatim}
-\colorbox{codecolor}{\BUseVerbatim{TutorCode}}
+\pcbdocmanualcode{%
+\textbackslash{}end\{ElementList\}\\
+\textbackslash{}end\{document\}
+}
 
-И сохранил полученный файл, присвоив ему имя \emph{vasia.tex}.
+И сохранил полученный файл, присвоив ему имя \bfemph{vasia.tex}.
 
 Открыв эмулятор терминала, Вася перешёл в директорию, куда он сохранил свой
 файл, и скомпилировал его:
 
-\begin{SaveVerbatim}{TutorCode}
-  cd vasia
-  xelatex vasia.tex
-\end{SaveVerbatim}
-\colorbox{terminalcolor}{\BUseVerbatim{TutorCode}}
+\pcbdocmanualterminal{%
+cd vasia\\
+xelatex vasia.tex
+}
 
 После компиляции Вася обнаружил в своей рабочей директории файл
-\emph{vasia.pdf}. Ну надо же, подумал Вася, получилось. Но что это за странные
-вопросительные знаки в графе \emph{Листов}? Наверное, я что-то не то сделал,
+\bfemph{vasia.pdf}. Ну надо же, подумал Вася, получилось. Но что это за странные
+вопросительные знаки в графе \bfemph{Листов}? Наверное, я что-то не то сделал,
 подумал Вася, повторно запуская компиляцию:
 
-\begin{SaveVerbatim}{TutorCode}
-  xelatex vasia.tex
-\end{SaveVerbatim}
-\colorbox{terminalcolor}{\BUseVerbatim{TutorCode}}
+\pcbdocmanualterminal{%
+xelatex vasia.tex
+}
 
 После которой странные знаки исчезли. То-то же, подумал Вася и приступил к
 настройке принтера. Распечатав полученный документ,
