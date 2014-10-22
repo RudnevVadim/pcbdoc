@@ -11,3 +11,4 @@
 \contentsline {section}{\numberline {5}Шрифты}{7}
 \contentsline {section}{\numberline {6}Команды заполнения полей документа}{8}
 \contentsline {section}{\numberline {7}Перечень элементов}{9}
+\contentsline {section}{\numberline {8}Спецификация}{10}

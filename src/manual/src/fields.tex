@@ -23,34 +23,34 @@
 \endhead
 \cellcolor{codecolor}%
 \textbackslash{}AuthorSet\{\sfemph{<name>}\} &
-Печатает аргумент \sfemph{<name>} в поле \sfemph{Разраб.} основной
-надписи.\\
+Печатает аргумент \sfemph{<name>} в поле \colorbox{resultcolor}{\sfemph{Разраб.}}
+основной надписи.\\
 \hline
 \cellcolor{codecolor}%
 \textbackslash{}CheckerSet\{\sfemph{<name>}\} &
-Печатает аргумент \sfemph{<name>} в поле \sfemph{Пров.} основной
+Печатает аргумент \sfemph{<name>} в поле \colorbox{resultcolor}{\sfemph{Пров.}} основной
 надписи.\\
 \hline
 \cellcolor{codecolor}
 
 \vspace{-4mm}
 \textbackslash{}ScaleSet\{\sfemph{<value>}\} &
-Печатает аргумент \sfemph{<value>} в поле \sfemph{Масштаб} основной
-надписи сборочного чертежа или чертежа печатной платы.\\
+Печатает аргумент \sfemph{<value>} в поле \colorbox{resultcolor}{\sfemph{Масштаб}}
+основной надписи сборочного чертежа или чертежа печатной платы.\\
 \hline
 \cellcolor{codecolor}%
 \textbackslash{}NormControllerSet \{\sfemph{<name>}\} &
-Печатает аргумент \sfemph{<name>} в поле \sfemph{Н.~контр.} основной
-надписи.\\
+Печатает аргумент \sfemph{<name>} в поле \colorbox{resultcolor}{\sfemph{Н.~контр.}}
+основной надписи.\\
 \hline
 \cellcolor{codecolor}%
 \textbackslash{}TechControllerSet \{\sfemph{<name>}\} &
-Печатает аргумент \sfemph{<name>} в поле \sfemph{Т.~контр.} основной
-надписи сборочного чертежа или чертежа печатной платы.\\
+Печатает аргумент \sfemph{<name>} в поле \colorbox{resultcolor}{\sfemph{Т.~контр.}}
+основной надписи сборочного чертежа или чертежа печатной платы.\\
 \hline
 \cellcolor{codecolor}%
 \textbackslash{}ApproverSet \{\sfemph{<name>}\} &
-Печатает аргумент \sfemph{<name>} в поле \sfemph{Утв.} основной
+Печатает аргумент \sfemph{<name>} в поле \colorbox{resultcolor}{\sfemph{Утв.}} основной
 надписи.\\
 \hline
 \cellcolor{codecolor}
@@ -61,9 +61,11 @@
 основной надписи. Аргумент \sfemph{<name>} может быть как
 однострочным, так и двустрочным. Разделение аргумента на строки производится с помощью
 команды \bfemph{\textbackslash\textbackslash}. Например:\\\\[-4mm]
-\multicolumn{2}{c}%
-{\pcbdocmanualcode%
-{\textbackslash{}NameSet\{Модуль\textbackslash\textbackslash{}расширителя сознания\}%
+\multicolumn{2}{c}{%
+\pcbdocmanualcode{%
+\textcolor{Blue}{\textbackslash{}NameSet\{}Модуль%
+\textcolor{Blue}{\textbackslash\textbackslash{}}расширителя сознания%
+\textcolor{Blue}{\}}%
 }}\\
 \hline
 \cellcolor{codecolor}
@@ -72,9 +74,9 @@
 \textbackslash{}NumberSet \{\sfemph{<number>}\} &
 Печатает децимальный номер \sfemph{<number>} в поле обозначения
 документа основной надписи схемы электрической принципиальной, перечня элементов,
-сборочного чертежа и спецификации, а также в поле \sfemph{Перв. примен.} схемы
-электрической принципиальной, перечня элементов, чертежа печатной платы и сборочного
-чертежа.\\
+сборочного чертежа и спецификации, а также в поле
+\colorbox{resultcolor}{\sfemph{Перв. примен.}} схемы электрической принципиальной,
+перечня элементов, чертежа печатной платы и сборочного чертежа.\\
 \hline
 \cellcolor{codecolor}%
 \textbackslash{}PcbNumberSet \{\sfemph{<number>}\} &
@@ -90,16 +92,16 @@
 \sfemph{<name>} может быть однострочным, двустрочным или
 трёхстрочным. Разделение аргумента на строки производится с помощью команды
 \bfemph{\textbackslash\textbackslash}. Например:\\\\[-4mm]
-%\hline\\[-4mm]
-\multicolumn{2}{c}%
-{\pcbdocmanualcode%
-{\textbackslash{}PcbMaterialSet\{Материал фольгированный%
-\textbackslash\textbackslash\\качественный\textbackslash\textbackslash{}от надёжного
-поставщика\}}}\\
+\multicolumn{2}{c}{%
+\pcbdocmanualcode{%
+\textcolor{Blue}{\textbackslash{}PcbMaterialSet\{}Материал фольгированный%
+\textcolor{Blue}{\textbackslash\textbackslash}\\качественный%
+\textcolor{Blue}{\textbackslash\textbackslash{}}от надёжного
+поставщика\textcolor{Blue}{\}}}}\\
 \hline
 \cellcolor{codecolor}%
 \textbackslash{}PrimaryUseSet \{\sfemph{<number>}\} &
-Печатает аргумент \sfemph{<number>} в поле \sfemph{Перв. примен.}
-основной надписи спецификации.\\
+Печатает аргумент \sfemph{<number>} в поле
+\colorbox{resultcolor}{\sfemph{Перв. примен.}} основной надписи спецификации.\\
 \hline\hline
 \end{longtable}

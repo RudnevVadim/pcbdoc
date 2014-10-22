@@ -7,14 +7,20 @@
 \usepackage{xltxtra}
 \usepackage{tikz}
 \usepackage{longtable}
-\usepackage{colortbl}
+\usepackage[pdftex,usenames]{colortbl}
 
 \setdefaultlanguage{russian}
 \setotherlanguage{english}
+\newfontfamily\sffont{Fira Sans OT}[Scale=0.9]
 
 \definecolor{terminalcolor}{rgb}{0.7, 0.75, 0.71}
 \definecolor{codecolor}{rgb}{0.84, 0.86, 0.86}
 \definecolor{resultcolor}{rgb}{0.8784,0.8784,0.7647}
+
+\definecolor{Blue}{cmyk}{1,1,0,0}
+\definecolor{MidnightBlue}{cmyk}{0.98,0.13,0,0.43}
+\definecolor{NavyBlue}{cmyk}{0.94,0.54,0,0}
+\definecolor{RoyalBlue}{cmyk}{1,0.50,0,0}
 
 %% fonts
 \newfontfamily\cyrillicfont
@@ -65,7 +71,8 @@
 \setlength{\parindent}{0pt}
 \setlength{\parskip}{1.6ex plus 0.4ex minus 0.4ex}
 
-%\newcommand{\PCBdocCode}[1]{\texttt{#1}}
+\renewcommand{\sf}[1]%
+{\fontspec[Scale=0.9]{Fira Sans OT}\mbox{#1}\normalfont}
 \newcommand{\sfemph}[1]%
   {\fontspec[Scale=0.9]{Fira Sans OT Italic}\mbox{#1}\normalfont}
 \newcommand{\bfemph}[1]%
@@ -98,6 +105,7 @@
 \input ./src/fonts.tex
 \input ./src/fields.tex
 \input ./src/elementlist.tex
+\input ./src/specification.tex
 \newpage
 
 \tableofcontents
