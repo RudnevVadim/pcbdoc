@@ -28,15 +28,20 @@
   ItalicFont=Liberation Serif Italic,
   BoldFont=Liberation Serif Bold,
   BoldItalicFont=Liberation Serif Bold Italic
-]
-{Computer Modern Concrete Roman}
-\newfontfamily\cyrillicfonttt[Scale=0.9]{Liberation Mono}
+]{Computer Modern Concrete Roman}
+
+\newfontfamily\cyrillicfonttt
+[
+  ItalicFont=CMU Typewriter Text Italic,
+  BoldFont=CMU Typewriter Text Bold
+]{CMU Typewriter Text}
+%{Liberation Mono}
 \newfontfamily\cyrillicfontsf
-%[
+[
   %Scale=0.9,
   %BoldFont=Fira Sans OT Medium,
-  %BoldItalicFont=Fira Sans OT Medium Italic
-%]
+  BoldItalicFont=Fira Sans OT Medium Italic
+]
 {Fira Sans OT}
 
 \newcommand{\normalfontresult}{\fontspec[Scale=1.0]{GOST Type AU}}%
@@ -72,13 +77,13 @@
 \setlength{\parskip}{1.6ex plus 0.4ex minus 0.4ex}
 
 \renewcommand{\sf}[1]%
-{\fontspec[Scale=0.9]{Fira Sans OT}\mbox{#1}\normalfont}
+{{\fontspec[Scale=0.9]{Fira Sans OT}\mbox{#1}}}
 \newcommand{\sfemph}[1]%
-  {\fontspec[Scale=0.9]{Fira Sans OT Italic}\mbox{#1}\normalfont}
+  {{\mdseries\fontspec[Scale=0.9]{Fira Sans OT Italic}\mbox{#1}}}
 \newcommand{\bfemph}[1]%
-  {\fontspec[Scale=0.9]{Fira Sans OT Medium Italic}\mbox{#1}\normalfont}
+  {{\fontspec[Scale=0.9]{Fira Sans OT Medium Italic}\mbox{#1}}}
 \newcommand{\bfsf}[1]%
-  {\fontspec[Scale=0.9]{Fira Sans OT Medium}\mbox{#1}\normalfont}
+  {{\fontspec[Scale=0.9]{Fira Sans OT Medium}\mbox{#1}}}
 \newcommand{\bftt}[1]%
   {\texttt{\bfseries{}\mbox{#1}}}
 \newcommand{\pcbdocmanualcode}[1]{%
@@ -98,16 +103,27 @@
 
 \begin{document}
 
-\input ./src/introduction.tex
-\input ./src/install.tex
-\input ./src/tutorial.tex
-\input ./src/options.tex
-\input ./src/fonts.tex
-\input ./src/fields.tex
-\input ./src/elementlist.tex
-\input ./src/specification.tex
-\newpage
+\title{Pbbdoc. Руководство пользователя}
+%\maketitle
 
+\begin{titlepage}
+\begin{tikzpicture}[overlay]
+\draw[top color=codecolor,middle color=gray,bottom color=gray]%
+ (-40mm,40mm) rectangle (180mm,-250mm);
+\node at(70mm,-80mm){\huge\sffamily\bfseries{}PCBDOC v0.4};
+\node at(70mm,-100mm){\LARGE\sffamily\bfseries{}Руководство пользователя};
+\end{tikzpicture}
+
+\end{titlepage}
+
+\input ./src/introduction.tex\newpage
+\input ./src/install.tex\newpage
+\input ./src/tutorial.tex\newpage
+\input ./src/options.tex\newpage
+\input ./src/fonts.tex\newpage
+\input ./src/fields.tex\newpage
+\input ./src/elementlist.tex\newpage
+\input ./src/specification.tex\newpage
 \tableofcontents
 
 \end{document}

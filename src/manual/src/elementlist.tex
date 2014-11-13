@@ -42,9 +42,10 @@ doctype=pe\textcolor{Blue}{]\{}pcbdoc%
 }
 
 Внутри окружения \sfemph{ElementList} должны находиться команды заполнения строк
-перечня элементов, приведённые в \bfsf{Таблице~\ref{tabular:pelines}}.\\%[-15mm]
+перечня элементов, приведённые в \bfsf{Таблице~\ref{tabular:pelines}}.\newpage
+
 \begin{longtable}{%
->{\ttfamily\bfseries}p{0.26\textwidth}%
+>{\sffamily\bfseries\itshape\small}p{0.26\textwidth}%
 >{\small}p{0.68\textwidth}%
 }%
 \label{tabular:pelines}\\
@@ -63,7 +64,7 @@ doctype=pe\textcolor{Blue}{]\{}pcbdoc%
 \cellcolor{codecolor}
 
 \vspace{-4mm}
-\textbackslash{}Part\{\sfemph{<name>}\} &
+\textbackslash{}Part\{<name>\} &
 Печатает подчёркнутый аргумент \sfemph{<name>} в центре колонки
 \colorbox{resultcolor}{\sfemph{Наименование}} Например:\\\\[-4mm]
 \multicolumn{2}{c}{%
@@ -74,12 +75,12 @@ doctype=pe\textcolor{Blue}{]\{}pcbdoc%
 \cellcolor{codecolor}
 
 \vspace{25mm}
-\textbackslash{}Element[\sfemph{<note>}]
-\{\sfemph{<naming>}\}
+\textbackslash{}Element[<note>]
+\{<naming>\}
 
-\{\sfemph{<refdes1 ... refdesN>}\}
+\{<refdes1 ... refdesN>\}
 
-\{\sfemph{<quantity>}\} &
+\{<quantity>\} &
 Заполняет строку перечня элементов. Необязательный аргумент \sfemph{<note>} печатается
 в колонке \colorbox{resultcolor}{\sfemph{Примечание}}. Аргументы \sfemph{<naming>},
 \sfemph{<refdes1 ... refdesN>} и \sfemph{<quantity>} печатаются в колонках
@@ -101,7 +102,7 @@ doctype=pe\textcolor{Blue}{]\{}pcbdoc%
 \multicolumn{2}{c}{%
 \pcbdocmanualcode{%
 \textcolor{Blue}{\textbackslash{}Element\{}Y5V\textbackslash\_1206\textbackslash\_%
-4,7\textbackslash\_MKF\textbackslash\_20\%\textbackslash\_25V%
+  4,7\textbackslash\_MKF\textbackslash\_20\textbackslash\%\textbackslash\_25V%
 \textcolor{Blue}{\}\{\%}\\
 ~~\textcolor{Blue}{\textbackslash{}refbox\{}C6,C15,C16\textcolor{Blue}{\}}\\
 ~~\textcolor{Blue}{\textbackslash{}refbox\{}C18,C21\textcolor{Blue}{\}}\\
@@ -121,7 +122,7 @@ doctype=pe\textcolor{Blue}{]\{}pcbdoc%
   \textcolor{Blue}{\{\}}C238-C240\textcolor{Blue}{\}}\\
 ~~\textcolor{Blue}{\textbackslash{}refbox\{}\textbackslash{}llargeit%
   \textcolor{Blue}{\{\}}C265-C266\textcolor{Blue}{\}\%}\\
-~~\textcolor{Blue}{\}\{}36\}
+~~\textcolor{Blue}{\}\{}36\textcolor{Blue}{\}}
 }}\\
 \hline
 \cellcolor{codecolor}\textbackslash\textbackslash & Переход на новую строку \\

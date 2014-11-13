@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99991 (TeX Live 2014) (preloaded format=xelatex 2014.10.12)  22 OCT 2014 22:20
+This is XeTeX, Version 3.14159265-2.6-0.99991 (TeX Live 2014) (preloaded format=xelatex 2014.10.12)  13 NOV 2014 22:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -848,22 +848,18 @@ File: gloss-english.ldf polyglossia: module for english
 . and font adjustment code:
 . 
 .................................................
-.................................................
-. fontspec info: "no-scripts"
-. 
-. Font Liberation Mono does not contain any OpenType `Script' information.
-.................................................
-\g__fontspec_family_LiberationMono_int=\count150
+\g__fontspec_family_CMUTypewriterText_int=\count150
 .................................................
 . fontspec info: "defining-font"
 . 
-. Font family 'LiberationMono(0)' created for font 'Liberation Mono' with
-. options [Scale=0.9].
+. Font family 'CMUTypewriterText(0)' created for font 'CMU Typewriter Text'
+. with options [ItalicFont=CMU Typewriter Text Italic,BoldFont=CMU Typewriter
+. Text Bold].
 . 
 . This font family consists of the following shapes:
 . 
 . * 'normal' with NFSS spec.:
-. <->s*[0.9]"Liberation Mono/OT:"
+. <->"CMU Typewriter Text/OT:script=latn;language=DFLT;"
 . 
 . * 'small caps' with NFSS spec.:
 . 
@@ -871,7 +867,7 @@ File: gloss-english.ldf polyglossia: module for english
 . 
 . 
 . * 'bold' with NFSS spec.:
-. <->s*[0.9]"Liberation Mono/B/OT:"
+. <->"CMU Typewriter Text Bold/OT:script=latn;language=DFLT;"
 . 
 . * 'bold small caps' with NFSS spec.:
 . 
@@ -879,7 +875,7 @@ File: gloss-english.ldf polyglossia: module for english
 . 
 . 
 . * 'italic' with NFSS spec.:
-. <->s*[0.9]"Liberation Mono/I/OT:"
+. <->"CMU Typewriter Text Italic/OT:script=latn;language=DFLT;"
 . 
 . * 'small caps' with NFSS spec.:
 . 
@@ -887,7 +883,7 @@ File: gloss-english.ldf polyglossia: module for english
 . 
 . 
 . * 'bold italic' with NFSS spec.:
-. <->s*[0.9]"Liberation Mono/BI/OT:"
+. <->"CMU Typewriter Text Italic/B/OT:script=latn;language=DFLT;"
 . 
 . * 'bold small caps' with NFSS spec.:
 . 
@@ -897,7 +893,8 @@ File: gloss-english.ldf polyglossia: module for english
 .................................................
 . fontspec info: "defining-font"
 . 
-. Font family 'FiraSansOT(1)' created for font 'Fira Sans OT' with options [].
+. Font family 'FiraSansOT(1)' created for font 'Fira Sans OT' with options
+. [BoldItalicFont=Fira Sans OT Medium Italic].
 . 
 . This font family consists of the following shapes:
 . 
@@ -926,10 +923,10 @@ File: gloss-english.ldf polyglossia: module for english
 . 
 . 
 . * 'bold italic' with NFSS spec.:
-. <->"Fira Sans OT/BI/OT:script=latn;language=DFLT;"
+. <->"Fira Sans OT Medium Italic/OT:script=latn;language=DFLT;"
 . 
 . * 'bold small caps' with NFSS spec.:
-. <->"Fira Sans OT/BI/OT:script=latn;language=DFLT;+smcp;"
+. <->"Fira Sans OT Medium Italic/OT:script=latn;language=DFLT;+smcp;"
 . and font adjustment code:
 . 
 .................................................
@@ -972,27 +969,27 @@ Package: topcapt 2004/12/11 v1.2 Caption at top of float
 (./output/pcbdocmanual.aux)
 \openout1 = `pcbdocmanual.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 99.
-LaTeX Font Info:    ... okay on input line 99.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 99.
-LaTeX Font Info:    ... okay on input line 99.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 99.
-LaTeX Font Info:    ... okay on input line 99.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 99.
-LaTeX Font Info:    ... okay on input line 99.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 99.
-LaTeX Font Info:    ... okay on input line 99.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 99.
-LaTeX Font Info:    ... okay on input line 99.
-LaTeX Font Info:    Checking defaults for EU1/lmr/m/n on input line 99.
-LaTeX Font Info:    ... okay on input line 99.
-LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 99.
-LaTeX Font Info:    Try loading font information for T3+cmr on input line 99.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 104.
+LaTeX Font Info:    ... okay on input line 104.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 104.
+LaTeX Font Info:    ... okay on input line 104.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 104.
+LaTeX Font Info:    ... okay on input line 104.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 104.
+LaTeX Font Info:    ... okay on input line 104.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 104.
+LaTeX Font Info:    ... okay on input line 104.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 104.
+LaTeX Font Info:    ... okay on input line 104.
+LaTeX Font Info:    Checking defaults for EU1/lmr/m/n on input line 104.
+LaTeX Font Info:    ... okay on input line 104.
+LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 104.
+LaTeX Font Info:    Try loading font information for T3+cmr on input line 104.
 
 (/opt1/texlive/2014/texmf-dist/tex/latex/tipa/t3cmr.fd
 File: t3cmr.fd 2001/12/31 TIPA font definitions
 )
-LaTeX Font Info:    ... okay on input line 99.
+LaTeX Font Info:    ... okay on input line 104.
 .................................................
 . fontspec info: "setup-math"
 . 
@@ -1000,64 +997,67 @@ LaTeX Font Info:    ... okay on input line 99.
 .................................................
 \symlegacymaths=\mathgroup4
 LaTeX Font Info:    Overwriting symbol font `legacymaths' in version `bold'
-(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 99.
-LaTeX Font Info:    Redeclaring math accent \acute on input line 99.
-LaTeX Font Info:    Redeclaring math accent \grave on input line 99.
-LaTeX Font Info:    Redeclaring math accent \ddot on input line 99.
-LaTeX Font Info:    Redeclaring math accent \tilde on input line 99.
-LaTeX Font Info:    Redeclaring math accent \bar on input line 99.
-LaTeX Font Info:    Redeclaring math accent \breve on input line 99.
-LaTeX Font Info:    Redeclaring math accent \check on input line 99.
-LaTeX Font Info:    Redeclaring math accent \hat on input line 99.
-LaTeX Font Info:    Redeclaring math accent \dot on input line 99.
-LaTeX Font Info:    Redeclaring math accent \mathring on input line 99.
-LaTeX Font Info:    Redeclaring math symbol \colon on input line 99.
-LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 99.
-LaTeX Font Info:    Redeclaring math symbol \Delta on input line 99.
-LaTeX Font Info:    Redeclaring math symbol \Theta on input line 99.
-LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 99.
-LaTeX Font Info:    Redeclaring math symbol \Xi on input line 99.
-LaTeX Font Info:    Redeclaring math symbol \Pi on input line 99.
-LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 99.
-LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 99.
-LaTeX Font Info:    Redeclaring math symbol \Phi on input line 99.
-LaTeX Font Info:    Redeclaring math symbol \Psi on input line 99.
-LaTeX Font Info:    Redeclaring math symbol \Omega on input line 99.
-LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 99.
-LaTeX Font Info:    Redeclaring symbol font `operators' on input line 99.
+(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 104.
+LaTeX Font Info:    Redeclaring math accent \acute on input line 104.
+LaTeX Font Info:    Redeclaring math accent \grave on input line 104.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 104.
+LaTeX Font Info:    Redeclaring math accent \tilde on input line 104.
+LaTeX Font Info:    Redeclaring math accent \bar on input line 104.
+LaTeX Font Info:    Redeclaring math accent \breve on input line 104.
+LaTeX Font Info:    Redeclaring math accent \check on input line 104.
+LaTeX Font Info:    Redeclaring math accent \hat on input line 104.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 104.
+LaTeX Font Info:    Redeclaring math accent \mathring on input line 104.
+LaTeX Font Info:    Redeclaring math symbol \colon on input line 104.
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 104.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 104.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 104.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 104.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 104.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 104.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 104.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 104.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 104.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 104.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 104.
+LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 104.
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 104.
 LaTeX Font Info:    Encoding `OT1' has changed to `EU1' for symbol font
-(Font)              `operators' in the math version `normal' on input line 99.
+(Font)              `operators' in the math version `normal' on input line 104.
+
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> EU1/lmr/m/n on input line 99.
+(Font)                  OT1/cmr/m/n --> EU1/lmr/m/n on input line 104.
 LaTeX Font Info:    Encoding `OT1' has changed to `EU1' for symbol font
-(Font)              `operators' in the math version `bold' on input line 99.
+(Font)              `operators' in the math version `bold' on input line 104.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> EU1/lmr/m/n on input line 99.
+(Font)                  OT1/cmr/bx/n --> EU1/lmr/m/n on input line 104.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  EU1/lmr/m/n --> EU1/lmr/m/n on input line 99.
+(Font)                  EU1/lmr/m/n --> EU1/lmr/m/n on input line 104.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> EU1/lmr/m/it on input line 99.
+(Font)                  OT1/cmr/m/it --> EU1/lmr/m/it on input line 104.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> EU1/lmr/bx/n on input line 99.
+(Font)                  OT1/cmr/bx/n --> EU1/lmr/bx/n on input line 104.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> EU1/lmss/m/n on input line 99.
+(Font)                  OT1/cmss/m/n --> EU1/lmss/m/n on input line 104.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> EU1/lmtt/m/n on input line 99.
+(Font)                  OT1/cmtt/m/n --> EU1/lmtt/m/n on input line 104.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  EU1/lmr/m/n --> EU1/lmr/bx/n on input line 99.
+(Font)                  EU1/lmr/m/n --> EU1/lmr/bx/n on input line 104.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> EU1/lmr/bx/it on input line 99.
+(Font)                  OT1/cmr/bx/it --> EU1/lmr/bx/it on input line 104.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> EU1/lmss/bx/n on input line 99.
+(Font)                  OT1/cmss/bx/n --> EU1/lmss/bx/n on input line 104.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> EU1/lmtt/bx/n on input line 99.
+(Font)                  OT1/cmtt/m/n --> EU1/lmtt/bx/n on input line 104.
 
 ABD: EveryShipout initializing macros
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: `topcapt' package detected; setting `position=b' for comp
 atibility reasons.
 Package caption Info: End \AtBeginDocument code.
- (./src/introduction.tex
+ [1
+
+] (./src/introduction.tex
 .................................................
 . fontspec info: "no-scripts"
 . 
@@ -1181,7 +1181,7 @@ LaTeX Font Info:    Font shape `EU1/FiraSansOTMediumItalic(0)/m/n' will be
 . 
 . Font Fira Sans OT Italic does not contain any OpenType `Script' information.
 .................................................
-)
+) [1]
 (./src/install.tex
 .................................................
 . fontspec info: "no-scripts"
@@ -1223,8 +1223,6 @@ LaTeX Font Info:    Font shape `EU1/FiraSansOTMediumItalic(0)/m/n' will be
 . 
 . Font Fira Sans OT Italic does not contain any OpenType `Script' information.
 .................................................
-LaTeX Font Info:    Font shape `EU1/LiberationMono(0)/m/n' will be
-(Font)              scaled to size 9.85492pt on input line 13.
 .................................................
 . fontspec info: "no-scripts"
 . 
@@ -1255,9 +1253,6 @@ LaTeX Font Info:    Font shape `EU1/LiberationMono(0)/m/n' will be
 . 
 . Font Fira Sans OT Italic does not contain any OpenType `Script' information.
 .................................................
- [1
-
-]
 .................................................
 . fontspec info: "no-scripts"
 . 
@@ -1273,10 +1268,10 @@ LaTeX Font Info:    Font shape `EU1/LiberationMono(0)/m/n' will be
 . 
 . Font Fira Sans OT Italic does not contain any OpenType `Script' information.
 .................................................
-) (./src/tutorial.tex [2] [3]
+) [2] (./src/tutorial.tex [3]
 File: output/vasia.pdf Graphic file (type QTm)
  <use  "output/vasia.pdf" >
-[4]) (./src/options.tex
+[4]) [5] (./src/options.tex
 .................................................
 . fontspec info: "no-scripts"
 . 
@@ -1345,13 +1340,7 @@ File: output/vasia.pdf Graphic file (type QTm)
 .................................................
 LaTeX Font Info:    Font shape `EU1/FiraSansOTMedium(0)/m/n' will be
 (Font)              scaled to size 9.85492pt on input line 9.
- [5]) (./src/fonts.tex [6]
-Underfull \hbox (badness 10000) in paragraph at lines 4--9
-
- []
-
-LaTeX Font Info:    Font shape `EU1/LiberationMono(0)/bx/n' will be
-(Font)              scaled to size 9.85492pt on input line 14.
+ [6]) [7] (./src/fonts.tex
 .................................................
 . fontspec info: "no-scripts"
 . 
@@ -1390,7 +1379,7 @@ LaTeX Font Info:    Font shape `EU1/LiberationMono(0)/bx/n' will be
 . 
 .................................................
 LaTeX Font Info:    Font shape `EU1/GOSTTypeAU(0)/m/n' will be
-(Font)              scaled to size 8.2125pt on input line 31.
+(Font)              scaled to size 8.2125pt on input line 32.
 .................................................
 . fontspec info: "no-scripts"
 . 
@@ -1428,7 +1417,7 @@ LaTeX Font Info:    Font shape `EU1/GOSTTypeAU(0)/m/n' will be
 . 
 .................................................
 LaTeX Font Info:    Font shape `EU1/GOSTTypeAU(1)/m/n' will be
-(Font)              scaled to size 10.95pt on input line 36.
+(Font)              scaled to size 10.95pt on input line 37.
 .................................................
 . fontspec info: "no-scripts"
 . 
@@ -1466,7 +1455,7 @@ LaTeX Font Info:    Font shape `EU1/GOSTTypeAU(1)/m/n' will be
 . 
 .................................................
 LaTeX Font Info:    Font shape `EU1/GOSTTypeAU(2)/m/n' will be
-(Font)              scaled to size 13.13995pt on input line 41.
+(Font)              scaled to size 13.13995pt on input line 42.
 .................................................
 . fontspec info: "no-scripts"
 . 
@@ -1504,7 +1493,7 @@ LaTeX Font Info:    Font shape `EU1/GOSTTypeAU(2)/m/n' will be
 . 
 .................................................
 LaTeX Font Info:    Font shape `EU1/GOSTTypeAU(3)/m/n' will be
-(Font)              scaled to size 14.23502pt on input line 46.
+(Font)              scaled to size 14.23502pt on input line 47.
 .................................................
 . fontspec info: "no-scripts"
 . 
@@ -1542,7 +1531,7 @@ LaTeX Font Info:    Font shape `EU1/GOSTTypeAU(3)/m/n' will be
 . 
 .................................................
 LaTeX Font Info:    Font shape `EU1/GOSTTypeAU(4)/m/n' will be
-(Font)              scaled to size 18.06741pt on input line 51.
+(Font)              scaled to size 18.06741pt on input line 52.
 .................................................
 . fontspec info: "no-scripts"
 . 
@@ -1580,12 +1569,7 @@ LaTeX Font Info:    Font shape `EU1/GOSTTypeAU(4)/m/n' will be
 . 
 .................................................
 LaTeX Font Info:    Font shape `EU1/GOSTTypeAU(5)/m/n' will be
-(Font)              scaled to size 19.16249pt on input line 56.
-
-Underfull \hbox (badness 10000) in paragraph at lines 57--58
-
- []
-
+(Font)              scaled to size 19.16249pt on input line 57.
 \g__fontspec_family_GOSTtypeA_int=\count156
 .................................................
 . fontspec info: "no-font-shape"
@@ -1625,9 +1609,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 57--58
 . 
 .................................................
 LaTeX Font Info:    Font shape `EU1/GOSTtypeA(0)/m/n' will be
-(Font)              scaled to size 8.2125pt on input line 80.
+(Font)              scaled to size 8.2125pt on input line 82.
 LaTeX Font Info:    Font shape `EU1/GOSTtypeA(0)/m/it' will be
-(Font)              scaled to size 8.2125pt on input line 80.
+(Font)              scaled to size 8.2125pt on input line 82.
 .................................................
 . fontspec info: "no-font-shape"
 . 
@@ -1666,9 +1650,9 @@ LaTeX Font Info:    Font shape `EU1/GOSTtypeA(0)/m/it' will be
 . 
 .................................................
 LaTeX Font Info:    Font shape `EU1/GOSTtypeA(1)/m/n' will be
-(Font)              scaled to size 10.95pt on input line 85.
+(Font)              scaled to size 10.95pt on input line 87.
 LaTeX Font Info:    Font shape `EU1/GOSTtypeA(1)/m/it' will be
-(Font)              scaled to size 10.95pt on input line 85.
+(Font)              scaled to size 10.95pt on input line 87.
 .................................................
 . fontspec info: "no-font-shape"
 . 
@@ -1707,9 +1691,9 @@ LaTeX Font Info:    Font shape `EU1/GOSTtypeA(1)/m/it' will be
 . 
 .................................................
 LaTeX Font Info:    Font shape `EU1/GOSTtypeA(2)/m/n' will be
-(Font)              scaled to size 13.13995pt on input line 90.
+(Font)              scaled to size 13.13995pt on input line 92.
 LaTeX Font Info:    Font shape `EU1/GOSTtypeA(2)/m/it' will be
-(Font)              scaled to size 13.13995pt on input line 90.
+(Font)              scaled to size 13.13995pt on input line 92.
 .................................................
 . fontspec info: "no-font-shape"
 . 
@@ -1748,9 +1732,9 @@ LaTeX Font Info:    Font shape `EU1/GOSTtypeA(2)/m/it' will be
 . 
 .................................................
 LaTeX Font Info:    Font shape `EU1/GOSTtypeA(3)/m/n' will be
-(Font)              scaled to size 14.23502pt on input line 95.
+(Font)              scaled to size 14.23502pt on input line 97.
 LaTeX Font Info:    Font shape `EU1/GOSTtypeA(3)/m/it' will be
-(Font)              scaled to size 14.23502pt on input line 95.
+(Font)              scaled to size 14.23502pt on input line 97.
 .................................................
 . fontspec info: "no-font-shape"
 . 
@@ -1789,9 +1773,9 @@ LaTeX Font Info:    Font shape `EU1/GOSTtypeA(3)/m/it' will be
 . 
 .................................................
 LaTeX Font Info:    Font shape `EU1/GOSTtypeA(4)/m/n' will be
-(Font)              scaled to size 18.06741pt on input line 100.
+(Font)              scaled to size 18.06741pt on input line 102.
 LaTeX Font Info:    Font shape `EU1/GOSTtypeA(4)/m/it' will be
-(Font)              scaled to size 18.06741pt on input line 100.
+(Font)              scaled to size 18.06741pt on input line 102.
 .................................................
 . fontspec info: "no-font-shape"
 . 
@@ -1830,29 +1814,32 @@ LaTeX Font Info:    Font shape `EU1/GOSTtypeA(4)/m/it' will be
 . 
 .................................................
 LaTeX Font Info:    Font shape `EU1/GOSTtypeA(5)/m/n' will be
-(Font)              scaled to size 19.16249pt on input line 105.
+(Font)              scaled to size 19.16249pt on input line 107.
 LaTeX Font Info:    Font shape `EU1/GOSTtypeA(5)/m/it' will be
-(Font)              scaled to size 19.16249pt on input line 105.
-) (./src/fields.tex
-Underfull \hbox (badness 10000) in paragraph at lines 4--7
-
- []
-
-[7]
-.................................................
-. fontspec info: "no-scripts"
-. 
-. Font Fira Sans OT Italic does not contain any OpenType `Script' information.
-.................................................
-LaTeX Font Info:    Font shape `EU1/FiraSansOTItalic(0)/bx/n' will be
-(Font)              scaled to size 9.85492pt on input line 25.
+(Font)              scaled to size 19.16249pt on input line 107.
+) [8] (./src/fields.tex
 .................................................
 . fontspec info: "no-scripts"
 . 
 . Font Fira Sans OT Italic does not contain any OpenType `Script' information.
 .................................................
 LaTeX Font Info:    Font shape `EU1/FiraSansOTItalic(0)/m/n' will be
-(Font)              scaled to size 8.99994pt on input line 26.
+(Font)              scaled to size 8.99994pt on input line 28.
+.................................................
+. fontspec info: "no-scripts"
+. 
+. Font Fira Sans OT Italic does not contain any OpenType `Script' information.
+.................................................
+.................................................
+. fontspec info: "no-scripts"
+. 
+. Font Fira Sans OT Italic does not contain any OpenType `Script' information.
+.................................................
+.................................................
+. fontspec info: "no-scripts"
+. 
+. Font Fira Sans OT Italic does not contain any OpenType `Script' information.
+.................................................
 .................................................
 . fontspec info: "no-scripts"
 . 
@@ -1864,9 +1851,8 @@ LaTeX Font Info:    Font shape `EU1/FiraSansOTItalic(0)/m/n' will be
 . Font Fira Sans OT Italic does not contain any OpenType `Script' information.
 .................................................
 
-Overfull \hbox (0.54631pt too wide) in paragraph at lines 29--30
-[]|\EU1/LiberationMono(0)/bx/n/10.95 \CheckerSet{[]\EU1/ComputerModernConcreteR
-oman(0)/bx/n/10.95 }| 
+Underfull \hbox (badness 10000) in paragraph at lines 43--44
+[]|\EU1/FiraSansOT(1)/bx/it/10 \NormControllerSet
  []
 
 .................................................
@@ -1879,29 +1865,9 @@ oman(0)/bx/n/10.95 }|
 . 
 . Font Fira Sans OT Italic does not contain any OpenType `Script' information.
 .................................................
-.................................................
-. fontspec info: "no-scripts"
-. 
-. Font Fira Sans OT Italic does not contain any OpenType `Script' information.
-.................................................
-.................................................
-. fontspec info: "no-scripts"
-. 
-. Font Fira Sans OT Italic does not contain any OpenType `Script' information.
-.................................................
-.................................................
-. fontspec info: "no-scripts"
-. 
-. Font Fira Sans OT Italic does not contain any OpenType `Script' information.
-.................................................
-.................................................
-. fontspec info: "no-scripts"
-. 
-. Font Fira Sans OT Italic does not contain any OpenType `Script' information.
-.................................................
 
-Underfull \hbox (badness 10000) in paragraph at lines 41--42
-[]|\EU1/LiberationMono(0)/bx/n/10.95 \NormControllerSet
+Underfull \hbox (badness 10000) in paragraph at lines 48--49
+[]|\EU1/FiraSansOT(1)/bx/it/10 \TechControllerSet
  []
 
 .................................................
@@ -1909,41 +1875,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 41--42
 . 
 . Font Fira Sans OT Italic does not contain any OpenType `Script' information.
 .................................................
-.................................................
-. fontspec info: "no-scripts"
-. 
-. Font Fira Sans OT Italic does not contain any OpenType `Script' information.
-.................................................
-.................................................
-. fontspec info: "no-scripts"
-. 
-. Font Fira Sans OT Italic does not contain any OpenType `Script' information.
-.................................................
-
-Underfull \hbox (badness 10000) in paragraph at lines 46--47
-[]|\EU1/LiberationMono(0)/bx/n/10.95 \TechControllerSet
- []
-
-.................................................
-. fontspec info: "no-scripts"
-. 
-. Font Fira Sans OT Italic does not contain any OpenType `Script' information.
-.................................................
-.................................................
-. fontspec info: "no-scripts"
-. 
-. Font Fira Sans OT Italic does not contain any OpenType `Script' information.
-.................................................
-.................................................
-. fontspec info: "no-scripts"
-. 
-. Font Fira Sans OT Italic does not contain any OpenType `Script' information.
-.................................................
-
-Underfull \hbox (badness 10000) in paragraph at lines 51--52
-[]|\EU1/LiberationMono(0)/bx/n/10.95 \ApproverSet
- []
-
 .................................................
 . fontspec info: "no-scripts"
 . 
@@ -1970,15 +1901,30 @@ Underfull \hbox (badness 10000) in paragraph at lines 51--52
 . Font Fira Sans OT Italic does not contain any OpenType `Script' information.
 .................................................
 LaTeX Font Info:    Font shape `EU1/FiraSansOTMediumItalic(0)/m/n' will be
-(Font)              scaled to size 8.99994pt on input line 63.
+(Font)              scaled to size 8.99994pt on input line 65.
+.................................................
+. fontspec info: "no-scripts"
+. 
+. Font Fira Sans OT Italic does not contain any OpenType `Script' information.
+.................................................
 .................................................
 . fontspec info: "no-scripts"
 . 
 . Font Fira Sans OT Italic does not contain any OpenType `Script' information.
 .................................................
 
-Underfull \hbox (badness 10000) in paragraph at lines 74--74
-[]\EU1/LiberationMono(0)/bx/n/10.95 \NumberSet
+Underfull \hbox (badness 10000) in paragraph at lines 83--84
+[]|\EU1/FiraSansOT(1)/bx/it/10 \PcbNumberSet
+ []
+
+.................................................
+. fontspec info: "no-scripts"
+. 
+. Font Fira Sans OT Italic does not contain any OpenType `Script' information.
+.................................................
+
+Underfull \hbox (badness 10000) in paragraph at lines 91--91
+[]\EU1/FiraSansOT(1)/bx/it/10 \PcbMaterialSet
  []
 
 .................................................
@@ -1991,14 +1937,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 74--74
 . 
 . Font Fira Sans OT Italic does not contain any OpenType `Script' information.
 .................................................
-.................................................
-. fontspec info: "no-scripts"
-. 
-. Font Fira Sans OT Italic does not contain any OpenType `Script' information.
-.................................................
 
-Underfull \hbox (badness 10000) in paragraph at lines 81--82
-[]|\EU1/LiberationMono(0)/bx/n/10.95 \PcbNumberSet
+Underfull \hbox (badness 10000) in paragraph at lines 104--105
+[]|\EU1/FiraSansOT(1)/bx/it/10 \PrimaryUseSet
  []
 
 .................................................
@@ -2011,109 +1952,43 @@ Underfull \hbox (badness 10000) in paragraph at lines 81--82
 . 
 . Font Fira Sans OT Italic does not contain any OpenType `Script' information.
 .................................................
+) [9] (./src/elementlist.tex
+.................................................
+. fontspec info: "no-scripts"
+. 
+. Font Fira Sans OT Italic does not contain any OpenType `Script' information.
+.................................................
+.................................................
+. fontspec info: "no-scripts"
+. 
+. Font Fira Sans OT Italic does not contain any OpenType `Script' information.
+.................................................
+.................................................
+. fontspec info: "no-scripts"
+. 
+. Font Fira Sans OT Italic does not contain any OpenType `Script' information.
+.................................................
+.................................................
+. fontspec info: "no-scripts"
+. 
+. Font Fira Sans OT Italic does not contain any OpenType `Script' information.
+.................................................
+ [10]
+.................................................
+. fontspec info: "no-scripts"
+. 
+. Font Fira Sans OT Italic does not contain any OpenType `Script' information.
+.................................................
+.................................................
+. fontspec info: "no-scripts"
+. 
+. Font Fira Sans OT Italic does not contain any OpenType `Script' information.
+.................................................
 
-Underfull \hbox (badness 10000) in paragraph at lines 89--89
-[]\EU1/LiberationMono(0)/bx/n/10.95 \PcbMaterialSet
+Underfull \hbox (badness 10000) in paragraph at lines 78--80
+[]\EU1/FiraSansOT(1)/bx/it/10 \Element[<note>]
  []
 
-.................................................
-. fontspec info: "no-scripts"
-. 
-. Font Fira Sans OT Italic does not contain any OpenType `Script' information.
-.................................................
-.................................................
-. fontspec info: "no-scripts"
-. 
-. Font Fira Sans OT Italic does not contain any OpenType `Script' information.
-.................................................
-.................................................
-. fontspec info: "no-scripts"
-. 
-. Font Fira Sans OT Italic does not contain any OpenType `Script' information.
-.................................................
-
-Underfull \hbox (badness 10000) in paragraph at lines 102--103
-[]|\EU1/LiberationMono(0)/bx/n/10.95 \PrimaryUseSet
- []
-
-.................................................
-. fontspec info: "no-scripts"
-. 
-. Font Fira Sans OT Italic does not contain any OpenType `Script' information.
-.................................................
-.................................................
-. fontspec info: "no-scripts"
-. 
-. Font Fira Sans OT Italic does not contain any OpenType `Script' information.
-.................................................
-) (./src/elementlist.tex
-.................................................
-. fontspec info: "no-scripts"
-. 
-. Font Fira Sans OT Italic does not contain any OpenType `Script' information.
-.................................................
-.................................................
-. fontspec info: "no-scripts"
-. 
-. Font Fira Sans OT Italic does not contain any OpenType `Script' information.
-.................................................
- [8]
-.................................................
-. fontspec info: "no-scripts"
-. 
-. Font Fira Sans OT Italic does not contain any OpenType `Script' information.
-.................................................
-.................................................
-. fontspec info: "no-scripts"
-. 
-. Font Fira Sans OT Italic does not contain any OpenType `Script' information.
-.................................................
-
-Underfull \hbox (badness 10000) in paragraph at lines 44--46
-
- []
-
-.................................................
-. fontspec info: "no-scripts"
-. 
-. Font Fira Sans OT Italic does not contain any OpenType `Script' information.
-.................................................
-.................................................
-. fontspec info: "no-scripts"
-. 
-. Font Fira Sans OT Italic does not contain any OpenType `Script' information.
-.................................................
-.................................................
-. fontspec info: "no-scripts"
-. 
-. Font Fira Sans OT Italic does not contain any OpenType `Script' information.
-.................................................
-.................................................
-. fontspec info: "no-scripts"
-. 
-. Font Fira Sans OT Italic does not contain any OpenType `Script' information.
-.................................................
-.................................................
-. fontspec info: "no-scripts"
-. 
-. Font Fira Sans OT Italic does not contain any OpenType `Script' information.
-.................................................
-
-Underfull \hbox (badness 10000) in paragraph at lines 77--79
-[]\EU1/LiberationMono(0)/bx/n/10.95 \Element[[]\EU1/ComputerModernConcreteRoman
-(0)/bx/n/10.95 ]
- []
-
-.................................................
-. fontspec info: "no-scripts"
-. 
-. Font Fira Sans OT Italic does not contain any OpenType `Script' information.
-.................................................
-.................................................
-. fontspec info: "no-scripts"
-. 
-. Font Fira Sans OT Italic does not contain any OpenType `Script' information.
-.................................................
 .................................................
 . fontspec info: "no-scripts"
 . 
@@ -2170,20 +2045,20 @@ Underfull \hbox (badness 10000) in paragraph at lines 77--79
 . Font Fira Sans OT Italic does not contain any OpenType `Script' information.
 .................................................
 LaTeX Font Info:    Font shape `EU1/FiraSansOTMedium(0)/m/n' will be
-(Font)              scaled to size 8.99994pt on input line 93.
-[9]) (./src/specification.tex) [10] (./output/pcbdocmanual.toc)
+(Font)              scaled to size 8.99994pt on input line 94.
+) [11] (./src/specification.tex) [12] (./output/pcbdocmanual.toc)
 \tf@toc=\write4
 \openout4 = `pcbdocmanual.toc'.
 
- [11]
+ [13]
 (./output/pcbdocmanual.aux) ) 
 Here is how much of TeX's memory you used:
- 25989 strings out of 493724
- 540103 string characters out of 6147868
- 566299 words of memory out of 5000000
- 28851 multiletter control sequences out of 15000+600000
- 7003 words of font info for 101 fonts, out of 8000000 for 9000
+ 26022 strings out of 493724
+ 541563 string characters out of 6147868
+ 564527 words of memory out of 5000000
+ 28877 multiletter control sequences out of 15000+600000
+ 7043 words of font info for 106 fonts, out of 8000000 for 9000
  1328 hyphenation exceptions out of 8191
- 55i,11n,92p,10434b,667s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,11n,92p,10434b,675s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on ./output/pcbdocmanual.pdf (11 pages).
+Output written on ./output/pcbdocmanual.pdf (14 pages).
