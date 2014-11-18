@@ -3,6 +3,7 @@
 \ProvidesClass{pcbdoc}%
 
 %начальный командный код
+\hbadness=10000
 \newcommand{\pcbdoctype}{spec}%
 \newlength{\pcbdoclinethick}%
 \setlength{\pcbdoclinethick}{0.6mm}%
