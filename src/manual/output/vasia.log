@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99991 (TeX Live 2014) (preloaded format=xelatex 2014.10.12)  18 NOV 2014 00:05
+This is XeTeX, Version 3.14159265-2.6-0.99991 (TeX Live 2014) (preloaded format=xelatex 2014.10.12)  6 DEC 2014 20:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -11,7 +11,7 @@ Document Class: pcbdoc
 \pcbdoclinethick=\skip41
 \pcbdoclinethin=\skip42
 (/opt1/texlive/2014/texmf-dist/tex/latex/graphics/keyval.sty
-Package: keyval 2014/05/08 v1.15 key=value parser (DPC)
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks14
 )
 (/home/vadim/texmf/tex/xelatex/pcbdoc/pcbdoclayout.sty
@@ -28,7 +28,7 @@ Package: etex 1998/03/26 v2.0 eTeX basic definition package (PEB)
 \et@xins=\count80
 )
 (/opt1/texlive/2014/texmf-dist/tex/latex/tools/calc.sty
-Package: calc 2007/08/22 v4.3 Infix arithmetic (KKT,FJ)
+Package: calc 2014/10/28 v4.3 Infix arithmetic (KKT,FJ)
 \calc@Acount=\count81
 \calc@Bcount=\count82
 \calc@Adimen=\dimen102
@@ -41,7 +41,7 @@ LaTeX Info: Redefining \addtolength on input line 76.
 \calc@Cskip=\skip45
 )
 (/opt1/texlive/2014/texmf-dist/tex/latex/base/ifthen.sty
-Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 )
 (/opt1/texlive/2014/texmf-dist/tex/latex/ifmtarg/ifmtarg.sty
 Package: ifmtarg 2009/09/02 v1.2a check for an empty argument
@@ -74,9 +74,9 @@ Package: vmargin 2004/07/15 V2.5 set document margins (VK)
 )
 \gridstep=\skip54
  (/opt1/texlive/2014/texmf-dist/tex/latex/base/article.cls
-Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
+Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
 (/opt1/texlive/2014/texmf-dist/tex/latex/base/size12.clo
-File: size12.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+File: size12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count93
 \c@section=\count94
@@ -108,10 +108,10 @@ File: t3enc.def 2001/12/31 T3 encoding
 \tipachecktokens=\toks16
 
 (/opt1/texlive/2014/texmf-dist/tex/latex/graphics/graphicx.sty
-Package: graphicx 2014/04/25 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
 
 (/opt1/texlive/2014/texmf-dist/tex/latex/graphics/graphics.sty
-Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+Package: graphics 2014/10/28 v1.0p Standard LaTeX Graphics (DPC,SPQR)
 
 (/opt1/texlive/2014/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
@@ -142,15 +142,15 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 Package: fontspec 2014/06/21 v2.4a Font selection for XeLaTeX and LuaLaTeX
 
 (/opt1/texlive/2014/texmf-dist/tex/latex/l3kernel/expl3.sty
-Package: expl3 2014/09/15 v5423 L3 programming layer (loader) 
+Package: expl3 2014/11/25 v5471 L3 programming layer (loader) 
 
 (/opt1/texlive/2014/texmf-dist/tex/latex/l3kernel/expl3-code.tex
-Package: expl3 2014/09/15 v5423 L3 programming layer (code) 
+Package: expl3 2014/11/25 v5471 L3 programming layer (code) 
 L3 Module: l3bootstrap 2014/08/23 v5354 L3 Bootstrap code
 L3 Module: l3names 2014/08/22 v5343 L3 Namespace for primitives
 L3 Module: l3basics 2014/08/24 v5364 L3 Basic definitions
 L3 Module: l3expan 2014/08/22 v5349 L3 Argument expansion
-L3 Module: l3tl 2014/08/24 v5359 L3 Token lists
+L3 Module: l3tl 2014/11/19 v5460 L3 Token lists
 L3 Module: l3str 2014/08/24 v5368 L3 Strings
 L3 Module: l3seq 2014/08/23 v5354 L3 Sequences and stacks
 L3 Module: l3int 2014/09/14 v5421 L3 Integers
@@ -231,7 +231,7 @@ L3 Module: l3coffins 2014/08/23 v5354 L3 Coffin code layer
 \l__coffin_display_x_dim=\dimen123
 \l__coffin_display_y_dim=\dimen124
 L3 Module: l3color 2014/08/23 v5354 L3 Experimental color support
-L3 Module: l3candidates 2014/08/24 v5366 L3 Experimental additions to l3kernel
+L3 Module: l3candidates 2014/11/23 v5466 L3 Experimental additions to l3kernel
 \l__box_top_dim=\dimen125
 \l__box_bottom_dim=\dimen126
 \l__box_left_dim=\dimen127
@@ -250,13 +250,13 @@ L3 Module: l3candidates 2014/08/24 v5366 L3 Experimental additions to l3kernel
 \l__coffin_scaled_width_dim=\dimen139
 )
 (/opt1/texlive/2014/texmf-dist/tex/latex/l3kernel/l3unicode-data.def
-File: l3unicode-data.def 2014/08/12 v5276 L3 Unicode data
+File: l3unicode-data.def 2014/11/23 v5465 L3 Unicode data
 )
 (/opt1/texlive/2014/texmf-dist/tex/latex/l3kernel/l3xdvipdfmx.def
-File: l3xdvidpfmx.def 2014/08/24 v5366 L3 Experimental driver: xdvipdfmx
+File: l3xdvidpfmx.def 2014/11/23 v5466 L3 Experimental driver: xdvipdfmx
 ))
 (/opt1/texlive/2014/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
-Package: xparse 2014/09/15 v5423 L3 Experimental document command parser
+Package: xparse 2014/11/25 v5471 L3 Experimental document command parser
 \l__xparse_current_arg_int=\count124
 \l__xparse_m_args_int=\count125
 \l__xparse_mandatory_args_int=\count126
@@ -469,7 +469,7 @@ LaTeX Info: Redefining \LaTeXe on input line 219.
 \xxt@tempbox=\box41
 )
 (/opt1/texlive/2014/texmf-dist/tex/latex/graphics/color.sty
-Package: color 2014/04/23 v1.1a Standard LaTeX Color (DPC)
+Package: color 2014/10/28 v1.1a Standard LaTeX Color (DPC)
 
 (/opt1/texlive/2014/texmf-dist/tex/latex/latexconfig/color.cfg
 File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
@@ -652,7 +652,7 @@ Package: pcbpe
 Package: pcbpeborder 
 )
 (/opt1/texlive/2014/texmf-dist/tex/latex/tools/longtable.sty
-Package: longtable 2004/02/01 v4.11 Multi-page Table package (DPC)
+Package: longtable 2014/10/28 v4.11 Multi-page Table package (DPC)
 \LTleft=\skip65
 \LTright=\skip66
 \LTpre=\skip67
@@ -909,11 +909,6 @@ LaTeX Font Info:    Font shape `EU1/GOSTtypeA(2)/m/n' will be
 (Font)              scaled to size 19.79993pt on input line 18.
 LaTeX Font Info:    Font shape `EU1/GOSTtypeA(2)/m/it' will be
 (Font)              scaled to size 19.79993pt on input line 18.
-
-Underfull \hbox (badness 10000) has occurred while \output is active
-[]
- []
-
 .................................................
 . fontspec info: "no-font-shape"
 . 
@@ -955,19 +950,14 @@ LaTeX Font Info:    Font shape `EU1/GOSTtypeA(3)/m/n' will be
 (Font)              scaled to size 12.0pt on input line 18.
 LaTeX Font Info:    Font shape `EU1/GOSTtypeA(3)/m/it' will be
 (Font)              scaled to size 12.0pt on input line 18.
-
-Underfull \hbox (badness 10000) has occurred while \output is active
-[]
- []
-
 [1
 
 ] (./output/vasia.aux) ) 
 Here is how much of TeX's memory you used:
- 14909 strings out of 493724
- 299666 string characters out of 6147868
- 353946 words of memory out of 5000000
- 18086 multiletter control sequences out of 15000+600000
+ 14910 strings out of 493724
+ 299675 string characters out of 6147868
+ 354310 words of memory out of 5000000
+ 18087 multiletter control sequences out of 15000+600000
  7857 words of font info for 48 fonts, out of 8000000 for 9000
  1328 hyphenation exceptions out of 8191
  61i,17n,71p,10511b,472s stack positions out of 5000i,500n,10000p,200000b,80000s

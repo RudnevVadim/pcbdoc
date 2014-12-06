@@ -8,10 +8,13 @@
 \usepackage{tikz}
 \usepackage{longtable}
 \usepackage[pdftex,usenames]{colortbl}
+\usepackage{listings}
+\usetikzlibrary{matrix}
 
 \setdefaultlanguage{russian}
 \setotherlanguage{english}
-\newfontfamily\sffont{Fira Sans OT}[Scale=0.9]
+%\newfontfamily\sffont{Fira Sans OT}[Scale=0.9]
+\newfontfamily\sffont{Fira Sans}[Scale=0.9]
 
 \definecolor{terminalcolor}{rgb}{0.7, 0.75, 0.71}
 \definecolor{codecolor}{rgb}{0.84, 0.86, 0.86}
@@ -35,14 +38,16 @@
   ItalicFont=CMU Typewriter Text Italic,
   BoldFont=CMU Typewriter Text Bold
 ]{CMU Typewriter Text}
-%{Liberation Mono}
+%{Nimbus Mono L}[Scale=0.9]
 \newfontfamily\cyrillicfontsf
 [
   %Scale=0.9,
   %BoldFont=Fira Sans OT Medium,
-  BoldItalicFont=Fira Sans OT Medium Italic
+  %BoldItalicFont=Fira Sans OT Medium Italic
+  BoldItalicFont=Fira Sans Medium Italic
 ]
-{Fira Sans OT}
+%{Fira Sans OT}
+{Fira Sans}
 
 \newcommand{\normalfontresult}{\fontspec[Scale=1.0]{GOST Type AU}}%
 \newcommand{\normalfontitresult}{\fontspec[Scale=1.0]{GOST type A}\itshape}%
@@ -79,11 +84,11 @@
 \renewcommand{\sf}[1]%
 {{\fontspec[Scale=0.9]{Fira Sans OT}\mbox{#1}}}
 \newcommand{\sfemph}[1]%
-  {{\mdseries\fontspec[Scale=0.9]{Fira Sans OT Italic}\mbox{#1}}}
+  {{\mdseries\fontspec[Scale=0.9]{Fira Sans Italic}\mbox{#1}}}
 \newcommand{\bfemph}[1]%
-  {{\fontspec[Scale=0.9]{Fira Sans OT Medium Italic}\mbox{#1}}}
+  {{\fontspec[Scale=0.9]{Fira Sans Medium Italic}\mbox{#1}}}
 \newcommand{\bfsf}[1]%
-  {{\fontspec[Scale=0.9]{Fira Sans OT Medium}\mbox{#1}}}
+  {{\fontspec[Scale=0.9]{Fira Sans Medium}\mbox{#1}}}
 \newcommand{\bftt}[1]%
   {\texttt{\bfseries{}\mbox{#1}}}
 \newcommand{\pcbdocmanualcode}[1]{%
@@ -99,7 +104,79 @@
   \end{tikzpicture}%
   }%
 
-%\usepackage{pcbdocmanual}
+\lstdefinelanguage{pcbdoc}{
+  morekeywords={
+    \documentclass,
+    \AuthorSet,
+    \CheckerSet,
+    \NormControllerSet,
+    \NameSet,
+    \NumberSet,
+    \begin,
+    \end,
+    \Part,
+    \Element,
+    \small,
+    \smallit,
+    \normalfont,
+    \normalfontit,
+    \llarge,
+    \llargeit,
+    \large,
+    \largeit,
+    \LLarge,
+    \LLargeit,
+    \Large,
+    \Largeit,
+    \fontspec,
+    \itshape,
+    \ScaleSet,
+    \TechControllerSet,
+    \ApproverSet,
+    \PcbNumberSet,
+    \PcbMaterialSet,
+    \PrimaryUseSet,
+    \newpage,
+    \refbox,
+    \plusminus
+  },
+  otherkeywords={[,],\\,\{,\}},
+  sensitive=true,
+}
+
+\lstnewenvironment{pcbdoccode}[1][0pt]{%
+  \lstset{%
+    language=pcbdoc,%
+    inputencoding=utf8x,%
+    keepspaces=true,%
+    escapechar=\$,%
+    basicstyle=\ttfamily\color{black},%
+    keywordstyle=\color{Blue}\ttfamily\bfseries,%
+    identifierstyle=\color{black}\ttfamily,%
+    commentstyle=\color{black}\ttfamily,%
+    stringstyle=\color{red}\ttfamily,%
+    backgroundcolor=\color{codecolor},%
+    xrightmargin=#1%
+  }%
+}{}
+
+\lstnewenvironment{pcbdoccode1}{%
+  \lstset{%
+    language=pcbdoc,%
+    inputencoding=utf8x,%
+    keepspaces=true,%
+    escapechar=\$,%
+    basicstyle=\ttfamily\color{black},%
+    keywordstyle=\color{Blue}\ttfamily\bfseries,%
+    identifierstyle=\color{black}\ttfamily,%
+    commentstyle=\color{black}\ttfamily,%
+    stringstyle=\color{red}\ttfamily,%
+  }%
+}{}
+
+%\newcommand{\tabularcaption}[1]{\hfill\sffamily\bfseries\normalfont#1\hfill}
+\usepackage{myspikes}
+
 
 \begin{document}
 
@@ -124,6 +201,7 @@
 \input ./src/fields.tex\newpage
 \input ./src/elementlist.tex\newpage
 \input ./src/specification.tex\newpage
+%\input ./src/temporary.tex\newpage
 \tableofcontents
 
 \end{document}

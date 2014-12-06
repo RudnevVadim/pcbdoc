@@ -7,111 +7,165 @@
 и(или) изменить размер шрифта можно с помощью команд, приведённых в
 \bfemph{Таблице~\ref{tabular:font}} и \bfemph{Таблице~\ref{tabular:fontit}}.~
 
-\begin{longtable}{%
->{\sffamily\bfseries\itshape\small}lc%
->{\ttfamily}lc%
-l%
-}%
-\label{tabular:font}\\
-\caption{Команды изменения размера прямого шрифта}\\
-\hline\hline
-\multicolumn{1}{c}{\sffamily\bfseries{}Команда} & &
-\multicolumn{1}{c}{\sffamily\bfseries{}Пример использования} & &
-\multicolumn{1}{c}{\sffamily\bfseries{}Результат}\\
-\endfirsthead
-\caption{Команды изменения размера прямого шрифта. Продолжение}\\
-\hline\hline
-\multicolumn{1}{c}{\bfseries{}Команда} & &
-\multicolumn{1}{c}{\bfseries{}Пример использования} & &
-\multicolumn{1}{c}{\bfseries{}Результат}\\
-\endhead
-\cellcolor{codecolor}\textbackslash{}small & &
-\cellcolor{codecolor}%
-\textcolor{Blue}{\textbackslash{}AuthorSet\{\textbackslash{}small\{\}}Пупкин%
-\textcolor{Blue}{\}} & &
-\cellcolor{resultcolor}\smallresult{}Пупкин\\
-\cellcolor{codecolor}\textbackslash{}normalfont & &
-\cellcolor{codecolor}%
-\textcolor{Blue}{\textbackslash{}AuthorSet\{\textbackslash{}normalfont\{\}}Пупкин%
-\textcolor{Blue}{\}} & &
-\cellcolor{resultcolor}\normalfontresult{}Пупкин\\
-\cellcolor{codecolor}\textbackslash{}llarge & &
-\cellcolor{codecolor}%
-\textcolor{Blue}{\textbackslash{}AuthorSet\{\textbackslash{}llarge\{\}}Пупкин%
-\textcolor{Blue}{\}} & &
-\cellcolor{resultcolor}\llargeresult{}Пупкин\\
-\cellcolor{codecolor}\textbackslash{}large & &
-\cellcolor{codecolor}%
-\textcolor{Blue}{\textbackslash{}AuthorSet\{\textbackslash{}large\{\}}Пупкин%
-\textcolor{Blue}{\}} & &
-\cellcolor{resultcolor}\largeresult{}Пупкин\\
-\cellcolor{codecolor}\textbackslash{}LLarge & &
-\cellcolor{codecolor}%
-\textcolor{Blue}{\textbackslash{}AuthorSet\{\textbackslash{}LLarge\{\}}Пупкин%
-\textcolor{Blue}{\}} & &
-\cellcolor{resultcolor}\LLargeresult{}Пупкин\\
-\cellcolor{codecolor}\textbackslash{}Large & &
-\cellcolor{codecolor}%
-\textcolor{Blue}{\textbackslash{}AuthorSet\{\textbackslash{}Large\{\}}Пупкин%
-\textcolor{Blue}{\}} & &
-\cellcolor{resultcolor}\Largeresult{}Пупкин\\
-\end{longtable}
+\begin{tikztable}
+{\topcaption{Команды изменения размера прямого шрифта}\label{tabular:font}}
+\matrix
+[
+  %execute at end cell=\node{+};,
+  %execute at empty cell=\node{+};,
+  draw,
+  nodes=
+  {
+    %draw,
+    text depth=0.5mm,
+    text height=3mm
+  },
+  column sep=3mm,
+  row 1/.style=
+  {
+    font=\sffamily\bfseries,align=center
+  },
+  column 1/.style=
+  {
+    font=\sffamily\bfseries\itshape\small,
+    align=left,
+    text width=21mm
+  },
+  column 2/.style={align=left,text width=70mm},
+  column 3/.style={align=left,text width=20mm}
+]
+{
+  Команда & Пример использования & Результат\\
+  |[fill=codecolor]|\textbackslash{}small       & |[fill=codecolor]|  &
+    |[fill=resultcolor]|\smallresult{}Пупкин\\
+  |[fill=codecolor]|\textbackslash{}normalfont  & |[fill=codecolor]|  &
+    |[fill=resultcolor]|\normalfontresult{}Пупкин\\
+  |[fill=codecolor]|\textbackslash{}llarge      & |[fill=codecolor]|  &
+    |[fill=resultcolor]|\llargeresult{}Пупкин\\
+  |[fill=codecolor]|\textbackslash{}large       & |[fill=codecolor]|  &
+    |[fill=resultcolor]|\largeresult{}Пупкин\\
+  |[fill=codecolor]|\textbackslash{}LLarge      & |[fill=codecolor]|  &
+    |[fill=resultcolor]|\LLargeresult{}Пупкин\\
+  |[fill=codecolor]|\textbackslash{}Large       & |[fill=codecolor]|  &
+    |[fill=resultcolor]|\Largeresult{}Пупкин\\
+};
+\node[anchor=west] at(tikztable-2-2.179){%
+\begin{pcbdoccode1}%
+\AuthorSet{\small{}Пупкин}
+\end{pcbdoccode1}
+};
+\node[anchor=west] at(tikztable-3-2.179){%
+\begin{pcbdoccode1}%
+\AuthorSet{\normalfont{}Пупкин}
+\end{pcbdoccode1}
+};
+\node[anchor=west] at(tikztable-4-2.179){%
+\begin{pcbdoccode1}%
+\AuthorSet{\llarge{}Пупкин}
+\end{pcbdoccode1}
+};
+\node[anchor=west] at(tikztable-5-2.179){%
+\begin{pcbdoccode1}%
+\AuthorSet{\large{}Пупкин}
+\end{pcbdoccode1}
+};
+\node[anchor=west] at(tikztable-6-2.179){%
+\begin{pcbdoccode1}%
+\AuthorSet{\LLarge{}Пупкин}
+\end{pcbdoccode1}
+};
+\node[anchor=west] at(tikztable-7-2.179){%
+\begin{pcbdoccode1}%
+\AuthorSet{\Large{}Пупкин}
+\end{pcbdoccode1}
+};
+\draw[line width=0.6mm] (tikztable-1-1.north west) -- (tikztable-1-3.north east);
+\end{tikztable}
 
-\begin{longtable}{%
->{\sffamily\bfseries\itshape\small}lc%
->{\ttfamily}lc%
->{\ttfamily}l%
-}%
-\label{tabular:fontit}\\
-\caption{Команды изменения размера наклонного шрифта}\\
-\hline\hline
-\multicolumn{1}{c}{\sffamily\bfseries{}Команда} & &
-\multicolumn{1}{c}{\sffamily\bfseries{}Пример использования} & &
-\multicolumn{1}{c}{\sffamily\bfseries{}Результат}\\
-\endfirsthead
-\caption{Команды изменения размера наклонного шрифта. Продолжение}\\
-\hline\hline
-\multicolumn{1}{c}{\sffamily\bfseries{}Команда} & &
-\multicolumn{1}{c}{\sffamily\bfseries{}Пример использования} & &
-\multicolumn{1}{c}{\sffamily\bfseries{}Результат}\\
-\endhead
-\cellcolor{codecolor}\textbackslash{}smallit & &
-\cellcolor{codecolor}%
-\textcolor{Blue}{\textbackslash{}AuthorSet\{\textbackslash{}smallit\{\}}Пупкин%
-\textcolor{Blue}{\}} & &
-\cellcolor{resultcolor}\smallitresult{}Пупкин\\
-\cellcolor{codecolor}\textbackslash{}normalfontit & &
-\cellcolor{codecolor}%
-\textcolor{Blue}{\textbackslash{}AuthorSet\{\textbackslash{}normalfontit\{\}}Пупкин%
-\textcolor{Blue}{\}} & &
-\cellcolor{resultcolor}\normalfontitresult{}Пупкин\\
-\cellcolor{codecolor}\textbackslash{}llargeit & &
-\cellcolor{codecolor}%
-\textcolor{Blue}{\textbackslash{}AuthorSet\{\textbackslash{}llargeit\{\}}Пупкин%
-\textcolor{Blue}{\}} & &
-\cellcolor{resultcolor}\llargeitresult{}Пупкин\\
-\cellcolor{codecolor}\textbackslash{}largeit & &
-\cellcolor{codecolor}%
-\textcolor{Blue}{\textbackslash{}AuthorSet\{\textbackslash{}largeit\{\}}Пупкин%
-\textcolor{Blue}{\}} & &
-\cellcolor{resultcolor}\largeitresult{}Пупкин\\
-\cellcolor{codecolor}\textbackslash{}LLargeit & &
-\cellcolor{codecolor}%
-\textcolor{Blue}{\textbackslash{}AuthorSet\{\textbackslash{}LLargeit\{\}}Пупкин%
-\textcolor{Blue}{\}} & &
-\cellcolor{resultcolor}\LLargeitresult{}Пупкин\\
-\cellcolor{codecolor}\textbackslash{}Largeit & &
-\cellcolor{codecolor}%
-\textcolor{Blue}{\textbackslash{}AuthorSet\{\textbackslash{}Largeit\{\}}Пупкин%
-\textcolor{Blue}{\}} & &
-\cellcolor{resultcolor}\Largeitresult{}Пупкин\\
-\end{longtable}
+\begin{tikztable}
+{\topcaption{Команды изменения размера наклонного шрифта}\label{tabular:fontit}}
+\matrix
+[
+  %execute at end cell=\node{+};,
+  %execute at empty cell=\node{+};,
+  draw,
+  nodes=
+  {
+    %draw,
+    text depth=0.5mm,
+    text height=3mm
+  },
+  column sep=3mm,
+  row 1/.style=
+  {
+    font=\sffamily\bfseries,align=center
+  },
+  column 1/.style=
+  {
+    font=\sffamily\bfseries\itshape\small,
+    align=left,
+    text width=23mm
+  },
+  column 2/.style={align=left,text width=75mm},
+  column 3/.style={align=left,text width=20mm}
+]
+{
+  Команда & Пример использования & Результат\\
+  |[fill=codecolor]|\textbackslash{}smallit       & |[fill=codecolor]|  &
+    |[fill=resultcolor]|\smallitresult{}Пупкин\\
+  |[fill=codecolor]|\textbackslash{}normalfontit  & |[fill=codecolor]|  &
+    |[fill=resultcolor]|\normalfontitresult{}Пупкин\\
+  |[fill=codecolor]|\textbackslash{}llargeit      & |[fill=codecolor]|  &
+    |[fill=resultcolor]|\llargeitresult{}Пупкин\\
+  |[fill=codecolor]|\textbackslash{}largeit       & |[fill=codecolor]|  &
+    |[fill=resultcolor]|\largeitresult{}Пупкин\\
+  |[fill=codecolor]|\textbackslash{}LLargeit      & |[fill=codecolor]|  &
+    |[fill=resultcolor]|\LLargeitresult{}Пупкин\\
+  |[fill=codecolor]|\textbackslash{}Largeit       & |[fill=codecolor]|  &
+    |[fill=resultcolor]|\Largeitresult{}Пупкин\\
+};
+\node[anchor=west] at(tikztable-2-2.179){%
+\begin{pcbdoccode1}%
+\AuthorSet{\smallit{}Пупкин}
+\end{pcbdoccode1}
+};
+\node[anchor=west] at(tikztable-3-2.179){%
+\begin{pcbdoccode1}%
+\AuthorSet{\normalfontit{}Пупкин}
+\end{pcbdoccode1}
+};
+\node[anchor=west] at(tikztable-4-2.179){%
+\begin{pcbdoccode1}%
+\AuthorSet{\llargeit{}Пупкин}
+\end{pcbdoccode1}
+};
+\node[anchor=west] at(tikztable-5-2.179){%
+\begin{pcbdoccode1}%
+\AuthorSet{\largeit{}Пупкин}
+\end{pcbdoccode1}
+};
+\node[anchor=west] at(tikztable-6-2.179){%
+\begin{pcbdoccode1}%
+\AuthorSet{\LLargeit{}Пупкин}
+\end{pcbdoccode1}
+};
+\node[anchor=west] at(tikztable-7-2.179){%
+\begin{pcbdoccode1}%
+\AuthorSet{\Largeit{}Пупкин}
+\end{pcbdoccode1}
+};
+\draw[line width=0.6mm] (tikztable-1-1.north west) -- (tikztable-1-3.north east);
+\end{tikztable}
 
 Кроме того, для указания типа шрифта и его размера можно воспользоваться встроенными
 средствами \XeLaTeX{}. Например:
 
-\pcbdocmanualcode{%
-\textcolor{Blue}{\textbackslash{}AuthorSet\{\textbackslash{}fontspec[}Scale=0.68%
-\textcolor{Blue}{]\{}GOST type A\textcolor{Blue}{\}\textbackslash{}itshape\{\}}Пупкин%
-\textcolor{Blue}{\}}
-}
+\begin{pcbdoccode}
+\AuthorSet{\fontspec[Scale=0.68]{GOST type A}\itshape{}Пупкин}
+\end{pcbdoccode}
+
+Команда \bfemph{\textbackslash{}plusminus} печатает символ \symbol{177}. Например:
+
+\begin{pcbdoccode}
+\Element{RMC\_0805\_1\_KOM\plusminus{}5\%}{\refbox{R1}}{1}
+\end{pcbdoccode}

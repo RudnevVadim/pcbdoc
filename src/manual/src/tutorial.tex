@@ -11,18 +11,17 @@
 Вася открывает свой любимый текстовый редактор(кто знает, возможно это
 \emph{emacs}) и приступает к работе. Он аккуратно набирает первую строчку:
 
-\pcbdocmanualcode{%
-\textcolor{Blue}{\textbackslash{}documentclass[}doctype=pe\textcolor{Blue}{]\{}%
-pcbdoc\textcolor{Blue}{\}}%
-}
+\begin{pcbdoccode}
+\documentclass[doctype=pe]{pcbdoc}
+\end{pcbdoccode}
 
 Теперь \LaTeX{} в курсе, что ему предстоит сверстать перечень элементов.
 Далее Васе требуется указать, что он является автором этого замечательного
 документа:
 
-\pcbdocmanualcode{%
-\textcolor{Blue}{\textbackslash{}AuthorSet\{}Пупкин\textcolor{Blue}{\}}
-}
+\begin{pcbdoccode}
+\AuthorSet{Пупкин}
+\end{pcbdoccode}
 
 Готовый перечень элементов Вася планирует показать для проверки коллеге, который,
 как и Вася, разрабатывает замечательные электронные устройства, рабочее место
@@ -30,84 +29,77 @@ pcbdoc\textcolor{Blue}{\}}%
 ошибка? Одна голова хорошо, а две лучше, думает Вася, набирая следующую
 строчку:
 
-\pcbdocmanualcode{%
-\textcolor{Blue}{\textbackslash{}CheckerSet\{}Ближайший\textcolor{Blue}{\}}
-}
+\begin{pcbdoccode}
+\CheckerSet{Ближайший}
+\end{pcbdoccode}
 
 Вася знает, что проверять готовый документ также будет и очень суровый
 нормоконтролёр. Нужно указать и этот факт. Быстро и решительно Вася набирает
 очередную строчку:
 
-\pcbdocmanualcode{%
-\textcolor{Blue}{\textbackslash{}NormControllerSet\{}Суровый\textcolor{Blue}{\}}
-}
+\begin{pcbdoccode}
+\NormControllerSet{Суровый}
+\end{pcbdoccode}
 
 Вася знает, что утверждать перечень элементов будет Васин начальник. Вася очень
 любит своего начальника, потому что он обещал повысить Васе зарплату. Жизнь
 прекрасна, думает Вася, набирая следующую строчку:
 
-\pcbdocmanualcode{%
-\textcolor{Blue}{\textbackslash{}ApproverSet\{}Сказочник\textcolor{Blue}{\}}
-}
+\begin{pcbdoccode}
+\ApproverSet{Сказочник}
+\end{pcbdoccode}
 
 Далее Вася указывает имя своего устройства и его децимальный номер, который
 по секрету сообщил Васе его начальник отдела:
 
-\pcbdocmanualcode{%
-\textcolor{Blue}{\textbackslash{}NameSet\{}Фильтр\textcolor{Blue}{\}}\\
-\textcolor{Blue}{\textbackslash{}NumberSet\{}РОГА.123456.001\textcolor{Blue}{\}}
-}
+\begin{pcbdoccode}
+\NameSet{Фильтр}
+\NumberSet{РОГА.123456.001}
+\end{pcbdoccode}
 
 Пора приступать к заполнению тела документа, думает Вася, набирая следующие
 две строчки:
 
-\pcbdocmanualcode{%
-\textcolor{Blue}{\textbackslash{}begin\{}document\textcolor{Blue}{\}}\\
-\textcolor{Blue}{\textbackslash{}begin\{}ElementList\textcolor{Blue}{\}}
-}
+\begin{pcbdoccode}
+\begin{document}
+\begin{ElementList}
+\end{pcbdoccode}
 
 Несмотря на то, что конденсатор в Васином устройстве всего один, Вася, вспомнив
 про суровость нормоконтролёра,  решил создать для одного конденсатора целый
 раздел:
 
-\pcbdocmanualcode{%
-\textcolor{Blue}{\textbackslash{}Part\{}Конденсаторы\textcolor{Blue}{\}}%
-}
+\begin{pcbdoccode}
+\Part{Конденсаторы}
+\end{pcbdoccode}
 
 Вот он, этот единственный конденсатор:
 
-\pcbdocmanualcode{%
-\textcolor{Blue}{\textbackslash{}Element\{}X7R\textbackslash\_0805%
-  \textbackslash\_1\textbackslash\_МКФ\textbackslash\_5\textbackslash\%%
-  \textcolor{Blue}{\}\{\textbackslash{}refbox\{}C1\textcolor{Blue}{\}\}\{}1%
-  \textcolor{Blue}{\}}%
-}
+\begin{pcbdoccode}
+\Element{X7R\_0805\_1\_$МКФ$\_5\%}{\refbox{C1}}{1}
+\end{pcbdoccode}
 
 Как видим, Вася не забыл указать его позиционное обозначение и
 количество. Аналогично Вася поступил и с единственным резистором:
 
-\pcbdocmanualcode{%
-\textcolor{Blue}{\textbackslash{}Part\{}Резисторы\textcolor{Blue}{\}}\\
-\textcolor{Blue}{\textbackslash{}Element\{}RMC\textbackslash\_0805%
-  \textbackslash\_1\textbackslash\_KOM\textbackslash\_5\textbackslash\%%
-  \textcolor{Blue}{\}%
-  \{\textbackslash{}refbox\{}R1\textcolor{Blue}{\}\}\{}1\textcolor{Blue}{\}}%
-}
+\begin{pcbdoccode}
+\Part{Резисторы}
+\Element{RMC\_0805\_1\_KOM\_5\%}{\refbox{R1}}{1}
+\end{pcbdoccode}
 
 А вот соединителей в Васином устройстве целых два. Вася не забыл и про них:
 
-\pcbdocmanualcode{%
-\textcolor{Blue}{\textbackslash{}Part\{}Соединители\textcolor{Blue}{\}}\\
-\textcolor{Blue}{\textbackslash{}Element\{}Розетка SMA-BJ\textcolor{Blue}{\}%
-\{\textbackslash{}refbox\{}XS1,XS2\textcolor{Blue}{\}\}\{}2\textcolor{Blue}{\}}%
-}
+\begin{pcbdoccode}
+\Part{Соединители}
+\Element{Розетка SMA-BJ}{\refbox{XS1,XS2}}{2}
+\end{pcbdoccode}
 
 Ну вроде всё, подумал Вася. Пора закругляться.
 
-\pcbdocmanualcode{%
-\textcolor{Blue}{\textbackslash{}end\{}ElementList\textcolor{Blue}{\}}\\
-\textcolor{Blue}{\textbackslash{}end\{}document\textcolor{Blue}{\}}
-}
+\begin{pcbdoccode}
+\end{ElementList}
+\end{document}
+\end{pcbdoccode}
 
 И сохранил полученный файл, присвоив ему имя \bfemph{vasia.tex}.
 
