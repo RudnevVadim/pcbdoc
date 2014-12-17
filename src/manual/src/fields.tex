@@ -5,17 +5,16 @@
 находиться либо непосредственно в преамбуле документа, либо в отдельном пакете,
 включаемом в преамбулу с помощью команды \bfemph{\textbackslash{}usepackage}.
 
-%\begin{tikztable}
-%{\topcaption{Команды заполнения полей документа}\label{tabular:fields}}
-%\matrix
+%\begin{tikztablex}
 %[
-%  every node/.style={anchor=center},
-%  draw,
+%  %draw,
 %  %nodes={draw},
 %  row 1/.style={font=\sffamily\bfseries,align=center},
 %  column 1/.style={font=\sffamily\bfseries\itshape\small,align=left,text width=38mm},
-%  column 2/.style={font=\small,align=left,text width=104mm}
+%  column 2/.style={font=\small,align=left,text width=104mm},
+%  row 9/.style={minimum height=10mm}
 %]
+%{\topcaption{Команды заполнения полей документа}\label{tabular:fields}}
 %{
 %  Команда & Описание\\
 %  \textbackslash{}AuthorSet\{<name>\} &
@@ -41,6 +40,7 @@
 %  основной надписи. Аргумент \sfemph{<name>} может быть как
 %  однострочным, так и двустрочным. Разделение аргумента на строки производится с помощью
 %  команды \bfemph{\textbackslash\textbackslash}. Например:\\
+%  &\\
 %  \textbackslash{}NumberSet\{<number>\} &
 %  Печатает децимальный номер \sfemph{<number>} в поле обозначения
 %  документа основной надписи схемы электрической принципиальной, перечня элементов,
@@ -60,20 +60,30 @@
 %  Печатает аргумент \sfemph{<number>} в поле
 %  \colorbox{resultcolor}{\sfemph{Перв. примен.}} основной надписи спецификации.\\
 %};
-%\tikzfirsthline{2}%
-%\tikzhline{1-2}%
-%\tikzhline{2-2}%
-%\tikzhline{3-2}%
-%\tikzhline{4-2}%
-%\tikzhline{5-2}%
-%\tikzhline{6-2}%
-%\tikzhline{7-2}%
-%\tikzhline{8-2}%
-%\tikzhline{9-2}%
-%\tikzhline{10-2}%
-%\tikzhline{11-2}%
-%\tikzhline{12-2}%
-%\end{tikztable}
+%%\tikzfirsthline{2}%
+%%\tikzhline{1-2}%
+%\tikzhlinex{2}{1}{1}{2}%
+%%\tikzhline{2-2}%
+%\tikzhlinex{2}{2}{1}{2}%
+%%\tikzhline{3-2}%
+%%\tikzhline{4-2}%
+%%\tikzhline{5-2}%
+%%\tikzhline{6-2}%
+%%\tikzhline{7-2}%
+%%\tikzhline{8-2}%
+%%\tikzhline{9-2}%
+%%\tikzhline{10-2}%
+%%\tikzhline{11-2}%
+%%\tikzhline{12-2}%
+%%\tikzhline{13-2}%
+%\fill[codecolor] (tikztable-9-1.north west) rectangle (tikztable-9-2.south east);
+%\node[right=30mm,anchor=center] at (tikztable-9-1)
+%{
+%\begin{pcbdoccode1}
+%\NameSet{Модуль\\расширителя сознания}
+%\end{pcbdoccode1}
+%};
+%\end{tikztablex}
 
 \vspace{-5mm}
 \begin{longtable}{%
