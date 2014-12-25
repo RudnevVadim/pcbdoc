@@ -6,127 +6,147 @@
 команды(в фигурных скобках) следует указать класс документа \sfemph{pcbdoc}, а в
 необязательном(в квадратных скобках) --- ключ \sfemph{doctype=pe}.
 
-\pcbdocmanualcode{%
-\ttfamily\textcolor{Blue}{\textbackslash{}documentclass[}%
-doctype=pe\textcolor{Blue}{]\{}pcbdoc%
-\textcolor{Blue}{\}}%
-}
+\begin{pcbdoccode}
+\documentclass[doctype=pe]{pcbdoc}
+\end{pcbdoccode}
 
 Далее(в преамбуле) должны находиться команды заполнения полей документа. Их можно
 разместить либо непосредственно в преамбуле, либо в отдельном пакете, включаемом в
 преамбулу с помощью команды \bfsf{\textbackslash{}usepackage}. Тело документа,
 находящееся после преамбулы, должно начинаться с команды
 
-\pcbdocmanualcode{%
-\ttfamily\textcolor{Blue}{\textbackslash{}begin\{}document%
-\textcolor{Blue}{\}}%
-}
+\begin{pcbdoccode}
+\begin{document}
+\end{pcbdoccode}
 
 а заканчиваться командой
 
-\pcbdocmanualcode{%
-\ttfamily\textcolor{Blue}{\textbackslash{}end\{}document\textcolor{Blue}{\}}%
-}
+\begin{pcbdoccode}
+\end{document}
+\end{pcbdoccode}
 
 Внутри тела документа должно находиться
 окружение \sfemph{ElementList}, которое начинается с команды
 
-\pcbdocmanualcode{%
-\ttfamily\textcolor{Blue}{\textbackslash{}begin\{}ElementList\textcolor{Blue}{\}}%
-}
+\begin{pcbdoccode}
+\begin{ElementList}
+\end{pcbdoccode}
 
 а заканчивается командой
 
-\pcbdocmanualcode{%
-\ttfamily\textcolor{Blue}{\textbackslash{}end\{}ElementList\textcolor{Blue}{\}}%
-}
+\begin{pcbdoccode}
+\end{ElementList}
+\end{pcbdoccode}
 
 Внутри окружения \sfemph{ElementList} должны находиться команды заполнения строк
 перечня элементов, приведённые в \bfsf{Таблице~\ref{tabular:pelines}}.\newpage
 
-\begin{longtable}{%
->{\sffamily\bfseries\itshape\small}p{0.26\textwidth}%
->{\small}p{0.68\textwidth}%
-}%
-\label{tabular:pelines}\\
-\caption{Команды заполнения строк перечня элементов}\\
-\hline\hline
-\multicolumn{1}{c}{\sffamily\bfseries{}Команда} &
-\multicolumn{1}{c}{\sffamily\bfseries{}Описание}\\
-\hline\hline
-\endfirsthead
-\caption{Команды заполнения строк перечня элементов. Продолжение}\\
-\hline\hline
-\multicolumn{1}{c}{\sffamily\bfseries{}Команда} &
-\multicolumn{1}{c}{\sffamily\bfseries{}Описание}\\
-\hline\hline
-\endhead
-\cellcolor{codecolor}
+\begin{tikztablex}
+[
+  draw,
+  %nodes={draw},
+  row 1/.style={minimum height=6mm,font=\sffamily\bfseries,align=center},
+  column 1/.style={font=\sffamily\bfseries\itshape\small,align=left,text width=39mm},
+  column 2/.style={font=\small,align=justify,text width=101mm},
+  row 3/.style={minimum height=8mm},
+  row 5/.style={minimum height=66mm}
+]
+{\topcaption{Команды заполнения строк перечня элементов}\label{tabular:pelines}}
+{
+  Команда & Описание\\
+  \textbackslash{}Part\{<name>\} &
+  Печатает подчёркнутый аргумент \sfemph{<name>} в центре колонки
+  \colorbox{resultcolor}{\sfemph{Наименование}} Например:\\
+  &\\
+  {\textbackslash{}Element[<note>]\\
+  \{<naming>\}\\
+  \{<refdes1 ... refdesN>\}\\
+  \{<quantity>\}} &
+  Заполняет строку перечня элементов. Необязательный аргумент \sfemph{<note>} печатается
+  в колонке \colorbox{resultcolor}{\sfemph{Примечание}}. Аргументы \sfemph{<naming>},
+  \sfemph{<refdes1 ... refdesN>} и \sfemph{<quantity>} печатаются в колонках
+  \colorbox{resultcolor}{\sfemph{Наименование}},
+  \colorbox{resultcolor}{\sfemph{Поз. обозначение}} и
+  \colorbox{resultcolor}{\sfemph{Кол.}} соответственно.
+  Каждая запись в аргументе \sfemph{<refdes1 ... refdesN>} печатается в отдельной строке
+  колонки \colorbox{resultcolor}{\sfemph{Поз. обозначение}}. Каждую строку в колонке
+  \colorbox{resultcolor}{\sfemph{Поз. обозначение}} следует отделять от предыдущей одним
+  или несколькими пробельными символами(символ перехода на другую строку также является
+  пробельным символом). Между символом \bfsf{\{} и первой строкой, а также между
+  последней строкой и символом \bfsf{\}} пробельных символов быть не должно, поэтому в
+  примере ниже используется символ подавления последующих пробельных символов
+  \bfsf{\%}. Каждую запись в строке позиционных обозначений рекомендуется размещать в
+  аргументе команды \bfsf{\textbackslash{}refbox}, которая центрирует запись внутри
+  колонки. Шрифт любой записи строки позиционных обозначений можно немного уменьшить с
+  помощью команды \bfsf{\textbackslash{}llargeit}, что позволяет разместить в колонке
+  чуть выступающий за её пределы текст. Например:\\
+  &\\
+  \textbackslash\textbackslash & Переход на новую строку \\
+  \textbackslash{}newpage & Переход на новую страницу \\
+};
+\node[right=40mm,anchor=center] at ($(tikztable-3-1)+(0,0)$){
+\begin{pcbdoccode1}
+\Part{Микросхемы}
+\end{pcbdoccode1}
+};
+\node[right=53mm,anchor=center] at ($(tikztable-5-1)+(0,0)$){
+\begin{pcbdoccode1}
+\Element{Y5V\_1206\_4,7\_MKF\_20\%\_25V}{%
+  \refbox{C6,C15,C16}
+  \refbox{C18,C21}
+  \refbox{C174,C175}
+  \refbox{C180,C181}
+  \refbox{C184-C187}
+  \refbox{C190,C191}
+  \refbox{C195-C199}
+  \refbox{C201,C204}
+  \refbox{C205}
+  \refbox{\llargeit{}C207-C210}
+  \refbox{C212}
+  \refbox{\llargeit{}C232-C234}
+  \refbox{\llargeit{}C238-C240}
+  \refbox{\llargeit{}C265-C266}%
+  }{36}
+\end{pcbdoccode1}
+};
+\coordinate(top) at (tikztable-1-2.north);
+\coordinate(left) at (tikztable-1-1.west);
+\coordinate(right) at (tikztable-1-2.east);
+\draw[line width=0.6mm] (top-|left) -- (top-|right);
+\coordinate(top) at (tikztable-1-2.south);
+\draw[line width=0.6mm] (top-|left) -- (top-|right);
 
-\vspace{-4mm}
-\textbackslash{}Part\{<name>\} &
-Печатает подчёркнутый аргумент \sfemph{<name>} в центре колонки
-\colorbox{resultcolor}{\sfemph{Наименование}} Например:\\\\[-4mm]
-\multicolumn{2}{c}{%
-\pcbdocmanualcode{%
-\textcolor{Blue}{\textbackslash{}Part\{}Микросхемы\textcolor{Blue}{\}}
-}}\\
-\hline
-\cellcolor{codecolor}
+\coordinate(top) at (tikztable-4-2.north);
+\draw (top-|left) -- (top-|right);
 
-\vspace{25mm}
-\textbackslash{}Element[<note>]
-\{<naming>\}
+\coordinate(top) at (tikztable-6-2.north);
+\draw (top-|left) -- (top-|right);
 
-\{<refdes1 ... refdesN>\}
+\coordinate(top) at (tikztable-7-2.north);
+\draw (top-|left) -- (top-|right);
 
-\{<quantity>\} &
-Заполняет строку перечня элементов. Необязательный аргумент \sfemph{<note>} печатается
-в колонке \colorbox{resultcolor}{\sfemph{Примечание}}. Аргументы \sfemph{<naming>},
-\sfemph{<refdes1 ... refdesN>} и \sfemph{<quantity>} печатаются в колонках
-\colorbox{resultcolor}{\sfemph{Наименование}},
-\colorbox{resultcolor}{\sfemph{Поз. обозначение}} и
-\colorbox{resultcolor}{\sfemph{Кол.}} соответственно.
-Каждая запись в аргументе \sfemph{<refdes1 ... refdesN>} печатается в отдельной строке
-колонки \colorbox{resultcolor}{\sfemph{Поз. обозначение}}. Каждую строку в колонке
-\colorbox{resultcolor}{\sfemph{Поз. обозначение}} следует отделять от предыдущей одним
-или несколькими пробельными символами(символ перехода на другую строку также является
-пробельным символом). Между символом \bfsf{\{} и первой строкой, а также между последней
-строкой и символом \bfsf{\}} пробельных символов быть не должно, поэтому в примере ниже
-используется символ подавления последующих пробельных символов \bfsf{\%}. Каждую запись
-в строке позиционных обозначений рекомендуется размещать в аргументе команды
-\bfsf{\textbackslash{}refbox}, которая центрирует запись внутри колонки. Шрифт любой
-записи строки позиционных обозначений можно немного уменьшить с помощью команды
-\bfsf{\textbackslash{}llargeit}, что позволяет разместить в колонке чуть выступающий за
-её пределы текст. Например:\\\\[-4mm]
-\multicolumn{2}{c}{%
-\pcbdocmanualcode{%
-\textcolor{Blue}{\textbackslash{}Element\{}Y5V\textbackslash\_1206\textbackslash\_%
-  4,7\textbackslash\_MKF\textbackslash\_20\textbackslash\%\textbackslash\_25V%
-\textcolor{Blue}{\}\{\%}\\
-~~\textcolor{Blue}{\textbackslash{}refbox\{}C6,C15,C16\textcolor{Blue}{\}}\\
-~~\textcolor{Blue}{\textbackslash{}refbox\{}C18,C21\textcolor{Blue}{\}}\\
-~~\textcolor{Blue}{\textbackslash{}refbox\{}C174,C175\textcolor{Blue}{\}}\\
-~~\textcolor{Blue}{\textbackslash{}refbox\{}C180,C181\textcolor{Blue}{\}}\\
-~~\textcolor{Blue}{\textbackslash{}refbox\{}C184-C187\textcolor{Blue}{\}}\\
-~~\textcolor{Blue}{\textbackslash{}refbox\{}C190,C191\textcolor{Blue}{\}}\\
-~~\textcolor{Blue}{\textbackslash{}refbox\{}C195-C199\textcolor{Blue}{\}}\\
-~~\textcolor{Blue}{\textbackslash{}refbox\{}C201,C204\textcolor{Blue}{\}}\\
-~~\textcolor{Blue}{\textbackslash{}refbox\{}C205\textcolor{Blue}{\}}\\
-~~\textcolor{Blue}{\textbackslash{}refbox\{}\textbackslash{}llargeit%
-  \textcolor{Blue}{\{\}}C207-C210\textcolor{Blue}{\}}\\
-~~\textcolor{Blue}{\textbackslash{}refbox\{}C212\textcolor{Blue}{\}}\\
-~~\textcolor{Blue}{\textbackslash{}refbox\{}\textbackslash{}llargeit%
-  \textcolor{Blue}{\{\}}C232-C234\textcolor{Blue}{\}}\\
-~~\textcolor{Blue}{\textbackslash{}refbox\{}\textbackslash{}llargeit%
-  \textcolor{Blue}{\{\}}C238-C240\textcolor{Blue}{\}}\\
-~~\textcolor{Blue}{\textbackslash{}refbox\{}\textbackslash{}llargeit%
-  \textcolor{Blue}{\{\}}C265-C266\textcolor{Blue}{\}\%}\\
-~~\textcolor{Blue}{\}\{}36\textcolor{Blue}{\}}
-}}\\
-\hline
-\cellcolor{codecolor}\textbackslash\textbackslash & Переход на новую строку \\
-\hline
-\cellcolor{codecolor}\textbackslash{}newpage & Переход на новую страницу \\
-\hline\hline
-\end{longtable}
+\coordinate(top) at (tikztable-7-2.south);
+\draw[line width=0.6mm] (top-|left) -- (top-|right);
+
+\begin{scope}[on background layer]
+\coordinate(top) at (tikztable-2-2.north);
+\coordinate(bottom) at (tikztable-2-2.south);
+\coordinate(left) at (tikztable-1-1.west);
+\coordinate(right) at (tikztable-1-1.east);
+\fill[codecolor] (top-|left) rectangle (bottom-|right);
+\coordinate(top) at (tikztable-4-2.north);
+\coordinate(bottom) at (tikztable-4-2.south);
+\fill[codecolor] (top-|left) rectangle (bottom-|right);
+\coordinate(top) at (tikztable-6-2.north);
+\coordinate(bottom) at (tikztable-7-2.south);
+\fill[codecolor] (top-|left) rectangle (bottom-|right);
+\fill[codecolor]
+  ($(tikztable-3-1.north west)-(0,1.5mm)$)
+  rectangle
+  ($(tikztable-3-2.south east)+(0,1.5mm)$);
+\fill[codecolor]
+  ($(tikztable-5-1.north west)-(0,1.5mm)$)
+  rectangle
+  ($(tikztable-5-2.south east)+(0,1.5mm)$);
+\end{scope}
+\end{tikztablex}

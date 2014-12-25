@@ -7,47 +7,25 @@
 и(или) изменить размер шрифта можно с помощью команд, приведённых в
 \bfemph{Таблице~\ref{tabular:font}} и \bfemph{Таблице~\ref{tabular:fontit}}.~
 
-\begin{tikztable}
+\begin{tikztablex}
 {\topcaption{Команды изменения размера прямого шрифта}\label{tabular:font}}
-\matrix
 [
-  %execute at end cell=\node{+};,
-  %execute at empty cell=\node{+};,
   draw,
-  nodes=
-  {
-    %draw,
-    text depth=0.5mm,
-    text height=3mm
-  },
+  nodes={text depth=0.5mm,text height=3mm},
   column sep=3mm,
-  row 1/.style=
-  {
-    font=\sffamily\bfseries,align=center
-  },
-  column 1/.style=
-  {
-    font=\sffamily\bfseries\itshape\small,
-    align=left,
-    text width=21mm
-  },
+  row 1/.style={font=\sffamily\bfseries,align=center},
+  column 1/.style={font=\sffamily\bfseries\itshape\small,align=left,text width=21mm},
   column 2/.style={align=left,text width=70mm},
-  column 3/.style={align=left,text width=20mm}
+  column 3/.style={align=left,text width=20mm},
 ]
 {
-  Команда & Пример использования & Результат\\
-  |[fill=codecolor]|\textbackslash{}small       & |[fill=codecolor]|  &
-    |[fill=resultcolor]|\smallresult{}Пупкин\\
-  |[fill=codecolor]|\textbackslash{}normalfont  & |[fill=codecolor]|  &
-    |[fill=resultcolor]|\normalfontresult{}Пупкин\\
-  |[fill=codecolor]|\textbackslash{}llarge      & |[fill=codecolor]|  &
-    |[fill=resultcolor]|\llargeresult{}Пупкин\\
-  |[fill=codecolor]|\textbackslash{}large       & |[fill=codecolor]|  &
-    |[fill=resultcolor]|\largeresult{}Пупкин\\
-  |[fill=codecolor]|\textbackslash{}LLarge      & |[fill=codecolor]|  &
-    |[fill=resultcolor]|\LLargeresult{}Пупкин\\
-  |[fill=codecolor]|\textbackslash{}Large       & |[fill=codecolor]|  &
-    |[fill=resultcolor]|\Largeresult{}Пупкин\\
+Команда & Пример использования & Результат\\
+\textbackslash{}small       & & \smallresult{}Пупкин\\
+\textbackslash{}normalfont  & & \normalfontresult{}Пупкин\\
+\textbackslash{}llarge      & & \llargeresult{}Пупкин\\
+\textbackslash{}large       & & \largeresult{}Пупкин\\
+\textbackslash{}LLarge      & & \LLargeresult{}Пупкин\\
+\textbackslash{}Large       & & \Largeresult{}Пупкин\\
 };
 \node[anchor=west] at(tikztable-2-2.179){%
 \begin{pcbdoccode1}%
@@ -79,83 +57,91 @@
 \AuthorSet{\Large{}Пупкин}
 \end{pcbdoccode1}
 };
-\draw[line width=0.6mm] (tikztable-1-1.north west) -- (tikztable-1-3.north east);
-\end{tikztable}
+\begin{scope}[on background layer]
+\coordinate(left) at (tikztable-1-1.west);
+\coordinate(right) at (tikztable-1-3.east);
+\coordinate(top) at (tikztable-1-2.north);
+\draw[line width=0.6 mm] (top-|left) -- (top-|right);
+\coordinate(right) at (tikztable-1-1.east);
+\coordinate(top) at (tikztable-2-1.north);
+\coordinate(bottom) at (tikztable-7-1.south);
+\fill[codecolor] (top-|left) rectangle (bottom-|right);
+\coordinate(left) at (tikztable-2-2.west);
+\coordinate(right) at (tikztable-2-2.east);
+\fill[codecolor] (top-|left) rectangle (bottom-|right);
+\coordinate(left) at (tikztable-2-3.west);
+\coordinate(right) at (tikztable-2-3.east);
+\fill[resultcolor] (top-|left) rectangle (bottom-|right);
+\end{scope}
+\end{tikztablex}
 
-\begin{tikztable}
+\begin{tikztablex}
 {\topcaption{Команды изменения размера наклонного шрифта}\label{tabular:fontit}}
-\matrix
 [
-  %execute at end cell=\node{+};,
-  %execute at empty cell=\node{+};,
   draw,
-  nodes=
-  {
-    %draw,
-    text depth=0.5mm,
-    text height=3mm
-  },
+  nodes={text depth=0.5mm,text height=3mm},
   column sep=3mm,
-  row 1/.style=
-  {
-    font=\sffamily\bfseries,align=center
-  },
-  column 1/.style=
-  {
-    font=\sffamily\bfseries\itshape\small,
-    align=left,
-    text width=23mm
-  },
+  row 1/.style={font=\sffamily\bfseries,align=center},
+  column 1/.style={font=\sffamily\bfseries\itshape\small,align=left,text width=21mm},
   column 2/.style={align=left,text width=75mm},
-  column 3/.style={align=left,text width=20mm}
+  column 3/.style={align=left,text width=20mm},
 ]
 {
-  Команда & Пример использования & Результат\\
-  |[fill=codecolor]|\textbackslash{}smallit       & |[fill=codecolor]|  &
-    |[fill=resultcolor]|\smallitresult{}Пупкин\\
-  |[fill=codecolor]|\textbackslash{}normalfontit  & |[fill=codecolor]|  &
-    |[fill=resultcolor]|\normalfontitresult{}Пупкин\\
-  |[fill=codecolor]|\textbackslash{}llargeit      & |[fill=codecolor]|  &
-    |[fill=resultcolor]|\llargeitresult{}Пупкин\\
-  |[fill=codecolor]|\textbackslash{}largeit       & |[fill=codecolor]|  &
-    |[fill=resultcolor]|\largeitresult{}Пупкин\\
-  |[fill=codecolor]|\textbackslash{}LLargeit      & |[fill=codecolor]|  &
-    |[fill=resultcolor]|\LLargeitresult{}Пупкин\\
-  |[fill=codecolor]|\textbackslash{}Largeit       & |[fill=codecolor]|  &
-    |[fill=resultcolor]|\Largeitresult{}Пупкин\\
+Команда & Пример использования & Результат\\
+\textbackslash{}smallit       & & \smallitresult{}Пупкин\\
+\textbackslash{}normalfontit  & & \normalfontitresult{}Пупкин\\
+\textbackslash{}llargeit      & & \llargeitresult{}Пупкин\\
+\textbackslash{}largeit       & & \largeitresult{}Пупкин\\
+\textbackslash{}LLargeit      & & \LLargeitresult{}Пупкин\\
+\textbackslash{}Largeit       & & \Largeitresult{}Пупкин\\
 };
-\node[anchor=west] at(tikztable-2-2.179){%
+\node[anchor=west] at(tikztable-2-2.180){%
 \begin{pcbdoccode1}%
 \AuthorSet{\smallit{}Пупкин}
 \end{pcbdoccode1}
 };
-\node[anchor=west] at(tikztable-3-2.179){%
+\node[anchor=west] at(tikztable-3-2.180){%
 \begin{pcbdoccode1}%
 \AuthorSet{\normalfontit{}Пупкин}
 \end{pcbdoccode1}
 };
-\node[anchor=west] at(tikztable-4-2.179){%
+\node[anchor=west] at(tikztable-4-2.180){%
 \begin{pcbdoccode1}%
 \AuthorSet{\llargeit{}Пупкин}
 \end{pcbdoccode1}
 };
-\node[anchor=west] at(tikztable-5-2.179){%
+\node[anchor=west] at(tikztable-5-2.180){%
 \begin{pcbdoccode1}%
 \AuthorSet{\largeit{}Пупкин}
 \end{pcbdoccode1}
 };
-\node[anchor=west] at(tikztable-6-2.179){%
+\node[anchor=west] at(tikztable-6-2.180){%
 \begin{pcbdoccode1}%
 \AuthorSet{\LLargeit{}Пупкин}
 \end{pcbdoccode1}
 };
-\node[anchor=west] at(tikztable-7-2.179){%
+\node[anchor=west] at(tikztable-7-2.180){%
 \begin{pcbdoccode1}%
 \AuthorSet{\Largeit{}Пупкин}
 \end{pcbdoccode1}
 };
-\draw[line width=0.6mm] (tikztable-1-1.north west) -- (tikztable-1-3.north east);
-\end{tikztable}
+\begin{scope}[on background layer]
+\coordinate(left) at (tikztable-1-1.west);
+\coordinate(right) at (tikztable-1-3.east);
+\coordinate(top) at (tikztable-1-2.north);
+\draw[line width=0.6 mm] (top-|left) -- (top-|right);
+\coordinate(right) at (tikztable-1-1.east);
+\coordinate(top) at (tikztable-2-1.north);
+\coordinate(bottom) at (tikztable-7-1.south);
+\fill[codecolor] (top-|left) rectangle (bottom-|right);
+\coordinate(left) at (tikztable-2-2.west);
+\coordinate(right) at (tikztable-2-2.east);
+\fill[codecolor] (top-|left) rectangle (bottom-|right);
+\coordinate(left) at (tikztable-2-3.west);
+\coordinate(right) at (tikztable-2-3.east);
+\fill[resultcolor] (top-|left) rectangle (bottom-|right);
+\end{scope}
+\end{tikztablex}
 
 Кроме того, для указания типа шрифта и его размера можно воспользоваться встроенными
 средствами \XeLaTeX{}. Например:

@@ -1,0 +1,76 @@
+
+\newcommand{\pcbdocmanualterminal}[1]{%
+  \begin{tikzpicture}\node[align=left,fill=terminalcolor,font=\ttfamily] at (0,0){#1};%
+  \end{tikzpicture}%
+  }%
+
+\lstdefinelanguage{pcbdoc}{
+  morekeywords={
+    \documentclass,
+    \AuthorSet,
+    \CheckerSet,
+    \NormControllerSet,
+    \NameSet,
+    \NumberSet,
+    \begin,
+    \end,
+    \Part,
+    \Element,
+    \small,
+    \smallit,
+    \normalfont,
+    \normalfontit,
+    \llarge,
+    \llargeit,
+    \large,
+    \largeit,
+    \LLarge,
+    \LLargeit,
+    \Large,
+    \Largeit,
+    \fontspec,
+    \itshape,
+    \ScaleSet,
+    \TechControllerSet,
+    \ApproverSet,
+    \PcbNumberSet,
+    \PcbMaterialSet,
+    \PrimaryUseSet,
+    \newpage,
+    \refbox,
+    \plusminus
+  },
+  otherkeywords={[,],\\,\{,\}},
+  sensitive=true,
+}
+
+\lstnewenvironment{pcbdoccode}[1][0pt]{%
+  \lstset{%
+    language=pcbdoc,%
+    inputencoding=utf8x,%
+    keepspaces=true,%
+    escapechar=\$,%
+    basicstyle=\ttfamily\color{black},%
+    keywordstyle=\color{Blue}\ttfamily\bfseries,%
+    identifierstyle=\color{black}\ttfamily,%
+    commentstyle=\color{black}\ttfamily,%
+    stringstyle=\color{red}\ttfamily,%
+    backgroundcolor=\color{codecolor},%
+    xrightmargin=#1%
+  }%
+}{}
+
+\lstnewenvironment{pcbdoccode1}{%
+  \lstset{%
+    lineskip=-2mm,%
+    language=pcbdoc,%
+    inputencoding=utf8x,%
+    keepspaces=true,%
+    escapechar=\$,%
+    basicstyle=\ttfamily\color{black},%
+    keywordstyle=\color{Blue}\ttfamily\bfseries,%
+    identifierstyle=\color{black}\ttfamily,%
+    commentstyle=\color{black}\ttfamily,%
+    stringstyle=\color{red}\ttfamily,%
+  }%
+}{}
