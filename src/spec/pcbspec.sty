@@ -16,17 +16,6 @@
 \setlength{\pcbdocpaperdeltawidth}{1mm}%
 \setlength{\pcbdocpaperdeltaheight}{1mm}%
 
-%\newcommand{\Line}[7]{%
-%  \makebox[6mm]{\largeit{#1}} &%
-%  \makebox[6mm]{\largeit{#2}} &%
-%  \makebox[8mm]{\largeit{#3}} &%
-%  \largeit{#4} &%
-%  \largeit{#5} &%
-%  \makebox[10mm]{\largeit{#6}} &%
-%  \largeit{#7}%
-%  \tabularnewline%
-%  }%
-
 \newcommand{\commentbox}[1]{%
   \makebox[20mm]{#1}%
   }%
@@ -97,32 +86,22 @@
   \tabularnewline%
   }%
 
-\newcommand{\Dd}{% Добавить конструкторские данные
-  \Line{-}{}{}{\PcbNumber{Д36}}{Конструкторские данные}{}{на CD}%
+\newcommand{\Dd}[1][на CD]{% Добавить конструкторские данные
+  \Line{-}{}{}{\PcbNumber{Д36}}{Конструкторские данные}{}{#1}%
   \tabularnewline%
   }%
 
-\newcommand{\ICd}{% Добавить данные микросхем
-  \Line{-}{}{}{\PcbDocNumber{Д66}}{Данные микросхем}{}{на CD}%
+\newcommand{\ICd}[1][на CD]{% Добавить данные микросхем
+  \Line{-}{}{}{\PcbDocNumber{Д66}}{Данные микросхем}{}{#1}%
   \tabularnewline%
   }%
 
-%\newcommand{\DigDoc}{% Добавить документацию в электронном виде
-%  \Line{-}{}{}{\PcbDocNumber{ДМ}}{%
-%    \mbox{КД на \MakeLowercase{\PcbDocName~на}} \mbox{магнитном носителе данных}%
-%    }{}{на CD}%
-%  \tabularnewline%
-%  }%
-
-\newcommand{\DigDoc}{% Добавить документацию в электронном виде
+\newcommand{\DigDoc}[1][на CD]{% Добавить документацию в электронном виде
   \Line{-}{}{}{\PcbDocNumber{ДМ}}{%
     \mbox{КД на магнитном носителе} \mbox{данных}%
-    }{}{на CD}%
+    }{}{#1}%
   \tabularnewline%
   }%
-
-%      \mbox{КД на #1~на} \mbox{магнитном носителе данных}
-%      \mbox{КД на \MakeLowercase{\PcbDocName~на}} \mbox{магнитном носителе данных}
 
 \newcommand{\Ai}{% Добавить инструкцию по настройке
   \Line{A4}{}{}{\PcbDocNumber{И2}}{Инструкция по настройке}{}{}%
@@ -234,21 +213,6 @@
   \Component[#1]{#2}{Джампер #3}{#4}{#5}%
   }%
 
-%\newenvironment{Specification}{%
-%  \begin{longtable}[c]{%
-%    @{\hspace{-0.5mm}}p{6mm}%
-%    @{\hspace{0mm}}p{6mm}%
-%    @{\hspace{0mm}}p{8mm}%
-%    @{\hspace{1mm}}p{70mm}%
-%    @{\hspace{0mm}}p{63mm}%
-%    @{\hspace{-1mm}}p{10mm}%
-%    @{\hspace{1mm}}p{22mm}%
-%    @{\hspace{-0.5mm}}%
-%    }%
-%    }{%
-%    \end{longtable}%
-%  }%
-
 \newenvironment{Specification}{%
   \begin{longtable}[c]{%
     @{\hspace{-0.5mm}}>{\largeit}p{6mm}%
@@ -352,21 +316,18 @@
 
 \AtBeginDocument{%
   \enlargethispage{-3\baselineskip}%
-%  \begin{Specification}%
+  %\begin{Specification}%
   }%
 \AtEndDocument{%
   \ifthenelse{\equal{\changelist}{changelist}}{%
     \EndSheet%
     \clearpage\lastpage@putlabel%
     }{}%
-%  \end{Specification}
+  %\end{Specification}
   }%
 
 % приводит к маловразумительным сообщениям об ошибках и глюкам.
-% Следствие показало, что виноват пакет longtable - кривое и
-% глючное говно. Так как нормального пакета для работы с длинными
-% таблицами больше не существует (все известные основаны на longtable),
-% пользователь при создании спецификации должен окружить свой код процедурой
+% Поэтому пользователь при создании спецификации должен окружить свой код процедурой
 % Specification:
 
 % \begin{Specification}
@@ -375,4 +336,3 @@
 
 % Увы и ах :(
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
