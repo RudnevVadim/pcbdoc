@@ -1,1 +1,5 @@
 
+/experimental/*
+*.log
+*.aux
+*.toc

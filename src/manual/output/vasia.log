@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99991 (TeX Live 2014) (preloaded format=xelatex 2014.10.12)  6 JAN 2015 00:36
+This is XeTeX, Version 3.14159265-2.6-0.99991 (TeX Live 2014) (preloaded format=xelatex 2014.10.12)  17 MAR 2015 23:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -24,7 +24,7 @@ Package: pcbdocpaper
 Package: xifthen 2009/04/17 v1.3 Extended ifthen features
 
 (/opt1/texlive/2014/texmf-dist/tex/latex/etex-pkg/etex.sty
-Package: etex 1998/03/26 v2.0 eTeX basic definition package (PEB)
+Package: etex 2015/03/02 v2.1 eTeX basic definition package (PEB,DPC)
 \et@xins=\count80
 )
 (/opt1/texlive/2014/texmf-dist/tex/latex/tools/calc.sty
@@ -142,18 +142,18 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 Package: fontspec 2014/06/21 v2.4a Font selection for XeLaTeX and LuaLaTeX
 
 (/opt1/texlive/2014/texmf-dist/tex/latex/l3kernel/expl3.sty
-Package: expl3 2014/11/25 v5471 L3 programming layer (loader) 
+Package: expl3 2015/03/01 v5547 L3 programming layer (loader) 
 
 (/opt1/texlive/2014/texmf-dist/tex/latex/l3kernel/expl3-code.tex
-Package: expl3 2014/11/25 v5471 L3 programming layer (code) 
-L3 Module: l3bootstrap 2014/08/23 v5354 L3 Bootstrap code
-L3 Module: l3names 2014/08/22 v5343 L3 Namespace for primitives
-L3 Module: l3basics 2014/08/24 v5364 L3 Basic definitions
-L3 Module: l3expan 2014/08/22 v5349 L3 Argument expansion
-L3 Module: l3tl 2014/11/19 v5460 L3 Token lists
-L3 Module: l3str 2014/08/24 v5368 L3 Strings
+Package: expl3 2015/03/01 v5547 L3 programming layer (code) 
+L3 Module: l3bootstrap 2015/02/28 v5542 L3 Bootstrap code
+L3 Module: l3names 2015/02/24 v5535 L3 Namespace for primitives
+L3 Module: l3basics 2015/01/27 v5500 L3 Basic definitions
+L3 Module: l3expan 2014/11/27 v5472 L3 Argument expansion
+L3 Module: l3tl 2015/01/27 v5500 L3 Token lists
+L3 Module: l3str 2015/03/01 v5545 L3 Strings
 L3 Module: l3seq 2014/08/23 v5354 L3 Sequences and stacks
-L3 Module: l3int 2014/09/14 v5421 L3 Integers
+L3 Module: l3int 2015/02/21 v5529 L3 Integers
 \c_max_int=\count102
 \l_tmpa_int=\count103
 \l_tmpb_int=\count104
@@ -165,7 +165,7 @@ L3 Module: l3prg 2014/08/23 v5354 L3 Control structures
 L3 Module: l3clist 2014/08/23 v5354 L3 Comma separated lists
 L3 Module: l3token 2014/09/15 v5422 L3 Experimental token manipulation
 L3 Module: l3prop 2014/08/23 v5354 L3 Property lists
-L3 Module: l3msg 2014/08/24 v5358 L3 Messages
+L3 Module: l3msg 2015/02/26 v5537 L3 Messages
 L3 Module: l3file 2014/08/24 v5369 L3 File and I/O operations
 \l_iow_line_count_int=\count108
 \l__iow_target_count_int=\count109
@@ -191,7 +191,7 @@ L3 Module: l3skip 2014/08/23 v5354 L3 Dimensions and skips
 \l_tmpb_muskip=\muskip13
 \g_tmpa_muskip=\muskip14
 \g_tmpb_muskip=\muskip15
-L3 Module: l3keys 2014/08/23 v5354 L3 Key-value interfaces
+L3 Module: l3keys 2015/01/27 v5500 L3 Key-value interfaces
 \g__keyval_level_int=\count113
 \l_keys_choice_int=\count114
 L3 Module: l3fp 2014/08/22 v5336 L3 Floating points
@@ -231,7 +231,7 @@ L3 Module: l3coffins 2014/08/23 v5354 L3 Coffin code layer
 \l__coffin_display_x_dim=\dimen123
 \l__coffin_display_y_dim=\dimen124
 L3 Module: l3color 2014/08/23 v5354 L3 Experimental color support
-L3 Module: l3candidates 2014/11/23 v5466 L3 Experimental additions to l3kernel
+L3 Module: l3candidates 2015/03/01 v5544 L3 Experimental additions to l3kernel
 \l__box_top_dim=\dimen125
 \l__box_bottom_dim=\dimen126
 \l__box_left_dim=\dimen127
@@ -250,10 +250,10 @@ L3 Module: l3candidates 2014/11/23 v5466 L3 Experimental additions to l3kernel
 \l__coffin_scaled_width_dim=\dimen139
 )
 (/opt1/texlive/2014/texmf-dist/tex/latex/l3kernel/l3unicode-data.def
-File: l3unicode-data.def 2014/11/23 v5465 L3 Unicode data
+File: l3unicode-data.def 2015/03/01 v5544 L3 Unicode data
 )
 (/opt1/texlive/2014/texmf-dist/tex/latex/l3kernel/l3xdvipdfmx.def
-File: l3xdvidpfmx.def 2014/11/23 v5466 L3 Experimental driver: xdvipdfmx
+File: l3xdvidpfmx.def 2015/03/01 v5544 L3 Experimental driver: xdvipdfmx
 ))
 (/opt1/texlive/2014/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
 Package: xparse 2014/11/25 v5471 L3 Experimental document command parser
@@ -481,7 +481,7 @@ Package: polyglossia 2014/05/21 v1.33.5 Babel replacement for XeLaTeX and LuaTe
 X
 
 (/opt1/texlive/2014/texmf-dist/tex/latex/etoolbox/etoolbox.sty
-Package: etoolbox 2011/01/03 v2.1 e-TeX tools for LaTeX
+Package: etoolbox 2015/03/10 v2.1b e-TeX tools for LaTeX (JAW)
 \etb@tempcnta=\count133
 )
 (/opt1/texlive/2014/texmf-dist/tex/latex/makecmds/makecmds.sty
@@ -954,10 +954,10 @@ LaTeX Font Info:    Font shape `EU1/GOSTtypeA(3)/m/it' will be
 
 ] (./output/vasia.aux) ) 
 Here is how much of TeX's memory you used:
- 14911 strings out of 493724
- 299683 string characters out of 6147868
- 355874 words of memory out of 5000000
- 18088 multiletter control sequences out of 15000+600000
+ 15043 strings out of 493724
+ 303961 string characters out of 6147868
+ 358418 words of memory out of 5000000
+ 18220 multiletter control sequences out of 15000+600000
  7857 words of font info for 48 fonts, out of 8000000 for 9000
  1328 hyphenation exceptions out of 8191
  61i,17n,71p,10511b,472s stack positions out of 5000i,500n,10000p,200000b,80000s

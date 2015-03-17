@@ -7,9 +7,7 @@
 и(или) изменить размер шрифта можно с помощью команд, приведённых в
 \bfemph{Таблице~\ref{tabular:font}} и \bfemph{Таблице~\ref{tabular:fontit}}.~
 
-\begin{tikztablex}
-{\topcaption{Команды изменения размера прямого шрифта}\label{tabular:font}}
-[
+\tikztableset{my table}{
   draw,
   nodes={text depth=0.5mm,text height=3mm},
   column sep=3mm,
@@ -17,7 +15,20 @@
   column 1/.style={font=\sffamily\bfseries\itshape\small,align=left,text width=21mm},
   column 2/.style={align=left,text width=70mm},
   column 3/.style={align=left,text width=20mm},
+}
+
+\begin{tikztablex}
+[
+  draw,
+  %nodes={text depth=0.5mm,text height=3mm},
+  %column sep=3mm,
+  %row 1/.style={font=\sffamily\bfseries,align=center},
+  %column 1/.style={font=\sffamily\bfseries\itshape\small,align=left,text width=21mm},
+  %column 2/.style={align=left,text width=70mm},
+  %column 3/.style={align=left,text width=20mm},
+  my table
 ]
+{\caption{Команды изменения размера прямого шрифта}\label{tabular:font}}
 {
 Команда & Пример использования & Результат\\
 \textbackslash{}small       & & \smallresult{}Пупкин\\
@@ -75,9 +86,7 @@
 \end{scope}
 \end{tikztablex}
 
-\begin{tikztablex}
-{\topcaption{Команды изменения размера наклонного шрифта}\label{tabular:fontit}}
-[
+\tikztableset{my table}{
   draw,
   nodes={text depth=0.5mm,text height=3mm},
   column sep=3mm,
@@ -85,7 +94,20 @@
   column 1/.style={font=\sffamily\bfseries\itshape\small,align=left,text width=21mm},
   column 2/.style={align=left,text width=75mm},
   column 3/.style={align=left,text width=20mm},
+}
+
+\begin{tikztablex}
+[
+  draw,
+  %nodes={text depth=0.5mm,text height=3mm},
+  %column sep=3mm,
+  %row 1/.style={font=\sffamily\bfseries,align=center},
+  %column 1/.style={font=\sffamily\bfseries\itshape\small,align=left,text width=21mm},
+  %column 2/.style={align=left,text width=75mm},
+  %column 3/.style={align=left,text width=20mm},
+  my table
 ]
+{\caption{Команды изменения размера наклонного шрифта}\label{tabular:fontit}}
 {
 Команда & Пример использования & Результат\\
 \textbackslash{}smallit       & & \smallitresult{}Пупкин\\

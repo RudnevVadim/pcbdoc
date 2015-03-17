@@ -41,17 +41,26 @@
 Внутри окружения \sfemph{ElementList} должны находиться команды заполнения строк
 перечня элементов, приведённые в \bfsf{Таблице~\ref{tabular:pelines}}.\newpage
 
-\begin{tikztablex}
-[
-  draw,
-  %nodes={draw},
+\tikztableset{my table}{
   row 1/.style={minimum height=6mm,font=\sffamily\bfseries,align=center},
   column 1/.style={font=\sffamily\bfseries\itshape\small,align=left,text width=39mm},
   column 2/.style={font=\small,align=justify,text width=101mm},
   row 3/.style={minimum height=8mm},
   row 5/.style={minimum height=66mm}
+}
+
+\begin{tikztablex}
+[
+  draw,
+  %nodes={draw},
+  %row 1/.style={minimum height=6mm,font=\sffamily\bfseries,align=center},
+  %column 1/.style={font=\sffamily\bfseries\itshape\small,align=left,text width=39mm},
+  %column 2/.style={font=\small,align=justify,text width=101mm},
+  %row 3/.style={minimum height=8mm},
+  %row 5/.style={minimum height=66mm}
+  my table
 ]
-{\topcaption{Команды заполнения строк перечня элементов}\label{tabular:pelines}}
+{\caption{Команды заполнения строк перечня элементов}\label{tabular:pelines}}
 {
 Команда & Описание\\
 \textbackslash{}Part\{<name>\} &

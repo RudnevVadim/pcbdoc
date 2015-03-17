@@ -5,18 +5,28 @@
 находиться либо непосредственно в преамбуле документа, либо в отдельном пакете,
 включаемом в преамбулу с помощью команды \bfemph{\textbackslash{}usepackage}.
 
-\begin{tikztablex}
-[
-  draw,
-  %nodes={draw},
+\tikztableset{my table}{
   row 1/.style={font=\sffamily\bfseries,align=center},
   column 1/.style={font=\sffamily\bfseries\itshape\small,align=left,text width=37.6mm},
   column 2/.style={font=\small,align=justify,text width=102.6mm},
   row 5/.style={minimum height=10mm},
   row 9/.style={minimum height=8mm},
   row 13/.style={minimum height=12mm}
+}
+
+\begin{tikztablex}
+[
+  draw,
+  %nodes={draw},
+  %row 1/.style={font=\sffamily\bfseries,align=center},
+  %column 1/.style={font=\sffamily\bfseries\itshape\small,align=left,text width=37.6mm},
+  %column 2/.style={font=\small,align=justify,text width=102.6mm},
+  %row 5/.style={minimum height=10mm},
+  %row 9/.style={minimum height=8mm},
+  %row 13/.style={minimum height=12mm}
+  my table
 ]
-{\topcaption{Команды заполнения полей документа}\label{tabular:fields}}
+{\caption{Команды заполнения полей документа}\label{tabular:fields}}
 {
   Команда & Описание\\
   \textbackslash{}AuthorSet\{<name>\} &
