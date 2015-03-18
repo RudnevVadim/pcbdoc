@@ -73,18 +73,9 @@
   row 1/.style={minimum height=6mm,font=\sffamily\bfseries,align=center},
   column 1/.style={font=\sffamily\bfseries\itshape\small,align=left,text width=35mm},
   column 2/.style={font=\small,align=justify,text width=105mm},
-  %row 5/.style={minimum height=1mm}
 }
 
-\begin{tikztablex}
-[
-  %draw,
-  %nodes={draw},
-  %row 1/.style={minimum height=6mm,font=\sffamily\bfseries,align=center},
-  %column 1/.style={font=\sffamily\bfseries\itshape\small,align=left,text width=35mm},
-  %column 2/.style={font=\small,align=justify,text width=105mm},
-  speclines table1
-]
+\begin{tikztablex}[speclines table1]
 {
 \caption{Команды заполнения строк спецификации\\без встроенного счётчика}
 \label{tabular:speclines1}
@@ -156,30 +147,13 @@
 
 \clearpage
 
-\begin{tikztablex}
-[
-  draw,
-  %nodes={draw},
-  %row 1/.style={minimum height=6mm,font=\sffamily\bfseries,align=center},
-  %column 1/.style={font=\sffamily\bfseries\itshape\small,align=left,text width=35mm},
-  %column 2/.style={font=\small,align=justify,text width=105mm},
-  speclines table1
-]
+\begin{tikztablex}[draw,speclines table1]
 {
 \caption{Команды заполнения строк спецификации\\без встроенного счётчика. Продолжение}
-\label{tabular:speclines2}
+\label{tabular:speclines1}
 }
 {
 Команда & Описание\\
-%\textbackslash{}Dd[<note>] &
-%Заполняет строку спецификации, добавляя запись о конструкторских данных. В колонке
-%\colorbox{resultcolor}{\sfemph{Формат}} печатается символ \sfemph{-}. В колонке
-%\colorbox{resultcolor}{\sfemph{Обозначение}} печатается текст вида
-%\sfemph{<number>Д36}, где \sfemph{<number>} - аргумент команды
-%\bfemph{\textbackslash{}PcbNumberSet}(см. таблицу~\ref{tabular:fields}). В колонке
-%\colorbox{resultcolor}{\sfemph{Наименование}} печатается текст \sfemph{Конструкторские
-%  данные}. В колонке \colorbox{resultcolor}{\sfemph{Примечание}} печатается
-%необязательный аргумент \sfemph{<note>} (\sfemph{на CD} по умолчанию)\\
 \textbackslash{}ICd[<note>] &
 Заполняет строку спецификации, добавляя запись о данных микросхем. В колонке
 \colorbox{resultcolor}{\sfemph{Формат}} печатается символ \sfemph{-}. В колонке
@@ -210,4 +184,45 @@
 };
 \end{tikztablex}
 
-~\\
+\tikztableset{speclines table2}{
+  draw,nodes=draw,
+  row 1/.style={minimum height=6mm,font=\sffamily\bfseries,align=center},
+  column 1/.style={font=\sffamily\bfseries\itshape\small,align=left,text width=35mm},
+  column 2/.style={font=\small,align=justify,text width=105mm},
+}
+
+\begin{tikztablex}[draw,speclines table2]
+{
+\caption{Команды заполнения строк спецификации\\со встроенным счётчиком}
+\label{tabular:speclines2}
+}
+{
+Команда & Описание\\
+{\textbackslash{}Detail[<reference>]\\
+\{<format>\}\\
+\{<zone>\}\\
+\{<designating>\}\\
+\{<naming>\}\\
+\{<quantity>\}\\
+\{<note>\}}
+& Базовая команда заполнения строки спецификации со встроенным
+счётчиком. Необязательный аргумент \sfemph{<reference>} управляет встроенным счётчиком
+позиционного обозначения. Если аргумент \sfemph{<reference>} имеет значение \sfemph{-},
+счетчик позиционного обозначения не инкрементируется, а в колонку
+\colorbox{resultcolor}{\sfemph{~~Поз~~}} записывается символ \sfemph{-}. Если данный
+аргумент имеет значение \sfemph{0}, счетчик позиционного обозначения не
+инкрементируется, а в колонку \colorbox{resultcolor}{\sfemph{~~Поз~~}} ничего не записывается. Если значением
+аргумента является положительное число, счётчик инкрементируется на это число, а если
+отрицательное --- счётчик принимает значение модуля этого числа. В двух последних
+случаях в колонку {\sfemph{~~Поз~~}} записывается значение счетчика. Аргументы
+\sfemph{<format>}, \sfemph{<zone>}, \sfemph{<designating>}, \sfemph{<naming>},
+\sfemph{<quantity>} и \sfemph{<note>} печатаются в колонках
+\colorbox{resultcolor}{\sfemph{~~Формат~~}},
+\colorbox{resultcolor}{\sfemph{~~Зона.~~}},
+\colorbox{resultcolor}{\sfemph{Обозначение}},
+\colorbox{resultcolor}{\sfemph{Наименование}}, \colorbox{resultcolor}{\sfemph{Кол.}} и
+\colorbox{resultcolor}{\sfemph{Примечание}} соответственно.\\
+};
+\end{tikztablex}
+
+\clearpage
