@@ -18,41 +18,35 @@
     p{8mm}@{\hspace{2mm}}%
     p{43mm}@{\hspace{1mm}}%
     }%
-    }{%
+  }{%
     \end{longtable}%
   }%
 
-\newcommand{\newsheet}{%
-  \end{ElementList}%
-  \newpage%
-  \begin{ElementList}%
-  }%
+\newcommand{\newsheet}{\newpage}%
 
 \newcommand{\Line}[4]{%
-  \largeit #1 & %
-  \largeit #2 & %
-  \makebox[8mm]{\largeit #3} & %
-  \largeit #4 %
+  \tabularnewline\kill%
+  \largeit{}#1 &%
+  \largeit{}#2 &%
+  \makebox[8mm]{\largeit{}#3} &%
+  \largeit{}#4%
   \tabularnewline%
   }%
 
 \newcommand{\Part}[1]{% Добавить раздел, #1 - имя раздела
-  \tabularnewline%
-%  \Line{}{\hfill \raisebox{0.8mm}{\underline{\largeit #1}} \hfill}{}{}%
-  \Line{}{\hfill \underline{\raisebox{0mm}[0mm][0mm]{#1}} \hfill}{}{}%
+  \tabularnewline\kill\tabularnewline%
+  \Line{}{\hfill\underline{\raisebox{0mm}[0mm][0mm]{#1}}\hfill}{}{}%
   \tabularnewline%
   }%
 
-\newcommand{\refbox}[1]{%
-  \makebox[19mm]{#1}%
-  }%
+\newcommand{\refbox}[1]{\makebox[19mm]{#1}}%
 
 \newcommand{\Element}[4][]{% Добавить элемент
   % #1 - примечание (необязательно),
   % #2 - наименование,
   % #3 - позиционное обозначение,
   % #4 - количество
-  \Line{\largeit #3}{#2}{#4}{#1}%
+  \Line{\largeit{}#3}{#2}{#4}{#1}%
   \tabularnewline%
   }%
 
@@ -62,14 +56,12 @@
   % #2 - наименование,
   % #3 - позиционное обозначение,
   % #4 - количество
-  \Line{\largeit #3}{#2}{#4}{#1}%
+  \Line{\largeit{}#3}{#2}{#4}{#1}%
   }%
 }{}%
 
-%\sloppy%
 \tolerance=10000%
 \raggedright%
-%\hyphenpenalty=10000%
 
 \newcommand{\EndSheet}{%
   \renewcommand{\DrawHeaderNext}{%
@@ -150,11 +142,20 @@
 
 \AtBeginDocument{%
   \enlargethispage{-3\baselineskip}%
+  %\begin{longtable}[c]{%
+  %  @{}p{19mm}@{\hspace{2mm}}%
+  %  p{107mm}@{\hspace{2mm}}%
+  %  p{8mm}@{\hspace{2mm}}%
+  %  p{43mm}@{\hspace{1mm}}%
+  %  }%
   }%
 
 \AtEndDocument{%
+  %\end{longtable}%
+  \label{LastPage}%
   \ifthenelse{\equal{\changelist}{changelist}}{%
+    \newpage%
     \EndSheet%
-    \clearpage\lastpage@putlabel%
+    \clearpage%\lastpage@putlabel%
     }{}%
   }%

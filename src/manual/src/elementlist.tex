@@ -42,6 +42,7 @@
 перечня элементов, приведённые в \bfsf{Таблице~\ref{tabular:pelines}}.\newpage
 
 \tikztableset{my table}{
+  draw,
   row 1/.style={minimum height=6mm,font=\sffamily\bfseries,align=center},
   column 1/.style={font=\sffamily\bfseries\itshape\small,align=left,text width=39mm},
   column 2/.style={font=\small,align=justify,text width=101mm},
@@ -49,37 +50,27 @@
   row 5/.style={minimum height=66mm}
 }
 
-\begin{tikztablex}
-[
-  draw,
-  %nodes={draw},
-  %row 1/.style={minimum height=6mm,font=\sffamily\bfseries,align=center},
-  %column 1/.style={font=\sffamily\bfseries\itshape\small,align=left,text width=39mm},
-  %column 2/.style={font=\small,align=justify,text width=101mm},
-  %row 3/.style={minimum height=8mm},
-  %row 5/.style={minimum height=66mm}
-  my table
-]
+\begin{tikztablex}[my table]
 {\caption{Команды заполнения строк перечня элементов}\label{tabular:pelines}}
 {
 Команда & Описание\\
 \textbackslash{}Part\{<name>\} &
 Печатает подчёркнутый аргумент \sfemph{<name>} в центре колонки
-\colorbox{resultcolor}{\sfemph{Наименование}} Например:\\
+\resultbox{\sfemph{Наименование}} Например:\\
 &\\
 {\textbackslash{}Element[<note>]\\
 \{<naming>\}\\
 \{<refdes1 ... refdesN>\}\\
 \{<quantity>\}} &
 Заполняет строку перечня элементов. Необязательный аргумент \sfemph{<note>} печатается
-в колонке \colorbox{resultcolor}{\sfemph{Примечание}}. Аргументы \sfemph{<naming>},
+в колонке \resultbox{\sfemph{Примечание}}. Аргументы \sfemph{<naming>},
 \sfemph{<refdes1 ... refdesN>} и \sfemph{<quantity>} печатаются в колонках
-\colorbox{resultcolor}{\sfemph{Наименование}},
-\colorbox{resultcolor}{\sfemph{Поз. обозначение}} и
-\colorbox{resultcolor}{\sfemph{Кол.}} соответственно.
+\resultbox{\sfemph{Наименование}},
+\resultbox{\sfemph{Поз. обозначение}} и
+\resultbox{\sfemph{Кол.}} соответственно.
 Каждая запись в аргументе \sfemph{<refdes1 ... refdesN>} печатается в отдельной строке
-колонки \colorbox{resultcolor}{\sfemph{Поз. обозначение}}. Каждую строку в колонке
-\colorbox{resultcolor}{\sfemph{Поз. обозначение}} следует отделять от предыдущей одним
+колонки \resultbox{\sfemph{Поз. обозначение}}. Каждую строку в колонке
+\resultbox{\sfemph{Поз. обозначение}} следует отделять от предыдущей одним
 или несколькими пробельными символами(символ перехода на другую строку также является
 пробельным символом). Между символом \bfsf{\{} и первой строкой, а также между
 последней строкой и символом \bfsf{\}} пробельных символов быть не должно, поэтому в

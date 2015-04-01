@@ -2,7 +2,12 @@
 \newcommand{\pcbdocmanualterminal}[1]{%
   \begin{tikzpicture}\node[align=left,fill=terminalcolor,font=\ttfamily] at (0,0){#1};%
   \end{tikzpicture}%
-  }%
+}%
+
+\newcommand{\resultbox}[1]{%
+  \colorbox{resultcolor}{\raisebox{0pt}[0.85\height][0pt]{#1}}%
+}
+
 
 \lstdefinelanguage{pcbdoc}{
   morekeywords={

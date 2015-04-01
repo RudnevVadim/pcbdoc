@@ -45,22 +45,22 @@
 команды, является команда \bfemph{\textbackslash{}Line}. Её необходимо использовать,
 если функциональности основанных на ней команд недостаточно. Эта команда принимает семь
 аргументов, которые печатаются в колонках
-\colorbox{resultcolor}{\sfemph{~~Формат~~}}, \colorbox{resultcolor}{\sfemph{~~Зона~~}},
-\colorbox{resultcolor}{\sfemph{~~Поз.~~}}, \colorbox{resultcolor}{\sfemph{Обозначение}},
-\colorbox{resultcolor}{\sfemph{Наименование}}, \colorbox{resultcolor}{\sfemph{Кол.}} и
-\colorbox{resultcolor}{\sfemph{Примечание}}. Команды, основанные на
+\resultbox{\sfemph{~~Формат~~}}, \resultbox{\sfemph{~~Зона~~}},
+\resultbox{\sfemph{~~Поз.~~}}, \resultbox{\sfemph{Обозначение}},
+\resultbox{\sfemph{Наименование}}, \resultbox{\sfemph{Кол.}} и
+\resultbox{\sfemph{Примечание}}. Команды, основанные на
 команде \bfemph{\textbackslash{}Line}, могут иметь встроенный счётчик, значение которого
-заносится в колонку \colorbox{resultcolor}{\sfemph{Поз.}}. Описание команды
+заносится в колонку \resultbox{\sfemph{Поз.}}. Описание команды
 \bfemph{\textbackslash{}Line}, а также команд заполнения строк спецификации без
 встроенного счётчика приведенно в \bfsf{Таблице~\ref{tabular:speclines1}}.
 
 Базовой командой заполнения строки спецификации со встроенным счётчиком является команда
 \bfemph{\textbackslash{}Detail}. Она основана на команде \bfemph{\textbackslash{}Line} и
 принимает семь аргументов, которые печатаются в колонках
-\colorbox{resultcolor}{\sfemph{Поз.}}, \colorbox{resultcolor}{\sfemph{Формат}},
-\colorbox{resultcolor}{\sfemph{Зона}}, \colorbox{resultcolor}{\sfemph{Обозначение}},
-\colorbox{resultcolor}{\sfemph{Наименование}}, \colorbox{resultcolor}{\sfemph{Кол.}} и
-\colorbox{resultcolor}{\sfemph{Примечание}}. Как и в случае с командой
+\resultbox{\sfemph{Поз.}}, \resultbox{\sfemph{Формат}},
+\resultbox{\sfemph{Зона}}, \resultbox{\sfemph{Обозначение}},
+\resultbox{\sfemph{Наименование}}, \resultbox{\sfemph{Кол.}} и
+\resultbox{\sfemph{Примечание}}. Как и в случае с командой
 \bfemph{\textbackslash{}Line}, данную команду имеет смысл использовать при отсутствии
 требуемой функциональности у основанных на ней команд. Описание команды
 \bfemph{\textbackslash{}Detail}, а также команд заполнения строк спецификации со
@@ -94,53 +94,53 @@
 Базовая команда заполнения строки спецификации. Аргументы \sfemph{<format>},
 \sfemph{<zone>}, \sfemph{<reference>}, \sfemph{<designating>}, \sfemph{<naming>},
 \sfemph{<quantity>} и \sfemph{<note>} печатаются в колонках
-\colorbox{resultcolor}{\sfemph{~~Формат~~}}, \colorbox{resultcolor}{\sfemph{~~Зона~~}},
-\colorbox{resultcolor}{\sfemph{~~Поз.~~}}, \colorbox{resultcolor}{\sfemph{Обозначение}},
-\colorbox{resultcolor}{\sfemph{Наименование}}, \colorbox{resultcolor}{\sfemph{Кол.}} и
-\colorbox{resultcolor}{\sfemph{Примечание}} соответственно.\\
+\resultbox{\sfemph{~~Формат~~}}, \resultbox{\sfemph{~~Зона~~}},
+\resultbox{\sfemph{~~Поз.~~}}, \resultbox{\sfemph{Обозначение}},
+\resultbox{\sfemph{Наименование}}, \resultbox{\sfemph{Кол.}} и
+\resultbox{\sfemph{Примечание}} соответственно.\\
 \textbackslash{}Part\{<name>\} &
 Печатает подчёркнутый аргумент \sfemph{<name>} в центре колонки
-\colorbox{resultcolor}{\sfemph{Наименование}} Например:\\
+\resultbox{\sfemph{Наименование}} Например:\\
 &\\
 \textbackslash{}Sb\{<format>\} &
 Заполняет строку спецификации, добавляя запись о сборочном чертеже. Аргумент
-\sfemph{<format>} печатается в колонке \colorbox{resultcolor}{\sfemph{Формат}}. В
+\sfemph{<format>} печатается в колонке \resultbox{\sfemph{Формат}}. В
 случае, если аргумент \sfemph{<format>} не помещается в этой колонке, он печатается в
-колонке \colorbox{resultcolor}{\sfemph{Примечание}}, а в колонке
-\colorbox{resultcolor}{\sfemph{Формат}} печатается символ \bfemph{*}. В колонке
-\colorbox{resultcolor}{\sfemph{Обозначение}} печатается текст вида \sfemph{<number>СБ},
+колонке \resultbox{\sfemph{Примечание}}, а в колонке
+\resultbox{\sfemph{Формат}} печатается символ \bfemph{*}. В колонке
+\resultbox{\sfemph{Обозначение}} печатается текст вида \sfemph{<number>СБ},
 где \sfemph{<number>} - аргумент команды
 \bfemph{\textbackslash{}NumberSet}(см. таблицу~\ref{tabular:fields}). В колонке
-\colorbox{resultcolor}{\sfemph{Наименование}} печатается текст \sfemph{Сборочный
+\resultbox{\sfemph{Наименование}} печатается текст \sfemph{Сборочный
 чертеж}.\\
 \textbackslash{}Sch\{<format>\} &
 Заполняет строку спецификации, добавляя запись о схеме электрической принципиальной.
 Аргумент \sfemph{<format>} печатается в колонке
-\colorbox{resultcolor}{\sfemph{Формат}}. В случае, если аргумент \sfemph{<format>} не
+\resultbox{\sfemph{Формат}}. В случае, если аргумент \sfemph{<format>} не
 помещается в этой колонке, он печатается в колонке
-\colorbox{resultcolor}{\sfemph{Примечание}}, а в колонке
-\colorbox{resultcolor}{\sfemph{Формат}} печатается символ \bfemph{*}. В колонке
-\colorbox{resultcolor}{\sfemph{Обозначение}} печатается текст вида \sfemph{<number>Э3},
+\resultbox{\sfemph{Примечание}}, а в колонке
+\resultbox{\sfemph{Формат}} печатается символ \bfemph{*}. В колонке
+\resultbox{\sfemph{Обозначение}} печатается текст вида \sfemph{<number>Э3},
 где \sfemph{<number>} - аргумент команды
 \bfemph{\textbackslash{}NumberSet}(см. таблицу~\ref{tabular:fields}). В колонке
-\colorbox{resultcolor}{\sfemph{Наименование}} печатается двустрочный текст
+\resultbox{\sfemph{Наименование}} печатается двустрочный текст
 \sfemph{Схема электрическая принципиальная}.\\
 \textbackslash{}El &
 Заполняет строку спецификации, добавляя запись о перечне элементов.
-В колонке \colorbox{resultcolor}{\sfemph{Формат}} печатается текст \sfemph{A4}.
-В колонке \colorbox{resultcolor}{\sfemph{Обозначение}} печатается текст вида
+В колонке \resultbox{\sfemph{Формат}} печатается текст \sfemph{A4}.
+В колонке \resultbox{\sfemph{Обозначение}} печатается текст вида
 \sfemph{<number>ПЭ}, где \sfemph{<number>} - аргумент команды
 \bfemph{\textbackslash{}NumberSet}(см. таблицу~\ref{tabular:fields}). В колонке
-\colorbox{resultcolor}{\sfemph{Наименование}} печатается текст
+\resultbox{\sfemph{Наименование}} печатается текст
 \sfemph{Перечень элементов}.\\
 \textbackslash{}Dd[<note>] &
 Заполняет строку спецификации, добавляя запись о конструкторских данных. В колонке
-\colorbox{resultcolor}{\sfemph{Формат}} печатается символ \sfemph{-}. В колонке
-\colorbox{resultcolor}{\sfemph{Обозначение}} печатается текст вида
+\resultbox{\sfemph{Формат}} печатается символ \sfemph{-}. В колонке
+\resultbox{\sfemph{Обозначение}} печатается текст вида
 \sfemph{<number>Д36}, где \sfemph{<number>} - аргумент команды
 \bfemph{\textbackslash{}PcbNumberSet}(см. таблицу~\ref{tabular:fields}). В колонке
-\colorbox{resultcolor}{\sfemph{Наименование}} печатается текст \sfemph{Конструкторские
-данные}. В колонке \colorbox{resultcolor}{\sfemph{Примечание}} печатается
+\resultbox{\sfemph{Наименование}} печатается текст \sfemph{Конструкторские
+данные}. В колонке \resultbox{\sfemph{Примечание}} печатается
 необязательный аргумент \sfemph{<note>}(\sfemph{на CD} по умолчанию)\\
 };
 \end{tikztablex}
@@ -149,45 +149,45 @@
 
 \begin{tikztablex}[draw,speclines table1]
 {
-\caption{Команды заполнения строк спецификации\\без встроенного счётчика. Продолжение}
-\label{tabular:speclines1}
+\caption*{Таблица~\ref{tabular:speclines1}. Команды заполнения строк спецификации\\без
+встроенного счётчика. Продолжение}
 }
 {
 Команда & Описание\\
 \textbackslash{}ICd[<note>] &
 Заполняет строку спецификации, добавляя запись о данных микросхем. В колонке
-\colorbox{resultcolor}{\sfemph{Формат}} печатается символ \sfemph{-}. В колонке
-\colorbox{resultcolor}{\sfemph{Обозначение}} печатается текст вида
+\resultbox{\sfemph{Формат}} печатается символ \sfemph{-}. В колонке
+\resultbox{\sfemph{Обозначение}} печатается текст вида
 \sfemph{<number>Д66}, где \sfemph{<number>} - аргумент команды
 \bfemph{\textbackslash{}NumberSet}(см. таблицу~\ref{tabular:fields}). В колонке
-\colorbox{resultcolor}{\sfemph{Наименование}} печатается текст \sfemph{Данные
-микросхем}. В колонке \colorbox{resultcolor}{\sfemph{Примечание}} печатается
+\resultbox{\sfemph{Наименование}} печатается текст \sfemph{Данные
+микросхем}. В колонке \resultbox{\sfemph{Примечание}} печатается
 необязательный аргумент \sfemph{<note>}(\sfemph{на CD} по умолчанию)\\
 \textbackslash{}DigDoc[<note>] &
 Заполняет строку спецификации, добавляя запись о документации в электронном виде. В
-колонке \colorbox{resultcolor}{\sfemph{Формат}} печатается символ \sfemph{-}. В колонке
-\colorbox{resultcolor}{\sfemph{Обозначение}} печатается текст вида
+колонке \resultbox{\sfemph{Формат}} печатается символ \sfemph{-}. В колонке
+\resultbox{\sfemph{Обозначение}} печатается текст вида
 \sfemph{<number>ДМ}, где \sfemph{<number>} - аргумент команды
 \bfemph{\textbackslash{}NumberSet}(см. таблицу~\ref{tabular:fields}). В колонке
-\colorbox{resultcolor}{\sfemph{Наименование}} печатается двустрочный текст
+\resultbox{\sfemph{Наименование}} печатается двустрочный текст
 \sfemph{КД на магнитном носителе данных}. В колонке
-\colorbox{resultcolor}{\sfemph{Примечание}} печатается необязательный аргумент
+\resultbox{\sfemph{Примечание}} печатается необязательный аргумент
 \sfemph{<note>}(\sfemph{на CD} по умолчанию)\\
 \textbackslash{}Ai &
 Заполняет строку спецификации, добавляя запись о инструкции по настройке. В колонке
-\colorbox{resultcolor}{\sfemph{Формат}} печатается текст \sfemph{A4}. В колонке
-\colorbox{resultcolor}{\sfemph{Обозначение}} печатается текст вида
+\resultbox{\sfemph{Формат}} печатается текст \sfemph{A4}. В колонке
+\resultbox{\sfemph{Обозначение}} печатается текст вида
 \sfemph{<number>И2}, где \sfemph{<number>} - аргумент команды
 \bfemph{\textbackslash{}NumberSet}(см. таблицу~\ref{tabular:fields}). В колонке
-\colorbox{resultcolor}{\sfemph{Наименование}} печатается текст
+\resultbox{\sfemph{Наименование}} печатается текст
 \sfemph{Инструкция по настройке}.\\
 };
 \end{tikztablex}
 ~\\[-18mm]
 
-Команды заполнения строк спецификации без встроенного счётчика используются автором для
-создания разделов спецификации(команда \bfemph{\textbackslash{}Part}), а также для
-заполнения раздела \sfemph{Документация}. Например:
+Команды заполнения строк без встроенного счётчика используются автором для создания
+разделов спецификации(команда \bfemph{\textbackslash{}Part}), а также для заполнения
+раздела \sfemph{Документация}. Например:
 
 \begin{pcbdoccode}
 ...
@@ -234,20 +234,28 @@
 счётчиком. Необязательный аргумент \sfemph{<reference>} управляет встроенным счётчиком
 позиционного обозначения. Если аргумент \sfemph{<reference>} имеет значение \sfemph{-},
 счетчик позиционного обозначения не инкрементируется, а в колонку
-\colorbox{resultcolor}{\sfemph{~~Поз~~}} записывается символ \sfemph{-}. Если данный
+\resultbox{\sfemph{Поз.}} записывается символ \sfemph{-}. Если данный
 аргумент имеет значение \sfemph{0}, счетчик позиционного обозначения также не
-инкрементируется, а в колонку \colorbox{resultcolor}{\sfemph{~~Поз~~}} ничего не
+инкрементируется, а в колонку \resultbox{\sfemph{Поз.}} ничего не
 записывается. Если значением аргумента является положительное число, счётчик
 инкрементируется на это число, а если отрицательное --- счётчик принимает значение
-модуля этого числа. В двух последних случаях в колонку {\sfemph{~~Поз~~}} записывается
-значение счетчика. Значением этого аргумента по умолчанию является
-\sfemph{1}. Аргументы \sfemph{<format>}, \sfemph{<zone>}, \sfemph{<designating>},
-\sfemph{<naming>}, \sfemph{<quantity>} и \sfemph{<note>} печатаются в колонках
-\colorbox{resultcolor}{\sfemph{~~Формат~~}},
-\colorbox{resultcolor}{\sfemph{~~Зона.~~}},
-\colorbox{resultcolor}{\sfemph{Обозначение}},
-\colorbox{resultcolor}{\sfemph{Наименование}}, \colorbox{resultcolor}{\sfemph{Кол.}} и
-\colorbox{resultcolor}{\sfemph{Примечание}} соответственно.\\
+модуля этого числа. В двух последних случаях в колонку
+\resultbox{\sfemph{Поз.}} записывается значение счетчика. Значением
+этого аргумента по умолчанию является \sfemph{1}. Аргументы \sfemph{<format>},
+\sfemph{<zone>}, \sfemph{<designating>}, \sfemph{<naming>}, \sfemph{<quantity>} и
+\sfemph{<note>} печатаются в колонках
+\resultbox{\sfemph{Формат}},
+\resultbox{\sfemph{Зона}},
+\resultbox{\sfemph{Обозначение}},
+\resultbox{\sfemph{Наименование}},
+\resultbox{\sfemph{Кол.}} и
+\resultbox{\sfemph{Примечание}} соответственно.\\
+{\textbackslash{}Component\\[0pt][<reference>]\\
+\{<zone>\}\\
+\{<naming>\}\\
+\{<quantity>\}\\
+\{<note>\}\\}
+&\\
 };
 \end{tikztablex}
 

@@ -6,6 +6,7 @@
 включаемом в преамбулу с помощью команды \bfemph{\textbackslash{}usepackage}.
 
 \tikztableset{my table}{
+  draw,
   row 1/.style={font=\sffamily\bfseries,align=center},
   column 1/.style={font=\sffamily\bfseries\itshape\small,align=left,text width=37.6mm},
   column 2/.style={font=\small,align=justify,text width=102.6mm},
@@ -14,38 +15,27 @@
   row 13/.style={minimum height=12mm}
 }
 
-\begin{tikztablex}
-[
-  draw,
-  %nodes={draw},
-  %row 1/.style={font=\sffamily\bfseries,align=center},
-  %column 1/.style={font=\sffamily\bfseries\itshape\small,align=left,text width=37.6mm},
-  %column 2/.style={font=\small,align=justify,text width=102.6mm},
-  %row 5/.style={minimum height=10mm},
-  %row 9/.style={minimum height=8mm},
-  %row 13/.style={minimum height=12mm}
-  my table
-]
+\begin{tikztablex}[my table]
 {\caption{Команды заполнения полей документа}\label{tabular:fields}}
 {
   Команда & Описание\\
   \textbackslash{}AuthorSet\{<name>\} &
-  Печатает аргумент \sfemph{<name>} в поле \colorbox{resultcolor}{\sfemph{Разраб.}}
+  Печатает аргумент \sfemph{<name>} в поле \resultbox{\sfemph{Разраб.}}
   основной надписи.\\
   \textbackslash{}CheckerSet\{<name>\} &
-  Печатает аргумент \sfemph{<name>} в поле \colorbox{resultcolor}{\sfemph{Пров.}}
+  Печатает аргумент \sfemph{<name>} в поле \resultbox{\sfemph{Пров.}}
   основной надписи.\\
   \textbackslash{}ScaleSet\{<value>\} &
-  Печатает аргумент \sfemph{<value>} в поле \colorbox{resultcolor}{\sfemph{Масштаб}}
+  Печатает аргумент \sfemph{<value>} в поле \resultbox{\sfemph{Масштаб}}
   основной надписи сборочного чертежа или чертежа печатной платы.\\
   {\textbackslash{}NormControllerSet\\\{<name>\}} &
-  Печатает аргумент \sfemph{<name>} в поле \colorbox{resultcolor}{\sfemph{Н.~контр.}}
+  Печатает аргумент \sfemph{<name>} в поле \resultbox{\sfemph{Н.~контр.}}
   основной надписи.\\
   {\textbackslash{}TechControllerSet\\\{<name>\}} &
-  Печатает аргумент \sfemph{<name>} в поле \colorbox{resultcolor}{\sfemph{Т.~контр.}}
+  Печатает аргумент \sfemph{<name>} в поле \resultbox{\sfemph{Т.~контр.}}
   основной надписи сборочного чертежа или чертежа печатной платы.\\
   \textbackslash{}ApproverSet\{<name>\} &
-  Печатает аргумент \sfemph{<name>} в поле \colorbox{resultcolor}{\sfemph{Утв.}}
+  Печатает аргумент \sfemph{<name>} в поле \resultbox{\sfemph{Утв.}}
   основной надписи.\\
   \textbackslash{}NameSet\{<name>\} &
   Печатает аргумент \sfemph{<name>} в поле наименования изделия
@@ -57,7 +47,7 @@
   Печатает децимальный номер \sfemph{<number>} в поле обозначения
   документа основной надписи схемы электрической принципиальной, перечня элементов,
   сборочного чертежа и спецификации, а также в поле
-  \colorbox{resultcolor}{\sfemph{Перв. примен.}} схемы электрической принципиальной,
+  \resultbox{\sfemph{Перв. примен.}} схемы электрической принципиальной,
   перечня элементов, чертежа печатной платы и сборочного чертежа.\\
   {\textbackslash{}PcbNumberSet\\\{<number>\}} &
   Печатает децимальный номер \sfemph{<number>} в поле обозначения
@@ -71,7 +61,7 @@
   &\\
   \textbackslash{}PrimaryUseSet \{<number>\} &
   Печатает аргумент \sfemph{<number>} в поле
-  \colorbox{resultcolor}{\sfemph{Перв. примен.}} основной надписи спецификации.\\
+  \resultbox{\sfemph{Перв. примен.}} основной надписи спецификации.\\
 };
 \coordinate(left) at (tikztable-1-1.west);
 \coordinate(right) at (tikztable-1-2.east);

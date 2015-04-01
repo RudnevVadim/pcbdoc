@@ -21,6 +21,7 @@
   }%
 
 \newcommand{\Line}[7]{%
+  \tabularnewline\kill%
   \makebox[6mm]{#1} &%
   \makebox[6mm]{#2} &%
   \makebox[8mm]{#3} &%
@@ -32,12 +33,12 @@
   }%
 
 \newcommand{\Part}[1]{% Добавить раздел, #1 - имя раздела
-  \tabularnewline%
-  \Line{}{}{}{}{%
-    \makebox[63mm]{\underline{\raisebox{0mm}[0mm][0mm]{#1}}}}%
-    {}{}%
+  \tabularnewline\kill\tabularnewline%
+  \Line{}{}{}{}{\makebox[63mm]{\underline{\raisebox{0mm}[0mm][0mm]{#1}}}}{}{}%
   \tabularnewline%
   }%
+
+\newcommand{\notebox}[1]{\makebox[20mm]{#1}}
 
 \newcommand{\VariableData}{%
   \tabularnewline%
@@ -139,6 +140,86 @@
   \tabularnewline%
   }%
 
+%% COMPACTMODE
+
+\ifthenelse{\equal{\compactmode}{compactmode}}{%
+
+\renewcommand{\Sb}[1]{% Добавить сборочный чертеж, #1 - формат
+  \settowidth{\pcbspeclength}{#1}%
+  \ifthenelse{\lengthtest\pcbspeclength < 6mm}{%
+    \Line{#1}{}{}{\PcbDocNumber{СБ}}{Сборочный чертеж}{}{}%
+    }{%
+    \Line{*}{}{}{\PcbDocNumber{СБ}}{Сборочный чертеж}{}{*~#1}%
+    }%
+  }%
+
+\renewcommand{\Sch}[1]{% Добавить схему электрическую принципиальную, #1 - формат
+  \settowidth{\pcbspeclength}{#1}%
+  \ifthenelse{\lengthtest\pcbspeclength < 6mm}{%
+    \Line{#1}{}{}{\PcbDocNumber{Э3}}%
+      {\mbox{Схема электрическая} \mbox{принципиальная}}{}{}%
+    }{%
+    \Line{*}{}{}{\PcbDocNumber{Э3}}%
+      {\mbox{Схема электрическая} \mbox{принципиальная}}{}{*~#1}%
+    }%
+  }%
+
+\renewcommand{\El}{% Добавить перечень элементов
+  \Line{A4}{}{}{\PcbDocNumber{ПЭ}}{Перечень элементов}{}{}%
+  }%
+
+\renewcommand{\Dd}[1][на CD]{% Добавить конструкторские данные
+  \Line{-}{}{}{\PcbNumber{Д36}}{Конструкторские данные}{}{#1}%
+  }%
+
+\renewcommand{\ICd}[1][на CD]{% Добавить данные микросхем
+  \Line{-}{}{}{\PcbDocNumber{Д66}}{Данные микросхем}{}{#1}%
+  }%
+
+\renewcommand{\DigDoc}[1][на CD]{% Добавить документацию в электронном виде
+  \Line{-}{}{}{\PcbDocNumber{ДМ}}{%
+    \mbox{КД на магнитном носителе} \mbox{данных}%
+    }{}{#1}%
+  }%
+
+\renewcommand{\Ai}{% Добавить инструкцию по настройке
+  \Line{A4}{}{}{\PcbDocNumber{И2}}{Инструкция по настройке}{}{}%
+  }%
+
+\renewcommand{\Detail}[7][1]{% Добавить деталь,
+  % #1 - позиционное обозначение (необязательно),
+    % - если '-', счетчик позиционного обозначения не инкрементируется,
+    %   а в графу 'Поз.' записывается '-';
+    % - если '0' (ноль), счетчик позиционного обозначения не инкрементируется,
+    %   а в графу 'Поз.' ничего не записывается;
+    % - если число - положительное, то счетчик инкрементируется на это число;
+    % - если отрицательное, то счетчик принимает значение модуля этого числа;
+    % В двух последних случаях в графу 'Поз.' записывается значение счетчика.
+  % #2 - формат,
+  % #3 - зона,
+  % #4 - децимальный номер детали (обозначение),
+  % #5 - название детали (наименование),
+  % #6 - количество,
+  % #7 - примечание%
+  \ifthenelse{\equal{#1}{-}}{}{%
+    \ifthenelse{#1 > 0 \or #1 = 0}{\addtocounter{SpecPosition}{#1}}{%
+      \setcounter{SpecPosition}{0 - #1}%
+      }%
+    }%
+  \Line{#2}{#3}{%
+    \ifthenelse{\equal{-}{#1}}{-}{%
+      \ifthenelse{#1 = 0}{}{%
+        \theSpecPosition%
+        }%
+      }%
+    }%
+    {#4}{#5}{#6}{#7}%
+  }%
+
+}{}%
+
+%%
+
 \newcommand{\Pp}[4][1]{%
   % #1 - необязательный инкремент позиционного обозначения,
   % #2 - формат,
@@ -228,11 +309,7 @@
     \end{longtable}%
   }%
 
-\newcommand{\newsheet}{%
-  \end{Specification}%
-  \newpage%
-  \begin{Specification}%
-  }%
+\newcommand{\newsheet}{\newpage}%
 
 \newcommand{\EndSheet}{%
   \renewcommand{\DrawHeaderNext}{%
@@ -311,28 +388,26 @@
   ~
   }%
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% К сожалению, очевидный способ внести нужный код в начало и конец документа:
-
 \AtBeginDocument{%
   \enlargethispage{-3\baselineskip}%
-  %\begin{Specification}%
+  %\begin{longtable}[c]{%
+  %  @{\hspace{-0.5mm}}>{\largeit}p{6mm}%
+  %  @{\hspace{0mm}}>{\largeit}p{6mm}%
+  %  @{\hspace{0mm}}>{\largeit}p{8mm}%
+  %  @{\hspace{1mm}}>{\largeit}p{70mm}%
+  %  @{\hspace{0mm}}>{\largeit}p{63mm}%
+  %  @{\hspace{-1mm}}>{\largeit}p{10mm}%
+  %  @{\hspace{1mm}}>{\largeit}p{22mm}%
+  %  @{\hspace{-0.5mm}}%
+  %  }%
   }%
+
 \AtEndDocument{%
+  %\end{longtable}%
+  \label{LastPage}%
   \ifthenelse{\equal{\changelist}{changelist}}{%
+    \newpage%
     \EndSheet%
-    \clearpage\lastpage@putlabel%
+    \clearpage%\lastpage@putlabel%
     }{}%
-  %\end{Specification}
   }%
-
-% приводит к маловразумительным сообщениям об ошибках и глюкам.
-% Поэтому пользователь при создании спецификации должен окружить свой код процедурой
-% Specification:
-
-% \begin{Specification}
-%   ...
-% \end{Specification}
-
-% Увы и ах :(
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
