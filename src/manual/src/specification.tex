@@ -250,6 +250,19 @@
 \resultbox{\sfemph{Наименование}},
 \resultbox{\sfemph{Кол.}} и
 \resultbox{\sfemph{Примечание}} соответственно.\\
+{\textbackslash{}Pp[<reference>]\\
+\{<format>\}\\
+\{<zone>\}\\
+\{<note>\}}
+& Заполняет строку спецификации, добавляя запись о печатной плате. Необязательный
+аргумент \sfemph{<reference>} управляет встроенным счётчиком позиционного
+обозначения(см. описание команды \bfemph{\textbackslash{}Detail}. В колонке
+\resultbox{\sfemph{Обозначение}} печатается аргумент команды
+\bfemph{\textbackslash{}PcbNumber}(см. таблицу~\ref{tabular:fields}). Аргументы
+\sfemph{<format>}, \sfemph{<zone>} и \sfemph{<note>} печатаются в колонках
+\resultbox{\sfemph{Формат}}, \resultbox{\sfemph{Зона}} и
+\resultbox{\sfemph{Примечание}} соответственно. В колонке
+\resultbox{\sfemph{Наименование}} печатается текст \sfemph{Плата печатная}.\\
 {\textbackslash{}Component\\[0pt][<reference>]\\
 \{<zone>\}\\
 \{<naming>\}\\
