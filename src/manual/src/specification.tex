@@ -254,9 +254,11 @@
 \{<format>\}\\
 \{<zone>\}\\
 \{<note>\}}
-& Заполняет строку спецификации, добавляя запись о печатной плате. Необязательный
-аргумент \sfemph{<reference>} управляет встроенным счётчиком позиционного
-обозначения(см. описание команды \bfemph{\textbackslash{}Detail}. В колонке
+&
+Команда, производная от команды \bfemph{\textbackslash{}Detail}. Заполняет строку
+спецификации, добавляя запись о печатной плате. Необязательный аргумент
+\sfemph{<reference>} управляет встроенным счётчиком позиционного
+обозначения(см. описание команды \bfemph{\textbackslash{}Detail}). В колонке
 \resultbox{\sfemph{Обозначение}} печатается аргумент команды
 \bfemph{\textbackslash{}PcbNumber}(см. таблицу~\ref{tabular:fields}). Аргументы
 \sfemph{<format>}, \sfemph{<zone>} и \sfemph{<note>} печатаются в колонках
@@ -268,7 +270,139 @@
 \{<naming>\}\\
 \{<quantity>\}\\
 \{<note>\}\\}
-&\\
+&
+Команда, производная от команды \bfemph{\textbackslash{}Detail}. Заполняет строку
+спецификации, добавляя запись об электронном компоненте(резистор, транзистор,
+микросхема и т.д.). Необязательный аргумент \sfemph{<reference>} управляет встроенным
+счётчиком позиционного обозначения(см. описание команды
+\bfemph{\textbackslash{}Detail}). Аргументы \sfemph{<zone>}, \sfemph{<naming>}
+\sfemph{<quantity>>} и \sfemph{<note>} печатаются в колонках \resultbox{\sfemph{Зона}},
+\resultbox{\sfemph{Наименование}}, \resultbox{\sfemph{Количество}} и
+\resultbox{\sfemph{Примечание}} соответственно.\\
+{\textbackslash{}Capacitor\\[0pt][<reference>]\\
+\{<zone>\}\\
+\{<naming>\}\\
+\{<quantity>\}\\
+\{<note>\}\\}
+&
+Команда, производная от команды \bfemph{\textbackslash{}Component}. Заполняет строку
+спецификации, добавляя запись о конденсаторе. Аргументы идентичны команде
+\bfemph{\textbackslash{}Component}. В колонке \resultbox{\sfemph{Наименование}} перед
+аргументом \sfemph{<naming>} печатается текст \sfemph{Конденсатор}.\\
+{\textbackslash{}Resistor\\[0pt][<reference>]\\
+\{<zone>\}\\
+\{<naming>\}\\
+\{<quantity>\}\\
+\{<note>\}\\}
+&
+Команда, производная от команды \bfemph{\textbackslash{}Component}. Заполняет строку
+спецификации, добавляя запись о резисторе. Аргументы идентичны команде
+\bfemph{\textbackslash{}Component}. В колонке \resultbox{\sfemph{Наименование}} перед
+аргументом \sfemph{<naming>} печатается текст \sfemph{Резистор}.\\
+};
+\end{tikztablex}
+
+\clearpage
+
+\begin{tikztablex}[draw,speclines table2]
+{
+\caption*{Таблица~\ref{tabular:speclines2}. Команды заполнения строк спецификации\\
+со встроенным счётчиком. Продолжение}
+}
+{
+Команда & Описание\\
+{\textbackslash{}IC\\[0pt][<reference>]\\
+\{<zone>\}\\
+\{<naming>\}\\
+\{<quantity>\}\\
+\{<note>\}\\}
+&
+Команда, производная от команды \bfemph{\textbackslash{}Component}. Заполняет строку
+спецификации, добавляя запись о микросхеме. Аргументы идентичны команде
+\bfemph{\textbackslash{}Component}. В колонке \resultbox{\sfemph{Наименование}} перед
+аргументом \sfemph{<naming>} печатается текст \sfemph{Микросхема}.\\
+{\textbackslash{}Relay\\[0pt][<reference>]\\
+\{<zone>\}\\
+\{<naming>\}\\
+\{<quantity>\}\\
+\{<note>\}\\}
+&
+Команда, производная от команды \bfemph{\textbackslash{}Component}. Заполняет строку
+спецификации, добавляя запись о реле. Аргументы идентичны команде
+\bfemph{\textbackslash{}Component}. В колонке \resultbox{\sfemph{Наименование}} перед
+аргументом \sfemph{<naming>} печатается текст \sfemph{Реле}.\\
+{\textbackslash{}Inductor\\[0pt][<reference>]\\
+\{<zone>\}\\
+\{<naming>\}\\
+\{<quantity>\}\\
+\{<note>\}\\}
+&
+Команда, производная от команды \bfemph{\textbackslash{}Component}. Заполняет строку
+спецификации, добавляя запись о дросселе. Аргументы идентичны команде
+\bfemph{\textbackslash{}Component}. В колонке \resultbox{\sfemph{Наименование}} перед
+аргументом \sfemph{<naming>} печатается текст \sfemph{Дроссель}.\\
+{\textbackslash{}Plug\\[0pt][<reference>]\\
+\{<zone>\}\\
+\{<naming>\}\\
+\{<quantity>\}\\
+\{<note>\}\\}
+&
+Команда, производная от команды \bfemph{\textbackslash{}Component}. Заполняет строку
+спецификации, добавляя запись о вилке. Аргументы идентичны команде
+\bfemph{\textbackslash{}Component}. В колонке \resultbox{\sfemph{Наименование}} перед
+аргументом \sfemph{<naming>} печатается текст \sfemph{Вилка}.\\
+{\textbackslash{}Socket\\[0pt][<reference>]\\
+\{<zone>\}\\
+\{<naming>\}\\
+\{<quantity>\}\\
+\{<note>\}\\}
+&
+Команда, производная от команды \bfemph{\textbackslash{}Component}. Заполняет строку
+спецификации, добавляя запись о розетке. Аргументы идентичны команде
+\bfemph{\textbackslash{}Component}. В колонке \resultbox{\sfemph{Наименование}} перед
+аргументом \sfemph{<naming>} печатается текст \sfemph{Розетка}.\\
+{\textbackslash{}Diode\\[0pt][<reference>]\\
+\{<zone>\}\\
+\{<naming>\}\\
+\{<quantity>\}\\
+\{<note>\}\\}
+&
+Команда, производная от команды \bfemph{\textbackslash{}Component}. Заполняет строку
+спецификации, добавляя запись о диоде. Аргументы идентичны команде
+\bfemph{\textbackslash{}Component}. В колонке \resultbox{\sfemph{Наименование}} перед
+аргументом \sfemph{<naming>} печатается текст \sfemph{Диод}.\\
+{\textbackslash{}Transistor\\[0pt][<reference>]\\
+\{<zone>\}\\
+\{<naming>\}\\
+\{<quantity>\}\\
+\{<note>\}\\}
+&
+Команда, производная от команды \bfemph{\textbackslash{}Component}. Заполняет строку
+спецификации, добавляя запись о транзисторе. Аргументы идентичны команде
+\bfemph{\textbackslash{}Component}. В колонке \resultbox{\sfemph{Наименование}} перед
+аргументом \sfemph{<naming>} печатается текст \sfemph{Транзистор}.\\
+};
+\end{tikztablex}
+
+\clearpage
+
+\begin{tikztablex}[draw,speclines table2]
+{
+\caption*{Таблица~\ref{tabular:speclines2}. Команды заполнения строк спецификации\\
+со встроенным счётчиком. Продолжение}
+}
+{
+Команда & Описание\\
+{\textbackslash{}Jumper\\[0pt][<reference>]\\
+\{<zone>\}\\
+\{<naming>\}\\
+\{<quantity>\}\\
+\{<note>\}\\}
+&
+Команда, производная от команды \bfemph{\textbackslash{}Component}. Заполняет строку
+спецификации, добавляя запись о джампере. Аргументы идентичны команде
+\bfemph{\textbackslash{}Component}. В колонке \resultbox{\sfemph{Наименование}} перед
+аргументом \sfemph{<naming>} печатается текст \sfemph{Джампер}.\\
 };
 \end{tikztablex}
 
