@@ -1,4 +1,6 @@
 
+\defaultfontfeatures{Mapping=tex-text}
+
 %\newfontfamily\sffont{Fira Sans OT}[Scale=0.9]
 \newfontfamily\sffont{Fira Sans}[Scale=0.9]
 
@@ -15,6 +17,7 @@
   BoldFont=CMU Typewriter Text Bold
 ]{CMU Typewriter Text}
 %{Nimbus Mono L}[Scale=0.9]
+
 \newfontfamily\cyrillicfontsf
 [
   %Scale=0.9,
@@ -48,3 +51,8 @@
   {{\fontspec[Scale=0.9]{Fira Sans Medium}\mbox{#1}}}
 \newcommand{\bftt}[1]%
   {\texttt{\bfseries{}\mbox{#1}}}
+
+%\tolerance=900
+%\hfuzz=2pt
+%\emergencystretch=25pt
+\hbadness=2600

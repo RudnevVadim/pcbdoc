@@ -41,7 +41,7 @@
 Внутри окружения \sfemph{Specification} должны находиться команды заполнения строк
 спецификации.
 
-Базовой командой заполнения строки спецификации, на которой основаны все остальные
+Базовой командой заполнения строки спецификации, на которой основаны все ос\-таль\-ные
 команды, является команда \bfemph{\textbackslash{}Line}. Её необходимо использовать,
 если функциональности основанных на ней команд недостаточно. Эта команда принимает семь
 аргументов, которые печатаются в колонках
@@ -52,8 +52,9 @@
 команде \bfemph{\textbackslash{}Line}, могут иметь встроенный счётчик, значение которого
 заносится в колонку \resultbox{\sfemph{Поз.}}. Описание команды
 \bfemph{\textbackslash{}Line}, а также команд заполнения строк спецификации без
-встроенного счётчика приведенно в \bfsf{Таблице~\ref{tabular:speclines1}}.
+встроенного счётчика приведенно в \bfsf{Таблице~\ref{tabular:speclines1}}.\sloppy
 
+\fussy
 Базовой командой заполнения строки спецификации со встроенным счётчиком является команда
 \bfemph{\textbackslash{}Detail}. Она основана на команде \bfemph{\textbackslash{}Line} и
 принимает семь аргументов, которые печатаются в колонках
@@ -64,15 +65,16 @@
 \bfemph{\textbackslash{}Line}, данную команду имеет смысл использовать при отсутствии
 требуемой функциональности у основанных на ней команд. Описание команды
 \bfemph{\textbackslash{}Detail}, а также команд заполнения строк спецификации со
-встроенным счётчиком приведено в \bfsf{Таблице~\ref{tabular:speclines2}}.
+встроенным счётчиком приведено в \bfsf{Таблице~\ref{tabular:speclines2}}.\sloppy
 
+\fussy
 \clearpage
 
 \tikztableset{speclines table1}{
-  draw,nodes=draw,
+  draw,
   row 1/.style={minimum height=6mm,font=\sffamily\bfseries,align=center},
-  column 1/.style={font=\sffamily\bfseries\itshape\small,align=left,text width=35mm},
-  column 2/.style={font=\small,align=justify,text width=105mm},
+  column 1/.style={font=\sffamily\bfseries\itshape\small,align=left,text width=26mm},
+  column 2/.style={font=\small,align=justify,text width=117mm}
 }
 
 \begin{tikztablex}[speclines table1]
@@ -81,7 +83,9 @@
 \label{tabular:speclines1}
 }
 {
+%%%
 Команда & Описание\\
+%%%
 {\textbackslash{}Line\\
 \{<format>\}\\
 \{<zone>\}\\
@@ -98,10 +102,21 @@
 \resultbox{\sfemph{~~Поз.~~}}, \resultbox{\sfemph{Обозначение}},
 \resultbox{\sfemph{Наименование}}, \resultbox{\sfemph{Кол.}} и
 \resultbox{\sfemph{Примечание}} соответственно.\\
+%%%
 \textbackslash{}Part\{<name>\} &
-Печатает подчёркнутый аргумент \sfemph{<name>} в центре колонки
-\resultbox{\sfemph{Наименование}} Например:\\
-&\\
+Печатает подчёркнутый текст \sfemph{<name>} в центре колонки
+\resultbox{\sfemph{Наименование}}\\
+%%%
+\textbackslash{}VariableData &
+Печатает подчёркнутый текст \sfemph{Переменные данные для исполнений} в колонках
+\resultbox{\sfemph{Обозначение}} и \resultbox{\sfemph{Наименование}}.\\
+%%%
+{\textbackslash{}VariantNumber\\[0pt][<number>]} &
+Печатает подчёркнутый текст вида \sfemph{<NUMBER>-<number>} в колонке
+\resultbox{\sfemph{Наименование}}, где \sfemph{<NUMBER>} - аргумент команды
+\bfemph{\textbackslash{}NumberSet}(см. таблицу~\ref{tabular:fields}). Наличие аргумента
+\sfemph<number> необязательно.\\
+%%%
 \textbackslash{}Sb\{<format>\} &
 Заполняет строку спецификации, добавляя запись о сборочном чертеже. Аргумент
 \sfemph{<format>} печатается в колонке \resultbox{\sfemph{Формат}}. В
@@ -113,18 +128,21 @@
 \bfemph{\textbackslash{}NumberSet}(см. таблицу~\ref{tabular:fields}). В колонке
 \resultbox{\sfemph{Наименование}} печатается текст \sfemph{Сборочный
 чертеж}.\\
+%%%
 \textbackslash{}Sch\{<format>\} &
-Заполняет строку спецификации, добавляя запись о схеме электрической принципиальной.
+Заполняет строку спецификации, добавляя запись о схеме электричес\-кой принципиальной.
 Аргумент \sfemph{<format>} печатается в колонке
-\resultbox{\sfemph{Формат}}. В случае, если аргумент \sfemph{<format>} не
-помещается в этой колонке, он печатается в колонке
+\resultbox{\sfemph{Формат}}. В случае, если аргумент \sfemph{<format>} не помещается в
+этой колонке, он пе\-ча\-та\-ет\-ся в колонке
 \resultbox{\sfemph{Примечание}}, а в колонке
-\resultbox{\sfemph{Формат}} печатается символ \bfemph{*}. В колонке
+\resultbox{\sfemph{Формат}} пе\-ча\-та\-ет\-ся символ \bfemph{*}. В колонке
 \resultbox{\sfemph{Обозначение}} печатается текст вида \sfemph{<number>Э3},
 где \sfemph{<number>} - аргумент команды
-\bfemph{\textbackslash{}NumberSet}(см. таблицу~\ref{tabular:fields}). В колонке
+\bfemph{\textbackslash{}NumberSet}(см. таб\-ли\-цу~\ref{tabular:fields}). В колонке
 \resultbox{\sfemph{Наименование}} печатается двустрочный текст
-\sfemph{Схема электрическая принципиальная}.\\
+\sfemph{Схема электрическая принципиальная}.\looseness=-1\\
+
+%%%
 \textbackslash{}El &
 Заполняет строку спецификации, добавляя запись о перечне элементов.
 В колонке \resultbox{\sfemph{Формат}} печатается текст \sfemph{A4}.
@@ -133,16 +151,43 @@
 \bfemph{\textbackslash{}NumberSet}(см. таблицу~\ref{tabular:fields}). В колонке
 \resultbox{\sfemph{Наименование}} печатается текст
 \sfemph{Перечень элементов}.\\
-\textbackslash{}Dd[<note>] &
-Заполняет строку спецификации, добавляя запись о конструкторских данных. В колонке
-\resultbox{\sfemph{Формат}} печатается символ \sfemph{-}. В колонке
-\resultbox{\sfemph{Обозначение}} печатается текст вида
-\sfemph{<number>Д36}, где \sfemph{<number>} - аргумент команды
-\bfemph{\textbackslash{}PcbNumberSet}(см. таблицу~\ref{tabular:fields}). В колонке
-\resultbox{\sfemph{Наименование}} печатается текст \sfemph{Конструкторские
-данные}. В колонке \resultbox{\sfemph{Примечание}} печатается
-необязательный аргумент \sfemph{<note>}(\sfemph{на CD} по умолчанию)\\
 };
+\coordinate(top) at (tikztable-1-2.north);
+\coordinate(left) at (tikztable-1-1.west);
+\coordinate(right) at (tikztable-1-2.east);
+\draw[line width=0.6mm] (top-|left) -- (top-|right);
+
+\coordinate(top) at (tikztable-1-2.south);
+\draw[line width=0.6mm] (top-|left) -- (top-|right);
+
+\coordinate(top) at (tikztable-3-2.north);
+\draw (top-|left) -- (top-|right);
+
+\coordinate(top) at (tikztable-4-2.north);
+\draw (top-|left) -- (top-|right);
+
+\coordinate(top) at (tikztable-5-2.north);
+\draw (top-|left) -- (top-|right);
+
+\coordinate(top) at (tikztable-6-2.north);
+\draw (top-|left) -- (top-|right);
+
+\coordinate(top) at (tikztable-7-2.north);
+\draw (top-|left) -- (top-|right);
+
+\coordinate(top) at (tikztable-8-2.north);
+\draw (top-|left) -- (top-|right);
+
+\coordinate(top) at (tikztable-8-2.south);
+\draw[line width = 0.6mm] (top-|left) -- (top-|right);
+
+\begin{scope}[on background layer]
+\coordinate(top) at (tikztable-2-1.north);
+\coordinate(bottom) at (tikztable-8-2.south);
+\coordinate(left) at (tikztable-1-1.west);
+\coordinate(right) at (tikztable-1-1.east);
+\fill[codecolor] (top-|left) rectangle (bottom-|right);
+\end{scope}
 \end{tikztablex}
 
 \clearpage
@@ -153,7 +198,19 @@
 встроенного счётчика. Продолжение}
 }
 {
+%%%
 Команда & Описание\\
+%%%
+\textbackslash{}Dd[<note>] &
+Заполняет строку спецификации, добавляя запись о конструкторских данных. В колонке
+\resultbox{\sfemph{Формат}} печатается символ \sfemph{-}. В колонке
+\resultbox{\sfemph{Обозначение}} печатается текст вида
+\sfemph{<number>Д36}, где \sfemph{<number>} - аргумент команды
+\bfemph{\textbackslash{}PcbNumberSet}(см. таблицу~\ref{tabular:fields}). В колонке
+\resultbox{\sfemph{Наименование}} печатается текст \sfemph{Конструкторские
+данные}. В колонке \resultbox{\sfemph{Примечание}} печатается
+необязательный аргумент \sfemph{<note>}(\sfemph{на CD} по умолчанию)\\
+%%%
 \textbackslash{}ICd[<note>] &
 Заполняет строку спецификации, добавляя запись о данных микросхем. В колонке
 \resultbox{\sfemph{Формат}} печатается символ \sfemph{-}. В колонке
@@ -163,6 +220,7 @@
 \resultbox{\sfemph{Наименование}} печатается текст \sfemph{Данные
 микросхем}. В колонке \resultbox{\sfemph{Примечание}} печатается
 необязательный аргумент \sfemph{<note>}(\sfemph{на CD} по умолчанию)\\
+%%%
 \textbackslash{}DigDoc[<note>] &
 Заполняет строку спецификации, добавляя запись о документации в электронном виде. В
 колонке \resultbox{\sfemph{Формат}} печатается символ \sfemph{-}. В колонке
@@ -173,21 +231,47 @@
 \sfemph{КД на магнитном носителе данных}. В колонке
 \resultbox{\sfemph{Примечание}} печатается необязательный аргумент
 \sfemph{<note>}(\sfemph{на CD} по умолчанию)\\
+%%%
 \textbackslash{}Ai &
 Заполняет строку спецификации, добавляя запись о инструкции по настройке. В колонке
-\resultbox{\sfemph{Формат}} печатается текст \sfemph{A4}. В колонке
+\resultbox{\sfemph{~Формат~}} печатается текст \sfemph{A4}. В колонке
 \resultbox{\sfemph{Обозначение}} печатается текст вида
 \sfemph{<number>И2}, где \sfemph{<number>} - аргумент команды
 \bfemph{\textbackslash{}NumberSet}(см. таблицу~\ref{tabular:fields}). В колонке
 \resultbox{\sfemph{Наименование}} печатается текст
 \sfemph{Инструкция по настройке}.\\
 };
-\end{tikztablex}
-~\\[-18mm]
+\coordinate(top) at (tikztable-1-2.north);
+\coordinate(left) at (tikztable-1-1.west);
+\coordinate(right) at (tikztable-1-2.east);
+\draw[line width=0.6mm] (top-|left) -- (top-|right);
 
-Команды заполнения строк без встроенного счётчика используются автором для создания
-разделов спецификации(команда \bfemph{\textbackslash{}Part}), а также для заполнения
-раздела \sfemph{Документация}. Например:
+\coordinate(top) at (tikztable-1-2.south);
+\draw[line width=0.6mm] (top-|left) -- (top-|right);
+
+\coordinate(top) at (tikztable-3-2.north);
+\draw (top-|left) -- (top-|right);
+
+\coordinate(top) at (tikztable-4-2.north);
+\draw (top-|left) -- (top-|right);
+
+\coordinate(top) at (tikztable-5-2.north);
+\draw (top-|left) -- (top-|right);
+
+\coordinate(top) at (tikztable-5-2.south);
+\draw[line width=0.6mm] (top-|left) -- (top-|right);
+\begin{scope}[on background layer]
+\coordinate(top) at (tikztable-2-2.north);
+\coordinate(bottom) at (tikztable-5-2.south);
+\coordinate(left) at (tikztable-1-1.west);
+\coordinate(right) at (tikztable-5-1.east);
+\fill[codecolor] (top-|left) rectangle (bottom-|right);
+\end{scope}
+\end{tikztablex}
+
+Команды заполнения строк без встроенного счётчика используются для
+создания разделов спецификации(команда \bfemph{\textbackslash{}Part}), а также для
+заполнения раздела \sfemph{Документация}. Например:
 
 \begin{pcbdoccode}
 ...
@@ -210,7 +294,8 @@
 \end{pcbdoccode}
 
 \tikztableset{speclines table2}{
-  draw,nodes=draw,
+  draw,
+  %nodes=draw,
   row 1/.style={minimum height=6mm,font=\sffamily\bfseries,align=center},
   column 1/.style={font=\sffamily\bfseries\itshape\small,align=left,text width=35mm},
   column 2/.style={font=\small,align=justify,text width=105mm},
@@ -222,7 +307,9 @@
 \label{tabular:speclines2}
 }
 {
+%%%
 Команда & Описание\\
+%%%
 {\textbackslash{}Detail[<reference>]\\
 \{<format>\}\\
 \{<zone>\}\\
@@ -250,6 +337,7 @@
 \resultbox{\sfemph{Наименование}},
 \resultbox{\sfemph{Кол.}} и
 \resultbox{\sfemph{Примечание}} соответственно.\\
+%%%
 {\textbackslash{}Pp[<reference>]\\
 \{<format>\}\\
 \{<zone>\}\\
@@ -265,6 +353,7 @@
 \resultbox{\sfemph{Формат}}, \resultbox{\sfemph{Зона}} и
 \resultbox{\sfemph{Примечание}} соответственно. В колонке
 \resultbox{\sfemph{Наименование}} печатается текст \sfemph{Плата печатная}.\\
+%%%
 {\textbackslash{}Component\\[0pt][<reference>]\\
 \{<zone>\}\\
 \{<naming>\}\\
@@ -279,16 +368,54 @@
 \sfemph{<quantity>>} и \sfemph{<note>} печатаются в колонках \resultbox{\sfemph{Зона}},
 \resultbox{\sfemph{Наименование}}, \resultbox{\sfemph{Количество}} и
 \resultbox{\sfemph{Примечание}} соответственно.\\
+};
+\coordinate(top) at (tikztable-1-2.north);
+\coordinate(left) at (tikztable-1-1.west);
+\coordinate(right) at (tikztable-1-2.east);
+\draw[line width=0.6mm] (top-|left) -- (top-|right);
+
+\coordinate(top) at (tikztable-1-2.south);
+\draw[line width=0.6mm] (top-|left) -- (top-|right);
+
+\coordinate(top) at (tikztable-3-2.north);
+\draw (top-|left) -- (top-|right);
+
+\coordinate(top) at (tikztable-4-2.north);
+\draw (top-|left) -- (top-|right);
+
+\coordinate(top) at (tikztable-4-2.south);
+\draw[line width=0.6mm] (top-|left) -- (top-|right);
+
+\begin{scope}[on background layer]
+\coordinate(top) at (tikztable-2-2.north);
+\coordinate(bottom) at (tikztable-4-2.south);
+\coordinate(left) at (tikztable-1-1.west);
+\coordinate(right) at (tikztable-1-1.east);
+\fill[codecolor] (top-|left) rectangle (bottom-|right);
+\end{scope}
+\end{tikztablex}
+
+\clearpage
+
+\begin{tikztablex}[draw,speclines table2]
+{
+\caption*{Таблица~\ref{tabular:speclines2}. Команды заполнения строк спецификации\\
+со встроенным счётчиком. Продолжение}
+}
+{
+%%%
+Команда & Описание\\
+%%%
 {\textbackslash{}Capacitor\\[0pt][<reference>]\\
 \{<zone>\}\\
 \{<naming>\}\\
 \{<quantity>\}\\
 \{<note>\}\\}
-&
-Команда, производная от команды \bfemph{\textbackslash{}Component}. Заполняет строку
+& Команда, производная от команды \bfemph{\textbackslash{}Component}. Заполняет строку
 спецификации, добавляя запись о конденсаторе. Аргументы идентичны команде
 \bfemph{\textbackslash{}Component}. В колонке \resultbox{\sfemph{Наименование}} перед
 аргументом \sfemph{<naming>} печатается текст \sfemph{Конденсатор}.\\
+%%%
 {\textbackslash{}Resistor\\[0pt][<reference>]\\
 \{<zone>\}\\
 \{<naming>\}\\
@@ -299,18 +426,6 @@
 спецификации, добавляя запись о резисторе. Аргументы идентичны команде
 \bfemph{\textbackslash{}Component}. В колонке \resultbox{\sfemph{Наименование}} перед
 аргументом \sfemph{<naming>} печатается текст \sfemph{Резистор}.\\
-};
-\end{tikztablex}
-
-\clearpage
-
-\begin{tikztablex}[draw,speclines table2]
-{
-\caption*{Таблица~\ref{tabular:speclines2}. Команды заполнения строк спецификации\\
-со встроенным счётчиком. Продолжение}
-}
-{
-Команда & Описание\\
 {\textbackslash{}IC\\[0pt][<reference>]\\
 \{<zone>\}\\
 \{<naming>\}\\
@@ -321,6 +436,7 @@
 спецификации, добавляя запись о микросхеме. Аргументы идентичны команде
 \bfemph{\textbackslash{}Component}. В колонке \resultbox{\sfemph{Наименование}} перед
 аргументом \sfemph{<naming>} печатается текст \sfemph{Микросхема}.\\
+%%%
 {\textbackslash{}Relay\\[0pt][<reference>]\\
 \{<zone>\}\\
 \{<naming>\}\\
@@ -331,6 +447,7 @@
 спецификации, добавляя запись о реле. Аргументы идентичны команде
 \bfemph{\textbackslash{}Component}. В колонке \resultbox{\sfemph{Наименование}} перед
 аргументом \sfemph{<naming>} печатается текст \sfemph{Реле}.\\
+%%%
 {\textbackslash{}Inductor\\[0pt][<reference>]\\
 \{<zone>\}\\
 \{<naming>\}\\
@@ -341,6 +458,7 @@
 спецификации, добавляя запись о дросселе. Аргументы идентичны команде
 \bfemph{\textbackslash{}Component}. В колонке \resultbox{\sfemph{Наименование}} перед
 аргументом \sfemph{<naming>} печатается текст \sfemph{Дроссель}.\\
+%%%
 {\textbackslash{}Plug\\[0pt][<reference>]\\
 \{<zone>\}\\
 \{<naming>\}\\
@@ -351,6 +469,7 @@
 спецификации, добавляя запись о вилке. Аргументы идентичны команде
 \bfemph{\textbackslash{}Component}. В колонке \resultbox{\sfemph{Наименование}} перед
 аргументом \sfemph{<naming>} печатается текст \sfemph{Вилка}.\\
+%%%
 {\textbackslash{}Socket\\[0pt][<reference>]\\
 \{<zone>\}\\
 \{<naming>\}\\
@@ -361,27 +480,43 @@
 спецификации, добавляя запись о розетке. Аргументы идентичны команде
 \bfemph{\textbackslash{}Component}. В колонке \resultbox{\sfemph{Наименование}} перед
 аргументом \sfemph{<naming>} печатается текст \sfemph{Розетка}.\\
-{\textbackslash{}Diode\\[0pt][<reference>]\\
-\{<zone>\}\\
-\{<naming>\}\\
-\{<quantity>\}\\
-\{<note>\}\\}
-&
-Команда, производная от команды \bfemph{\textbackslash{}Component}. Заполняет строку
-спецификации, добавляя запись о диоде. Аргументы идентичны команде
-\bfemph{\textbackslash{}Component}. В колонке \resultbox{\sfemph{Наименование}} перед
-аргументом \sfemph{<naming>} печатается текст \sfemph{Диод}.\\
-{\textbackslash{}Transistor\\[0pt][<reference>]\\
-\{<zone>\}\\
-\{<naming>\}\\
-\{<quantity>\}\\
-\{<note>\}\\}
-&
-Команда, производная от команды \bfemph{\textbackslash{}Component}. Заполняет строку
-спецификации, добавляя запись о транзисторе. Аргументы идентичны команде
-\bfemph{\textbackslash{}Component}. В колонке \resultbox{\sfemph{Наименование}} перед
-аргументом \sfemph{<naming>} печатается текст \sfemph{Транзистор}.\\
 };
+\coordinate(top) at (tikztable-1-2.north);
+\coordinate(left) at (tikztable-1-1.west);
+\coordinate(right) at (tikztable-1-2.east);
+\draw[line width=0.6mm] (top-|left) -- (top-|right);
+
+\coordinate(top) at (tikztable-1-2.south);
+\draw[line width=0.6mm] (top-|left) -- (top-|right);
+
+\coordinate(top) at (tikztable-3-1.north);
+\draw (top-|left) -- (top-|right);
+
+\coordinate(top) at (tikztable-4-1.north);
+\draw (top-|left) -- (top-|right);
+
+\coordinate(top) at (tikztable-5-1.north);
+\draw (top-|left) -- (top-|right);
+
+\coordinate(top) at (tikztable-6-1.north);
+\draw (top-|left) -- (top-|right);
+
+\coordinate(top) at (tikztable-7-1.north);
+\draw (top-|left) -- (top-|right);
+
+\coordinate(top) at (tikztable-8-1.north);
+\draw (top-|left) -- (top-|right);
+
+\coordinate(top) at (tikztable-8-1.south);
+\draw[line width=0.6mm] (top-|left) -- (top-|right);
+
+\begin{scope}[on background layer]
+\coordinate(top) at (tikztable-2-1.north);
+\coordinate(bottom) at (tikztable-8-1.south);
+\coordinate(left) at (tikztable-1-1.west);
+\coordinate(right) at (tikztable-1-1.east);
+\fill[codecolor] (top-|left) rectangle (bottom-|right);
+\end{scope}
 \end{tikztablex}
 
 \clearpage
@@ -393,6 +528,29 @@
 }
 {
 Команда & Описание\\
+%%%
+{\textbackslash{}Diode\\[0pt][<reference>]\\
+\{<zone>\}\\
+\{<naming>\}\\
+\{<quantity>\}\\
+\{<note>\}\\}
+&
+Команда, производная от команды \bfemph{\textbackslash{}Component}. Заполняет строку
+спецификации, добавляя запись о диоде. Аргументы идентичны команде
+\bfemph{\textbackslash{}Component}. В колонке \resultbox{\sfemph{Наименование}} перед
+аргументом \sfemph{<naming>} печатается текст \sfemph{Диод}.\\
+%%%
+{\textbackslash{}Transistor\\[0pt][<reference>]\\
+\{<zone>\}\\
+\{<naming>\}\\
+\{<quantity>\}\\
+\{<note>\}\\}
+&
+Команда, производная от команды \bfemph{\textbackslash{}Component}. Заполняет строку
+спецификации, добавляя запись о транзисторе. Аргументы идентичны команде
+\bfemph{\textbackslash{}Component}. В колонке \resultbox{\sfemph{Наименование}} перед
+аргументом \sfemph{<naming>} печатается текст \sfemph{Транзистор}.\\
+%%%
 {\textbackslash{}Jumper\\[0pt][<reference>]\\
 \{<zone>\}\\
 \{<naming>\}\\
@@ -404,6 +562,30 @@
 \bfemph{\textbackslash{}Component}. В колонке \resultbox{\sfemph{Наименование}} перед
 аргументом \sfemph{<naming>} печатается текст \sfemph{Джампер}.\\
 };
+\coordinate(top) at (tikztable-1-2.north);
+\coordinate(left) at (tikztable-1-1.west);
+\coordinate(right) at (tikztable-1-2.east);
+\draw[line width=0.6mm] (top-|left) -- (top-|right);
+
+\coordinate(top) at (tikztable-1-2.south);
+\draw[line width=0.6mm] (top-|left) -- (top-|right);
+
+\coordinate(top) at (tikztable-3-1.north);
+\draw (top-|left) -- (top-|right);
+
+\coordinate(top) at (tikztable-4-1.north);
+\draw (top-|left) -- (top-|right);
+
+\coordinate(top) at (tikztable-4-1.south);
+\draw[line width=0.6mm] (top-|left) -- (top-|right);
+
+\begin{scope}[on background layer]
+\coordinate(top) at (tikztable-2-1.north);
+\coordinate(bottom) at (tikztable-4-1.south);
+\coordinate(left) at (tikztable-1-1.west);
+\coordinate(right) at (tikztable-1-1.east);
+\fill[codecolor] (top-|left) rectangle (bottom-|right);
+\end{scope}
 \end{tikztablex}
 
 \clearpage
