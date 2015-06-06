@@ -1,6 +1,6 @@
 #!/bin/bash
 
-PCBDOC_VERSION=v0.41
+PCBDOC_VERSION=v0.42
 
 mkdir texmf
 mkdir texmf/tex
