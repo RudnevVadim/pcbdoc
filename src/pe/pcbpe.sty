@@ -11,16 +11,16 @@
 \setlength{\pcbdocpaperdeltawidth}{0mm}%
 \setlength{\pcbdocpaperdeltaheight}{1mm}%
 
-\newenvironment{ElementList}{%
-  \begin{longtable}[c]{%
-    @{}p{19mm}@{\hspace{2mm}}%
-    p{107mm}@{\hspace{2mm}}%
-    p{8mm}@{\hspace{2mm}}%
-    p{43mm}@{\hspace{1mm}}%
-    }%
-  }{%
-    \end{longtable}%
-  }%
+%\newenvironment{ElementList}{%
+%  \begin{longtable}[c]{%
+%    @{}p{19mm}@{\hspace{2mm}}%
+%    p{107mm}@{\hspace{2mm}}%
+%    p{8mm}@{\hspace{2mm}}%
+%    p{43mm}@{\hspace{1mm}}%
+%    }%
+%  }{%
+%    \end{longtable}%
+%  }%
 
 \newcommand{\newsheet}{\newpage}%
 
@@ -142,16 +142,16 @@
 
 \AtBeginDocument{%
   \enlargethispage{-3\baselineskip}%
-  %\begin{longtable}[c]{%
-  %  @{}p{19mm}@{\hspace{2mm}}%
-  %  p{107mm}@{\hspace{2mm}}%
-  %  p{8mm}@{\hspace{2mm}}%
-  %  p{43mm}@{\hspace{1mm}}%
-  %  }%
+  \begin{longtable}[c]{%
+    @{}p{19mm}@{\hspace{2mm}}%
+    p{107mm}@{\hspace{2mm}}%
+    p{8mm}@{\hspace{2mm}}%
+    p{43mm}@{\hspace{1mm}}%
+    }%
   }%
 
 \AtEndDocument{%
-  %\end{longtable}%
+  \end{longtable}%
   \label{LastPage}%
   \ifthenelse{\equal{\changelist}{changelist}}{%
     \newpage%
