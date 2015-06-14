@@ -1,14 +1,16 @@
 
 \section{Команды заполнения полей документа}
 
-Команды заполнения полей, приведённые в \bfemph{Таблице~\ref{tabular:fields}}, должны
-находиться либо непосредственно в преамбуле документа, либо в отдельном пакете,
-включаемом в преамбулу с помощью команды \bfemph{\textbackslash{}usepackage}.
+Команды заполнения полей, приведённые в \bfemph{Таблице~\ref{tabular:fields}},
+должны находиться либо непосредственно в преамбуле документа, либо в отдельном
+пакете, включаемом в преамбулу с помощью команды
+\bfemph{\textbackslash{}usepackage}.
 
 \tikztableset{my table}{
   draw,
   row 1/.style={font=\sffamily\bfseries,align=center},
-  column 1/.style={font=\sffamily\bfseries\itshape\small,align=left,text width=37.6mm},
+  column 1/.style
+    ={font=\sffamily\bfseries\itshape\small,align=left,text width=37.6mm},
   column 2/.style={font=\small,align=justify,text width=102.6mm},
   row 5/.style={minimum height=10mm},
   row 9/.style={minimum height=8mm},
@@ -40,13 +42,13 @@
   \textbackslash{}NameSet\{<name>\} &
   Печатает аргумент \sfemph{<name>} в поле наименования изделия
   основной надписи. Аргумент \sfemph{<name>} может быть как
-  однострочным, так и двустрочным. Разделение аргумента на строки производится с помощью
-  команды \bfemph{\textbackslash\textbackslash}. Например:\\
+  однострочным, так и двустрочным. Разделение аргумента на строки производится с
+  помощью команды \bfemph{\textbackslash\textbackslash}. Например:\\
   &\\
   \textbackslash{}NumberSet\{<number>\} &
   Печатает децимальный номер \sfemph{<number>} в поле обозначения
-  документа основной надписи схемы электрической принципиальной, перечня элементов,
-  сборочного чертежа и спецификации, а также в поле
+  документа основной надписи схемы электрической принципиальной, перечня
+  элементов, сборочного чертежа и спецификации, а также в поле
   \resultbox{\sfemph{Перв. примен.}} схемы электрической принципиальной,
   перечня элементов, чертежа печатной платы и сборочного чертежа.\\
   {\textbackslash{}PcbNumberSet\\\{<number>\}} &
@@ -108,6 +110,47 @@
   ($(tikztable-13-1.north west)-(0,1.5mm)$)
   rectangle
   ($(tikztable-13-2.south east)+(0,1.5mm)$);
+\end{scope}
+\end{tikztablex}
+
+\clearpage
+
+%\tikztableset{my table}{
+%  draw,
+%  row 1/.style={font=\sffamily\bfseries,align=center},
+%  column 1/.style
+%    ={font=\sffamily\bfseries\itshape\small,align=left,text width=37.6mm},
+%  column 2/.style={font=\small,align=justify,text width=102.6mm},
+%  row 5/.style={minimum height=10mm},
+%  row 9/.style={minimum height=8mm},
+%  row 13/.style={minimum height=12mm}
+%}
+
+\begin{tikztablex}[my table]
+{
+  \caption*{Таблица~\ref{tabular:fields}.Команды заполнения полей
+  документа. Продолжение}
+}
+{
+  Команда & Описание\\
+  \textbackslash{}CompanySet\{<name>\} &
+  Печатает аргумент \sfemph{<name>} в поле наименования или различительного
+  индекса предприятия. Аргумент \sfemph{<name>} может быть как однострочным,
+  так и двустрочным.\\
+};
+\coordinate(left) at (tikztable-1-1.west);
+\coordinate(right) at (tikztable-1-2.east);
+\draw[line width=0.6mm]
+  coordinate(top) at (tikztable-1-2.north) (top-|left) -- (top-|right);
+\draw[line width=0.6mm]
+  coordinate(top) at (tikztable-2-2.north) (top-|left) -- (top-|right);
+\draw[line width=0.6mm]
+  coordinate(top) at (tikztable-2-2.south) (top-|left) -- (top-|right);
+\begin{scope}[on background layer]
+\coordinate(right) at (tikztable-1-1.east);
+\coordinate(top) at (tikztable-2-2.north);
+\coordinate(bottom) at (tikztable-2-2.south);
+\fill[codecolor] (top-|left) rectangle (bottom-|right);
 \end{scope}
 \end{tikztablex}
 
