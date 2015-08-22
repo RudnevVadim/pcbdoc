@@ -290,6 +290,8 @@
   \PcbDocLayoutSet%
   \changetext{0mm}{0mm}{}{}{}%
     \begin{tikzpicture}[%
+      overlay,%
+      baseline=\pcbdocpaperheight-\pcbdocpapertopmargin-\pcbdocpaperbottommargin,%
       linethick/.style={%
         line width=\pcbdoclinethick%
         },%
@@ -407,4 +409,3 @@
     \draw ++(#2) node{\Largeit #3};%
     }%
   }%
-

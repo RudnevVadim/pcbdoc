@@ -3,16 +3,13 @@
 \ProvidesClass{pcbdoc}%
 
 %начальный командный код
+\RequirePackage{keyval, xifthen, array, pcbdoclayout}%
 \hbadness=10000
 \newcommand{\pcbdoctype}{spec}%
 \newlength{\pcbdoclinethick}%
 \setlength{\pcbdoclinethick}{0.6mm}%
 \newlength{\pcbdoclinethin}%
 \setlength{\pcbdoclinethin}{0.3mm}%
-
-\RequirePackage{keyval}%
-\RequirePackage{pcbdoclayout}%
-\RequirePackage{xifthen}%
 
 \define@key{pcbdoc}{deltawidth}{\setlength{\pcbdocpaperdeltawidth}{#1}}%
 \define@key{pcbdoc}{deltaheight}{\setlength{\pcbdocpaperdeltaheight}{#1}}%
@@ -47,9 +44,7 @@
 
 %загрузка пакетов
 \LoadClass[12pt]{article}%
-\RequirePackage{pcbdocborder}%
-\RequirePackage{pcb\pcbdoctype}%
-\RequirePackage{pcbdoccontent}%
+\RequirePackage{pcbdocborder, pcb\pcbdoctype, pcbdoccontent}%
 
 \newcommand{\papersizeset}[1]{%
   \renewcommand{\pcbdocpapersize}{#1}%
@@ -69,6 +64,7 @@
 \newcommand{\PcbDocTechController}{}%
 \newcommand{\PcbDocApprover}{}%
 \newcommand{\PcbDocName}{}%
+\newcommand{\PcbDocCompany}{}%
 \newcommand{\PcbDocNumber}{}%
 \newcommand{\PcbNumber}{}%
 \newcommand{\PcbMaterial}{}%
@@ -86,6 +82,7 @@
 \newcommand{\TechControllerSet}[1]{\renewcommand{\PcbDocTechController}{#1}}%
 \newcommand{\ApproverSet}[1]{\renewcommand{\PcbDocApprover}{#1}}%
 \newcommand{\NameSet}[1]{\renewcommand{\PcbDocName}{#1}}%
+\newcommand{\CompanySet}[1]{\renewcommand{\PcbDocCompany}{#1}}%
 \newcommand{\NumberSet}[1]{\renewcommand{\PcbDocNumber}{#1}}%
 \newcommand{\PcbNumberSet}[1]{\renewcommand{\PcbNumber}{#1}}%
 \newcommand{\PcbMaterialSet}[1]{\renewcommand{\PcbMaterial}{#1}}%

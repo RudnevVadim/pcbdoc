@@ -4,7 +4,6 @@
 \RequirePackage{pcbschborder}%
 
 \RequirePackage{tikz}%
-\RequirePackage{xifthen}%
 \RequirePackage{graphicx}%
 \RequirePackage{changepage}%
 
@@ -21,6 +20,9 @@
   \PcbDocLayoutSet%
   \changetext{0mm}{0mm}{}{}{}%
   \begin{tikzpicture}[%
+    overlay,%
+    baseline=\pcbdocpaperheight-\pcbdocpapertopmargin-\pcbdocpaperbottommargin,%
+    %baseline=\pcbdocpaperheight-10mm,%
     linethick/.style={%
       line width=\pcbdoclinethick%
       },%

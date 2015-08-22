@@ -119,6 +119,24 @@
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \ifthenelse{\equal{\pcbdoctype}{sch}}{%
+    \setlength{\voffset}{0pt}%
+    \setlength{\topmargin}{\pcbdocpapertopmargin}%
+    \setlength{\headheight}{0pt}%
+    \setlength{\footskip}{0pt}%
+    \setlength{\headsep}{-4mm}}{}%
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \ifthenelse{\equal{\pcbdoctype}{sb}}{%
+    \setlength{\voffset}{0pt}%
+    \setlength{\topmargin}{\pcbdocpapertopmargin}%
+    \setlength{\headheight}{0pt}%
+    \setlength{\footskip}{0pt}%
+    \setlength{\headsep}{-4mm}}{}%
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
   \ifthenelse{\equal{\pcbdoctype}{in}}{%
     \setlength{\headsep}{0mm}%
     \setlength{\footskip}{15mm}}{}%

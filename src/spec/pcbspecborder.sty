@@ -2,10 +2,7 @@
 \ProvidesPackage{pcbspecborder}%
 
 \RequirePackage{pcbdoccontent}%
-%\RequirePackage{lastpage}%
 \RequirePackage{rotating}%
-\RequirePackage{xifthen}%
-\RequirePackage{array}%
 
 \newcommand{\DrawHeaderFirst}{%
   \unitlength=1mm%
@@ -160,21 +157,22 @@
       }%
     }%
     \put(65,30){\makebox[110mm]{\Largeit \PcbDocNumber}}%
-%    \put(65,10){\makebox[70mm]{\Largeit \PcbDocName}}%
     \put(150,16.25){\makebox[17mm]{%
         \normalfontit\ifthenelse{\equal{\pageref{LastPage}}{1}}{}{1}%
         }%
       }%
-
-%    \setcounter{TotalPages}{\pageref{LastPage}}%
-%    \ifthenelse{\equal{\changelist}{changelist}}{\addtocounter{page}{1}}{}%
     \put(167,16.25){\makebox[18mm]{\normalfontit\pageref{LastPage}}}%
-
+    \renewcommand{\arraystretch}{0.5}%
+    \put(135,6.25){\makebox[50mm]{%
+      \begin{tabular}[c]{@{}>{\largeit}c}%
+        \largeit\PcbDocCompany%
+      \end{tabular}%
+      }%
+    }%
   \end{picture}%
   }%
 
 \newcommand{\DrawStampNext}{%
-%  \enlargethispage{-5\baselineskip}%
   \begin{picture}(0,0)%
     \setlength{\unitlength}{1mm}%
     \linethickness{\pcbdoclinethick}%
@@ -200,11 +198,9 @@
     \put(175,2.75){\makebox[10mm]{\normalfontit\thepage}}%
     \put(65,5){\makebox[110mm]{\Largeit\PcbDocNumber}}%
   \end{picture}%
-%  \enlargethispage{-5\baselineskip}%
   }%
 
 \newcommand{\DrawFieldBottomFirst}{%
-%  \enlargethispage{-5\baselineskip}%
   \begin{picture}(0,0)%
     \setlength{\unitlength}{1mm}%
     \linethickness{\pcbdoclinethick}%
@@ -222,11 +218,9 @@
     \put(-8,85){\begin{rotate}{90}\makebox[25mm]{\normalfontit Инв. № дубл.}\end{rotate}}%
     \put(-8,110){\begin{rotate}{90}\makebox[35mm]{\normalfontit Подп. и дата.}\end{rotate}}%
   \end{picture}%
-%  \enlargethispage{-5\baselineskip}%
   }%
 
 \newcommand{\DrawFieldBottomNext}{%
-%  \enlargethispage{-5\baselineskip}%
   \begin{picture}(0,0)%
     \setlength{\unitlength}{1mm}%
     \linethickness{\pcbdoclinethick}%
@@ -244,11 +238,9 @@
     \put(-8,85){\begin{rotate}{90}\makebox[25mm]{\normalfontit Инв. № дубл.}\end{rotate}}%
     \put(-8,110){\begin{rotate}{90}\makebox[35mm]{\normalfontit Подп. и дата.}\end{rotate}}%
   \end{picture}%
-%  \enlargethispage{-5\baselineskip}%
   }%
 
 \newcommand{\DrawFieldTopFirst}{%
-%  \enlargethispage{-5\baselineskip}%
   \begin{picture}(0,0)%
     \setlength{\unitlength}{1mm}%
     \linethickness{\pcbdoclinethick}%
@@ -261,7 +253,6 @@
     \put(-8.25,227){\begin{rotate}{90}\makebox[60mm]{\normalfontit Перв. примен.}\end{rotate}}%
     \put(-2,227){\begin{rotate}{90}\makebox[60mm]{\largeit\PcbDocPrimaryUse}\end{rotate}}%
   \end{picture}%
-%  \enlargethispage{-5\baselineskip}%
   }%
 
 \newcommand{\DrawFieldTopNext}{%

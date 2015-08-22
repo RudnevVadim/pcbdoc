@@ -1,10 +1,7 @@
 
 \ProvidesPackage{pcbpeborder}%
 
-\RequirePackage{pcbdoccontent}%
-%\RequirePackage{lastpage}%
 \RequirePackage{rotating}%
-\RequirePackage{xifthen}%
 
 \newcommand{\DrawHeaderFirst}{%
   \unitlength=1mm%
@@ -146,7 +143,7 @@
     \put(65,30){\makebox[110mm]{\Largeit \PcbDocNumber{ПЭ}}}%
     \renewcommand{\arraystretch}{0}%
     \put(65,15){\makebox[70mm]{%
-      \begin{tabular}{@{\Largeit}c}%
+      \begin{tabular}[c]{@{}>{\Largeit}c}%
         \PcbDocName%
       \end{tabular}%
       }%
@@ -158,6 +155,13 @@
         }%
       }%
     \put(167,16.25){\makebox[18mm]{\normalfontit\pageref{LastPage}}}%
+    \renewcommand{\arraystretch}{0.5}%
+    \put(135,6.25){\makebox[50mm]{%
+      \begin{tabular}[c]{@{}>{\largeit}c}%
+        \PcbDocCompany%
+      \end{tabular}%
+      }%
+    }%
   \end{picture}%
   }%
 

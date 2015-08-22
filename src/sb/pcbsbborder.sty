@@ -5,8 +5,6 @@
 \RequirePackage{pcbdoclayout}%
 \RequirePackage{lastpage}%
 \RequirePackage{rotating}%
-\RequirePackage{xifthen}%
-\RequirePackage{array}%
 
 \newcommand{\DrawHeaderFirst}{}%
 \newcommand{\DrawHeaderNext}{}%
@@ -87,6 +85,13 @@
         }%
       }%
     \put(155,16.25){\makebox[30mm]{\normalfontit Листов~\pageref{LastPage}}}%
+    \renewcommand{\arraystretch}{0.5}%
+    \put(135,6.25){\makebox[50mm]{%
+      \begin{tabular}[c]{@{}>{\largeit}c}%
+        \PcbDocCompany%
+      \end{tabular}%
+      }%
+    }%
   \end{picture}%
   }%
 
@@ -195,4 +200,3 @@
     \put(70,-4){\begin{rotate}{180}\makebox[70mm]{\Largeit\PcbDocNumber{СБ}}\end{rotate}}%
   \end{picture}%
   }%
-

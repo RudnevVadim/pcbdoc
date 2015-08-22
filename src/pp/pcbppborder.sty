@@ -4,8 +4,6 @@
 \RequirePackage{pcbdoccontent}%
 \RequirePackage{lastpage}%
 \RequirePackage{rotating}%
-\RequirePackage{xifthen}%
-\RequirePackage{array}%
 
 \newcommand{\DrawHeaderFirst}{}%
 \newcommand{\DrawHeaderNext}{}%
@@ -72,13 +70,11 @@
     }%
     \renewcommand{\arraystretch}{1}%
     \put(0,60){%
-%      \begin{tabular}[b]{@{\largeit}p{185mm}}%
       \begin{tabular}[b]{@{}>{\largeit}p{185mm}}%
         \PcbDocPpTtFirst%
       \end{tabular}%
       }%
     \put(-205,5){%
-%      \begin{tabular}[b]{@{\largeit}p{185mm}}%
       \begin{tabular}[b]{@{}>{\largeit}p{185mm}}%
         \PcbDocPpTtNext%
       \end{tabular}%
@@ -88,6 +84,13 @@
         }%
       }%
     \put(155,16.25){\makebox[30mm]{\normalfontit Листов~\pageref{LastPage}}}%
+    \renewcommand{\arraystretch}{0.5}%
+    \put(135,6.25){\makebox[50mm]{%
+      \begin{tabular}[c]{@{}>{\largeit}c}%
+        \PcbDocCompany%
+      \end{tabular}%
+      }%
+    }%
   \end{picture}%
   }%
 
@@ -208,4 +211,3 @@
     \put(70,-4){\begin{rotate}{180}\makebox[70mm]{\Largeit\PcbNumber}\end{rotate}}%
   \end{picture}%
   }%
-

@@ -11,17 +11,6 @@
 \setlength{\pcbdocpaperdeltawidth}{0mm}%
 \setlength{\pcbdocpaperdeltaheight}{1mm}%
 
-%\newenvironment{ElementList}{%
-%  \begin{longtable}[c]{%
-%    @{}p{19mm}@{\hspace{2mm}}%
-%    p{107mm}@{\hspace{2mm}}%
-%    p{8mm}@{\hspace{2mm}}%
-%    p{43mm}@{\hspace{1mm}}%
-%    }%
-%  }{%
-%    \end{longtable}%
-%  }%
-
 \newcommand{\newsheet}{\newpage}%
 
 \newcommand{\Line}[4]{%
@@ -35,7 +24,7 @@
 
 \newcommand{\Part}[1]{% Добавить раздел, #1 - имя раздела
   \tabularnewline\kill\tabularnewline%
-  \Line{}{\hfill\underline{\raisebox{0mm}[0mm][0mm]{#1}}\hfill}{}{}%
+  \Line{}{\makebox[107mm]{\underline{\raisebox{0mm}[0mm][0mm]{#1}}}}{}{}%
   \tabularnewline%
   }%
 
