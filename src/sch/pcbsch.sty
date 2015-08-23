@@ -22,7 +22,6 @@
   \begin{tikzpicture}[%
     overlay,%
     baseline=\pcbdocpaperheight-\pcbdocpapertopmargin-\pcbdocpaperbottommargin,%
-    %baseline=\pcbdocpaperheight-10mm,%
     linethick/.style={%
       line width=\pcbdoclinethick%
       },%
@@ -54,4 +53,12 @@
 {%
   \end{tikzpicture}%
   \newpage%
+}%
+
+
+\newcommand{\Picture}[2][SheetCenter]{\node at (#1){\includegraphics{#2}};}%
+
+\newcommand{\Schematic}[2][0mm,0mm]%
+{%
+  \path (SheetCenter) ++(-7.5mm,0mm) +(#1) node {\includegraphics{#2}};
 }%
