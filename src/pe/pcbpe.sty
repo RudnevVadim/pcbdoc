@@ -130,7 +130,11 @@
   }%
 
 \AtBeginDocument{%
-  \enlargethispage{-3\baselineskip}%
+  \ifthenelse{\equal{\extstamp}{extstamp}}{%
+    \enlargethispage{-6\baselineskip}%
+    }{%
+    \enlargethispage{-3\baselineskip}%
+    }%
   \begin{longtable}[c]{%
     @{}p{19mm}@{\hspace{2mm}}%
     p{107mm}@{\hspace{2mm}}%

@@ -39,6 +39,15 @@
         }%
       },%
     execute at end picture={%
+      %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      %\ifthenelse{\equal{\thepage}{1}}%
+      %{%
+      %  \draw[fill]
+      %    ++(\pcbdocpaperwidth-25mm+1.5mm,-1.5mm) rectangle ++(-185mm-1.5mm,55mm+1.5mm);
+      %  \draw[fill]
+      %    ++(-1.5mm,\pcbdocpaperheight-10mm+1.5mm) rectangle ++(70mm+1.5mm,-14mm-1.5mm);
+      %}{}%
+      %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
       \ifthenelse{\equal{\draftmode}{draftmode}}{%
         \draw[step=\gridstep,color=gray] (0,0) grid%
           (\theBorderWidth mm,\theBorderHeight mm);%

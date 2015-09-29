@@ -8,9 +8,15 @@
   \begin{picture}(0,0)%
     \linethickness{\pcbdoclinethick}%
     \put(0,-15){\line(1,0){185}}%
-    \put(21,0){\line(0,-1){247}}%
-    \put(130,0){\line(0,-1){247}}%
-    \put(140,0){\line(0,-1){247}}%
+    \ifthenelse{\equal{\extstamp}{extstamp}}{
+      \put(21,0){\line(0,-1){223}}%
+      \put(130,0){\line(0,-1){223}}%
+      \put(140,0){\line(0,-1){223}}%
+      }{%
+      \put(21,0){\line(0,-1){247}}%
+      \put(130,0){\line(0,-1){247}}%
+      \put(140,0){\line(0,-1){247}}%
+      }%
     \put(0,-5){\makebox[20mm]{\largeit Поз.}}%
     \put(0,-9){\makebox[20mm]{\largeit обозна-}}%
     \put(0,-13){\makebox[20mm]{\largeit чение}}%
@@ -44,8 +50,10 @@
     \put(0,-207){\line(1,0){185}}%
     \put(0,-215){\line(1,0){185}}%
     \put(0,-223){\line(1,0){185}}%
-    \put(0,-231){\line(1,0){185}}%
-    \put(0,-239){\line(1,0){185}}%
+    \ifthenelse{\equal{\extstamp}{extstamp}}{}{%
+      \put(0,-231){\line(1,0){185}}%
+      \put(0,-239){\line(1,0){185}}%
+    }
   \end{picture}%
   }%
 
@@ -103,6 +111,10 @@
     \setlength{\unitlength}{1mm}%
     \linethickness{\pcbdoclinethick}%
     \ifthenelse{\equal{\pcbdocpapersize}{a4}}{}{\put(0,40){\line(0,-1){40}}}%
+    \ifthenelse{\equal{\extstamp}{extstamp}}{%
+      \put(65,62){\line(1,0){120}}%
+      \put(65,48){\line(1,0){120}}%
+      }{}%
     \put(0,40){\line(1,0){185}}%
     \put(0,25){\line(1,0){185}}%
     \put(135,20){\line(1,0){50}}%
@@ -111,7 +123,13 @@
     \put(17,40){\line(0,-1){40}}%
     \put(40,40){\line(0,-1){40}}%
     \put(55,40){\line(0,-1){40}}%
-    \put(65,40){\line(0,-1){40}}%
+    \ifthenelse{\equal{\extstamp}{extstamp}}{%
+      \put(65,62){\line(0,-1){62}}%
+      \put(79,62){\line(0,-1){14}}%
+      \put(132,62){\line(0,-1){14}}%
+      }{%
+      \put(65,40){\line(0,-1){40}}%
+      }%
     \put(135,25){\line(0,-1){25}}%
     \put(150,25){\line(0,-1){10}}%
     \put(167,25){\line(0,-1){10}}%

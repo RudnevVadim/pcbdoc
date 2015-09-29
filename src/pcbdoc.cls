@@ -32,10 +32,12 @@
 \newcommand{\draftmode}{}% черновой режим
 \newcommand{\changelist}{}% печать листа изменений
 \newcommand{\compactmode}{}% не печатать пустую строку после записи в перечне элементов
+\newcommand{\extstamp}{}% расширенный штамп на первом листе
 
 \DeclareOption{draftmode}{\renewcommand{\draftmode}{draftmode}}%
 \DeclareOption{changelist}{\renewcommand{\changelist}{changelist}}%
 \DeclareOption{compactmode}{\renewcommand{\compactmode}{compactmode}}%
+\DeclareOption{extstamp}{\renewcommand{\extstamp}{extstamp}}%
 
 \DeclareOption*{\edef\@tempa{%
     \noexpand\setkeys{pcbdoc}{\CurrentOption}}\@tempa}%

@@ -1,17 +1,20 @@
 
-\documentclass[11pt]{article}
+\documentclass[11pt,oneside]{book}
 
 \input ./src/preamble.tex
 
 \begin{document}
 
 \input ./src/titlepage.tex\newpage
+\chapter{Введение}
 \input ./src/introduction.tex\newpage
 \input ./src/install.tex\newpage
 \input ./src/tutorial.tex\newpage
+\chapter{Общие положения}
 \input ./src/options.tex\newpage
 \input ./src/fonts.tex\newpage
 \input ./src/fields.tex\newpage
+\chapter{Таблицы}
 \input ./src/elementlist.tex\newpage
 \input ./src/specification.tex\newpage
 \tableofcontents
