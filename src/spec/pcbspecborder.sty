@@ -9,12 +9,21 @@
   \begin{picture}(0,0)%
     \linethickness{\pcbdoclinethick}%
     \put(0,-15){\line(1,0){185}}%
-    \put(6,0){\line(0,-1){247}}%
-    \put(12,0){\line(0,-1){247}}%
-    \put(20,0){\line(0,-1){247}}%
-    \put(90,0){\line(0,-1){247}}%
-    \put(153,0){\line(0,-1){247}}%
-    \put(163,0){\line(0,-1){247}}%
+    \ifthenelse{\equal{\extstamp}{extstamp}}{%
+      \put(6,0){\line(0,-1){223}}%
+      \put(12,0){\line(0,-1){223}}%
+      \put(20,0){\line(0,-1){223}}%
+      \put(90,0){\line(0,-1){223}}%
+      \put(153,0){\line(0,-1){223}}%
+      \put(163,0){\line(0,-1){223}}%
+      }{%
+      \put(6,0){\line(0,-1){247}}%
+      \put(12,0){\line(0,-1){247}}%
+      \put(20,0){\line(0,-1){247}}%
+      \put(90,0){\line(0,-1){247}}%
+      \put(153,0){\line(0,-1){247}}%
+      \put(163,0){\line(0,-1){247}}%
+      }%
     \put(4,-15){\begin{rotate}{90}\makebox[15mm]{\normalfontit Формат}\end{rotate}}%
     \put(10.5,-15){\begin{rotate}{90}\makebox[15mm]{\largeit Зона}\end{rotate}}%
     \put(18,-15){\begin{rotate}{90}\makebox[15mm]{\largeit Поз.}\end{rotate}}%
@@ -49,8 +58,10 @@
     \put(0,-207){\line(1,0){185}}%
     \put(0,-215){\line(1,0){185}}%
     \put(0,-223){\line(1,0){185}}%
-    \put(0,-231){\line(1,0){185}}%
-    \put(0,-239){\line(1,0){185}}%
+    \ifthenelse{\equal{\extstamp}{extstamp}}{}{%
+      \put(0,-231){\line(1,0){185}}%
+      \put(0,-239){\line(1,0){185}}%
+      }%
   \end{picture}%
   }%
 
@@ -112,6 +123,10 @@
     \setlength{\unitlength}{1mm}%
     \linethickness{\pcbdoclinethick}%
     \ifthenelse{\equal{\pcbdocpapersize}{a4}}{}{\put(0,40){\line(0,-1){40}}}%
+    \ifthenelse{\equal{\extstamp}{extstamp}}{%
+      \put(65,62){\line(1,0){120}}%
+      \put(65,48){\line(1,0){120}}%
+      }{}%
     \put(0,40){\line(1,0){185}}%
     \put(0,25){\line(1,0){185}}%
     \put(135,20){\line(1,0){50}}%
@@ -120,7 +135,13 @@
     \put(17,40){\line(0,-1){40}}%
     \put(40,40){\line(0,-1){40}}%
     \put(55,40){\line(0,-1){40}}%
-    \put(65,40){\line(0,-1){40}}%
+    \ifthenelse{\equal{\extstamp}{extstamp}}{%
+      \put(65,62){\line(0,-1){62}}%
+      \put(79,62){\line(0,-1){14}}%
+      \put(132,62){\line(0,-1){14}}%
+      }{%
+      \put(65,40){\line(0,-1){40}}%
+      }%
     \put(135,25){\line(0,-1){25}}%
     \put(150,25){\line(0,-1){10}}%
     \put(167,25){\line(0,-1){10}}%

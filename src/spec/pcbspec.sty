@@ -374,7 +374,11 @@
   }%
 
 \AtBeginDocument{%
-  \enlargethispage{-3\baselineskip}%
+  \ifthenelse{\equal{\extstamp}{extstamp}}{%
+    \enlargethispage{-6\baselineskip}%
+    }{%
+      \enlargethispage{-3\baselineskip}%
+    }%
   \begin{longtable}[c]{%
     @{\hspace{-0.5mm}}>{\largeit}p{6mm}%
     @{\hspace{0mm}}>{\largeit}p{6mm}%
