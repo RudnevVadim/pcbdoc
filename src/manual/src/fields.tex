@@ -115,16 +115,16 @@
 
 \clearpage
 
-%\tikztableset{my table}{
-%  draw,
-%  row 1/.style={font=\sffamily\bfseries,align=center},
-%  column 1/.style
-%    ={font=\sffamily\bfseries\itshape\small,align=left,text width=37.6mm},
-%  column 2/.style={font=\small,align=justify,text width=102.6mm},
-%  row 5/.style={minimum height=10mm},
-%  row 9/.style={minimum height=8mm},
-%  row 13/.style={minimum height=12mm}
-%}
+\tikztableset{my table}{
+  draw,
+  row 1/.style={font=\sffamily\bfseries,align=center},
+  column 1/.style
+    ={font=\sffamily\bfseries\itshape\small,align=left,text width=39.6mm},
+  column 2/.style={font=\small,align=justify,text width=100.6mm},
+  row 5/.style={minimum height=10mm},
+  row 9/.style={minimum height=8mm},
+  row 13/.style={minimum height=12mm}
+}
 
 \begin{tikztablex}[my table]
 {
@@ -137,6 +137,19 @@
   Печатает аргумент \sfemph{<name>} в поле наименования или различительного
   индекса предприятия. Аргумент \sfemph{<name>} может быть как однострочным,
   так и двустрочным.\\
+  \textbackslash{}ClientSignSet\{<name>\} &
+  При включённой опции \bfemph{extstamp} печатает аргумент \sfemph{<name>} в поле
+  знака, установленного заказчиком в соответствии с требованиями нормативной
+  документации.\\
+  {\textbackslash{}LiterSolutionNumberSet\\\{<name>\}} &
+  При включённой опции \bfemph{extstamp} печатает аргумент \sfemph{<name>} в поле
+  номера решения и года утверждения соответствующей литеры.\\
+  {\textbackslash{}SolutionNumberSet\\\{<name>\}} &
+  При включённой опции \bfemph{extstamp} печатает аргумент \sfemph{<name>} в поле
+  номера решения и года утверждения документации.\\
+  {\textbackslash{}ClientIndexSet\\\{<name>\}} &
+  При включённой опции \bfemph{extstamp} печатает аргумент \sfemph{<name>} в поле
+  индекса заказчика в соответствии с нормативной документацией.\\
 };
 \coordinate(left) at (tikztable-1-1.west);
 \coordinate(right) at (tikztable-1-2.east);
@@ -145,11 +158,11 @@
 \draw[line width=0.6mm]
   coordinate(top) at (tikztable-2-2.north) (top-|left) -- (top-|right);
 \draw[line width=0.6mm]
-  coordinate(top) at (tikztable-2-2.south) (top-|left) -- (top-|right);
+  coordinate(top) at (tikztable-6-2.south) (top-|left) -- (top-|right);
 \begin{scope}[on background layer]
 \coordinate(right) at (tikztable-1-1.east);
 \coordinate(top) at (tikztable-2-2.north);
-\coordinate(bottom) at (tikztable-2-2.south);
+\coordinate(bottom) at (tikztable-6-2.south);
 \fill[codecolor] (top-|left) rectangle (bottom-|right);
 \end{scope}
 \end{tikztablex}
