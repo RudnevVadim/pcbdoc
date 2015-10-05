@@ -169,9 +169,9 @@
     \put(65,5){\makebox[70mm]{\largeit Перечень элементов}}%
     \renewcommand{\arraystretch}{1}%
     \put(150,16.25){\makebox[17mm]{%
-        \normalfontit\ifthenelse{\equal{\pageref{LastPage}}{1}}{}{1}%
-        }%
+      \normalfontit\ifthenelse{\equal{\pageref{LastPage}}{1}}{}{1}%
       }%
+    }%
     \put(167,16.25){\makebox[18mm]{\normalfontit\pageref{LastPage}}}%
     \renewcommand{\arraystretch}{0.5}%
     \put(135,6.25){\makebox[50mm]{%
@@ -180,6 +180,30 @@
       \end{tabular}%
       }%
     }%
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \ifthenelse{\equal{\extstamp}{extstamp}}{%
+    \put(65,42){\makebox[120mm]{%
+      \begin{tabular}[c]{@{}>{\largeit}c}%
+        \largeit{}\PcbDocClientIndex%
+      \end{tabular}%
+      }}%
+    \put(65,53){\makebox[14mm]{%
+      \begin{tabular}[c]{@{}>{\largeit}c}%
+        \largeit{}\PcbDocClientSign%
+      \end{tabular}%
+      }}%
+    \put(79,53){\makebox[53mm]{%
+      \begin{tabular}[c]{@{}>{\largeit}c}%
+        \largeit{}\PcbDocLiterSolutionNumber%
+      \end{tabular}%
+      }}%
+    \put(132,53){\makebox[53mm]{%
+      \begin{tabular}[c]{@{}>{\largeit}c}%
+        \largeit{}\PcbDocSolutionNumber%
+      \end{tabular}%
+      }}%
+    }{}%
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
   \end{picture}%
   }%
 

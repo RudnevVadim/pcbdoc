@@ -67,6 +67,10 @@
 \newcommand{\PcbDocApprover}{}%
 \newcommand{\PcbDocName}{}%
 \newcommand{\PcbDocCompany}{}%
+\newcommand{\PcbDocClientSign}{}%
+\newcommand{\PcbDocLiterSolutionNumber}{}%
+\newcommand{\PcbDocSolutionNumber}{}%
+\newcommand{\PcbDocClientIndex}{}%
 \newcommand{\PcbDocNumber}{}%
 \newcommand{\PcbNumber}{}%
 \newcommand{\PcbMaterial}{}%
@@ -85,6 +89,10 @@
 \newcommand{\ApproverSet}[1]{\renewcommand{\PcbDocApprover}{#1}}%
 \newcommand{\NameSet}[1]{\renewcommand{\PcbDocName}{#1}}%
 \newcommand{\CompanySet}[1]{\renewcommand{\PcbDocCompany}{#1}}%
+\newcommand{\ClientSignSet}[1]{\renewcommand{\PcbDocClientSign}{#1}}%
+\newcommand{\LiterSolutionNumberSet}[1]{\renewcommand{\PcbDocLiterSolutionNumber}{#1}}%
+\newcommand{\SolutionNumberSet}[1]{\renewcommand{\PcbDocSolutionNumber}{#1}}%
+\newcommand{\ClientIndexSet}[1]{\renewcommand{\PcbDocClientIndex}{#1}}%
 \newcommand{\NumberSet}[1]{\renewcommand{\PcbDocNumber}{#1}}%
 \newcommand{\PcbNumberSet}[1]{\renewcommand{\PcbNumber}{#1}}%
 \newcommand{\PcbMaterialSet}[1]{\renewcommand{\PcbMaterial}{#1}}%

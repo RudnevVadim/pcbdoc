@@ -409,3 +409,15 @@
     \draw ++(#2) node{\Largeit #3};%
     }%
   }%
+
+\newcommand{\Picture}[3][]{\node at (#3){\includegraphics[#1]{#2}};}
+
+\newcommand{\Assembly}[2][0mm,0mm]%
+{%
+  \path (SheetCenter) ++(-7.5mm,0mm) +(#1) node {\includegraphics{#2}};
+}%
+
+\newcommand{\Board}[2][0mm,0mm]%
+{%
+  \path (SheetCenter) ++(-7.5mm,0mm) +(#1) node {\includegraphics{#2}};
+}%
