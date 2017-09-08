@@ -6,6 +6,7 @@
 \RequirePackage{keyval, xifthen, array, pcbdoclayout}%
 \hbadness=10000
 \newcommand{\pcbdoctype}{spec}%
+\newcommand{\suppress}{normal}%
 \newlength{\pcbdoclinethick}%
 \setlength{\pcbdoclinethick}{0.6mm}%
 \newlength{\pcbdoclinethin}%
@@ -20,10 +21,8 @@
 \define@key{pcbdoc}{linethick}{\setlength{\pcbdoclinethick}{#1}}%
 \define@key{pcbdoc}{linethin}{\setlength{\pcbdoclinethin}{#1}}%
 \define@key{pcbdoc}{doctype}{\renewcommand{\pcbdoctype}{#1}}%
-\define@key{pcbdoc}{papersize}{%
-  \renewcommand{\pcbdocpapersize}{#1}%
-  \PcbDocSizeChoice%
-  }%
+\define@key{pcbdoc}{papersize}{\renewcommand{\pcbdocpapersize}{#1}\PcbDocSizeChoice}%
+\define@key{pcbdoc}{suppress}{\renewcommand{\suppress}{#1}}%
 
 \newlength{\gridstep}% шаг сетки в черновом режиме
 \setlength{\gridstep}{10mm}%

@@ -39,15 +39,41 @@
         }%
       },%
     execute at end picture={%
-      %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-      %\ifthenelse{\equal{\thepage}{1}}%
-      %{%
-      %  \draw[fill]
-      %    ++(\pcbdocpaperwidth-25mm+1.5mm,-1.5mm) rectangle ++(-185mm-1.5mm,55mm+1.5mm);
-      %  \draw[fill]
-      %    ++(-1.5mm,\pcbdocpaperheight-10mm+1.5mm) rectangle ++(70mm+1.5mm,-14mm-1.5mm);
-      %}{}%
-      %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      \draw[fill=white,draw=white](-20mm, -5mm)
+        rectangle(\theBorderWidth mm + 5mm, 5mm);%
+      \draw[fill=white,draw=white](-20mm, \theBorderHeight mm + 5mm)%
+        rectangle(\theBorderWidth mm + 5mm, \theBorderHeight mm - 5mm);%
+        \draw[fill=white,draw=white]
+          (-20mm, -5mm) rectangle (5mm, \theBorderHeight mm + 5mm);%
+      \draw[fill=white,draw=white](\theBorderWidth mm + 5 mm, -5 mm)%
+        rectangle(\theBorderWidth mm - 5mm, \theBorderHeight mm + 5mm);%
+      \draw[fill=white,draw=white](-5mm, \theBorderHeight mm + 5mm)%
+        rectangle(70mm + 5mm, \theBorderHeight mm - 14mm - 5mm);%
+      \ifthenelse{\equal{\thepage}{1}}{%
+        \draw[fill=white,draw=white](\theBorderWidth mm - 185mm - 5mm, -5mm)%
+          rectangle(\theBorderWidth mm + 5mm, 55 mm + 5 mm);%
+        \ifthenelse{\equal{\suppress}{+bottom}}{%
+          \draw[fill=white,draw=white](\theBorderWidth mm + 5mm, 55 mm - 5 mm)
+          rectangle(\theBorderWidth mm - 120 mm - 5 mm, 55 mm + 5 mm + 8 mm);%
+          }{}%
+        \ifthenelse{\equal{\suppress}{+top}}{%
+          \draw[fill=white,draw=white](70 mm - 5 mm, \theBorderHeight mm - 14 mm - 5 mm)
+            rectangle(137 mm + 5 mm, \theBorderHeight mm + 5 mm);%
+          \draw[fill=white,draw=white](-5 mm, \theBorderHeight mm - 21 mm - 5 mm)
+            rectangle(70 mm + 5 mm, \theBorderHeight mm - 14 mm + 5 mm);%
+          }{}%
+        \ifthenelse{\equal{\suppress}{force}}{%
+          \draw[fill=white,draw=white](\theBorderWidth mm + 5mm, 55 mm - 5 mm)
+            rectangle(\theBorderWidth mm - 120 mm - 5 mm, 55 mm + 5 mm + 8 mm);%
+          \draw[fill=white,draw=white](70 mm - 5 mm, \theBorderHeight mm - 14 mm - 5 mm)
+            rectangle(137 mm + 5 mm, \theBorderHeight mm + 5 mm);%
+          \draw[fill=white,draw=white](-5 mm, \theBorderHeight mm - 21 mm - 5 mm)
+            rectangle(70 mm + 5 mm, \theBorderHeight mm - 14 mm + 5 mm);%
+          }{}%
+        }{%
+        \draw[fill=white,draw=white](\theBorderWidth mm - 185mm - 5mm, -5mm)%
+          rectangle(\theBorderWidth mm + 5mm, 15 mm + 5 mm);%
+        }%
       \ifthenelse{\equal{\draftmode}{draftmode}}{%
         \draw[step=\gridstep,color=gray] (0,0) grid%
           (\theBorderWidth mm,\theBorderHeight mm);%
@@ -64,6 +90,14 @@
   \newpage%
 }%
 
+\newenvironment{page}[3][]
+{%
+  \begin{sheet}[#3]
+    \node at (\theBorderWidth/20,\theBorderHeight/20){\includegraphics[#1]{#2}};
+}%
+{%
+  \end{sheet}
+}%
 
 \newcommand{\Picture}[2][SheetCenter]{\node at (#1){\includegraphics{#2}};}%
 
