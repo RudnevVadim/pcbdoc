@@ -91,6 +91,10 @@
 }%
 
 \newenvironment{page}[3][]
+% добавить лист в схему электрическую принципиальную
+% #1 - параметры вставляемого рисунка для команды '\includegraphics' (необязательно)
+% #2 - файл вставляемого командой '\includegraphics' рисунка
+% #3 - размер листа
 {%
   \begin{sheet}[#3]
     \node at (\theBorderWidth/20,\theBorderHeight/20){\includegraphics[#1]{#2}};
