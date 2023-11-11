@@ -203,10 +203,12 @@
   \ifthenelse{\equal{#1}{o}}{%
     \draw[linethin] ++(#3) +(90+#2:#4/3*2) circle(#4*0.33);%
     }{}%
-  \ifthenelse{\equal{#5}{}}{}{\node[above right,rotate=#2] at (#3){\makebox{~~~#5}};}%
-  \ifthenelse{\equal{#5}{}}{}{%
-    \draw[linethin] ++(#3) ++(60+#2:\dimregI) -- +(#2:\RoughnessSignLength);%
-    }%
+  %\ifthenelse{\equal{#5}{}}{}{\node[above right,rotate=#2] at (#3){\makebox{~~~#5}};}%
+  %\ifthenelse{\equal{#5}{}}{}{%
+  %  \draw[linethin] ++(#3) ++(60+#2:\dimregI) -- +(#2:\RoughnessSignLength);%
+  %  }%
+  \node[above right,rotate=#2] at (#3){\makebox{~~~#5}};%
+  \draw[linethin] ++(#3) ++(60+#2:\dimregI) -- +(#2:\RoughnessSignLength);%
   }%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -278,7 +280,9 @@
 \newcommand{\Roughness}[1]{%
   \node[coordinate](righttoppoint) at (\theBorderWidth mm,\theBorderHeight mm){};%
   \draw ++(righttoppoint) +(-45mm,-20mm) node[coordinate](roughnessorigin){};%
+  %\draw ++(righttoppoint) +(-45mm,-20mm) node[coordinate](\theBorderWidth mm,\theBorderHeight mm){};%
   \LargeRoughnessSign[0]{roughnessorigin}{#1};%
+  %\LargeRoughnessSign[0]{\theBorderWidth mm,\theBorderHeight mm}{#1};%
   }%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 

@@ -73,6 +73,15 @@
       }%
     }%
     \put(65,17.5){\makebox[70mm]{\largeit Сборочный чертеж}}%
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \put(65,6.5){\makebox[70mm]{%
+    \renewcommand{\arraystretch}{0.5}%
+      \begin{tabular}[c]{@{}>{\largeit}c}%
+        \PcbMaterial%
+      \end{tabular}%
+      }%
+    }%
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     \renewcommand{\arraystretch}{1}%
     \ifthenelse{\equal{\extstamp}{extstamp}}{\put(0,68)}{\put(0,60)}{%
       \begin{tabular}[b]{@{}>{\largeit}p{185mm}}%
