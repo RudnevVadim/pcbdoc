@@ -1,4 +1,0 @@
-#!/bin/bash
-
-#xelatex pe.tex
-xelatex pe.tex
